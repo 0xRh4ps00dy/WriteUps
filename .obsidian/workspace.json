@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test.md",
+                "file": "Untitled 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Test.md",
+                "file": "Untitled 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Test.md",
+                "file": "Untitled 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Test.md"
+                "file": "Untitled 1.md"
               }
             }
           }
@@ -161,10 +161,10 @@
   },
   "active": "ad84c02baaa2f81d",
   "lastOpenFiles": [
+    "Test.md",
     "Untitled.md",
     "Untitled 1.md",
     "Write Ups/Untitled.md",
-    "Test.md",
     "1. Reconnaissance/Test Note.md",
     "README.md",
     "2. Exploitation",
