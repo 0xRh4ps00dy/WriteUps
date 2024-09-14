@@ -1,9 +1,3 @@
-```
----
-hidden: true
----
-```
-
 Marcos
 
 Test
