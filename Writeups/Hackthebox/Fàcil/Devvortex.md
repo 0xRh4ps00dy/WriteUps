@@ -91,7 +91,7 @@ Encontramos unas credenciales de la base de datos MYSQL.
 
 Usando estas credenciales en el panel de administrador de Joomla conseguimos tener acceso al CMS.
 
-#### Explotación
+## Explotación
 
 Una vez dentro del sistema es muy fácil obtener acceso al sistema, solo tenemos que reemplazar un archivo de alguna plantilla del CMS, preparar un listener de **netcat** y navegar hacia ella:
 
@@ -101,7 +101,7 @@ Una vez conseguimos el punto de apoyo en el sistema objetivo es buen momento par
 
 ![](../../../Imágenes/Selection_027.png)
 
-###  **Movimiento lateral**
+#  **Movimiento lateral**
 
 En primer lugar, intentemos conectarnos a la base de datos MYSQL e intentar recopilar algún hash para desencriptarlo:
 
@@ -119,20 +119,15 @@ Estamos de suerte y encontramos el hash del usuario Logan:
 
 Intentemos desencriptarlo usando **hashcat:**
 
-```
-
-```
+![[../../../Imágenes/Pasted image 20240919134303.png]]
 
 Finalmente, podemos obtener acceso al sistema objetivo mediante **SSH** y como usuario Logan, el cual ya podemos leer la bandera user.txt:
 
-```
+![[../../../Imágenes/Pasted image 20240919134309.png]]
 
-```
+# **Escalada de privilegios**
 
-### **Escalada de privilegios  
-**
-
-#### Identificar la vulnerabilidad
+## Identificar la vulnerabilidad
 
 Comprobamos los permisos sudo sobre el usuario **Logan** y encontramos que puede ejecutar el binario **/usr/bin/apport-cli** con privilegios:
 
