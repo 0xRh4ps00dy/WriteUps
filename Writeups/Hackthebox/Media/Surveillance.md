@@ -1,159 +1,4 @@
-  
-
-# Por favor, espera. Copia en progreso...
-
-If you’re making a lot of copies it can take a while  
-(up to 5 minutes if you’re on a slow server).
-
-El tiempo promedio es de 8 copias por segundo.
-
-![Revisit consent button](HTML%20import/Attachments/revisit.svg)
-
-We value your privacy
-
-We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
-
-Customize Reject All Accept All
-
-Customize Consent Preferences ![Close](HTML%20import/Attachments/close.svg)
-
-We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below.
-
-The cookies that are categorized as "Necessary" are stored on your browser as they are essential for enabling the basic functionalities of the site. ... Show more
-
-NecessaryAlways Active
-
-Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.
-
-No cookies to display.
-
-Functional
-
-Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features.
-
-No cookies to display.
-
-Analytics
-
-Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.
-
-No cookies to display.
-
-Performance
-
-Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.
-
-No cookies to display.
-
-Advertisement
-
-Advertisement cookies are used to provide visitors with customized advertisements based on the pages you visited previously and to analyze the effectiveness of the ad campaigns.
-
-No cookies to display.
-
-Reject All Save My Preferences Accept All
-
-- [Acerca de WordPress](https://marcosjurado.com/wp-admin/about.php)
-    
-    - [Acerca de WordPress](https://marcosjurado.com/wp-admin/about.php)
-    - [Únete](https://marcosjurado.com/wp-admin/contribute.php)
-    
-    - [WordPress.org](https://es.wordpress.org/)
-    - [Documentación](https://wordpress.org/documentation/)
-    - [Aprende WordPress](https://learn.wordpress.org/)
-    - [Soporte](https://es.wordpress.org/support/)
-    - [Sugerencias](https://es.wordpress.org/support/forum/comunidad/peticiones-y-feedback/)
-    
-- [Marcos Jurado](https://marcosjurado.com/wp-admin/)
-    
-    - [Escritorio](https://marcosjurado.com/wp-admin/)
-    - [Plugins](https://marcosjurado.com/wp-admin/plugins.php)
-    
-    - [Temas](https://marcosjurado.com/wp-admin/themes.php)
-    
-- [Editar sitio](https://marcosjurado.com/wp-admin/site-editor.php?postType=wp_template&postId=twentytwentythree//single&canvas=edit)
-- [33 actualizaciones disponibles](https://marcosjurado.com/wp-admin/update-core.php)
-- [00 comentarios en moderación](https://marcosjurado.com/wp-admin/edit-comments.php)
-- [Añadir](https://marcosjurado.com/wp-admin/post-new.php)
-    
-    - [Entrada](https://marcosjurado.com/wp-admin/post-new.php)
-    - [Medio](https://marcosjurado.com/wp-admin/media-new.php)
-    - [Página](https://marcosjurado.com/wp-admin/post-new.php?post_type=page)
-    - [Página de destino](https://marcosjurado.com/wp-admin/edit.php?action=elementor_new_post&post_type=e-landing-page&template_type=landing-page&_wpnonce=34713479b4#library)
-    - [Plantilla](https://marcosjurado.com/wp-admin/post-new.php?post_type=elementor_library)
-    - [Usuario](https://marcosjurado.com/wp-admin/user-new.php)
-    
-- [Copiar esta](https://marcosjurado.com/surveillance/#)
-- [Editar la entrada](https://marcosjurado.com/wp-admin/post.php?post=550&action=edit)
-- [Site Kit](https://marcosjurado.com/surveillance/#)
-    
-    El plugin Site Kit by Google necesita que esté activado JavaScript en tu navegador.
-    
-    Estadísticas para
-    
-    Surveillance
-    
-    en los últimos 28 días
-    
-    ### Error de datos en Search Console
-    
-    Error: Parece que tu sitio no tiene permiso para acceder a los datos de la cuenta de Google y no puede mostrar las estadísticas en el escritorio. Para corregirlo, [vuelve a hacer la configuración del plugin](https://sitekit.withgoogle.com/v2/site-management/setup/?code=sitekit-EhIKB1Nlc3Npb24QgICA0vSTsQg&site_id=8LDpvmGy9s3FyugTSW8oMj-pjgjQpFNZmFdztkYgxkwBM.apps.sitekit.withgoogle.com&step=delegation_consent).
-    
-    [Obtener ayuda](https://sitekit.withgoogle.com/support?error_id=missing_delegation_consent)
-    
-    ### Error de datos en Search Console
-    
-    Error: Parece que tu sitio no tiene permiso para acceder a los datos de la cuenta de Google y no puede mostrar las estadísticas en el escritorio. Para corregirlo, [vuelve a hacer la configuración del plugin](https://sitekit.withgoogle.com/v2/site-management/setup/?code=sitekit-EhIKB1Nlc3Npb24QgICA0vSTsQg&site_id=8LDpvmGy9s3FyugTSW8oMj-pjgjQpFNZmFdztkYgxkwBM.apps.sitekit.withgoogle.com&step=delegation_consent).
-    
-    [Obtener ayuda](https://sitekit.withgoogle.com/support?error_id=missing_delegation_consent)
-    
-    ### Error de datos en Analytics
-    
-    Error: Parece que tu sitio no tiene permiso para acceder a los datos de la cuenta de Google y no puede mostrar las estadísticas en el escritorio. Para corregirlo, [vuelve a hacer la configuración del plugin](https://sitekit.withgoogle.com/v2/site-management/setup/?code=sitekit-EhIKB1Nlc3Npb24QgICA0tvutgk&site_id=8LDpvmGy9s3FyugTSW8oMj-pjgjQpFNZmFdztkYgxkwBM.apps.sitekit.withgoogle.com&step=delegation_consent).
-    
-    [Obtener ayuda](https://sitekit.withgoogle.com/support?error_id=missing_delegation_consent)
-    
-    ### Error de datos en Analytics
-    
-    Error: Parece que tu sitio no tiene permiso para acceder a los datos de la cuenta de Google y no puede mostrar las estadísticas en el escritorio. Para corregirlo, [vuelve a hacer la configuración del plugin](https://sitekit.withgoogle.com/v2/site-management/setup/?code=sitekit-EhIKB1Nlc3Npb24QgICA8oyO0gg&site_id=8LDpvmGy9s3FyugTSW8oMj-pjgjQpFNZmFdztkYgxkwBM.apps.sitekit.withgoogle.com&step=delegation_consent).
-    
-    [Obtener ayuda](https://sitekit.withgoogle.com/support?error_id=missing_delegation_consent)
-    
-    [Más detalles](https://marcosjurado.com/surveillance/#)
-    
-    [Más detalles](https://marcosjurado.com/surveillance/#)
-    
-- [
-    
-    ![Estadísticas](HTML%20import/Attachments/admin.php "Visitas de 48 horas. Haz clic para ver más estadísticas del sitio.")
-    
-    ](https://marcosjurado.com/wp-admin/admin.php?page=stats)
-
-- [Avisos](https://wordpress.com/notifications)
-    
-    Avisos
-    
-- [Hola, marcosjurado![](./Surveillance%20–%20Marcos%20Jurado_files/f2d6c89652d573300d73a9d2c4b82c14.png)](https://marcosjurado.com/wp-admin/profile.php)
-    
-    - [![](./Surveillance%20–%20Marcos%20Jurado_files/f2d6c89652d573300d73a9d2c4b82c14(1).png)marcosjuradoEditar perfil](https://marcosjurado.com/wp-admin/profile.php)
-    - [Salir](https://marcosjurado.com/wp-login.php?action=logout&_wpnonce=675479bef5)
-    
-- Buscar
-    
-
-[Saltar al contenido](https://marcosjurado.com/surveillance/#wp--skip-link--target)
-
-[![Marcos Jurado](HTML%20import/Attachments/LogotipoH.png)](https://marcosjurado.com/)
-
-- [Home](https://marcosjurado.com/)
-- [Whoami](https://marcosjurado.com/whoami/)
-- [WriteUps](https://marcosjurado.com/category/writeups/)
-    - [Hack The Box](https://marcosjurado.com/category/writeups/hack-the-box/)
-- [Tutoriales](https://marcosjurado.com/category/tutoriales/)
-
-# Surveillance
-
-![](HTML%20import/Attachments/Surveillance.png)
+![](../../../Imágenes/Surveillance%201.png)
 
 Surveillance es una máquina que funciona con un sistema operativo Linux y de dificultad media. Para explotar la máquina debemos aprovechar un CVE que nos permite realizar una ejecución remota de código sin autentificación que nos da acceso a la máquina. Posteriormente, debemos hacer un movimiento lateral hacia otro usuario mediante la búsqueda de un par de credenciales que hay en una copia de seguridad. A continuación, debemos realizar otro movimiento lateral aprovechando otro CVE que permite también una ejecución remota de código sin autentificación. Finalmente, para escalar privilegios debemos abusar de un binario con privilegios de administrador.
 
@@ -163,7 +8,7 @@ Surveillance es una máquina que funciona con un sistema operativo Linux y de di
 
 El escaneo de puertos nos arroja la siguiente información:
 
-![](HTML%20import/Attachments/image-14.png)
+![](../../../Imágenes/image-14%201.png)
 
 Utilizando esta información, mi evaluación inicial es:
 
@@ -174,13 +19,13 @@ Utilizando esta información, mi evaluación inicial es:
 
 Añadimos surveillance.htb en el fichero /etc/hosts y accedemos a la dirección mediante el navegador:
 
-![](HTML%20import/Attachments/Screenshot-2024-04-20-at-10-21-23-Surveillance.png)
+![](../../../Imágenes/Screenshot-2024-04-20-at-10-21-23-Surveillance%201.png)
 
 Si nos fijamos en el footer del sitio web podemos ver que el sitio está desarrollado con un gestor de contenidos llamado **Craft CMS**.
 
 También **Wappalyzer** nos muestra la misma información:
 
-![](HTML%20import/Attachments/image-15.png)
+![](../../../Imágenes/image-15%202.png)
 
 ### ****Foothold****
 
@@ -188,13 +33,13 @@ También **Wappalyzer** nos muestra la misma información:
 
 Si nos dirigimos al enlace que hay en el footer del sitio web, podemos comprobar la versión de Craft CMS usada en el sitio web. Por lo tanto, ya sabemos que estamos enfrente de la versión 4.4.14:
 
-![](HTML%20import/Attachments/Selection_002-2.png)
+![](../../../Imágenes/Selection_002-2%201.png)
 
 #### Identificar la vulnerabilidad
 
 Investigando por Google podemos ver que existe una vulnerabilidad [CVE-2023-41892](https://nvd.nist.gov/vuln/detail/CVE-2023-41892) relacionada con esta versión de Craft CMS. La vulnerabilidad nos permite ejecución remota de código sin necesidad de autenticación.
 
-![](HTML%20import/Attachments/image-16.png)
+![](../../../Imágenes/image-16%202.png)
 
 #### Prueba de concepto
 
@@ -294,7 +139,7 @@ if __name__ == "__main__":
 
 Copiamos el script en nuestro host de ataque y lo ejecutamos:
 
-![](HTML%20import/Attachments/image-18.png)
+![](../../../Imágenes/image-18%202.png)
 
 Parece ser que el script no funciona, ya que este POC depende de la escritura de un webshell, por lo que es necesario encontrar una carpeta adecuada con permisos de escritura. Revisando el código debemos hacer dos pequeños cambios para conseguir que funcione. El cambio es el siguiente:
 
@@ -314,7 +159,7 @@ response = requests.post(url, headers=headers, data=data, files=files)
 
 Además, también debemos cambiar la dirección donde se escribirá el script. Si visitamos el repositorio de GitHub vemos que hay una carpeta donde podemos probar a depositar el webshell.
 
-![](HTML%20import/Attachments/image-20.png)
+![](../../../Imágenes/image-20%201.png)
 
 Esta modificación se da en dos lugares:
 
@@ -338,11 +183,11 @@ response = requests.get(url + "/cpresources/shell.php", params={"cmd": cmd})
 
 Probemos a ejecutar el script ahora:
 
-![](HTML%20import/Attachments/image-19.png)
+![](../../../Imágenes/image-19%201.png)
 
 Ahora es momento de estabilizar la terminal:
 
-![](HTML%20import/Attachments/image-22.png)
+![](../../../Imágenes/image-22%201.png)
 
 ### **Movimiento lateral hacia Matthew**
 
@@ -360,13 +205,13 @@ En este momento, copiemos el fichero al host de ataque y lo descomprimimos. Una 
 
 Por suerte, encontramos un hash del usuario Matthew.
 
-![](HTML%20import/Attachments/image-25.png)
+![](../../../Imágenes/image-25%201.png)
 
 Ahora intentemos desencriptarlo usando **hashcat**:
 
-![](HTML%20import/Attachments/image-26.png)
+![](../../../Imágenes/image-26%201.png)
 
-![](HTML%20import/Attachments/image-27.png)
+![](../../../Imágenes/image-27%201.png)
 
 Hacemos suerte y logramos encontrar la contraseña del usuario Matthew que nos permite conectarnos a la máquina con este usuario mediante SSH y realizar el movimiento lateral:
 
@@ -374,25 +219,25 @@ Hacemos suerte y logramos encontrar la contraseña del usuario Matthew que nos p
 
 Aprovechamos para leer la bandera user.txt:
 
-![](HTML%20import/Attachments/image-29.png)
+![](../../../Imágenes/image-29%201.png)
 
 ### ****Movimiento lateral hacia Zoneminder****
 
 Enumerando el sistema nos encontramos con unas credenciales del usuario Zoneminder en el fichero database.php que sirven para conectarse a una base de datos MySQL:
 
-![](HTML%20import/Attachments/image-31.png)
+![](../../../Imágenes/image-31%201.png)
 
-![](HTML%20import/Attachments/Selection_020-1.png)
+![](../../../Imágenes/Selection_020-1%201.png)
 
 También observamos el funcionamiento de un servicio en el puerto 8080, por lo tanto, nos disponemos a hacer un portfordward de ese puerto mediante SSH:
 
-![](HTML%20import/Attachments/image-30.png)
+![](../../../Imágenes/image-30%201.png)
 
-![](HTML%20import/Attachments/image-33.png)
+![](../../../Imágenes/image-33%201.png)
 
 De esta forma podemos navegar hacia ese puerto mediante el navegador de nuestro host de ataque:
 
-![](HTML%20import/Attachments/image-34.png)
+![](../../../Imágenes/image-34%201.png)
 
 El sitio web parece funcionar una aplicación llamada Zoneminder. Después de investigar un poco descubrimos que Zoneminder es un software que se utiliza para monitorear.
 
@@ -402,37 +247,37 @@ En este punto es interesante probar varias credenciales por defecto, aunque no l
 
 Antes debemos encontrar la versión que trabaje:
 
-![](HTML%20import/Attachments/image-35.png)
+![](../../../Imágenes/image-35%201.png)
 
 #### Identificar la vulnerabilidad
 
 Decidimos investigar por Google en la búsqueda de alguna vulnerabilidad del servicio y nos encontramos en que existe la vulnerabilidad [CVE-2023-26035](https://nvd.nist.gov/vuln/detail/CVE-2023-26035). Esta vulnerabilidad permite la ejecución remota de código sin necesidad de autenticación.
 
-![](HTML%20import/Attachments/image-36.png)
+![](../../../Imágenes/image-36%201.png)
 
 #### Explotación
 
 Aunque existen varias pruebas de concepto para explotar la vulnerabilidad, decidimos usar un módulo de **metasploit**:
 
-![](HTML%20import/Attachments/image-37.png)
+![](../../../Imágenes/image-37%201.png)
 
 Realizamos la configuración del módulo y procedemos a ejecutarlo para al fin llegar hacia el usuario Zoneminder:
 
-![](HTML%20import/Attachments/image-38.png)
+![](../../../Imágenes/image-38%201.png)
 
 ### **Escalada de privilegios**
 
 Una vez dentro del sistema objetivo como usuario Zoneminder descubrimos que este puede ejecutar con privilegios el siguiente comando que ejecuta diferentes binarios desarrollados con Perl:
 
-![](HTML%20import/Attachments/image-39.png)
+![](../../../Imágenes/image-39%201.png)
 
 El binario ejecuta todos los binarios ubicados en /usr/bin:
 
-![](HTML%20import/Attachments/image-40.png)
+![](../../../Imágenes/image-40%201.png)
 
 Después de revisar todos estos binarios nos parece interesante el binario zmupdate.pl. Viendo su ayuda, podemos intentar abusar de él:
 
-![](HTML%20import/Attachments/image-41.png)
+![](../../../Imágenes/image-41%201.png)
 
 Mirando el script, vemos que el siguiente código escapa la inyección cuando se introduce en la contraseña, en cambio, no en los otros parámetros:
 
@@ -461,114 +306,22 @@ my $command = 'mysqldump';
 
 Como hemos visto en la ayuda, podemos manipular los otros parámetros, por lo tanto:
 
-![](HTML%20import/Attachments/image-43.png)
+![](../../../Imágenes/image-43%201.png)
 
 Con esto conseguimos una terminal con privilegios. Aunque por el momento la terminal no termina siendo funcional y debemos realizar otro forma de escalar los privilegios.
 
 Podemos probar a crear una copia del binario /bin/bash en el directorio /tmp y luego ejecutarlo:
 
-![](HTML%20import/Attachments/image-44.png)
+![](../../../Imágenes/image-44%201.png)
 
 Comprobemos que se ha creado el binario:
 
-![](HTML%20import/Attachments/image-45.png)
+![](../../../Imágenes/image-45%201.png)
 
 Probemos a ejecutarlo y comprobar que hemos escalado los privilegios:
 
-![](HTML%20import/Attachments/image-46.png)
+![](../../../Imágenes/image-46%201.png)
 
 Por último, solo queda leer la bandera root.txt y dar por finalizada la máquina:
 
-![](HTML%20import/Attachments/image-13.png)
-
----
-
-##### ¡Gracias por vuestro apoyo!  
-Sígueme para más contenido
-
----
-
-[Hack The Box](https://marcosjurado.com/category/writeups/hack-the-box/), [Machines](https://marcosjurado.com/category/writeups/hack-the-box/machines/), [WriteUps](https://marcosjurado.com/category/writeups/)
-
-[abusing sudo](https://marcosjurado.com/tag/abusing-sudo/), [code review](https://marcosjurado.com/tag/code-review/), [craft cms](https://marcosjurado.com/tag/craft-cms/), [CVE-2023-26035](https://marcosjurado.com/tag/cve-2023-26035/), [CVE-2023-41892](https://marcosjurado.com/tag/cve-2023-41892/), [hashcat](https://marcosjurado.com/tag/hashcat/), [metasploit](https://marcosjurado.com/tag/metasploit/), [nmap](https://marcosjurado.com/tag/nmap/), [portfordward](https://marcosjurado.com/tag/portfordward/), [sql](https://marcosjurado.com/tag/sql/), [zoneminder](https://marcosjurado.com/tag/zoneminder/)
-
-[Marcos Jurado](https://marcosjurado.com/)
-
-© 2024 Copyright
-
-- [LinkedIn](https://www.linkedin.com/in/marcosjurado/)
-- [X](https://twitter.com/0xRh4ps00dy)
-- [GitHub](https://github.com/0xRh4ps00dy)
-
- 
-
-![Imagen copiada correctamente](./Surveillance%20–%20Marcos%20Jurado_files/copy.png)
-
-![happy face](HTML%20import/Attachments/smile.svg)
-
-¡La copia ha funcionado!
-
-Sin embargo, notamos cierto potencial de optimización en tu servidor.
-
-**Por favor**, copia los siguientes registros [en el foro](https://wordpress.org/support/plugin/copy-delete-posts/#new-topic-0) para que podamos hacer el plugin aún mejor (¡gratis!)
-
-The OS: Linux PHP Version: 7.4.28 WP Version: 6.6.2 MySQL Version: 8.0.39 Directory Separator: / Copy logs: 21-04-2024 08:00:22 - 1x, [total: 0.15213584899902, avg: 0.15213584899902] (mem: 11.64 MB - 12201648, peak: 2 MB - 2097152) 21-04-2024 07:56:31 - 1x, [total: 0.21652412414551, avg: 0.21652412414551] (mem: 14.55 MB - 15259640, peak: 8 MB - 8388608) 20-04-2024 07:51:41 - 1x, [total: 0.08299708366394, avg: 0.08299708366394] (mem: 11.61 MB - 12176984, peak: 4 MB - 4194304) 08-04-2024 08:04:41 - 1x, [total: 0.096487998962402, avg: 0.096487998962402] (mem: 11.53 MB - 12088496, peak: 4 MB - 4194304)
-
-Copiar los registros
-
-[
-
-Ir al foro
-
-](https://wordpress.org/support/plugin/copy-delete-posts/#new-topic-0)
-
-¿Problemas para acceder aquí?
-
-No, no quiero ayudarte a mejorar el plugin.
-
-De acuerdo, ¡hecho!
-
-                                              
-
-## Elementos a copiar:
-
-Usar como ajustes base
-
-–– Seleccionar –– Seleccionar todo Iniciar de nuevo Personalizado Por defecto
-
-Seleccionar todo
-
-- –– Seleccionar ––
-- Seleccionar todo
-- Iniciar de nuevo
-- Personalizado
-- Por defecto
-
- Título Fecha  Estado  Slug
-
- Extracto Contenido  Imagen destacada  Plantilla
-
- Formato Autor  Contraseña  Secundarias
-
- Comentarios Orden del menú  Adjuntos  Categorías
-
- Etiquetas Taxonomías  Menús de navegación  Categorías de enlaces
-
-**Opciones del plugin:**  
- Todos los meta de las entradas
-
-Copiar 
-
- veces
-
- to
-
-este sitio
-
-este sitio
-
-- este sitio
-
-Hacer más de 50 copias tardará un tiempo. Dependiendo de tu servidor.
-
-¡Copiarlo!
+![](../../../Imágenes/image-13%201.png)
