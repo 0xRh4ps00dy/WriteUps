@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Surveillance.md",
+                "file": "Writeups/Fàcil/Devvortex.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Surveillance.md",
+                "file": "Writeups/Fàcil/Devvortex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Surveillance.md",
+                "file": "Writeups/Fàcil/Devvortex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Surveillance.md"
+                "file": "Writeups/Fàcil/Devvortex.md"
               }
             }
           }
@@ -148,10 +148,15 @@
   },
   "active": "39de62204e624e81",
   "lastOpenFiles": [
-    "Writeups/Analytics.md",
-    "Writeups/Surveillance.md",
-    "Writeups/Devvortex.md",
-    "Writeups/Manager.md",
+    "Writeups/Fàcil/Codify.md",
+    "Writeups/Fàcil/Analytics.md",
+    "Writeups/Fàcil/Devvortex.md",
+    "Writeups/Media/Manager.md",
+    "Writeups/Media/Surveillance.md",
+    "Writeups/Media",
+    "Writeups/Sin nombre 1",
+    "Writeups/Fàcil",
+    "Writeups/Sin título.md",
     "Imágenes/Pasted image 20240919120526.png",
     "Imágenes/Pasted image 20240919120231.png",
     "Imágenes/Pasted image 20240919120324.png",
