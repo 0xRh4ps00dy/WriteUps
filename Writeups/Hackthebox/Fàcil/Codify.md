@@ -1,12 +1,12 @@
-#code-review CVE-2023-30547, hashcat, javascript library, mysql, nmap, node.js, pspy, vm2
+#code-review CVE-2023-30547, hashcat, javascript library, mysql, #node.js, pspy, vm2
 
 ![](../../../Imágenes/Codify.png)
 
 Codify es una máquina que aloja un sitio web para revisar código Node.js en un servidor web. Podemos conseguir un punto de apoyo en el sistema objetivo mediante la explotación de una vulnerabilidad de una librería JavaScript que el sitio utiliza para la revisión de código. Una vez dentro debemos movernos lateralmente hacia otro usuario gracias al hallazgo de un hash ubicado dentro de un fichero en el sistema y realizando su desencriptado. Finalmente, debemos escalar privilegios realizando fuerza bruta sobre un script encontrado en el sistema o, también, usando la herramienta PSPY que nos permitirá capturar la contraseña del usuario root.
 
-### **Enumeración**
+# **Enumeración**
 
-#### Nmap
+## Nmap
 
 El escaneo de puertos nos arroja la existencia de servicios como **SSH**, **HTTP** y un servicio **HTTP** alojado en el puerto 3000.
 
@@ -14,7 +14,7 @@ El escaneo de puertos nos arroja la existencia de servicios como **SSH**, **HTTP
 
 ![](../../../Imágenes/Selection_002-1.png)
 
-#### HTTP 3000/TCP
+## HTTP 3000/TCP
 
 El puerto 3000 nos aporta mucha curiosidad, por lo que nos dirigimos hacia él mediante el navegador. El sitio nos muestra un editor de código para testear código escrito en lenguaje Node.js:
 
