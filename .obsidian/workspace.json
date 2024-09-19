@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML import/Manager – Marcos Jurado.md",
+                "file": "Writeups/Media/Manager – Marcos Jurado.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HTML import/Manager – Marcos Jurado.md",
+                "file": "Writeups/Media/Manager – Marcos Jurado.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HTML import/Manager – Marcos Jurado.md",
+                "file": "Writeups/Media/Manager – Marcos Jurado.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HTML import/Manager – Marcos Jurado.md"
+                "file": "Writeups/Media/Manager – Marcos Jurado.md"
               }
             }
           }
@@ -147,22 +147,23 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "39de62204e624e81",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
-    "Writeups/Media/Manager.md",
-    "HTML import/Manager – Marcos Jurado.md",
+    "Imágenes/Attachments/image.png",
+    "Imágenes/Attachments/image-2.png",
+    "Imágenes/Attachments/Selection_017.png",
     "HTML import/Attachments/smile.svg",
-    "HTML import/Attachments/image-17.png",
-    "HTML import/Attachments/image-16.png",
-    "HTML import/Attachments/image-15.png",
-    "HTML import/Attachments/image-12.png",
-    "HTML import/Attachments/image-10.png",
-    "HTML import/Attachments/image-9.png",
-    "HTML import/Attachments/image-8.png",
-    "HTML import/Attachments/image-5.png",
-    "HTML import/Attachments/image-6.png",
-    "HTML import/Attachments/admin.php",
-    "HTML import/Attachments",
+    "Imágenes/Attachments/Selection_015.png",
+    "Imágenes/Attachments/Selection_012.png",
+    "Imágenes/Attachments/Selection_010-1.png",
+    "HTML import/Attachments/revisit.svg",
+    "Imágenes/Attachments/Selection_011.png",
+    "Imágenes/Attachments/Manager.png",
+    "HTML import/Attachments/LogotipoH.png",
+    "Writeups/Media/Manager – Marcos Jurado.md",
+    "Writeups/Media/Manager.md",
+    "Imágenes/Attachments/admin.php",
+    "Imágenes/Attachments",
     "HTML import",
     "Writeups/Media/Surveillance.md",
     "Writeups/Fàcil/Devvortex.md",

@@ -3,5 +3,6 @@
   "useMarkdownLinks": false,
   "newLinkFormat": "relative",
   "autoConvertHtml": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }
