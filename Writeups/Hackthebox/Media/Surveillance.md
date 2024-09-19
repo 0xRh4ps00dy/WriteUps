@@ -5,7 +5,7 @@ Surveillance es una máquina que funciona con un sistema operativo Linux y de di
 
 # **Reconocimiento**
 
-# Nmap
+## Nmap
 
 El escaneo de puertos nos arroja la siguiente información:
 
