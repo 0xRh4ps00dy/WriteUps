@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3885e833f9d60303",
+        "id": "27362fef8a0974fd",
         "type": "tabs",
         "children": [
           {
-            "id": "045e96f0c25bc445",
+            "id": "39de62204e624e81",
             "type": "leaf",
             "state": {
               "type": "image",
@@ -144,7 +144,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "045e96f0c25bc445",
+  "active": "39de62204e624e81",
   "lastOpenFiles": [
     "Writeups/Devvortex.md",
     "Imágenes/Pasted image 20240919100648.png",
