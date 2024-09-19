@@ -123,7 +123,7 @@ Por suerte nos encontramos que el usuario **operator** tiene acceso a SMB con la
 
 Nada interesante…
 
-### **Acceso como Raven**
+# **Acceso como Raven**
 
 No obstante, descubrimos que el usuario **operator** también puede acceder a **MSSQL**:
 
@@ -149,7 +149,7 @@ Una vez dentro nos hacemos con la bandera **user.txt:**
 
 ![](../../../Imágenes/image-6%201.png)
 
-### **Escalada de priviliegios**
+# **Escalada de priviliegios**
 
 En ese mismo directorio y en el directorio **Documents,** el cual fue el punto de acceso al sistema, nos encontramos el fichero **certify.exe**:
 

@@ -1,4 +1,4 @@
-
+abusing sudo, apport-cli, cms, CVE-2023-1326, CVE-2023-23752, ffuf, hashcat, joomla, mysql, netcat, nmap, wfuzz
 
 ![](../../../Imágenes/Devvortex.png)
 
