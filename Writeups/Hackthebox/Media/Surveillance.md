@@ -195,11 +195,11 @@ Usuario
 
 En este momento estamos con un punto de apoyo como usuario www-data. Vemos que hay dos usuarios en el sistema, Matthew y Zoneminder:
 
-![](./Surveillance%20–%20Marcos%20Jurado_files/image-23.png)
+![[../../../Imágenes/Pasted image 20240919130039.png]]
 
 Enumerando el sistema nos encontramos con una copia de seguridad de la base de datos SQL del sitio web:
 
-![](./Surveillance%20–%20Marcos%20Jurado_files/image-24.png)
+![[../../../Imágenes/Pasted image 20240919130050.png]]
 
 En este momento, copiemos el fichero al host de ataque y lo descomprimimos. Una vez hecho esto, abrimos la copia de seguridad con un editor de texto en busca de credenciales.
 
