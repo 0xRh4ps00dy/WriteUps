@@ -6,7 +6,7 @@ Hoy en día, he encontrado mi lugar combinando dos de mis grandes pasiones: la e
 
 **Mi viaje en la Ciberseguridad**
 
-Desde joven, tuve un primer contacto en el mundo del hacking mientras usaba los chats IRC y las diferente distribuciones ofensivas como IRcap o similares. Esto me despertaro una gran fascinación, pero la falta de conocim que el tiempo no ha apagado. Después de años desconnectado , volví a descubrir la ciberseguridad gracias a la C1b3rWall Academy y a streamers como s4vitar.
+Desde joven, tuve un primer contacto en el mundo del hacking mientras usaba los chats IRC y las diferente distribuciones ofensivas como IRcap o similares. Esto me despertaron una gran fascinación, pero la falta de contenido que había en Internet en esa época, mi poco nivel de ingles y mis pocos conocimientos en informática hicieron que me olvidará de este campo. Años más ta desconnectado , volví a descubrir la ciberseguridad gracias a la C1b3rWall Academy y a streamers como s4vitar.
 
 Desde entonces, me he adentrado en plataformas como Try Hack Me y Hack The Box, donde he ido perfeccionando mis habilidades hasta obtener mi certificación eJPTv2. Actualmente, estoy enfocado en seguir aprendiendo, con la mira puesta en nuevas certificaciones como la OSCP o la CPTS y ,posiblemente, intentar hacer alguna incursión en el mundo del Bug Bounty.
 
