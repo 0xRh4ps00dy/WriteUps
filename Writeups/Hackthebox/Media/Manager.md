@@ -123,7 +123,7 @@ Por suerte nos encontramos que el usuario **operator** tiene acceso a SMB con la
 
 Nada interesante…
 
-## **Acceso como Raven**
+## Acceso como Raven
 
 No obstante, descubrimos que el usuario **operator** también puede acceder a **MSSQL**:
 
