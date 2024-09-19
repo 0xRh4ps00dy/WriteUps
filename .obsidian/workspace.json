@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconocimiento/Reconocimiento.md",
+                "file": "Writeups/Devvortex.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconocimiento/Reconocimiento.md",
+                "file": "Writeups/Devvortex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconocimiento/Reconocimiento.md",
+                "file": "Writeups/Devvortex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconocimiento/Reconocimiento.md"
+                "file": "Writeups/Devvortex.md"
               }
             }
           }
@@ -159,9 +159,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c9df10bcd5b889c0",
+  "active": "ff472486ffbd6568",
   "lastOpenFiles": [
     "Reconocimiento/Reconocimiento.md",
+    "Writeups/Devvortex.md",
     "Introducción.md",
     "Write Ups/Untitled.md",
     "Test.md",
