@@ -9,7 +9,7 @@ Para entender cómo funciona a nivel técnico, necesitamos familiarizarnos con c
 
 Los exploits normalmente solo funcionan para una versión específica del software y del sistema operativo.
 
-## ## La memoria
+## La memoria
 
 Cuando se llama al programa, las secciones se asignan a los segmentos del proceso y los segmentos se cargan en la memoria según lo describe el `ELF`archivo.
 ### .texto
