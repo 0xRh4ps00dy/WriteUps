@@ -6,8 +6,8 @@ Manager empieza realizando fuerza bruta sobre Kerberos para encontrar usuarios e
 
 En primer lugar, realizamos la enumeración básica de puertos con **Nmap**:
 
-![](https://i0.wp.com/marcosjurado.com/wp-content/uploads/2024/03/image-2.png?resize=1024%2C492&ssl=1)
-
+![](
+![[../../Imágenes/image-2.webp]]
 A continuación, realizamos el escaneo de servicios/versión y scripts de los puertos que hemos encontrado abiertos:
 
 ```

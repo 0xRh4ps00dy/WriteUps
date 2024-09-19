@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 215.5
   },
   "right": {
     "id": "1a9a10c6b7318c55",
@@ -148,9 +148,10 @@
   },
   "active": "39de62204e624e81",
   "lastOpenFiles": [
-    "Imágenes/Pasted image 20240919121731.png",
     "Writeups/Media/Surveillance.md",
     "Writeups/Media/Manager.md",
+    "Imágenes/image-2.webp",
+    "Imágenes/Pasted image 20240919121731.png",
     "Writeups/Fàcil/Devvortex.md",
     "Writeups/Fàcil/Codify.md",
     "Writeups/Fàcil/Analytics.md",
