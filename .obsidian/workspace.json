@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Codify.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215.5
+    "width": 214.5
   },
   "right": {
     "id": "1a9a10c6b7318c55",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Codify.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Codify.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Codify.md"
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md"
               }
             }
           }
@@ -147,13 +147,13 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "39de62204e624e81",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
-    "Writeups/Devvortex.md",
+    "Writeups/Hackthebox/Fàcil/Codify.md",
+    "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
-    "Writeups/Codify.md",
-    "Writeups/Analytics.md",
+    "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Imágenes/Analytics.png",
     "Imágenes/Surveillance.png",
     "Imágenes/Selection_005-1.png",
