@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7d325d5533bf6845",
+        "id": "3885e833f9d60303",
         "type": "tabs",
         "children": [
           {
-            "id": "ad84c02baaa2f81d",
+            "id": "045e96f0c25bc445",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introducción.md",
+                "file": "Writeups/Devvortex.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "ff472486ffbd6568",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Imágenes/Pasted image 20240919094158.png"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Imágenes/Pasted image 20240919094158.png",
+                "file": "Writeups/Devvortex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Imágenes/Pasted image 20240919094158.png",
+                "file": "Writeups/Devvortex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Imágenes/Pasted image 20240919094158.png"
+                "file": "Writeups/Devvortex.md"
               }
             }
           }
@@ -157,14 +146,15 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ff472486ffbd6568",
+  "active": "045e96f0c25bc445",
   "lastOpenFiles": [
+    "Pasted image 20240919094742.png",
+    "Introducción.md",
+    "Imágenes/Pasted image 20240919094158.png",
     "Reconocimiento/Reconocimiento.md",
     "Writeups/Devvortex.md",
     "Sin nombre",
-    "Imágenes/Pasted image 20240919094158.png",
     "Imágenes",
-    "Introducción.md",
     "Write Ups/Untitled.md",
     "Test.md",
     "Untitled.md",

@@ -8,7 +8,7 @@ Devvortex es una máquina con un sistema Linux el cual debemos iniciar el ataque
 
 El escaneo de puertos nos arroja la siguiente información:
 
-![](https://i0.wp.com/marcosjurado.com/wp-content/uploads/2024/04/Selection_016-2.png?resize=858%2C557&ssl=1)
+![[Pasted image 20240919094742.png]]
 
 Utilizando esta información, mi evaluación inicial es:
 
