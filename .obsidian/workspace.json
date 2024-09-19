@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md",
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md",
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md",
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md"
+                "file": "Writeups/Hackthebox/Media/Surveillance.md"
               }
             }
           }
@@ -150,6 +150,7 @@
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
     "Writeups/Hackthebox/Media/Manager.md",
+    "Imágenes/Pasted image 20240919130218.png",
     "Imágenes/Selection_017 1.png",
     "Imágenes/Selection_010-1 2.png",
     "HTML import/Attachments/smile.svg",
@@ -159,7 +160,6 @@
     "Imágenes/image-17 1.png",
     "Imágenes/image-16 3.png",
     "Imágenes/image-15 3.png",
-    "Imágenes/image-12 2.png",
     "HTML import/Attachments/admin 1.php",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",

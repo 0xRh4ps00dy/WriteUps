@@ -186,7 +186,7 @@ Habilitamos una plantilla de certificado específica y solicitamos un certificad
 
 Emitimos el certificado solicitado:
 
-
+![[../../../Imágenes/Pasted image 20240919130218.png]]
 
 Nos autenticamos con el certificado obtenido y obtenemos el hash del administrador del sistema:
 
