@@ -106,7 +106,7 @@ Además, **nmap** también nos ha brindado dos dominios, **manager.htb** y 
 
 Ahora probemos a enumerar usuarios usando la herramienta Kerbrute:
 
-![](https://i0.wp.com/marcosjurado.com/wp-content/uploads/2024/03/image-4.png?resize=1024%2C321&ssl=1)
+
 
 Depuremos la lista:
 
