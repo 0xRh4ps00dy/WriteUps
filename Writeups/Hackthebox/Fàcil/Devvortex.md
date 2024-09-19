@@ -15,9 +15,8 @@ El escaneo de puertos nos arroja la siguiente información:
 Utilizando esta información, mi evaluación inicial es:
 
 - Servicio **SSH** en el puerto 22 TCP. Puede ser útil en el futuro si se encuentran credenciales o se pueden generar claves después de obtener un punto de apoyo.
-    
+
 - Servicio **HTTP** alojado en el puerto 80 TCP corriendo bajo Nginx 1.18.0 con un redireccionamiento hacia http://devortex.htb. Se puede comprobar el sitio web y si no encontramos ninguna vulnerabilidad podemos enumerar subdirectorios y/o subdominios mediante fuerza bruta.
-    
 
 ## Website (80 TCP Port)
 

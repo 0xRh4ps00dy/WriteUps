@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
+                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
+                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
+                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md"
+                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md"
               }
             }
           }
@@ -149,9 +149,9 @@
   },
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
-    "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
+    "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Introducción.md",

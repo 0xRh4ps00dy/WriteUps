@@ -71,7 +71,7 @@ En este caso, intentamos conectarnos vía SSH con estas credenciales encontradas
 
 ![](../../../Imágenes/Pasted-image-20240318204558.png)
 
-# ****Escalada de privilegios****
+# **Escalada de privilegios**
 
 Después de realizar una enumeración inicial para intentar escalar privilegios y no encontrar nada útil, decidimos buscar en Google alguna vulnerabilidad relacionada con el kernel del sistema.
 
