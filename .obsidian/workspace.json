@@ -11,11 +11,9 @@
             "id": "045e96f0c25bc445",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Writeups/Devvortex.md",
-                "mode": "source",
-                "source": false
+                "file": "Imágenes/Pasted image 20240919100648.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Devvortex.md",
+                "file": "Imágenes/Pasted image 20240919100648.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Devvortex.md",
+                "file": "Imágenes/Pasted image 20240919100648.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Devvortex.md"
+                "file": "Imágenes/Pasted image 20240919100648.png"
               }
             }
           }
@@ -148,8 +146,9 @@
   },
   "active": "045e96f0c25bc445",
   "lastOpenFiles": [
-    "Imágenes/Pasted image 20240919094158.png",
     "Writeups/Devvortex.md",
+    "Imágenes/Pasted image 20240919100648.png",
+    "Imágenes/Pasted image 20240919094158.png",
     "Imágenes/Pasted image 20240919094742.png",
     "Introducción.md",
     "Reconocimiento/Reconocimiento.md",
