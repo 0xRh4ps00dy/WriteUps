@@ -95,9 +95,7 @@ Usando estas credenciales en el panel de administrador de Joomla conseguimos ten
 
 Una vez dentro del sistema es muy fácil obtener acceso al sistema, solo tenemos que reemplazar un archivo de alguna plantilla del CMS, preparar un listener de **netcat** y navegar hacia ella:
 
-```
-
-```
+![[../../../Imágenes/Pasted image 20240919134159.png]]
 
 Una vez conseguimos el punto de apoyo en el sistema objetivo es buen momento para estabilizar la terminal e intentar buscar la bandera user.txt. En este caso hemos accedido al sistema como usuario www-data y no podemos leer la bandera que está en la carpeta del usuario Logan. Vamos a intentar hacer un movimiento lateral hacia el usuario Logan.
 
@@ -111,9 +109,13 @@ En primer lugar, intentemos conectarnos a la base de datos MYSQL e intentar reco
 
  ![](../../../Imágenes/Selection_029.png)
 
-```
+![[../../../Imágenes/Pasted image 20240919134217.png]]
 
-```
+![[../../../Imágenes/Pasted image 20240919134234.png]]
+
+Estamos de suerte y encontramos el hash del usuario Logan:   
+  
+`$2y$10$IT4k5kmSGvHSO9d6M/1w0eYiB5Ne9XzArQRFJTGThNiy/yBtkIj12`
 
 Intentemos desencriptarlo usando **hashcat:**
 
