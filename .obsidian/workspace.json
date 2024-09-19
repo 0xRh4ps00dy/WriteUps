@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Media/Manager – Marcos Jurado.md",
+                "file": "Writeups/Media/Manager.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Media/Manager – Marcos Jurado.md",
+                "file": "Writeups/Media/Manager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Media/Manager – Marcos Jurado.md",
+                "file": "Writeups/Media/Manager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Media/Manager – Marcos Jurado.md"
+                "file": "Writeups/Media/Manager.md"
               }
             }
           }
@@ -147,8 +147,10 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c9df10bcd5b889c0",
+  "active": "39de62204e624e81",
   "lastOpenFiles": [
+    "Writeups/Media/Manager.md",
+    "Writeups/Media/Manager.md",
     "Imágenes/Attachments/image.png",
     "Imágenes/Attachments/image-2.png",
     "Imágenes/Attachments/Selection_017.png",
@@ -159,9 +161,6 @@
     "HTML import/Attachments/revisit.svg",
     "Imágenes/Attachments/Selection_011.png",
     "Imágenes/Attachments/Manager.png",
-    "HTML import/Attachments/LogotipoH.png",
-    "Writeups/Media/Manager – Marcos Jurado.md",
-    "Writeups/Media/Manager.md",
     "Imágenes/Attachments/admin.php",
     "Imágenes/Attachments",
     "HTML import",
