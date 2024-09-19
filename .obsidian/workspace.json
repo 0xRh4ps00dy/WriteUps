@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#brute-force-directory",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -147,7 +148,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c9df10bcd5b889c0",
+  "active": "0fc1e77951c70ed7",
   "lastOpenFiles": [
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Introducción.md",

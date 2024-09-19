@@ -1,4 +1,4 @@
-#env #brute-force-directory #gameoverlay #metabase
+#env #subdomain #gameoverlay #metabase
 
 ![](../../../Imágenes/Analytics.png)
 
