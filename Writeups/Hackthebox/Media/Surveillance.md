@@ -1,4 +1,4 @@
-#abusing-sudo #code-review #craft-cms  CVE-2023-26035, CVE-2023-41892, #hashcat #metasploit #pivoting #portfordward #sql #zoneminder
+#abusing-sudo #code-review #craft-cms #hashcat #metasploit #pivoting #portfordward #sql #zoneminder
 ![](../../../Imágenes/Surveillance%201.png)
 
 Surveillance es una máquina que funciona con un sistema operativo Linux y de dificultad media. Para explotar la máquina debemos aprovechar un CVE que nos permite realizar una ejecución remota de código sin autentificación que nos da acceso a la máquina. Posteriormente, debemos hacer un movimiento lateral hacia otro usuario mediante la búsqueda de un par de credenciales que hay en una copia de seguridad. A continuación, debemos realizar otro movimiento lateral aprovechando otro CVE que permite también una ejecución remota de código sin autentificación. Finalmente, para escalar privilegios debemos abusar de un binario con privilegios de administrador.
@@ -190,8 +190,6 @@ Ahora es momento de estabilizar la terminal:
 
 # **Movimiento lateral hacia Matthew**
 
-Usuario
-
 En este momento estamos con un punto de apoyo como usuario www-data. Vemos que hay dos usuarios en el sistema, Matthew y Zoneminder:
 
 ![[../../../Imágenes/Pasted image 20240919130039.png]]
@@ -220,7 +218,7 @@ Aprovechamos para leer la bandera user.txt:
 
 ![](../../../Imágenes/image-29%201.png)
 
-### ****Movimiento lateral hacia Zoneminder****
+# ****Movimiento lateral hacia Zoneminder****
 
 Enumerando el sistema nos encontramos con unas credenciales del usuario Zoneminder en el fichero database.php que sirven para conectarse a una base de datos MySQL:
 
@@ -242,19 +240,19 @@ El sitio web parece funcionar una aplicación llamada Zoneminder. Después de in
 
 En este punto es interesante probar varias credenciales por defecto, aunque no llegamos a tener suerte.
 
-#### Identificar la versión
+## Identificar la versión
 
 Antes debemos encontrar la versión que trabaje:
 
 ![](../../../Imágenes/image-35%201.png)
 
-#### Identificar la vulnerabilidad
+## Identificar la vulnerabilidad
 
 Decidimos investigar por Google en la búsqueda de alguna vulnerabilidad del servicio y nos encontramos en que existe la vulnerabilidad [CVE-2023-26035](https://nvd.nist.gov/vuln/detail/CVE-2023-26035). Esta vulnerabilidad permite la ejecución remota de código sin necesidad de autenticación.
 
 ![](../../../Imágenes/image-36%201.png)
 
-#### Explotación
+## Explotación
 
 Aunque existen varias pruebas de concepto para explotar la vulnerabilidad, decidimos usar un módulo de **metasploit**:
 
@@ -264,7 +262,7 @@ Realizamos la configuración del módulo y procedemos a ejecutarlo para al fin l
 
 ![](../../../Imágenes/image-38%201.png)
 
-### **Escalada de privilegios**
+# **Escalada de privilegios**
 
 Una vez dentro del sistema objetivo como usuario Zoneminder descubrimos que este puede ejecutar con privilegios el siguiente comando que ejecuta diferentes binarios desarrollados con Perl:
 
