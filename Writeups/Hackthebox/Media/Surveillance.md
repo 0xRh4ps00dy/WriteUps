@@ -16,7 +16,7 @@ Utilizando esta información, mi evaluación inicial es:
 - Servicio **SSH** en el puerto 22 TCP. Puede ser útil en el futuro si se encuentran credenciales o se pueden generar claves después de obtener un punto de apoyo.
 - Servicio **HTTP** alojado en el puerto 80 TCP corriendo bajo Nginx 1.18.0 con un redireccionamiento hacia http://surveillance.htb. Se puede comprobar el sitio web y si no encontramos ninguna vulnerabilidad podemos enumerar subdirectorios y/o subdominios mediante fuerza bruta.
 
-#### Website (80 TCP Port)
+## Website (80 TCP Port)
 
 Añadimos surveillance.htb en el fichero /etc/hosts y accedemos a la dirección mediante el navegador:
 
@@ -28,21 +28,21 @@ También **Wappalyzer** nos muestra la misma información:
 
 ![](../../../Imágenes/image-15%202.png)
 
-### ****Foothold****
+# ****Foothold****
 
-#### Craft CMS Version
+## Craft CMS Version
 
 Si nos dirigimos al enlace que hay en el footer del sitio web, podemos comprobar la versión de Craft CMS usada en el sitio web. Por lo tanto, ya sabemos que estamos enfrente de la versión 4.4.14:
 
 ![](../../../Imágenes/Selection_002-2%201.png)
 
-#### Identificar la vulnerabilidad
+## Identificar la vulnerabilidad
 
 Investigando por Google podemos ver que existe una vulnerabilidad [CVE-2023-41892](https://nvd.nist.gov/vuln/detail/CVE-2023-41892) relacionada con esta versión de Craft CMS. La vulnerabilidad nos permite ejecución remota de código sin necesidad de autenticación.
 
 ![](../../../Imágenes/image-16%202.png)
 
-#### Prueba de concepto
+## Prueba de concepto
 
 Esta vulnerabilidad es fácil de explotar utilizando este [exploit](https://gist.github.com/gmh5225/8fad5f02c2cf0334249614eb80cbf4ce):
 
@@ -136,7 +136,7 @@ if __name__ == "__main__":
             shell(cmd)
 ```
 
-#### Explotación
+## Explotación
 
 Copiamos el script en nuestro host de ataque y lo ejecutamos:
 
@@ -188,7 +188,7 @@ Ahora es momento de estabilizar la terminal:
 
 ![](../../../Imágenes/image-22%201.png)
 
-### **Movimiento lateral hacia Matthew**
+# **Movimiento lateral hacia Matthew**
 
 Usuario
 
