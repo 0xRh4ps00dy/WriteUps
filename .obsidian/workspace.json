@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md"
+                "file": "Writeups/Hackthebox/Media/Surveillance.md"
               }
             }
           }
@@ -149,23 +149,22 @@
   },
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
+    "Writeups/Hackthebox/Media/Manager.md",
+    "Writeups/Hackthebox/Fàcil/Devvortex.md",
+    "Writeups/Hackthebox/Fàcil/Analytics.md",
+    "Writeups/Hackthebox/Fàcil/Codify.md",
+    "Imágenes/Pasted image 20240919134732.png",
+    "Imágenes/Pasted image 20240919134725.png",
+    "Imágenes/Pasted image 20240919134709.png",
+    "Imágenes/Pasted image 20240919134659.png",
     "Imágenes/Pasted image 20240919134413.png",
     "Imágenes/Pasted image 20240919134309.png",
     "Imágenes/Pasted image 20240919134303.png",
     "Imágenes/Pasted image 20240919134234.png",
     "Imágenes/Pasted image 20240919134217.png",
     "Imágenes/Pasted image 20240919134159.png",
-    "Imágenes/Pasted image 20240919134147.png",
-    "Imágenes/Pasted image 20240919134133.png",
-    "Imágenes/Pasted image 20240919134107.png",
-    "Writeups/Hackthebox/Fàcil/Codify.md",
-    "Writeups/Hackthebox/Fàcil/Analytics.md",
-    "Writeups/Hackthebox/Fàcil/Devvortex.md",
-    "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Introducción.md",
-    "Imágenes/Pasted image 20240919130218.png",
-    "Imágenes/Selection_017 1.png",
     "HTML import/Attachments/admin 1.php",
     "HTML import/Attachments/admin.php",
     "HTML import/Attachments",

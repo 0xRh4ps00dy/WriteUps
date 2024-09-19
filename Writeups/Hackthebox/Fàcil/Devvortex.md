@@ -1,4 +1,4 @@
-#abusing-sudo #apport-cli #cms  CVE-2023-1326, CVE-2023-23752, ffuf, hashcat, joomla, mysql, netcat, wfuzz
+#abusing-sudo #apport-cli #cms #password-brute-force #hashcat #joomla #mysql #wfuzz #subdomain-brute-force
 
 ![](../../../Imágenes/Devvortex.png)
 
@@ -169,7 +169,7 @@ Bug: [https://launchpad.net/bugs/2016023](https://launchpad.net/bugs/2016023)
 Signed-off-by: Benjamin Drung <benjamin.drung@canonical.com>
 ```
 
-#### Explotación
+## Explotación
 
 En primer lugar, para realizar la explotación de esta vulnerabilidad y obtener un terminal con privilegios debemos ejecutar la aplicación y seleccionar que queremos reportar un problema referente a la pantalla:
 
@@ -177,22 +177,20 @@ En primer lugar, para realizar la explotación de esta vulnerabilidad y obtener 
 
 Entonces, indicamos que tipo de problemas hemos observado, por ejemplo, podemos indicar que hemos observado congelaciones de la pantalla durante el arranque o el uso del sistema:
 
-`![](HTML%20import/Attachments/Selection_041.png)`
+![[../../../Imágenes/Pasted image 20240919134659.png]]
 
 Ahora, debemos indicar que queremos ver el informe y una vez el binario nos muestre toda la información del informe nos aparecerán dos puntos (:).
 
-`![](HTML%20import/Attachments/Selection_045.png)`
+![[../../../Imágenes/Pasted image 20240919134709.png]]
 
 ![](../../../Imágenes/Selection_042.png)
 
 En este momento debemos escribir el signo de exclamación (!) y pulsar la tecla Enter:
 
-`![](HTML%20import/Attachments/Selection_043.png)`
+![[../../../Imágenes/Pasted image 20240919134725.png]]
 
 Con esto, conseguimos obtener el terminal con privilegios y leer la bandera root.txt:
 
-```
-
-```
+![[../../../Imágenes/Pasted image 20240919134732.png]]
 
 ![](../../../Imágenes/image-12%201.png)
