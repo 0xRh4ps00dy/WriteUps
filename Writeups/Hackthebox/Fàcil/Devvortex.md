@@ -1,4 +1,4 @@
-##abusing-sudo ##apport-cli ##cms ##password-brute-force ##hashcat ##joomla ##mysql ##wfuzz ##subdomain-brute-force
+#abusing-sudo #apport-cli #cms #password-brute-force #hashcat #joomla #mysql #wfuzz #subdomain-brute-force
 
 ![](../../../Imágenes/Devvortex.png)
 
