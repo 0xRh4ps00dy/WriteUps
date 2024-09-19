@@ -145,7 +145,6 @@ Parece ser que el script no funciona, ya que este POC depende de la escritura de
 
 Por una parte, se deben modificar la siguiente línea, ten en cuenta que esta línea aparece dos veces:
 
-```
 response = requests.post(url, headers=headers, data=data, files=files, proxies={"http": "http://localhost:8080"})
 ```
 
