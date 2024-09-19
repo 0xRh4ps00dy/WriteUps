@@ -1,4 +1,4 @@
-#code-review CVE-2023-30547, hashcat, javascript library, mysql, #node.js, pspy, vm2
+#code-review #password-brute-force #hashcat #javascript-library #mysql #nodejs #pspy #vm2
 
 ![](../../../Imágenes/Codify.png)
 
@@ -60,7 +60,7 @@ Si volvemos al sitio web y probamos el código podemos comprobar que se muestra 
 
 ![](../../../Imágenes/Pasted-image-20240404133530.png)
 
-### **Usuario svc**
+# **Usuario svc**
 
 Ahora es hora de introducir un payload para obtener una reverse shell:
 
@@ -70,7 +70,7 @@ Una vez obtenido la shell en el sistema objetivo y estabilizarla, nos encontramo
 
 ![](../../../Imágenes/Selection_005-1.png)
 
-### **Usuario joshua**
+# **Usuario joshua**
 
 Después de realizar una enumeración del sistema nos encontramos que existe un archivo llamado **tickets.db** dentro de la carpeta **/var/www**. Este archivo parece contener el nombre de joshua (el cual no tenemos acceso) y lo que parece ser un hash.
 
