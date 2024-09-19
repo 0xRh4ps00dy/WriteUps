@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md",
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md",
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md",
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md"
+                "file": "Writeups/Hackthebox/Media/Surveillance.md"
               }
             }
           }
@@ -149,8 +149,10 @@
   },
   "active": "28c8b1121746278f",
   "lastOpenFiles": [
-    "Imágenes/image-13.png.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
+    "Writeups/Hackthebox/Media/Manager.md",
+    "Imágenes/Pasted image 20240919125542.png",
+    "Imágenes/image-13.png.md",
     "Surveillance – Marcos Jurado_files/image-23.png.md",
     "Surveillance – Marcos Jurado_files",
     "Surveillance – Marcos Jurado_files/image-24.png.md",
@@ -159,7 +161,6 @@
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
-    "Writeups/Hackthebox/Media/Manager.md",
     "Imágenes/Analytics.png",
     "Imágenes/Surveillance.png",
     "Imágenes/Selection_005-1.png",
@@ -169,7 +170,6 @@
     "HTML import/Attachments/revisit 3.svg",
     "HTML import/Attachments/revisit.svg",
     "Imágenes/Pasted-image-20240404133530.png",
-    "Imágenes/Pasted-image-20240318200812.png",
     "HTML import/Attachments/admin 3.php",
     "HTML import/Attachments/admin 2.php",
     "HTML import/Attachments/admin 1.php",
