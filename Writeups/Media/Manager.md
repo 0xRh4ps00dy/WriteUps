@@ -106,11 +106,7 @@ Además, **nmap** también nos ha brindado dos dominios, **manager.htb** y 
 
 Ahora probemos a enumerar usuarios usando la herramienta Kerbrute:
 
-
-
-Depuremos la lista:
-
-![](https://i0.wp.com/marcosjurado.com/wp-content/uploads/2024/03/image.png?resize=950%2C273&ssl=1)
+![[../../Imágenes/Pasted image 20240919122540.png]]
 
 Ahora es momento de realizar una pulverización de contraseñas con cuidado de no vulnerar la política de contraseñas mediante la herramienta **Crackmapexec**:
 
