@@ -1,11 +1,11 @@
-#abusing-sudo #code-review #craft-cms #hashcat #metasploit #pivoting #portfordward #sql #zoneminder
+##abusing-sudo ##code-review ##craft-cms ##hashcat ##metasploit ##pivoting ##portfordward ##sql ##zoneminder
 ![](../../../Imágenes/Surveillance%201.png)
 
 Surveillance es una máquina que funciona con un sistema operativo Linux y de dificultad media. Para explotar la máquina debemos aprovechar un CVE que nos permite realizar una ejecución remota de código sin autentificación que nos da acceso a la máquina. Posteriormente, debemos hacer un movimiento lateral hacia otro usuario mediante la búsqueda de un par de credenciales que hay en una copia de seguridad. A continuación, debemos realizar otro movimiento lateral aprovechando otro CVE que permite también una ejecución remota de código sin autentificación. Finalmente, para escalar privilegios debemos abusar de un binario con privilegios de administrador.
 
-# **Reconocimiento**
+## **Reconocimiento**
 
-## Nmap
+#### Nmap
 
 El escaneo de puertos nos arroja la siguiente información:
 
@@ -16,7 +16,7 @@ Utilizando esta información, mi evaluación inicial es:
 - Servicio **SSH** en el puerto 22 TCP. Puede ser útil en el futuro si se encuentran credenciales o se pueden generar claves después de obtener un punto de apoyo.
 - Servicio **HTTP** alojado en el puerto 80 TCP corriendo bajo Nginx 1.18.0 con un redireccionamiento hacia http://surveillance.htb. Se puede comprobar el sitio web y si no encontramos ninguna vulnerabilidad podemos enumerar subdirectorios y/o subdominios mediante fuerza bruta.
 
-## Website (80 TCP Port)
+#### Website (80 TCP Port)
 
 Añadimos surveillance.htb en el fichero /etc/hosts y accedemos a la dirección mediante el navegador:
 
@@ -28,21 +28,21 @@ También **Wappalyzer** nos muestra la misma información:
 
 ![](../../../Imágenes/image-15%202.png)
 
-# ****Foothold****
+## ****Foothold****
 
-## Craft CMS Version
+#### Craft CMS Version
 
 Si nos dirigimos al enlace que hay en el footer del sitio web, podemos comprobar la versión de Craft CMS usada en el sitio web. Por lo tanto, ya sabemos que estamos enfrente de la versión 4.4.14:
 
 ![](../../../Imágenes/Selection_002-2%201.png)
 
-## Identificar la vulnerabilidad
+#### Identificar la vulnerabilidad
 
 Investigando por Google podemos ver que existe una vulnerabilidad [CVE-2023-41892](https://nvd.nist.gov/vuln/detail/CVE-2023-41892) relacionada con esta versión de Craft CMS. La vulnerabilidad nos permite ejecución remota de código sin necesidad de autenticación.
 
 ![](../../../Imágenes/image-16%202.png)
 
-## Prueba de concepto
+#### Prueba de concepto
 
 Esta vulnerabilidad es fácil de explotar utilizando este [exploit](https://gist.github.com/gmh5225/8fad5f02c2cf0334249614eb80cbf4ce):
 
@@ -136,7 +136,7 @@ if __name__ == "__main__":
             shell(cmd)
 ```
 
-## Explotación
+#### Explotación
 
 Copiamos el script en nuestro host de ataque y lo ejecutamos:
 
@@ -188,7 +188,7 @@ Ahora es momento de estabilizar la terminal:
 
 ![](../../../Imágenes/image-22%201.png)
 
-# **Movimiento lateral hacia Matthew**
+## **Movimiento lateral hacia Matthew**
 
 En este momento estamos con un punto de apoyo como usuario www-data. Vemos que hay dos usuarios en el sistema, Matthew y Zoneminder:
 
@@ -218,7 +218,7 @@ Aprovechamos para leer la bandera user.txt:
 
 ![](../../../Imágenes/image-29%201.png)
 
-# ****Movimiento lateral hacia Zoneminder****
+## ****Movimiento lateral hacia Zoneminder****
 
 Enumerando el sistema nos encontramos con unas credenciales del usuario Zoneminder en el fichero database.php que sirven para conectarse a una base de datos MySQL:
 
@@ -240,19 +240,19 @@ El sitio web parece funcionar una aplicación llamada Zoneminder. Después de in
 
 En este punto es interesante probar varias credenciales por defecto, aunque no llegamos a tener suerte.
 
-## Identificar la versión
+#### Identificar la versión
 
 Antes debemos encontrar la versión que trabaje:
 
 ![](../../../Imágenes/image-35%201.png)
 
-## Identificar la vulnerabilidad
+#### Identificar la vulnerabilidad
 
 Decidimos investigar por Google en la búsqueda de alguna vulnerabilidad del servicio y nos encontramos en que existe la vulnerabilidad [CVE-2023-26035](https://nvd.nist.gov/vuln/detail/CVE-2023-26035). Esta vulnerabilidad permite la ejecución remota de código sin necesidad de autenticación.
 
 ![](../../../Imágenes/image-36%201.png)
 
-## Explotación
+#### Explotación
 
 Aunque existen varias pruebas de concepto para explotar la vulnerabilidad, decidimos usar un módulo de **metasploit**:
 
@@ -262,7 +262,7 @@ Realizamos la configuración del módulo y procedemos a ejecutarlo para al fin l
 
 ![](../../../Imágenes/image-38%201.png)
 
-# **Escalada de privilegios**
+## **Escalada de privilegios**
 
 Una vez dentro del sistema objetivo como usuario Zoneminder descubrimos que este puede ejecutar con privilegios el siguiente comando que ejecuta diferentes binarios desarrollados con Perl:
 
@@ -298,7 +298,7 @@ my $command = 'mysqldump';
       my $backup = '/tmp/zm/'.$Config{ZM_DB_NAME}.'-'.$version.'.dump';
       $command .= ' --add-drop-table --databases '.$Config{ZM_DB_NAME}.' > '.$backup;
       print("Creating backup to $backup. This may take several minutes.\n");
-      ($command) = $command =~ /(.*)/; # detaint
+      ($command) = $command =~ /(.*)/; ## detaint
 ```
 
 Como hemos visto en la ayuda, podemos manipular los otros parámetros, por lo tanto:

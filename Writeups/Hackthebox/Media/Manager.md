@@ -1,11 +1,11 @@
-#active-directory #adcs #certipy #crackmapexec #esc7 #evil-winrm #mssql #mssqlclient #password-spray #windows #xp-dirtree
+##active-directory ##adcs ##certipy ##crackmapexec ##esc7 ##evil-winrm ##mssql ##mssqlclient ##password-spray ##windows ##xp-dirtree
 
 
 ![](../../../Imágenes/Manager%201.png)
 
 Manager empieza realizando fuerza bruta sobre Kerberos para encontrar usuarios en el dominio, y luego haciendo un spray de contraseñas usando el nombre de usuario de cada usuario como contraseña. Una vez tenemos las primeras credenciales podemos acceder a la instancia de base de datos MSSQL y utilizar la función xp_dirtree para explorar el sistema de archivos. Gracias a una copia de seguridad del servidor web, obtenemos unas credenciales de usuario que nos dan acceso al sistema mediante el servicio WINRM. Una vez dentro del sistema escalamos privilegios gracias la vulnerabilidad ESC7 obtenida mediante una configuración errónea.
 
-# **Enumeración**
+## **Enumeración**
 
 En primer lugar, realizamos la enumeración básica de puertos con **Nmap**:
 
@@ -123,7 +123,7 @@ Por suerte nos encontramos que el usuario **operator** tiene acceso a SMB con la
 
 Nada interesante…
 
-# **Acceso como Raven**
+## **Acceso como Raven**
 
 No obstante, descubrimos que el usuario **operator** también puede acceder a **MSSQL**:
 
@@ -149,7 +149,7 @@ Una vez dentro nos hacemos con la bandera **user.txt:**
 
 ![](../../../Imágenes/image-6%201.png)
 
-# **Escalada de priviliegios**
+## **Escalada de priviliegios**
 
 En ese mismo directorio y en el directorio **Documents,** el cual fue el punto de acceso al sistema, nos encontramos el fichero **certify.exe**:
 
@@ -173,7 +173,7 @@ Asimismo, la plantilla del certificado **`SubCA`** es **vulnerable a ESC1**, per
 - Derecho **`Manage Certificates`** (se puede otorgar desde **`ManageCA`**)
 - La plantilla de certificado **`SubCA`** debe estar **habilitado** (se puede habilitar desde **`ManageCA`**)
 
-#### **Abuso**
+######## **Abuso**
 
 Para poder abusar de esta vulnerabilidad vamos a usar la utilidad **[certipy](https://github.com/ly4k/Certipy)**.
 
