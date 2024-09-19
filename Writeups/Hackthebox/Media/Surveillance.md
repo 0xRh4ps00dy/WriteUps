@@ -1,4 +1,4 @@
-CVE-2023-2640 CVE-2023-32629 CVE-2023-38646 env brute-force-directory gameoverlay
+#CVE-2023-2640 #CVE-2023-32629 #CVE-2023-38646 #env #brute-force-directory #gameoverlay
 
 ![](../../../Imágenes/Surveillance%201.png)
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md"
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md"
               }
             }
           }
@@ -149,10 +149,10 @@
   },
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
+    "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
-    "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
     "Imágenes/Pasted image 20240919130218.png",
     "Imágenes/Selection_017 1.png",
