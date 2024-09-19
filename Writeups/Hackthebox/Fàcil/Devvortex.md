@@ -4,7 +4,7 @@
 
 Devvortex es una máquina con un sistema Linux el cual debemos iniciar el ataque realizando fuerza bruta de subdominios para encontrar un subdominio que contiene un CMS vulnerable a un CVE. Esta vulnerabilidad nos permite obtener unas credenciales para acceder al panel de administrador del CMS y obtener una reverse shell que nos dará acceso al sistema objetivo. Una vez dentro debemos hacer un movimiento lateral hacia otro usuario del sistema mediante la recuperación y desencriptación de un hash que encontramos en la base de datos MYSQL que hay en el sistema. Finalmente, para conseguir la escalada de privilegios debemos de abusar de los permisos otorgados a un binario.
 
-## **Reconocimiento**
+## Reconocimiento
 
 ### Nmap
 
@@ -60,7 +60,7 @@ Encontramos el panel de inicio de sesión en el directorio **administrator**:
 
 ![](../../../Imágenes/Screenshot-2024-04-17-at-20-42-49-Development-Administration.png)
 
-## **Foothold**
+## Foothold
 
 ### Joomla Version
 
@@ -125,7 +125,7 @@ Finalmente, podemos obtener acceso al sistema objetivo mediante **SSH** y como u
 
 ![[../../../Imágenes/Pasted image 20240919134309.png]]
 
-## **Escalada de privilegios**
+## Escalada de privilegios
 
 ### Identificar la vulnerabilidad
 

@@ -61,7 +61,7 @@ Decidimos modificar el payload y finalmente conseguimos una shell en el sistema 
 
 ![](../../../Imágenes/Pasted-image-20240318204340.png)
 
-## **Usuario metalytics**
+## Usuario metalytics
 
 Después de realizar el reconocimiento en lo que parece ser un contenedor, nos encontramos con unas variables que parecen ser unas credenciales:
 

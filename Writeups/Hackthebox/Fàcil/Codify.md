@@ -70,7 +70,7 @@ Una vez obtenido la shell en el sistema objetivo y estabilizarla, nos encontramo
 
 ![](../../../Imágenes/Selection_005-1.png)
 
-## **Usuario joshua**
+## Usuario joshua
 
 Después de realizar una enumeración del sistema nos encontramos que existe un archivo llamado **tickets.db** dentro de la carpeta **/var/www**. Este archivo parece contener el nombre de joshua (el cual no tenemos acceso) y lo que parece ser un hash.
 
