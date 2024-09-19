@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Media/Manager.md",
+                "file": "HTML import/Manager – Marcos Jurado.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Media/Manager.md",
+                "file": "HTML import/Manager – Marcos Jurado.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Media/Manager.md",
+                "file": "HTML import/Manager – Marcos Jurado.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Media/Manager.md"
+                "file": "HTML import/Manager – Marcos Jurado.md"
               }
             }
           }
@@ -143,16 +143,27 @@
       "canvas:Crear nuevo lienzo": false,
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false
+      "command-palette:Abrir paleta de comandos": false,
+      "obsidian-importer:Open Importer": false
     }
   },
   "active": "39de62204e624e81",
   "lastOpenFiles": [
-    "Imágenes/Pasted image 20240919122540.png",
-    "Imágenes/image-2.webp",
-    "Imágenes/Pasted image 20240919122449.png",
-    "Imágenes/Pasted image 20240919121731.png",
     "Writeups/Media/Manager.md",
+    "HTML import/Manager – Marcos Jurado.md",
+    "HTML import/Attachments/smile.svg",
+    "HTML import/Attachments/image-17.png",
+    "HTML import/Attachments/image-16.png",
+    "HTML import/Attachments/image-15.png",
+    "HTML import/Attachments/image-12.png",
+    "HTML import/Attachments/image-10.png",
+    "HTML import/Attachments/image-9.png",
+    "HTML import/Attachments/image-8.png",
+    "HTML import/Attachments/image-5.png",
+    "HTML import/Attachments/image-6.png",
+    "HTML import/Attachments/admin.php",
+    "HTML import/Attachments",
+    "HTML import",
     "Writeups/Media/Surveillance.md",
     "Writeups/Fàcil/Devvortex.md",
     "Writeups/Fàcil/Codify.md",
@@ -161,13 +172,7 @@
     "Writeups/Sin nombre 1",
     "Writeups/Fàcil",
     "Writeups/Sin título.md",
-    "Imágenes/Pasted image 20240919120526.png",
-    "Imágenes/Pasted image 20240919120231.png",
-    "Imágenes/Pasted image 20240919120324.png",
-    "Imágenes/Pasted image 20240919100648.png",
     "Introducción.md",
-    "Imágenes/Pasted image 20240919094158.png",
-    "Imágenes/Pasted image 20240919094742.png",
     "Reconocimiento/Reconocimiento.md",
     "Sin nombre",
     "Imágenes",
@@ -177,7 +182,6 @@
     "Untitled 1.md",
     "1. Reconnaissance/Test Note.md",
     "2. Exploitation",
-    "Writeups",
-    "Reconocimiento"
+    "Writeups"
   ]
 }
