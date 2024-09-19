@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconocimiento/Reconocimiento.md",
+                "file": "Introducción.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconocimiento/Reconocimiento.md",
+                "file": "Introducción.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconocimiento/Reconocimiento.md",
+                "file": "Introducción.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconocimiento/Reconocimiento.md"
+                "file": "Introducción.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
+    "Reconocimiento/Reconocimiento.md",
     "Introducción.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
@@ -184,7 +185,6 @@
     "Writeups/Fàcil/Codify.md",
     "Writeups/Fàcil/Analytics.md",
     "Writeups/Sin título.md",
-    "Reconocimiento/Reconocimiento.md",
     "Write Ups/Untitled.md",
     "Test.md",
     "Untitled.md",
