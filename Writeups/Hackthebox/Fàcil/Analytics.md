@@ -6,7 +6,7 @@ Analytics aloja una instancia de Metabase en un servidor web. A partir de la fil
 
 ## Enumeración
 
-#### Nmap
+### Nmap
 
 **Nmap** encuentra dos puertos TCP abiertos:
 
@@ -16,7 +16,7 @@ Analytics aloja una instancia de Metabase en un servidor web. A partir de la fil
 
 Podemos observar un redireccionamiento web hacia **http://analytical.htb**. Por lo tanto, lo incluimos en el archivo **/etc/hosts**.
 
-#### Analytical.htb (HTTP 80)
+### Analytical.htb (HTTP 80)
 
 El sitio web nos descubre una empresa relacionada con el análisis de datos:
 
@@ -30,11 +30,11 @@ Por lo tanto, también lo añadimos en **/etc/hosts** y visitamos el subdominio 
 
 ## Usuario metabase
 
-#### Identificación
+### Identificación
 
 Investigando por internet en busca de exploits de Metabase descubrimos que existen muchas referencia al [CVE-2023-38646](https://nvd.nist.gov/vuln/detail/CVE-2023-38646). Por lo cual decidimos investigar un poco sobre la vulnerabilidad.
 
-#### Detalles
+### Detalles
 
 [La siguiente publicación](https://www.assetnote.io/resources/research/chaining-our-way-to-pre-auth-rce-in-metabase-cve-2023-38646) nos arroja información sobre esta vulnerabilidad. Básicamente, Metabase utiliza un token llamado **setup-token** para ejecutar la inicialización y configuración de la aplicación. Este token debería ser borrado una vez completada la configuración, aunque después de eso este token aún permanece disponible para los usuarios no autenticados en dos lugares:
 
@@ -47,7 +47,7 @@ Entonces decidimos intentar encontrar el token en la dirección **/api/session/p
 
 ![](../../../Imágenes/Pasted-image-20240318202326-1.png)
 
-#### Explotación
+### Explotación
 
 Como hemos conseguido encontrar el token decidimos utilizar este [poc](https://github.com/securezeron/CVE-2023-38646) para intentar penetrar en el sistema objetivo:
 

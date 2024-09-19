@@ -173,7 +173,7 @@ Asimismo, la plantilla del certificado **`SubCA`** es **vulnerable a ESC1**, per
 - Derecho **`Manage Certificates`** (se puede otorgar desde **`ManageCA`**)
 - La plantilla de certificado **`SubCA`** debe estar **habilitado** (se puede habilitar desde **`ManageCA`**)
 
-######## **Abuso**
+###### **Abuso**
 
 Para poder abusar de esta vulnerabilidad vamos a usar la utilidad **[certipy](https://github.com/ly4k/Certipy)**.
 
