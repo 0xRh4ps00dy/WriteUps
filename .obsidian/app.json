@@ -2,5 +2,6 @@
   "attachmentFolderPath": "Imágenes",
   "useMarkdownLinks": false,
   "newLinkFormat": "relative",
-  "autoConvertHtml": true
+  "autoConvertHtml": true,
+  "promptDelete": false
 }
