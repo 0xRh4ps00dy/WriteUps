@@ -149,9 +149,7 @@ Por una parte, se deben modificar la siguiente lÃ­nea, ten en cuenta que esta lÃ
 response = requests.post(url, headers=headers, data=data, files=files, proxies={"http": "http://localhost:8080"})
 ```
 
-```
 Por:
-```
 
 ```
 response = requests.post(url, headers=headers, data=data, files=files)

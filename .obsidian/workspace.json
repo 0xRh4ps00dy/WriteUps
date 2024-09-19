@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b1f05f9591c51362",
+        "id": "7788e22f27d45319",
         "type": "tabs",
         "children": [
           {
-            "id": "4854e2c4e90dd55c",
+            "id": "28c8b1121746278f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Writeups/Hackthebox/Media/Manager.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Writeups/Hackthebox/Media/Manager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Writeups/Hackthebox/Media/Manager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md"
+                "file": "Writeups/Hackthebox/Media/Manager.md"
               }
             }
           }
@@ -147,15 +147,15 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "4854e2c4e90dd55c",
+  "active": "28c8b1121746278f",
   "lastOpenFiles": [
+    "Imágenes/image-13.png.md",
+    "Writeups/Hackthebox/Media/Surveillance.md",
     "Surveillance – Marcos Jurado_files/image-23.png.md",
     "Surveillance – Marcos Jurado_files",
     "Surveillance – Marcos Jurado_files/image-24.png.md",
-    "Writeups/Hackthebox/Media/Surveillance.md",
     "Manager – Marcos Jurado_files/image-13.png.md",
     "Manager – Marcos Jurado_files",
-    "Imágenes/image-13.png.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
