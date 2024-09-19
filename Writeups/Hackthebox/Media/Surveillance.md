@@ -1,6 +1,4 @@
-
-
-![](../Imágenes/Surveillance.png)
+![](../../../Imágenes/Surveillance.png)
 
 Surveillance es una máquina que funciona con un sistema operativo Linux y de dificultad media. Para explotar la máquina debemos aprovechar un CVE que nos permite realizar una ejecución remota de código sin autentificación que nos da acceso a la máquina. Posteriormente, debemos hacer un movimiento lateral hacia otro usuario mediante la búsqueda de un par de credenciales que hay en una copia de seguridad. A continuación, debemos realizar otro movimiento lateral aprovechando otro CVE que permite también una ejecución remota de código sin autentificación. Finalmente, para escalar privilegios debemos abusar de un binario con privilegios de administrador.
 
@@ -10,7 +8,7 @@ Surveillance es una máquina que funciona con un sistema operativo Linux y de di
 
 El escaneo de puertos nos arroja la siguiente información:
 
-![](../Imágenes/image-14.png)
+![](../../../Imágenes/image-14.png)
 
 Utilizando esta información, mi evaluación inicial es:
 
@@ -21,13 +19,13 @@ Utilizando esta información, mi evaluación inicial es:
 
 Añadimos surveillance.htb en el fichero /etc/hosts y accedemos a la dirección mediante el navegador:
 
-![](../Imágenes/Screenshot-2024-04-20-at-10-21-23-Surveillance.png)
+![](../../../Imágenes/Screenshot-2024-04-20-at-10-21-23-Surveillance.png)
 
 Si nos fijamos en el footer del sitio web podemos ver que el sitio está desarrollado con un gestor de contenidos llamado **Craft CMS**.
 
 También **Wappalyzer** nos muestra la misma información:
 
-![](../Imágenes/image-15%201.png)
+![](../../../Imágenes/image-15%201.png)
 
 ### ****Foothold****
 
@@ -35,13 +33,13 @@ También **Wappalyzer** nos muestra la misma información:
 
 Si nos dirigimos al enlace que hay en el footer del sitio web, podemos comprobar la versión de Craft CMS usada en el sitio web. Por lo tanto, ya sabemos que estamos enfrente de la versión 4.4.14:
 
-![](../Imágenes/Selection_002-2.png)
+![](../../../Imágenes/Selection_002-2.png)
 
 #### Identificar la vulnerabilidad
 
 Investigando por Google podemos ver que existe una vulnerabilidad [CVE-2023-41892](https://nvd.nist.gov/vuln/detail/CVE-2023-41892) relacionada con esta versión de Craft CMS. La vulnerabilidad nos permite ejecución remota de código sin necesidad de autenticación.
 
-![](../Imágenes/image-16%201.png)
+![](../../../Imágenes/image-16%201.png)
 
 #### Prueba de concepto
 
@@ -141,7 +139,7 @@ if __name__ == "__main__":
 
 Copiamos el script en nuestro host de ataque y lo ejecutamos:
 
-![](../Imágenes/image-18.png)
+![](../../../Imágenes/image-18.png)
 
 Parece ser que el script no funciona, ya que este POC depende de la escritura de un webshell, por lo que es necesario encontrar una carpeta adecuada con permisos de escritura. Revisando el código debemos hacer dos pequeños cambios para conseguir que funcione. El cambio es el siguiente:
 
@@ -161,7 +159,7 @@ response = requests.post(url, headers=headers, data=data, files=files)
 
 Además, también debemos cambiar la dirección donde se escribirá el script. Si visitamos el repositorio de GitHub vemos que hay una carpeta donde podemos probar a depositar el webshell.
 
-![](../Imágenes/image-20.png)
+![](../../../Imágenes/image-20.png)
 
 Esta modificación se da en dos lugares:
 
@@ -185,11 +183,11 @@ response = requests.get(url + "/cpresources/shell.php", params={"cmd": cmd})
 
 Probemos a ejecutar el script ahora:
 
-![](../Imágenes/image-19.png)
+![](../../../Imágenes/image-19.png)
 
 Ahora es momento de estabilizar la terminal:
 
-![](../Imágenes/image-22.png)
+![](../../../Imágenes/image-22.png)
 
 ### **Movimiento lateral hacia Matthew**
 
@@ -207,13 +205,13 @@ En este momento, copiemos el fichero al host de ataque y lo descomprimimos. Una 
 
 Por suerte, encontramos un hash del usuario Matthew.
 
-![](../Imágenes/image-25.png)
+![](../../../Imágenes/image-25.png)
 
 Ahora intentemos desencriptarlo usando **hashcat**:
 
-![](../Imágenes/image-26.png)
+![](../../../Imágenes/image-26.png)
 
-![](../Imágenes/image-27.png)
+![](../../../Imágenes/image-27.png)
 
 Hacemos suerte y logramos encontrar la contraseña del usuario Matthew que nos permite conectarnos a la máquina con este usuario mediante SSH y realizar el movimiento lateral:
 
@@ -221,25 +219,25 @@ Hacemos suerte y logramos encontrar la contraseña del usuario Matthew que nos p
 
 Aprovechamos para leer la bandera user.txt:
 
-![](../Imágenes/image-29.png)
+![](../../../Imágenes/image-29.png)
 
 ### ****Movimiento lateral hacia Zoneminder****
 
 Enumerando el sistema nos encontramos con unas credenciales del usuario Zoneminder en el fichero database.php que sirven para conectarse a una base de datos MySQL:
 
-![](../Imágenes/image-31.png)
+![](../../../Imágenes/image-31.png)
 
-![](../Imágenes/Selection_020-1.png)
+![](../../../Imágenes/Selection_020-1.png)
 
 También observamos el funcionamiento de un servicio en el puerto 8080, por lo tanto, nos disponemos a hacer un portfordward de ese puerto mediante SSH:
 
-![](../Imágenes/image-30.png)
+![](../../../Imágenes/image-30.png)
 
-![](../Imágenes/image-33.png)
+![](../../../Imágenes/image-33.png)
 
 De esta forma podemos navegar hacia ese puerto mediante el navegador de nuestro host de ataque:
 
-![](../Imágenes/image-34.png)
+![](../../../Imágenes/image-34.png)
 
 El sitio web parece funcionar una aplicación llamada Zoneminder. Después de investigar un poco descubrimos que Zoneminder es un software que se utiliza para monitorear.
 
@@ -249,37 +247,37 @@ En este punto es interesante probar varias credenciales por defecto, aunque no l
 
 Antes debemos encontrar la versión que trabaje:
 
-![](../Imágenes/image-35.png)
+![](../../../Imágenes/image-35.png)
 
 #### Identificar la vulnerabilidad
 
 Decidimos investigar por Google en la búsqueda de alguna vulnerabilidad del servicio y nos encontramos en que existe la vulnerabilidad [CVE-2023-26035](https://nvd.nist.gov/vuln/detail/CVE-2023-26035). Esta vulnerabilidad permite la ejecución remota de código sin necesidad de autenticación.
 
-![](../Imágenes/image-36.png)
+![](../../../Imágenes/image-36.png)
 
 #### Explotación
 
 Aunque existen varias pruebas de concepto para explotar la vulnerabilidad, decidimos usar un módulo de **metasploit**:
 
-![](../Imágenes/image-37.png)
+![](../../../Imágenes/image-37.png)
 
 Realizamos la configuración del módulo y procedemos a ejecutarlo para al fin llegar hacia el usuario Zoneminder:
 
-![](../Imágenes/image-38.png)
+![](../../../Imágenes/image-38.png)
 
 ### **Escalada de privilegios**
 
 Una vez dentro del sistema objetivo como usuario Zoneminder descubrimos que este puede ejecutar con privilegios el siguiente comando que ejecuta diferentes binarios desarrollados con Perl:
 
-![](../Imágenes/image-39.png)
+![](../../../Imágenes/image-39.png)
 
 El binario ejecuta todos los binarios ubicados en /usr/bin:
 
-![](../Imágenes/image-40.png)
+![](../../../Imágenes/image-40.png)
 
 Después de revisar todos estos binarios nos parece interesante el binario zmupdate.pl. Viendo su ayuda, podemos intentar abusar de él:
 
-![](../Imágenes/image-41.png)
+![](../../../Imágenes/image-41.png)
 
 Mirando el script, vemos que el siguiente código escapa la inyección cuando se introduce en la contraseña, en cambio, no en los otros parámetros:
 
@@ -308,114 +306,22 @@ my $command = 'mysqldump';
 
 Como hemos visto en la ayuda, podemos manipular los otros parámetros, por lo tanto:
 
-![](../Imágenes/image-43.png)
+![](../../../Imágenes/image-43.png)
 
 Con esto conseguimos una terminal con privilegios. Aunque por el momento la terminal no termina siendo funcional y debemos realizar otro forma de escalar los privilegios.
 
 Podemos probar a crear una copia del binario /bin/bash en el directorio /tmp y luego ejecutarlo:
 
-![](../Imágenes/image-44.png)
+![](../../../Imágenes/image-44.png)
 
 Comprobemos que se ha creado el binario:
 
-![](../Imágenes/image-45.png)
+![](../../../Imágenes/image-45.png)
 
 Probemos a ejecutarlo y comprobar que hemos escalado los privilegios:
 
-![](../Imágenes/image-46.png)
+![](../../../Imágenes/image-46.png)
 
 Por último, solo queda leer la bandera root.txt y dar por finalizada la máquina:
 
-![](../Imágenes/image-13.png)
-
----
-
-##### ¡Gracias por vuestro apoyo!  
-Sígueme para más contenido
-
----
-
-[Hack The Box](https://marcosjurado.com/category/writeups/hack-the-box/), [Machines](https://marcosjurado.com/category/writeups/hack-the-box/machines/), [WriteUps](https://marcosjurado.com/category/writeups/)
-
-[abusing sudo](https://marcosjurado.com/tag/abusing-sudo/), [code review](https://marcosjurado.com/tag/code-review/), [craft cms](https://marcosjurado.com/tag/craft-cms/), [CVE-2023-26035](https://marcosjurado.com/tag/cve-2023-26035/), [CVE-2023-41892](https://marcosjurado.com/tag/cve-2023-41892/), [hashcat](https://marcosjurado.com/tag/hashcat/), [metasploit](https://marcosjurado.com/tag/metasploit/), [nmap](https://marcosjurado.com/tag/nmap/), [portfordward](https://marcosjurado.com/tag/portfordward/), [sql](https://marcosjurado.com/tag/sql/), [zoneminder](https://marcosjurado.com/tag/zoneminder/)
-
-[Marcos Jurado](https://marcosjurado.com/)
-
-© 2024 Copyright
-
-- [LinkedIn](https://www.linkedin.com/in/marcosjurado/)
-- [X](https://twitter.com/0xRh4ps00dy)
-- [GitHub](https://github.com/0xRh4ps00dy)
-
- 
-
-![Imagen copiada correctamente](./Surveillance%20–%20Marcos%20Jurado_files/copy.png)
-
-![happy face](HTML%20import/Attachments/smile.svg)
-
-¡La copia ha funcionado!
-
-Sin embargo, notamos cierto potencial de optimización en tu servidor.
-
-**Por favor**, copia los siguientes registros [en el foro](https://wordpress.org/support/plugin/copy-delete-posts/#new-topic-0) para que podamos hacer el plugin aún mejor (¡gratis!)
-
-The OS: Linux PHP Version: 7.4.28 WP Version: 6.6.2 MySQL Version: 8.0.39 Directory Separator: / Copy logs: 21-04-2024 08:00:22 - 1x, [total: 0.15213584899902, avg: 0.15213584899902] (mem: 11.64 MB - 12201648, peak: 2 MB - 2097152) 21-04-2024 07:56:31 - 1x, [total: 0.21652412414551, avg: 0.21652412414551] (mem: 14.55 MB - 15259640, peak: 8 MB - 8388608) 20-04-2024 07:51:41 - 1x, [total: 0.08299708366394, avg: 0.08299708366394] (mem: 11.61 MB - 12176984, peak: 4 MB - 4194304) 08-04-2024 08:04:41 - 1x, [total: 0.096487998962402, avg: 0.096487998962402] (mem: 11.53 MB - 12088496, peak: 4 MB - 4194304)
-
-Copiar los registros
-
-[
-
-Ir al foro
-
-](https://wordpress.org/support/plugin/copy-delete-posts/#new-topic-0)
-
-¿Problemas para acceder aquí?
-
-No, no quiero ayudarte a mejorar el plugin.
-
-De acuerdo, ¡hecho!
-
-                                              
-
-## Elementos a copiar:
-
-Usar como ajustes base
-
-–– Seleccionar –– Seleccionar todo Iniciar de nuevo Personalizado Por defecto
-
-Seleccionar todo
-
-- –– Seleccionar ––
-- Seleccionar todo
-- Iniciar de nuevo
-- Personalizado
-- Por defecto
-
- Título Fecha  Estado  Slug
-
- Extracto Contenido  Imagen destacada  Plantilla
-
- Formato Autor  Contraseña  Secundarias
-
- Comentarios Orden del menú  Adjuntos  Categorías
-
- Etiquetas Taxonomías  Menús de navegación  Categorías de enlaces
-
-**Opciones del plugin:**  
- Todos los meta de las entradas
-
-Copiar 
-
- veces
-
- to
-
-este sitio
-
-este sitio
-
-- este sitio
-
-Hacer más de 50 copias tardará un tiempo. Dependiendo de tu servidor.
-
-¡Copiarlo!
+![](../../../Imágenes/image-13.png)
