@@ -133,7 +133,7 @@ Comprobamos los permisos sudo sobre el usuario **Logan** y encontramos que puede
 
 ![](../../../Imágenes/Selection_034.png)
 
-#### Proof of Concept
+## Proof of Concept
 
 Investigando en Google encontramos que el binario **apport-cli** tiene una vulnerabilidad llamada [CVE-2023-1326](https://nvd.nist.gov/vuln/detail/CVE-2023-1326):
 
@@ -173,9 +173,7 @@ Signed-off-by: Benjamin Drung <benjamin.drung@canonical.com>
 
 En primer lugar, para realizar la explotación de esta vulnerabilidad y obtener un terminal con privilegios debemos ejecutar la aplicación y seleccionar que queremos reportar un problema referente a la pantalla:
 
-```
-
-```
+![[../../../Imágenes/Pasted image 20240919134413.png]]
 
 Entonces, indicamos que tipo de problemas hemos observado, por ejemplo, podemos indicar que hemos observado congelaciones de la pantalla durante el arranque o el uso del sistema:
 
