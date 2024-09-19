@@ -1,4 +1,4 @@
-#linux
+#linux #medium #hackthebox 
 
 ![](../../../Imágenes/Analytics.png)
 
