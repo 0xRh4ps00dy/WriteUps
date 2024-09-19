@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack-Based Buffer OverFlow en Linux x86.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer OverFlow en Linux x86.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer OverFlow en Linux x86.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer OverFlow en Linux x86.md"
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86.md"
               }
             }
           }
@@ -160,11 +160,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c9df10bcd5b889c0",
+  "active": "d313c0a4781948bf",
   "lastOpenFiles": [
-    "Sin nombre",
+    "Stack-Based Buffer Overflow",
     "Introducción.md",
-    "Stack-Based Buffer OverFlow en Linux x86.md",
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
