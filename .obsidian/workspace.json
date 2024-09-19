@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Devvortex.md",
+                "file": "Writeups/Surveillance.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Devvortex.md",
+                "file": "Writeups/Surveillance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Devvortex.md",
+                "file": "Writeups/Surveillance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Devvortex.md"
+                "file": "Writeups/Surveillance.md"
               }
             }
           }
@@ -148,9 +148,12 @@
   },
   "active": "39de62204e624e81",
   "lastOpenFiles": [
+    "Writeups/Analytics.md",
+    "Writeups/Surveillance.md",
+    "Writeups/Devvortex.md",
+    "Writeups/Manager.md",
     "Imágenes/Pasted image 20240919120526.png",
     "Imágenes/Pasted image 20240919120231.png",
-    "Writeups/Devvortex.md",
     "Imágenes/Pasted image 20240919120324.png",
     "Imágenes/Pasted image 20240919100648.png",
     "Introducción.md",
