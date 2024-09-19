@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Devvortex – Marcos Jurado.md",
+                "file": "Writeups/Analytics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Devvortex – Marcos Jurado.md",
+                "file": "Writeups/Analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Devvortex – Marcos Jurado.md",
+                "file": "Writeups/Analytics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Devvortex – Marcos Jurado.md"
+                "file": "Writeups/Analytics.md"
               }
             }
           }
@@ -149,8 +149,10 @@
   },
   "active": "39de62204e624e81",
   "lastOpenFiles": [
+    "Writeups/Surveillance – Marcos Jurado.md",
+    "Writeups/Devvortex – Marcos Jurado.md",
     "Writeups/Codify – Marcos Jurado.md",
-    "Writeups/Analytics – Marcos Jurado.md",
+    "Writeups/Analytics.md",
     "Writeups/Hackthebox/Media/Manager.md",
     "Imágenes/Analytics.png",
     "Imágenes/Surveillance.png",
@@ -163,10 +165,8 @@
     "Imágenes/Pasted-image-20240404133530.png",
     "Imágenes/Pasted-image-20240318200812.png",
     "HTML import/Attachments/admin 3.php",
-    "Writeups/Devvortex – Marcos Jurado.md",
     "HTML import/Attachments/admin 2.php",
     "HTML import/Attachments/admin 1.php",
-    "Writeups/Surveillance – Marcos Jurado.md",
     "HTML import/Attachments/admin.php",
     "HTML import/Attachments",
     "Writeups/Hackthebox",

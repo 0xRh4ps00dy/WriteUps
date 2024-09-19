@@ -1,5 +1,3 @@
-
-
 ![](../Imágenes/Analytics.png)
 
 Analytics aloja una instancia de Metabase en un servidor web. A partir de la filtración de un token gracias a una vulnerabilidad descubierta podemos inyectarlo para ejecutar código y acceder en la máquina. Accedemos dentro de un contenedor donde nos encontramos unas variables que nos ayudan a obtener acceso a la máquina host. Desde allí podemos explotar la vulnerabilidad GameOver(Lay) para escalar privilegios hacia root.
