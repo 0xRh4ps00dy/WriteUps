@@ -85,7 +85,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introducción.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +101,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introducción.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introducción.md"
+                "file": "Sin título.md"
               }
             }
           }
@@ -146,10 +144,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ad84c02baaa2f81d",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
-    "Write Ups/Untitled.md",
     "Introducción.md",
+    "Sin título.md",
+    "Write Ups/Untitled.md",
     "Test.md",
     "Untitled.md",
     "Untitled 1.md",
