@@ -86,7 +86,7 @@ Por suerte, logramos desencriptar la contraseña, cambiar de usuario hacia joshu
 
 ![](../../../Imágenes/Selection_009-1-wpp1712234194943.png)
 
-### **Escalada de privilegios**
+# **Escalada de privilegios**
 
 Rápidamente, comprobamos comandos que el usuario puede ejecutar con permisos root y nos entramos con que puede ejecutar un script que aparentemente realiza una copia de seguridad de la base de datos **MYSQL**.
 
