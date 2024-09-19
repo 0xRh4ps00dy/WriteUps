@@ -4,7 +4,7 @@
 
 Analytics aloja una instancia de Metabase en un servidor web. A partir de la filtración de un token gracias a una vulnerabilidad descubierta podemos inyectarlo para ejecutar código y acceder en la máquina. Accedemos dentro de un contenedor donde nos encontramos unas variables que nos ayudan a obtener acceso a la máquina host. Desde allí podemos explotar la vulnerabilidad GameOver(Lay) para escalar privilegios hacia root.
 
-## **Enumeración**
+## Enumeración
 
 #### Nmap
 
@@ -28,7 +28,7 @@ Si nos dirigimos hacia la página de login descubrimos un subdominio **data.anal
 
 Por lo tanto, también lo añadimos en **/etc/hosts** y visitamos el subdominio para descubrir una página de inicio de sesión de una aplicación llamada Metabase que sirve para el análisis de datos.
 
-## **Usuario metabase**
+## Usuario metabase
 
 #### Identificación
 
@@ -71,7 +71,7 @@ En este caso, intentamos conectarnos vía SSH con estas credenciales encontradas
 
 ![](../../../Imágenes/Pasted-image-20240318204558.png)
 
-## **Escalada de privilegios**
+## Escalada de privilegios
 
 Después de realizar una enumeración inicial para intentar escalar privilegios y no encontrar nada útil, decidimos buscar en Google alguna vulnerabilidad relacionada con el kernel del sistema.
 
