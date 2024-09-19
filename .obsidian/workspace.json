@@ -11,9 +11,11 @@
             "id": "39de62204e624e81",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Imágenes/Analytics.png"
+                "file": "Writeups/Devvortex – Marcos Jurado.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Imágenes/Analytics.png",
+                "file": "Writeups/Devvortex – Marcos Jurado.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Imágenes/Analytics.png",
+                "file": "Writeups/Devvortex – Marcos Jurado.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Imágenes/Analytics.png"
+                "file": "Writeups/Devvortex – Marcos Jurado.md"
               }
             }
           }
@@ -145,8 +147,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c9df10bcd5b889c0",
+  "active": "39de62204e624e81",
   "lastOpenFiles": [
+    "Writeups/Codify – Marcos Jurado.md",
+    "Writeups/Analytics – Marcos Jurado.md",
+    "Writeups/Hackthebox/Media/Manager.md",
+    "Imágenes/Analytics.png",
     "Imágenes/Surveillance.png",
     "Imágenes/Selection_005-1.png",
     "HTML import/Attachments/smile.svg",
@@ -156,16 +162,11 @@
     "HTML import/Attachments/revisit.svg",
     "Imágenes/Pasted-image-20240404133530.png",
     "Imágenes/Pasted-image-20240318200812.png",
-    "Imágenes/Pasted-image-20240318200859.png",
-    "HTML import/Attachments/LogotipoH 2.png",
-    "Writeups/Hackthebox/Media/Manager.md",
-    "HTML import/Analytics – Marcos Jurado.md",
     "HTML import/Attachments/admin 3.php",
-    "HTML import/Devvortex – Marcos Jurado.md",
+    "Writeups/Devvortex – Marcos Jurado.md",
     "HTML import/Attachments/admin 2.php",
-    "HTML import/Codify – Marcos Jurado.md",
     "HTML import/Attachments/admin 1.php",
-    "HTML import/Surveillance – Marcos Jurado.md",
+    "Writeups/Surveillance – Marcos Jurado.md",
     "HTML import/Attachments/admin.php",
     "HTML import/Attachments",
     "Writeups/Hackthebox",
