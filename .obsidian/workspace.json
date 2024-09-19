@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflow en Linux x86.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflow en Linux x86.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflow en Linux x86.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflow en Linux x86.md"
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md"
               }
             }
           }
@@ -160,12 +160,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c9df10bcd5b889c0",
+  "active": "d313c0a4781948bf",
   "lastOpenFiles": [
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
     "Stack-Based Buffer Overflow",
     "Introducción.md",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflow en Linux x86.md",
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
