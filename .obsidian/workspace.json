@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Reconnaissance/Sin título.md",
+                "file": "Reconocimiento/Reconocimiento.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Reconnaissance/Sin título.md",
+                "file": "Reconocimiento/Reconocimiento.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. Reconnaissance/Sin título.md",
+                "file": "Reconocimiento/Reconocimiento.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Reconnaissance/Sin título.md"
+                "file": "Reconocimiento/Reconocimiento.md"
               }
             }
           }
@@ -159,9 +159,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c9df10bcd5b889c0",
+  "active": "ff472486ffbd6568",
   "lastOpenFiles": [
-    "1. Reconnaissance/Sin título.md",
+    "Reconocimiento/Reconocimiento.md",
     "Introducción.md",
     "Write Ups/Untitled.md",
     "Test.md",
@@ -170,6 +170,6 @@
     "1. Reconnaissance/Test Note.md",
     "2. Exploitation",
     "Write Ups",
-    "1. Reconnaissance"
+    "Reconocimiento"
   ]
 }
