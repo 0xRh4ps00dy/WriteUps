@@ -5,7 +5,7 @@
 
 Manager empieza realizando fuerza bruta sobre Kerberos para encontrar usuarios en el dominio, y luego haciendo un spray de contraseñas usando el nombre de usuario de cada usuario como contraseña. Una vez tenemos las primeras credenciales podemos acceder a la instancia de base de datos MSSQL y utilizar la función xp_dirtree para explorar el sistema de archivos. Gracias a una copia de seguridad del servidor web, obtenemos unas credenciales de usuario que nos dan acceso al sistema mediante el servicio WINRM. Una vez dentro del sistema escalamos privilegios gracias la vulnerabilidad ESC7 obtenida mediante una configuración errónea.
 
-### **Enumeración**
+# **Enumeración**
 
 En primer lugar, realizamos la enumeración básica de puertos con **Nmap**:
 
