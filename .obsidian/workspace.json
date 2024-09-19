@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b6a04dd7b7342d23",
+        "id": "4eacc62a6b264373",
         "type": "tabs",
         "children": [
           {
-            "id": "746be1c0dd75ddf1",
+            "id": "284a1626dc7cd883",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,14 +139,14 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "746be1c0dd75ddf1",
+  "active": "284a1626dc7cd883",
   "lastOpenFiles": [
     "Writeups/Hackthebox/Media/Manager.md",
+    "Imágenes/image-13.png.md",
+    "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
-    "Imágenes/image-13.png.md",
-    "Writeups/Hackthebox/Media/Surveillance.md",
     "Imágenes/Pasted image 20240919125649.png",
     "Imágenes/Pasted image 20240919125635.png",
     "Imágenes/Pasted image 20240919125542.png",
