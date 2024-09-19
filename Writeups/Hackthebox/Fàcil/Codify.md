@@ -1,4 +1,4 @@
-#linux #medium #hackthebox 
+
 
 ![](../../../Imágenes/Codify.png)
 

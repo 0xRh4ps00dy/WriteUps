@@ -1,4 +1,4 @@
-#active #directory #adcs #certipy #crackmapexec #esc7 #evil-winrm #mssql #mssqlclient #password-spray #windows #xp-dirtree
+#active-directory #adcs #certipy #crackmapexec #esc7 #evil-winrm #mssql #mssqlclient #password-spray #windows #xp-dirtree
 
 
 ![](../../../Imágenes/Manager%201.png)
