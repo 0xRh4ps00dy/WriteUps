@@ -1,4 +1,4 @@
-#windows
+#windows #medium #hackthebox
 
 
 ![](../../../Imágenes/Manager%201.png)
