@@ -1,4 +1,4 @@
-![](../../Imágenes/Attachments/Manager.png)
+![](../../../Imágenes/Attachments/Manager.png)
 
 Manager empieza realizando fuerza bruta sobre Kerberos para encontrar usuarios en el dominio, y luego haciendo un spray de contraseñas usando el nombre de usuario de cada usuario como contraseña. Una vez tenemos las primeras credenciales podemos acceder a la instancia de base de datos MSSQL y utilizar la función xp_dirtree para explorar el sistema de archivos. Gracias a una copia de seguridad del servidor web, obtenemos unas credenciales de usuario que nos dan acceso al sistema mediante el servicio WINRM. Una vez dentro del sistema escalamos privilegios gracias la vulnerabilidad ESC7 obtenida mediante una configuración errónea.
 
@@ -6,7 +6,7 @@ Manager empieza realizando fuerza bruta sobre Kerberos para encontrar usuarios e
 
 En primer lugar, realizamos la enumeración básica de puertos con **Nmap**:
 
-![](../../Imágenes/Attachments/image-2.png)
+![](../../../Imágenes/Attachments/image-2.png)
 
 A continuación, realizamos el escaneo de servicios/versión y scripts de los puertos que hemos encontrado abiertos:
 
@@ -104,19 +104,19 @@ Además, **nmap** también nos ha brindado dos dominios, **manager.htb** y **dc0
 
 Ahora probemos a enumerar usuarios usando la herramienta [**Kerbrute**](https://github.com/ropnop/kerbrute):
 
-![](../../Imágenes/Attachments/image-4.png)
+![](../../../Imágenes/Attachments/image-4.png)
 
 Depuremos la lista:
 
-![](../../Imágenes/Attachments/image.png)
+![](../../../Imágenes/Attachments/image.png)
 
 Ahora es momento de realizar una pulverización de contraseñas con cuidado de no vulnerar la política de contraseñas mediante la herramienta **Crackmapexec**:
 
-![](../../Imágenes/Attachments/Selection_017.png)
+![](../../../Imágenes/Attachments/Selection_017.png)
 
 Por suerte nos encontramos que el usuario **operator** tiene acceso a SMB con la contraseña **operator**. Inspeccionemos SMB y averigüemos que podemos encontrar allí:
 
-![](../../Imágenes/Attachments/Selection_016.png)
+![](../../../Imágenes/Attachments/Selection_016.png)
 
 Nada interesante…
 
@@ -124,39 +124,39 @@ Nada interesante…
 
 No obstante, descubrimos que el usuario **operator** también puede acceder a **MSSQL**:
 
-![](../../Imágenes/Attachments/Selection_015.png)
+![](../../../Imágenes/Attachments/Selection_015.png)
 
 Después de enumerar el servicio **MSSQL** y probar diferentes técnicas de forma fallida, descubrimos que podemos leer archivos y en especial vemos una copia de seguridad del sitio del cual podemos acceder a través del protocolo HTTP:
 
-![](../../Imágenes/Attachments/Selection_013.png)
+![](../../../Imágenes/Attachments/Selection_013.png)
 
-![](../../Imágenes/Attachments/Selection_012.png)
+![](../../../Imágenes/Attachments/Selection_012.png)
 
 Descomprimimos el fichero descargado y visualizamos el fichero **.old-conf.xml** que nos arroja las credenciales del usuario **raven**:
 
-![](../../Imágenes/Attachments/Selection_014.png)
+![](../../../Imágenes/Attachments/Selection_014.png)
 
-![](../../Imágenes/Attachments/Selection_011.png)
+![](../../../Imágenes/Attachments/Selection_011.png)
 
 Es hora de probar estas credenciales en el servicio WINRM:
 
-![](../../Imágenes/Attachments/Selection_010-1.png)
+![](../../../Imágenes/Attachments/Selection_010-1.png)
 
 Una vez dentro nos hacemos con la bandera **user.txt:**
 
-![](../../Imágenes/Attachments/image-6.png)
+![](../../../Imágenes/Attachments/image-6.png)
 
 ### **Escalada de priviliegios**
 
 En ese mismo directorio y en el directorio **Documents,** el cual fue el punto de acceso al sistema, nos encontramos el fichero **certify.exe**:
 
-![](../../Imágenes/Attachments/image-5.png)
+![](../../../Imágenes/Attachments/image-5.png)
 
 Esta repetición genera curiosidad y nos da una señal de que la escalada de privilegios podía estar relacionada con certificados, por lo tanto, investiguemos un poco.
 
 Ejecutamos el siguiente comando:
 
-![](../../Imágenes/Attachments/image-8.png)
+![](../../../Imágenes/Attachments/image-8.png)
 
 El resultado nos arroja mucha información, pero lo más importante aquí son los dos derechos principales **`ManageCA`** y **`ManageCertificates`**.
 
@@ -176,13 +176,13 @@ Para poder abusar de esta vulnerabilidad vamos a usar la utilidad **[certipy](ht
 
 Concedemos el derecho `**Manage Certificates**` agregando al usuario rave como nuevo oficial:
 
-![](../../Imágenes/Attachments/image-9.png)
+![](../../../Imágenes/Attachments/image-9.png)
 
 Habilitamos una plantilla de certificado específica y solicitamos un certificado con privilegios elevados:
 
-![](../../Imágenes/Attachments/image-10.png)
+![](../../../Imágenes/Attachments/image-10.png)
 
-![](../../Imágenes/Attachments/image-12.png)
+![](../../../Imágenes/Attachments/image-12.png)
 
 Emitimos el certificado solicitado:
 
@@ -190,7 +190,7 @@ Emitimos el certificado solicitado:
 
 Nos autenticamos con el certificado obtenido y obtenemos el hash del administrador del sistema:
 
-![](../../Imágenes/Attachments/image-15.png)
+![](../../../Imágenes/Attachments/image-15.png)
 
 Durante el proceso, me encontré un error relacionado con el desfase del reloj. Este error, conocido como ‘KRB_AP_ERR_SKEW’ , ocurre cuando hay una diferencia horaria significativa entre el sistema local y el servidor remoto.
 
@@ -204,98 +204,6 @@ Además, la introducción de los comandos debe de hacerse de forma rápida, ya q
 
 Finalmente, iniciamos sesión mediante WINRM y leemos la bandera **root.txt**:
 
-![](../../Imágenes/Attachments/image-16.png)
+![](../../../Imágenes/Attachments/image-16.png)
 
-![](../../Imágenes/Attachments/image-17.png)
-
----
-
-##### ¡Gracias por vuestro apoyo!  
-Sígueme para más contenido
-
----
-
-[Hack The Box](https://marcosjurado.com/category/writeups/hack-the-box/), [Machines](https://marcosjurado.com/category/writeups/hack-the-box/machines/), [WriteUps](https://marcosjurado.com/category/writeups/)
-
-[active directory](https://marcosjurado.com/tag/active-directory/), [adcs](https://marcosjurado.com/tag/adcs/), [certipy](https://marcosjurado.com/tag/certipy/), [crackmapexec](https://marcosjurado.com/tag/crackmapexec/), [esc7](https://marcosjurado.com/tag/esc7/), [evil-winrm](https://marcosjurado.com/tag/evil-winrm/), [mssql](https://marcosjurado.com/tag/mssql/), [mssqlclient](https://marcosjurado.com/tag/mssqlclient/), [nmap](https://marcosjurado.com/tag/nmap/), [password-spray](https://marcosjurado.com/tag/password-spray/), [windows](https://marcosjurado.com/tag/windows/), [xp-dirtree](https://marcosjurado.com/tag/xp-dirtree/)
-
-[Marcos Jurado](https://marcosjurado.com/)
-
-© 2024 Copyright
-
-- [LinkedIn](https://www.linkedin.com/in/marcosjurado/)
-- [X](https://twitter.com/0xRh4ps00dy)
-- [GitHub](https://github.com/0xRh4ps00dy)
-
- 
-
-![Imagen copiada correctamente](./Manager%20–%20Marcos%20Jurado_files/copy.png)
-
-![happy face](HTML%20import/Attachments/smile.svg)
-
-¡La copia ha funcionado!
-
-Sin embargo, notamos cierto potencial de optimización en tu servidor.
-
-**Por favor**, copia los siguientes registros [en el foro](https://wordpress.org/support/plugin/copy-delete-posts/#new-topic-0) para que podamos hacer el plugin aún mejor (¡gratis!)
-
-The OS: Linux PHP Version: 7.4.28 WP Version: 6.6.2 MySQL Version: 8.0.39 Directory Separator: / Copy logs: 21-04-2024 08:00:22 - 1x, [total: 0.15213584899902, avg: 0.15213584899902] (mem: 11.64 MB - 12201648, peak: 2 MB - 2097152) 21-04-2024 07:56:31 - 1x, [total: 0.21652412414551, avg: 0.21652412414551] (mem: 14.55 MB - 15259640, peak: 8 MB - 8388608) 20-04-2024 07:51:41 - 1x, [total: 0.08299708366394, avg: 0.08299708366394] (mem: 11.61 MB - 12176984, peak: 4 MB - 4194304) 08-04-2024 08:04:41 - 1x, [total: 0.096487998962402, avg: 0.096487998962402] (mem: 11.53 MB - 12088496, peak: 4 MB - 4194304)
-
-Copiar los registros
-
-[
-
-Ir al foro
-
-](https://wordpress.org/support/plugin/copy-delete-posts/#new-topic-0)
-
-¿Problemas para acceder aquí?
-
-No, no quiero ayudarte a mejorar el plugin.
-
-De acuerdo, ¡hecho!
-
-                                              
-
-## Elementos a copiar:
-
-Usar como ajustes base
-
-–– Seleccionar –– Seleccionar todo Iniciar de nuevo Personalizado Por defecto
-
-Seleccionar todo
-
-- –– Seleccionar ––
-- Seleccionar todo
-- Iniciar de nuevo
-- Personalizado
-- Por defecto
-
- Título Fecha  Estado  Slug
-
- Extracto Contenido  Imagen destacada  Plantilla
-
- Formato Autor  Contraseña  Secundarias
-
- Comentarios Orden del menú  Adjuntos  Categorías
-
- Etiquetas Taxonomías  Menús de navegación  Categorías de enlaces
-
-**Opciones del plugin:**  
- Todos los meta de las entradas
-
-Copiar 
-
- veces
-
- to
-
-este sitio
-
-este sitio
-
-- este sitio
-
-Hacer más de 50 copias tardará un tiempo. Dependiendo de tu servidor.
-
-¡Copiarlo!
+![](../../../Imágenes/Attachments/image-17.png)
