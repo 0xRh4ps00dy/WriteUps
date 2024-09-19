@@ -8,7 +8,7 @@ Hoy en día, he encontrado mi lugar combinando dos de mis grandes pasiones: la e
 
 Desde joven, los primeros contactos con el mundo del hacking ético, como los scripts en los chats IRC, despertaron una fascinación que el tiempo no ha apagado. Después de años explorando el mundo de los videojuegos, volví a descubrir la ciberseguridad gracias a la C1b3rWall Academy y a streamers como s4vitar.
 
-Desde entonces, me he adentrado en plataformas como Try Hack Me y Hack The Box, donde he ido perfeccionando mis habilidades hasta obtener mi certificación eJPTv2. Actualmente, estoy enfocado en seguir aprendiendo, con la mira puesta en nuevas certificaciones y posiblemente en el mundo del Bug Bounty.
+Desde entonces, me he adentrado en plataformas como Try Hack Me y Hack The Box, donde he ido perfeccionando mis habilidades hasta obtener mi certificación eJPTv2. Actualmente, estoy enfocado en seguir aprendiendo, con la mira puesta en nuevas certificaciones como la OSCP o y posiblemente en el mundo del Bug Bounty.
 
 **¿Qué encontrarás aquí?**
 
