@@ -8,6 +8,7 @@ En primer lugar, realizamos la enumeración básica de puertos con **Nmap**:
 
 ![](
 ![[../../Imágenes/image-2.webp]]
+
 A continuación, realizamos el escaneo de servicios/versión y scripts de los puertos que hemos encontrado abiertos:
 
 ```
