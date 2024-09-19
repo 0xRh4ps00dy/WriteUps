@@ -153,7 +153,7 @@ Reject All Save My Preferences Accept All
 
 # Surveillance
 
-![](HTML%20import/Attachments/Surveillance.png)
+![](../Imágenes/Surveillance.png)
 
 Surveillance es una máquina que funciona con un sistema operativo Linux y de dificultad media. Para explotar la máquina debemos aprovechar un CVE que nos permite realizar una ejecución remota de código sin autentificación que nos da acceso a la máquina. Posteriormente, debemos hacer un movimiento lateral hacia otro usuario mediante la búsqueda de un par de credenciales que hay en una copia de seguridad. A continuación, debemos realizar otro movimiento lateral aprovechando otro CVE que permite también una ejecución remota de código sin autentificación. Finalmente, para escalar privilegios debemos abusar de un binario con privilegios de administrador.
 
@@ -163,7 +163,7 @@ Surveillance es una máquina que funciona con un sistema operativo Linux y de di
 
 El escaneo de puertos nos arroja la siguiente información:
 
-![](HTML%20import/Attachments/image-14.png)
+![](../Imágenes/image-14.png)
 
 Utilizando esta información, mi evaluación inicial es:
 
@@ -174,13 +174,13 @@ Utilizando esta información, mi evaluación inicial es:
 
 Añadimos surveillance.htb en el fichero /etc/hosts y accedemos a la dirección mediante el navegador:
 
-![](HTML%20import/Attachments/Screenshot-2024-04-20-at-10-21-23-Surveillance.png)
+![](../Imágenes/Screenshot-2024-04-20-at-10-21-23-Surveillance.png)
 
 Si nos fijamos en el footer del sitio web podemos ver que el sitio está desarrollado con un gestor de contenidos llamado **Craft CMS**.
 
 También **Wappalyzer** nos muestra la misma información:
 
-![](HTML%20import/Attachments/image-15.png)
+![](../Imágenes/image-15%201.png)
 
 ### ****Foothold****
 
@@ -188,13 +188,13 @@ También **Wappalyzer** nos muestra la misma información:
 
 Si nos dirigimos al enlace que hay en el footer del sitio web, podemos comprobar la versión de Craft CMS usada en el sitio web. Por lo tanto, ya sabemos que estamos enfrente de la versión 4.4.14:
 
-![](HTML%20import/Attachments/Selection_002-2.png)
+![](../Imágenes/Selection_002-2.png)
 
 #### Identificar la vulnerabilidad
 
 Investigando por Google podemos ver que existe una vulnerabilidad [CVE-2023-41892](https://nvd.nist.gov/vuln/detail/CVE-2023-41892) relacionada con esta versión de Craft CMS. La vulnerabilidad nos permite ejecución remota de código sin necesidad de autenticación.
 
-![](HTML%20import/Attachments/image-16.png)
+![](../Imágenes/image-16%201.png)
 
 #### Prueba de concepto
 
@@ -294,7 +294,7 @@ if __name__ == "__main__":
 
 Copiamos el script en nuestro host de ataque y lo ejecutamos:
 
-![](HTML%20import/Attachments/image-18.png)
+![](../Imágenes/image-18.png)
 
 Parece ser que el script no funciona, ya que este POC depende de la escritura de un webshell, por lo que es necesario encontrar una carpeta adecuada con permisos de escritura. Revisando el código debemos hacer dos pequeños cambios para conseguir que funcione. El cambio es el siguiente:
 
@@ -314,7 +314,7 @@ response = requests.post(url, headers=headers, data=data, files=files)
 
 Además, también debemos cambiar la dirección donde se escribirá el script. Si visitamos el repositorio de GitHub vemos que hay una carpeta donde podemos probar a depositar el webshell.
 
-![](HTML%20import/Attachments/image-20.png)
+![](../Imágenes/image-20.png)
 
 Esta modificación se da en dos lugares:
 
@@ -338,11 +338,11 @@ response = requests.get(url + "/cpresources/shell.php", params={"cmd": cmd})
 
 Probemos a ejecutar el script ahora:
 
-![](HTML%20import/Attachments/image-19.png)
+![](../Imágenes/image-19.png)
 
 Ahora es momento de estabilizar la terminal:
 
-![](HTML%20import/Attachments/image-22.png)
+![](../Imágenes/image-22.png)
 
 ### **Movimiento lateral hacia Matthew**
 
@@ -360,13 +360,13 @@ En este momento, copiemos el fichero al host de ataque y lo descomprimimos. Una 
 
 Por suerte, encontramos un hash del usuario Matthew.
 
-![](HTML%20import/Attachments/image-25.png)
+![](../Imágenes/image-25.png)
 
 Ahora intentemos desencriptarlo usando **hashcat**:
 
-![](HTML%20import/Attachments/image-26.png)
+![](../Imágenes/image-26.png)
 
-![](HTML%20import/Attachments/image-27.png)
+![](../Imágenes/image-27.png)
 
 Hacemos suerte y logramos encontrar la contraseña del usuario Matthew que nos permite conectarnos a la máquina con este usuario mediante SSH y realizar el movimiento lateral:
 
@@ -374,25 +374,25 @@ Hacemos suerte y logramos encontrar la contraseña del usuario Matthew que nos p
 
 Aprovechamos para leer la bandera user.txt:
 
-![](HTML%20import/Attachments/image-29.png)
+![](../Imágenes/image-29.png)
 
 ### ****Movimiento lateral hacia Zoneminder****
 
 Enumerando el sistema nos encontramos con unas credenciales del usuario Zoneminder en el fichero database.php que sirven para conectarse a una base de datos MySQL:
 
-![](HTML%20import/Attachments/image-31.png)
+![](../Imágenes/image-31.png)
 
-![](HTML%20import/Attachments/Selection_020-1.png)
+![](../Imágenes/Selection_020-1.png)
 
 También observamos el funcionamiento de un servicio en el puerto 8080, por lo tanto, nos disponemos a hacer un portfordward de ese puerto mediante SSH:
 
-![](HTML%20import/Attachments/image-30.png)
+![](../Imágenes/image-30.png)
 
-![](HTML%20import/Attachments/image-33.png)
+![](../Imágenes/image-33.png)
 
 De esta forma podemos navegar hacia ese puerto mediante el navegador de nuestro host de ataque:
 
-![](HTML%20import/Attachments/image-34.png)
+![](../Imágenes/image-34.png)
 
 El sitio web parece funcionar una aplicación llamada Zoneminder. Después de investigar un poco descubrimos que Zoneminder es un software que se utiliza para monitorear.
 
@@ -402,37 +402,37 @@ En este punto es interesante probar varias credenciales por defecto, aunque no l
 
 Antes debemos encontrar la versión que trabaje:
 
-![](HTML%20import/Attachments/image-35.png)
+![](../Imágenes/image-35.png)
 
 #### Identificar la vulnerabilidad
 
 Decidimos investigar por Google en la búsqueda de alguna vulnerabilidad del servicio y nos encontramos en que existe la vulnerabilidad [CVE-2023-26035](https://nvd.nist.gov/vuln/detail/CVE-2023-26035). Esta vulnerabilidad permite la ejecución remota de código sin necesidad de autenticación.
 
-![](HTML%20import/Attachments/image-36.png)
+![](../Imágenes/image-36.png)
 
 #### Explotación
 
 Aunque existen varias pruebas de concepto para explotar la vulnerabilidad, decidimos usar un módulo de **metasploit**:
 
-![](HTML%20import/Attachments/image-37.png)
+![](../Imágenes/image-37.png)
 
 Realizamos la configuración del módulo y procedemos a ejecutarlo para al fin llegar hacia el usuario Zoneminder:
 
-![](HTML%20import/Attachments/image-38.png)
+![](../Imágenes/image-38.png)
 
 ### **Escalada de privilegios**
 
 Una vez dentro del sistema objetivo como usuario Zoneminder descubrimos que este puede ejecutar con privilegios el siguiente comando que ejecuta diferentes binarios desarrollados con Perl:
 
-![](HTML%20import/Attachments/image-39.png)
+![](../Imágenes/image-39.png)
 
 El binario ejecuta todos los binarios ubicados en /usr/bin:
 
-![](HTML%20import/Attachments/image-40.png)
+![](../Imágenes/image-40.png)
 
 Después de revisar todos estos binarios nos parece interesante el binario zmupdate.pl. Viendo su ayuda, podemos intentar abusar de él:
 
-![](HTML%20import/Attachments/image-41.png)
+![](../Imágenes/image-41.png)
 
 Mirando el script, vemos que el siguiente código escapa la inyección cuando se introduce en la contraseña, en cambio, no en los otros parámetros:
 
@@ -461,25 +461,25 @@ my $command = 'mysqldump';
 
 Como hemos visto en la ayuda, podemos manipular los otros parámetros, por lo tanto:
 
-![](HTML%20import/Attachments/image-43.png)
+![](../Imágenes/image-43.png)
 
 Con esto conseguimos una terminal con privilegios. Aunque por el momento la terminal no termina siendo funcional y debemos realizar otro forma de escalar los privilegios.
 
 Podemos probar a crear una copia del binario /bin/bash en el directorio /tmp y luego ejecutarlo:
 
-![](HTML%20import/Attachments/image-44.png)
+![](../Imágenes/image-44.png)
 
 Comprobemos que se ha creado el binario:
 
-![](HTML%20import/Attachments/image-45.png)
+![](../Imágenes/image-45.png)
 
 Probemos a ejecutarlo y comprobar que hemos escalado los privilegios:
 
-![](HTML%20import/Attachments/image-46.png)
+![](../Imágenes/image-46.png)
 
 Por último, solo queda leer la bandera root.txt y dar por finalizada la máquina:
 
-![](HTML%20import/Attachments/image-13.png)
+![](../Imágenes/image-13.png)
 
 ---
 

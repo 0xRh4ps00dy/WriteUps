@@ -119,7 +119,7 @@ Reject All Save My Preferences Accept All
 
 # Devvortex
 
-![](HTML%20import/Attachments/Devvortex.png)
+![](../Imágenes/Devvortex.png)
 
 Devvortex es una máquina con un sistema Linux el cual debemos iniciar el ataque realizando fuerza bruta de subdominios para encontrar un subdominio que contiene un CMS vulnerable a un CVE. Esta vulnerabilidad nos permite obtener unas credenciales para acceder al panel de administrador del CMS y obtener una reverse shell que nos dará acceso al sistema objetivo. Una vez dentro debemos hacer un movimiento lateral hacia otro usuario del sistema mediante la recuperación y desencriptación de un hash que encontramos en la base de datos MYSQL que hay en el sistema. Finalmente, para conseguir la escalada de privilegios debemos de abusar de los permisos otorgados a un binario.
 
@@ -129,7 +129,7 @@ Devvortex es una máquina con un sistema Linux el cual debemos iniciar el ataque
 
 El escaneo de puertos nos arroja la siguiente información:
 
-![](HTML%20import/Attachments/Selection_016-2.png)
+![](../Imágenes/Selection_016-2.png)
 
 Utilizando esta información, mi evaluación inicial es:
 
@@ -142,7 +142,7 @@ Utilizando esta información, mi evaluación inicial es:
 
 Añadimos devortex.htb en el fichero /etc/hosts y accedemos a la dirección mediante el navegador:
 
-![](HTML%20import/Attachments/Screenshot-2024-04-17-at-20-16-01-DevVortex-scaled.jpg)
+![](../Imágenes/Screenshot-2024-04-17-at-20-16-01-DevVortex-scaled.jpg)
 
 Por el momento no vemos nada interesante.
 
@@ -160,27 +160,27 @@ Los resultados tampoco nos muestran nada interesante.
 
 Ahora podemos realizar una fuerza bruta de subdominios con **wfuzz**:
 
-![](HTML%20import/Attachments/Selection_019-2.png)
+![](../Imágenes/Selection_019-2.png)
 
 Los resultados nos muestran la existencia de un subdominio: `**dev.devvortex.htb**`.
 
 Añadimos el subdominio en el fichero /etc/hosts y navegamos hacia él para ver que nos encontramos:
 
-![](HTML%20import/Attachments/Screenshot-2024-04-17-at-20-30-25-Devvortex-scaled.jpg)
+![](../Imágenes/Screenshot-2024-04-17-at-20-30-25-Devvortex-scaled.jpg)
 
 Tampoco vemos nada interesante, pero sí vemos que es un sitio web desarrollado con Joomla:
 
-![](HTML%20import/Attachments/Selection_021.png)
+![](../Imágenes/Selection_021.png)
 
 ##### Fuerza bruta de directorios en subdominios
 
 Ahora probemos a realizar fuerza bruta de directorios, pero esta vez en el subdominio descubierto:
 
-![](HTML%20import/Attachments/Selection_022.png)
+![](../Imágenes/Selection_022.png)
 
 Encontramos el panel de inicio de sesión en el directorio **administrator**:
 
-![](HTML%20import/Attachments/Screenshot-2024-04-17-at-20-42-49-Development-Administration.png)
+![](../Imágenes/Screenshot-2024-04-17-at-20-42-49-Development-Administration.png)
 
 ### **Foothold**
 
@@ -203,7 +203,7 @@ Con esta información podemos concretar que estamos enfrente de la versión 4.2.
 
 Buscando en Google encontramos que la versión de Joomla tiene una vulnerabilidad, [CVE-2023-23752](https://nvd.nist.gov/vuln/detail/CVE-2023-23752). Según NVD, esta versión de Joomla permite el acceso no autorizado a puntos finales del servicio web gracias a una comprobación de acceso incorrecta.
 
-![](HTML%20import/Attachments/Screenshot-2024-04-18-at-12-16-41-jomla-4.2.6-exploit-Buscar-con-Google.png)
+![](../Imágenes/Screenshot-2024-04-18-at-12-16-41-jomla-4.2.6-exploit-Buscar-con-Google.png)
 
 #### Prueba de concepto
 
@@ -227,15 +227,15 @@ Una vez dentro del sistema es muy fácil obtener acceso al sistema, solo tenemos
 
 Una vez conseguimos el punto de apoyo en el sistema objetivo es buen momento para estabilizar la terminal e intentar buscar la bandera user.txt. En este caso hemos accedido al sistema como usuario www-data y no podemos leer la bandera que está en la carpeta del usuario Logan. Vamos a intentar hacer un movimiento lateral hacia el usuario Logan.
 
-![](HTML%20import/Attachments/Selection_027.png)
+![](../Imágenes/Selection_027.png)
 
 ###  **Movimiento lateral**
 
 En primer lugar, intentemos conectarnos a la base de datos MYSQL e intentar recopilar algún hash para desencriptarlo:
 
-![](HTML%20import/Attachments/Selection_028.png)
+![](../Imágenes/Selection_028.png)
 
- ![](HTML%20import/Attachments/Selection_029.png)
+ ![](../Imágenes/Selection_029.png)
 
 ```
 
@@ -260,13 +260,13 @@ Finalmente, podemos obtener acceso al sistema objetivo mediante **SSH** y como u
 
 Comprobamos los permisos sudo sobre el usuario **Logan** y encontramos que puede ejecutar el binario **/usr/bin/apport-cli** con privilegios:
 
-![](HTML%20import/Attachments/Selection_034.png)
+![](../Imágenes/Selection_034.png)
 
 #### Proof of Concept
 
 Investigando en Google encontramos que el binario **apport-cli** tiene una vulnerabilidad llamada [CVE-2023-1326](https://nvd.nist.gov/vuln/detail/CVE-2023-1326):
 
-![](HTML%20import/Attachments/Selection_046.png)
+![](../Imágenes/Selection_046.png)
 
 La siguiente prueba de concepto nos puede proporcionar un terminal con privilegios root:
 
@@ -314,7 +314,7 @@ Ahora, debemos indicar que queremos ver el informe y una vez el binario nos mues
 
 `![](HTML%20import/Attachments/Selection_045.png)`
 
-![](HTML%20import/Attachments/Selection_042.png)
+![](../Imágenes/Selection_042.png)
 
 En este momento debemos escribir el signo de exclamación (!) y pulsar la tecla Enter:
 
@@ -326,7 +326,7 @@ Con esto, conseguimos obtener el terminal con privilegios y leer la bandera root
 
 ```
 
-![](HTML%20import/Attachments/image-12.png)
+![](../Imágenes/image-12%201.png)
 
 ---
 

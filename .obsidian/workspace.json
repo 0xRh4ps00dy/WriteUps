@@ -11,11 +11,9 @@
             "id": "39de62204e624e81",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md",
-                "mode": "source",
-                "source": false
+                "file": "Imágenes/Analytics.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md",
+                "file": "Imágenes/Analytics.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md",
+                "file": "Imágenes/Analytics.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Manager.md"
+                "file": "Imágenes/Analytics.png"
               }
             }
           }
@@ -149,17 +147,19 @@
   },
   "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
+    "Imágenes/Surveillance.png",
+    "Imágenes/Selection_005-1.png",
+    "HTML import/Attachments/smile.svg",
+    "Imágenes/Screenshot-2024-04-17-at-20-42-49-Development-Administration.png",
+    "HTML import/Attachments/revisit 1.svg",
+    "HTML import/Attachments/revisit 3.svg",
+    "HTML import/Attachments/revisit.svg",
+    "Imágenes/Pasted-image-20240404133530.png",
+    "Imágenes/Pasted-image-20240318200812.png",
+    "Imágenes/Pasted-image-20240318200859.png",
+    "HTML import/Attachments/LogotipoH 2.png",
+    "Writeups/Hackthebox/Media/Manager.md",
     "HTML import/Analytics – Marcos Jurado.md",
-    "HTML import/Attachments/htb-analytics.png",
-    "HTML import/Attachments/smile 3.svg",
-    "HTML import/Attachments/image-18 1.png",
-    "HTML import/Attachments/Pasted-image-20240318204924.png",
-    "HTML import/Attachments/Pasted-image-20240318204558.png",
-    "HTML import/Attachments/Pasted-image-20240318204449.png",
-    "HTML import/Attachments/Pasted-image-20240318204340.png",
-    "HTML import/Attachments/Pasted-image-20240318204311.png",
-    "HTML import/Attachments/Pasted-image-20240318202908.png",
-    "HTML import/Attachments/Pasted-image-20240318202326-1.png",
     "HTML import/Attachments/admin 3.php",
     "HTML import/Devvortex – Marcos Jurado.md",
     "HTML import/Attachments/admin 2.php",
@@ -169,8 +169,6 @@
     "HTML import/Attachments/admin.php",
     "HTML import/Attachments",
     "Writeups/Hackthebox",
-    "Writeups/Hackthebox/Media/Manager.md",
-    "Writeups/Hackthebox/Media/Manager.md",
     "Imágenes/Attachments/admin.php",
     "Imágenes/Attachments",
     "HTML import",
