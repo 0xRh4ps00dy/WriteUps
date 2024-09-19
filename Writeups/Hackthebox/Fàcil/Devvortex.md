@@ -30,9 +30,7 @@ Por el momento no vemos nada interesante.
 
 Ahora es una buena opción intentar encontrar algún subdirectorio. Esto lo podemos hacer mediante alguna herramienta como **`ffuf`**:
 
-```
-
-```
+![[../../../Imágenes/Pasted image 20240919134107.png]]
 
 Los resultados tampoco nos muestran nada interesante.
 
@@ -73,9 +71,7 @@ Según este [sitio web](https://hackertarget.com/attacking-enumerating-joomla/),
 - /administrator/manifests/files/joomla.xml
 - /language/en-GB/en-GB.xml
 
-```
-
-```
+![[../../../Imágenes/Pasted image 20240919134133.png]]
 
 Con esta información podemos concretar que estamos enfrente de la versión 4.2.6.
 
@@ -89,9 +85,7 @@ Buscando en Google encontramos que la versión de Joomla tiene una vulnerabilida
 
 Esta vulnerabilidad es fácil de explotar utilizando este [exploit](https://www.exploit-db.com/exploits/51334). Descargamos el exploit y lo ejecutamos:
 
-```
-
-```
+![[../../../Imágenes/Pasted image 20240919134147.png]]
 
 Encontramos unas credenciales de la base de datos MYSQL.
 
