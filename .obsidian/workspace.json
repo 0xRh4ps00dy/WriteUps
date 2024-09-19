@@ -11,12 +11,8 @@
             "id": "284a1626dc7cd883",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -149,6 +141,7 @@
   },
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
+    "Writeups/Hackthebox/Media/Surveillance.md",
     "Imágenes/Pasted image 20240919135441.png",
     "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
@@ -163,8 +156,6 @@
     "Imágenes/Pasted image 20240919134303.png",
     "Imágenes/Pasted image 20240919134234.png",
     "Imágenes/Pasted image 20240919134217.png",
-    "Imágenes/Pasted image 20240919134159.png",
-    "Writeups/Hackthebox/Media/Surveillance.md",
     "Introducción.md",
     "HTML import/Attachments/admin 1.php",
     "HTML import/Attachments/admin.php",
