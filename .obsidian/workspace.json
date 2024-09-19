@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sobre mí.md",
+                "file": "Introducció.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sobre mí.md",
+                "file": "Introducció.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sobre mí.md",
+                "file": "Introducció.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sobre mí.md"
+                "file": "Introducció.md"
               }
             }
           }
@@ -149,7 +149,7 @@
   "active": "ad84c02baaa2f81d",
   "lastOpenFiles": [
     "Write Ups/Untitled.md",
-    "Sobre mí.md",
+    "Introducció.md",
     "Test.md",
     "Untitled.md",
     "Untitled 1.md",
