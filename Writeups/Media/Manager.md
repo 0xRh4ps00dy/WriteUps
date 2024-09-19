@@ -9,7 +9,8 @@ En primer lugar, realizamos la enumeración básica de puertos con **Nmap**:
 ![](
 ![[../../Imágenes/image-2.webp]]
 
-A continuación, realizamos el escaneo de servicios/versión y scripts de los puertos que hemos encontrado abiertos
+A continuación, realizamos el escaneo de servicios/versión y scripts de los puertos que hemos encontrado abiertos:
+
 
 ```
 > nmap -sCV -oN scans/targetTCPPorts $target -p 53,80,88,135,139,389,445,464,593,1433,3268,3269,5985,9389,49667,49669,49670,49671,49731,56082,60677,62324
@@ -103,7 +104,7 @@ Con esta información podemos observar puertos abiertos con servicios DNS, HTTP,
 
 Además, **nmap** también nos ha brindado dos dominios, **manager.htb** y **dc01.manager.htb**. Así que los añadimos en el fichero **/etc/hosts**.
 
-Ahora probemos a enumerar usuarios usando la herramienta [**Kerbrute**](https://github.com/ropnop/kerbrute):
+Ahora probemos a enumerar usuarios usando la herramienta Kerbrute:
 
 ![](https://i0.wp.com/marcosjurado.com/wp-content/uploads/2024/03/image-4.png?resize=1024%2C321&ssl=1)
 
