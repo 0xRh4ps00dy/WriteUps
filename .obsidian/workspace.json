@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#env",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -148,7 +147,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "0fc1e77951c70ed7",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Introducción.md",
