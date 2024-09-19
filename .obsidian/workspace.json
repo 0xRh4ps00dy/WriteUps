@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#active",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -149,11 +150,11 @@
   },
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
+    "Writeups/Hackthebox/Media/Surveillance.md",
+    "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
-    "Writeups/Hackthebox/Media/Surveillance.md",
-    "Writeups/Hackthebox/Media/Manager.md",
     "Imágenes/Pasted image 20240919130218.png",
     "Imágenes/Selection_017 1.png",
     "Imágenes/Selection_010-1 2.png",
