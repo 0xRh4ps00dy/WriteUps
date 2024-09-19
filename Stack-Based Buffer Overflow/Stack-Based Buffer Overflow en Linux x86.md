@@ -12,24 +12,19 @@ Los exploits normalmente solo funcionan para una versión específica del softwa
 ## ## La memoria
 
 Cuando se llama al programa, las secciones se asignan a los segmentos del proceso y los segmentos se cargan en la memoria según lo describe el `ELF`archivo.
-
-#### texto
+### .texto
 
 La `.text`sección contiene las instrucciones del ensamblador del programa. Esta área puede ser de solo lectura para evitar que el proceso modifique accidentalmente sus instrucciones. Cualquier intento de escribir en esta área provocará inevitablemente un error de segmentación.
-#### .datos
+### .datos
 
 La `.data`sección contiene variables globales y estáticas que son inicializadas explícitamente por el programa.
-#### .bss
+### .bss
 
 Varios compiladores y enlazadores utilizan la `.bss`sección como parte del segmento de datos, que contiene variables asignadas estáticamente representadas exclusivamente por 0 bits.
-
-#### Heap
+### Heap
 
 `Heap memory`Se asigna desde esta área. Esta área comienza al final del segmento ".bss" y crece hasta las direcciones de memoria superiores.
-
----
-
-#### Stack
+### Stack
 
 `Stack memory`es una `Last-In-First-Out`estructura de datos en la que se almacenan las direcciones de retorno, los parámetros y, según las opciones del compilador, los punteros de marco. `C/C++`Las variables locales se almacenan aquí e incluso se puede copiar código a la pila. El `Stack`es un área definida en `RAM`. El enlazador reserva esta área y normalmente coloca la pila en el área inferior de la RAM por encima de las variables globales y estáticas. Se accede al contenido a través de `stack pointer`, establecido en el extremo superior de la pila durante la inicialización. Durante la ejecución, la parte asignada de la pila crece hasta las direcciones de memoria inferiores.
 
