@@ -47,7 +47,7 @@ Además de los 8 GPR, hay otro registro que será muy importante para nosotros, 
 
 Cuando se ejecuta un proceso, se organiza en la memoria de la siguiente forma:
 
-![image 65](https://deephacking.tech/wp-content/uploads/2021/10/image-65.png.webp "Fundamentos para Stack based Buffer Overflow 7")
+![image 65|hgola](https://deephacking.tech/wp-content/uploads/2021/10/image-65.png.webp "Fundamentos para Stack based Buffer Overflow 7")
 
 Proceso en memoria
 
