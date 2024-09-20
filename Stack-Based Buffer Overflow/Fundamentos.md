@@ -7,7 +7,7 @@ La CPU (Unidad Central de Procesamiento), es la parte de nuestro ordenador que s
 Las instrucciones de la CPU son representadas en hexadecimal. Sin embargo, ésta misma instrucciones son traducidas a código mnemotécnico (un lenguaje mas legible), y es esto lo que conocemos como código ensamblador (ASM).
 
 Entonces, de forma gráfica, la diferencia entre el código máquina y el lenguaje ensamblador es la siguiente:
-
+![[../Images/Analytics.png]]
 ![[../Images/Pasted image 20240920103739.png]]
 
 Cada CPU tiene su Conjunto de Instrucciones, en inglés: `Instruction Set Architecture (ISA)`.
