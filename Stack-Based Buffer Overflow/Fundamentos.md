@@ -76,8 +76,6 @@ De forma detallada, la dirección iria cambiando tal que:
 
 ![image 87](https://deephacking.tech/wp-content/uploads/2021/10/image-87.png.webp "Fundamentos para Stack based Buffer Overflow 9")
 
-Ejemplo de operación PUSH
-
 - Operacion POP
 
 El caso del POP es igual pero al contrario, en 32 bits también se suma 4 y en 64, 8. El POP lo que haría en este caso sería quitar el valor que está en la cima del stack, es decir, los datos que se encuentren en la dirección donde apunta ahora mismo el ESP. Estos datos que se quitan normalmente se almacenarian en otro registro.
