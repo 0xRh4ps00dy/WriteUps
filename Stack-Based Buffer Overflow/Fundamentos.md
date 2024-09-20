@@ -112,8 +112,6 @@ Vamos a ver un ejemplo práctico básico para que se vea todo mas claro:
 
 ![](../Images/Pasted%20image%2020240920105149.png)
 
-Ejemplo código simple en C
-
 1. El programa empieza por la funcion main. El primer stack frame que debe ser empujado (PUSH) al stack es `main() stack frame`. Así que una vez se inicia, un nuevo stack frame se crea, el main() stack frame.
 2. Dentro de `main()`, se llama a la función `a()`, por lo que el ESP está apuntando a la cima del stack de `main()` y aquí se crea el stack frame para `a()`.
 3. Dentro de `a()`, se llama a `b()`, por lo que estando el ESP en la cima del stack frame de `a()` se crea el stack frame para `b()`.
@@ -126,8 +124,6 @@ POC (proof of concept)
 - Ejemplo mas complejo y en detalle:
 
 ![](../Images/Pasted%20image%2020240920105207.png)
-
-Ejemplo código en C
 
 Cuando una función comienza, lo primero que se añade al stack son los parámetros, en este caso, el programa comienza en la función `main()` y añade mediante PUSH al stack los parámetros `argc` y `argv` , en orden de derecha a izquierda (siempre es así).
 
@@ -215,8 +211,6 @@ Así que no podemos usar este tipo de operación.
 Así que, en este caso, trayendo el código para recordarlo:
 
 ![](../Images/Pasted%20image%2020240920105345.png)
-
-Código en C
 
 Vamos a tener que usar otro tipo de operación, y será la siguiente:
 
@@ -308,8 +302,6 @@ La forma de representar y almacenar los valores en la memoria es en Endianness, 
 - little-endian
 
 ![](../Images/Pasted%20image%2020240920105433.png)
-
-Referencia: [skmp.dev](https://skmp.dev/blog/negative-addressing-bswap/)
 
 Ejemplo:
 
