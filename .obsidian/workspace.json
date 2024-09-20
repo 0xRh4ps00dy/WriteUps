@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md"
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
-    "Stack-Based Buffer Overflow/Fundamentos.md",
+    "Introducción.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
+    "Stack-Based Buffer Overflow/Fundamentos.md",
     "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
@@ -165,7 +166,6 @@
     "Images/Pasted-image-20240404133530.png",
     "Images/Pasted-image-20240404133457.png",
     "Images/Pasted image 20240919125635.png",
-    "Introducción.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
     "Stack-Based Buffer Overflow",
     "Reconocimiento/Reconocimiento.md",
