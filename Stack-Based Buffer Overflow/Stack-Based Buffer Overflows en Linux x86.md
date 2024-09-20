@@ -135,8 +135,6 @@ Dump of assembler code for function main:
 
 ## Change GDB Syntax permanently
 
-  Stack-Based Buffer Overflow
-
 ```shell-session
 student@nix-bow:~$ echo 'set disassembly-flavor intel' > ~/.gdbinit
 ```
