@@ -175,7 +175,8 @@ El stack antes de estas tres instrucciones es el siguiente:
 
 `Low Memory`
 
-![image 75](https://deephacking.tech/wp-content/uploads/2021/10/image-75.png.webp "Fundamentos para Stack based Buffer Overflow 17")
+![](../Images/Pasted%20image%2020240920105312.png)
+
 
 `High Memory`
 
@@ -187,7 +188,7 @@ Con la segunda instrucción (`mov ebp, esp`), conseguimos que el ESP se mueva do
 
 `Low Memory`
 
-![image 76](https://deephacking.tech/wp-content/uploads/2021/10/image-76.png.webp "Fundamentos para Stack based Buffer Overflow 18")
+![](../Images/Pasted%20image%2020240920105323.png)
 
 `High Memory`
 
@@ -203,7 +204,7 @@ Dejando el stack, en la siguiente forma:
 
 `Low Memory`
 
-![image 77](https://deephacking.tech/wp-content/uploads/2021/10/image-77.png.webp "Fundamentos para Stack based Buffer Overflow 19")
+![](../Images/Pasted%20image%2020240920105334.png)
 
 `High Memory`
 
@@ -215,7 +216,7 @@ Así que no podemos usar este tipo de operación.
 
 Así que, en este caso, trayendo el código para recordarlo:
 
-![image 78](https://deephacking.tech/wp-content/uploads/2021/10/image-78.png.webp "Fundamentos para Stack based Buffer Overflow 20")
+![](../Images/Pasted%20image%2020240920105345.png)
 
 Código en C
 
@@ -231,7 +232,7 @@ Este proceso se repetirá para todas las variables que se tengan que declarar. U
 
 `Low Memory`
 
-![image 79](https://deephacking.tech/wp-content/uploads/2021/10/image-79.png.webp "Fundamentos para Stack based Buffer Overflow 21")
+![](../Images/Pasted%20image%2020240920105354.png)
 
 `High Memory`
 
