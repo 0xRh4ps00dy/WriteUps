@@ -2,7 +2,7 @@
 
 Ahora estamos escribiendo un programa C simple llamado ``bow.c`` con una función vulnerable llamada ``strcpy()``.
 
-#### Bow.c
+## Bow.c
 
 ```c
 #include <stdlib.h>
@@ -26,9 +26,7 @@ int main(int argc, char *argv[]) {
 
 Los sistemas operativos modernos tienen protecciones integradas contra este tipo de vulnerabilidades, como la aleatorización del diseño del espacio de direcciones (ASLR). Con el fin de aprender los conceptos básicos de la explotación del desbordamiento de búfer, vamos a desactivar estas funciones de protección de memoria:
 
-#### Desactivar ASLR
-
-  Desbordamiento de búfer basado en pila
+## Desactivar ASLR
 
 ```shell-session
 student@nix-bow:~$ sudo su
@@ -40,7 +38,7 @@ root@nix-bow:/home/student# cat /proc/sys/kernel/randomize_va_space
 
 A continuación, compilamos el código C en un binario ELF de 32 bits.
 
-#### Compilación
+## Compilación
 
   Desbordamiento de búfer basado en pila
 
