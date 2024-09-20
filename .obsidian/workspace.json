@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
+                "file": "Writeups/Hackthebox/Fàcil/Codify.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
+                "file": "Writeups/Hackthebox/Fàcil/Codify.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
+                "file": "Writeups/Hackthebox/Fàcil/Codify.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md"
+                "file": "Writeups/Hackthebox/Fàcil/Codify.md"
               }
             }
           }
@@ -149,6 +149,9 @@
   },
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
+    "Writeups/Hackthebox/Fàcil/Devvortex.md",
+    "Writeups/Hackthebox/Fàcil/Codify.md",
+    "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Stack-Based Buffer Overflow/Fundamentos.md",
     "Images/Pasted image 20240920102831.png",
     "Images/Pasted image 20240920102757.png",
@@ -166,9 +169,6 @@
     "Reconocimiento/Reconocimiento.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
-    "Writeups/Hackthebox/Fàcil/Devvortex.md",
-    "Writeups/Hackthebox/Fàcil/Codify.md",
-    "Writeups/Hackthebox/Fàcil/Analytics.md",
     "HTML import/Attachments/admin 1.php",
     "HTML import/Attachments/admin.php",
     "HTML import/Attachments",
