@@ -92,7 +92,7 @@
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -133,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,7 +146,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "8285d5bf1f7ee7fa",
+  "active": "d958f94bf8629c1d",
   "lastOpenFiles": [
     "Stack-Based Buffer Overflow/Fundamentos.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflows en Linux x86.md",
