@@ -50,7 +50,9 @@ La memoria se divide en 4 regiones: Text, Data, Heap y Stack.
     - Los datos inicializados incluyen objetos como variables estáticas y globales que ya han sido predefinidas y pueden ser modificadas.
     - Los datos no inicializados, llamados también BSS (Block Started by Symbol), también inicializan variables, pero estas se inicializan como 0 o sin ninguna inicializacion explícita, por ejemplo: `static int t`.
 - `Heap`: aquí es donde se encuentra la memoria dinámica, es decir, durante la ejecución, el programa puede requerir mas memoria de lo que estaba previsto, por ello, a través de llamadas al sistema como brk o sbrk y todo controlado a través del uso de malloc, realloc y free, se consigue un área expandible en base a lo necesario.
-- `Stack`: es el área donde ocurre todo, vamos a dedicarle un punto:
+- `Stack`: es el área donde ocurre todo, vamos a dedicarle un punto.
+
+
 
 
 
@@ -82,9 +84,7 @@ Los exploits normalmente solo funcionan para una versión específica del softwa
 ## La memoria
 
 Cuando se llama al programa, las secciones se asignan a los segmentos del proceso y los segmentos se cargan en la memoria según lo describe el `ELF`archivo.
-### .texto
 
-La `.text`sección contiene las instrucciones del ensamblador del programa. Esta área puede ser de solo lectura para evitar que el proceso modifique accidentalmente sus instrucciones. Cualquier intento de escribir en esta área provocará inevitablemente un error de segmentación.
 ### .datos
 
 La `.data`sección contiene variables globales y estáticas que son inicializadas explícitamente por el programa.
