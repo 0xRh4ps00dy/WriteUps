@@ -112,7 +112,7 @@ Dicho de otra forma, el stack frame mantiene el control de la direccion donde ca
 
 Vamos a ver un ejemplo práctico básico para que se vea todo mas claro:
 
-![image 69](https://deephacking.tech/wp-content/uploads/2021/10/image-69.png.webp "Fundamentos para Stack based Buffer Overflow 11")
+![](../Images/Pasted%20image%2020240920105149.png)
 
 Ejemplo código simple en C
 
