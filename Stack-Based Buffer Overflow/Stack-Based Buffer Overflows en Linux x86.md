@@ -150,8 +150,15 @@ student@nix-bow:~$ echo 'set disassembly-flavor intel' > ~/.gdbinit
 
 ## Identifications of Bad Characters
 
+
+
 ## Generating Shellcode
+
+
 
 ## Generating Shell
 
+
+
 ## Identification of the Return Address
+
