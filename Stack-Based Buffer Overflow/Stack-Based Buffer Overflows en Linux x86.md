@@ -255,6 +255,13 @@ A menudo puede resultar útil insertar algunos `no operation instruction`( `NO
 2. Aquí podemos utilizar un adicional `100 bytes`de`NOPs`
 3. `150 bytes`para nuestro `shellcode`.
 
+```shell-session
+   Buffer = "\x55" * (1040 - 100 - 150 - 4) = 786
+     NOPs = "\x90" * 100
+Shellcode = "\x44" * 150
+      EIP = "\x66" * 4
+```
+
 
 
 
