@@ -23,10 +23,9 @@ int main(int argc, char *argv[]) {
 	return 1;
 }
 ```
+## Desactivar ASLR
 
 Los sistemas operativos modernos tienen protecciones integradas contra este tipo de vulnerabilidades, como la aleatorización del diseño del espacio de direcciones (ASLR). Con el fin de aprender los conceptos básicos de la explotación del desbordamiento de búfer, vamos a desactivar estas funciones de protección de memoria:
-
-## Desactivar ASLR
 
 ```shell-session
 student@nix-bow:~$ sudo su
@@ -35,12 +34,9 @@ root@nix-bow:/home/student# cat /proc/sys/kernel/randomize_va_space
 
 0
 ```
-
-A continuación, compilamos el código C en un binario ELF de 32 bits.
-
 ## Compilación
 
-  Desbordamiento de búfer basado en pila
+A continuación, compilamos el código C en un binario ELF de 32 bits.
 
 ```shell-session
 student@nix-bow:~$ sudo apt install gcc-multilib
@@ -56,9 +52,6 @@ bow: ELF 32-bit LSB shared object
  BuildID[sha1]=93dda6b77131deecaadf9d207fdd2e70f47e1071
  not stripped
 ```
-
----
-
 ## Funciones C vulnerables
 
 Existen varias funciones vulnerables en el lenguaje de programación C que no protegen la memoria de forma independiente. Estas son algunas de ellas:
@@ -69,3 +62,4 @@ Existen varias funciones vulnerables en el lenguaje de programación C que no pr
 - `scanf`
 - `strcat`
 - ...
+
