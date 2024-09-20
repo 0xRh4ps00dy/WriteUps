@@ -8,7 +8,7 @@ Las instrucciones de la CPU son representadas en hexadecimal. Sin embargo, ésta
 
 Entonces, de forma gráfica, la diferencia entre el código máquina y el lenguaje ensamblador es la siguiente:
 
-![[../../Imágenes/Pasted image 20240920074609.png|Referencia: [Quora](https://www.quora.com/Is-assembly-language-a-source-code-or-object-code)]]
+![[../../Imágenes/Pasted image 20240920074609.png | Referencia: [Quora](https://www.quora.com/Is-assembly-language-a-source-code-or-object-code)]]
 Cada CPU tiene su Conjunto de Instrucciones, en inglés: `Instruction Set Architecture (ISA)`.
 
 El ISA es una serie de instrucciones que el programador o el compilador debe entender y usar para poder escribir un programa correctamente para esa CPU y máquina en específico.
