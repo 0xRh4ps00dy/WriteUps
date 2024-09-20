@@ -41,6 +41,25 @@ Referencia: [decoder.cloud](https://decoder.cloud/2017/01/25/idiots-guide-to-bu
 - En las CPU de 32 bits, como vemos, se añade el prefijo E, refiriendose a Extender.
 - Por último, en las CPU de 64 bits, la E se reemplaza por la R.
 
+Además de los 8 GPR, hay otro registro que será muy importante para nosotros, se trata del EIP (en la nomenclatura x86). El EIP (Extended Instruction Pointer) contiene la dirección de la próxima instrucción del programa.
+
+## Proceso en la memoria
+
+Cuando se ejecuta un proceso, se organiza en la memoria de la siguiente forma:
+
+![image 65](https://deephacking.tech/wp-content/uploads/2021/10/image-65.png.webp "Fundamentos para Stack based Buffer Overflow 7")
+
+Proceso en memoria
+
+La memoria se divide en 4 regiones: Text, Data, Heap y Stack.
+
+- `Text`: es establecido por el programa y contiene su código, éste área está establecida de solo lectura.
+- `Data`: esta region se divide en datos inicializados y datos no inicializados.
+    - Los datos inicializados incluyen objetos como variables estáticas y globales que ya han sido predefinidas y pueden ser modificadas.
+    - Los datos no inicializados, llamados también BSS (Block Started by Symbol), también inicializan variables, pero estas se inicializan como 0 o sin ninguna inicializacion explícita, por ejemplo: `static int t`.
+- `Heap`: aquí es donde se encuentra la memoria dinámica, es decir, durante la ejecución, el programa puede requerir mas memoria de lo que estaba previsto, por ello, a través de llamadas al sistema como brk o sbrk y todo controlado a través del uso de malloc, realloc y free, se consigue un área expandible en base a lo necesario.
+- `Stack`: es el área donde ocurre todo, vamos a dedicarle un punto:
+
 
 
 
