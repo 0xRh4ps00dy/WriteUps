@@ -112,10 +112,31 @@ Dump of assembler code for function main:
 End of assembler dump.
 ```
 
-En la primera columna, los números hexadecimales representan los `memory addresses`. Los números con el signo más ( `+`) muestran los `address jumps`en memoria en bytes, utilizados para la instrucción respectiva. A continuación, podemos ver los `assembler instructions`( `mnemonics`) con registros y sus `operation suffixes`. La sintaxis actual es `AT&T`, que podemos reconocer por los caracteres `%`y .`$`
+## GDB - Change the Syntax to Intel
 
-|**Dirección de memoria**|**Saltos de dirección**|**Instrucciones de ensamblador**|**Sufijos de operaciones**|
-|---|---|---|---|
-|0x00000582|<+0>:|pasto|0x4(%esp),%ecx|
-|0x00000586|<+4>:|y|$0xfffffff0,%esp|
-|...|...|...|...|
+```shell-session
+(gdb) set disassembly-flavor intel
+(gdb) disassemble main
+
+Dump of assembler code for function main:
+   0x00000582 <+0>:	    lea    ecx,[esp+0x4]
+   0x00000586 <+4>:	    and    esp,0xfffffff0
+   0x00000589 <+7>:	    push   DWORD PTR [ecx-0x4]
+   0x0000058c <+10>:	push   ebp
+   0x0000058d <+11>:	mov    ebp,esp
+   0x0000058f <+13>:	push   ebx
+   0x00000590 <+14>:	push   ecx
+   0x00000591 <+15>:	call   0x450 <__x86.get_pc_thunk.bx>
+   0x00000596 <+20>:	add    ebx,0x1a3e
+   0x0000059c <+26>:	mov    eax,ecx
+   0x0000059e <+28>:	mov    eax,DWORD PTR [eax+0x4]
+<SNIP>
+```
+
+## Change GDB Syntax permanently
+
+  Stack-Based Buffer Overflow
+
+```shell-session
+student@nix-bow:~$ echo 'set disassembly-flavor intel' > ~/.gdbinit
+```
