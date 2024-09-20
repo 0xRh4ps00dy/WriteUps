@@ -138,3 +138,14 @@ Dump of assembler code for function main:
 ```shell-session
 student@nix-bow:~$ echo 'set disassembly-flavor intel' > ~/.gdbinit
 ```
+
+# Explotaition
+# 
+
+# 
+
+# 
+
+# Generating Shell
+
+## Identification of the Return Address
