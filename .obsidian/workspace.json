@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introducción.md",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introducción.md",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introducción.md",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introducción.md"
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md"
               }
             }
           }
@@ -149,13 +149,13 @@
   },
   "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
+    "Introducción.md",
+    "Stack-Based Buffer Overflow/Fundamentos.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
     "Stack-Based Buffer Overflow",
     "Imágenes/Pasted image 20240920074643.png",
     "Imágenes/Pasted image 20240920074609.png",
     "Reconocimiento/Reconocimiento.md",
-    "Introducción.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
