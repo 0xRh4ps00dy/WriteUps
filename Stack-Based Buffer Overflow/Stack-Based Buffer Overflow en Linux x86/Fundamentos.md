@@ -1,5 +1,9 @@
 Antes de la explotación del Buffer Overflow tenemos que entender que ocurre cuando ejecutamos este tipo de ataque, para ello vamos a empezar desde lo más básico.
 
+# Introducción
+
+La CPU (Unidad Central de Procesamiento), es la parte de nuestro ordenador que se encarga de ejecutar el “código máquina”. El código máquina es una serie de instrucciones que la CPU procesa. Siendo estas instrucciones, cada una de ellas un comando básico que ejecuta una operación específica, como mover datos, cambiar el flujo de ejecución del programa, hacer operaciones aritméticas, operaciones lógicas, etc.
+
 Las instrucciones de la CPU son representadas en hexadecimal. Sin embargo, ésta misma instrucciones son traducidas a código mnemotécnico (un lenguaje mas legible), y es esto lo que conocemos como código ensamblador (ASM).
 
 Entonces, de forma gráfica, la diferencia entre el código máquina y el lenguaje ensamblador es la siguiente:
@@ -8,7 +12,11 @@ Entonces, de forma gráfica, la diferencia entre el código máquina y el lengua
 
 Referencia: [Quora](https://www.quora.com/Is-assembly-language-a-source-code-or-object-code)
 
+Cada CPU tiene su Conjunto de Instrucciones, en inglés: `Instruction Set Architecture (ISA)`.
 
+El ISA es una serie de instrucciones que el programador o el compilador debe entender y usar para poder escribir un programa correctamente para esa CPU y máquina en específico.
+
+En otras palabras, ISA es lo que el programador puede ver, es decir, memoria, registros, instrucciones, etc. Da toda la información necesaria para el que quiera escribir un programa en ese lenguaje maquina.
 
 
 
