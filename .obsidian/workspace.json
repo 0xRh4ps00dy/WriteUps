@@ -129,7 +129,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -146,7 +147,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "d958f94bf8629c1d",
+  "active": "72668184f78afabd",
   "lastOpenFiles": [
     "Stack-Based Buffer Overflow/Fundamentos.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflows en Linux x86.md",
