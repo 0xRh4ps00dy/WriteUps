@@ -8,7 +8,7 @@ Las instrucciones de la CPU son representadas en hexadecimal. Sin embargo, ésta
 
 Entonces, de forma gráfica, la diferencia entre el código máquina y el lenguaje ensamblador es la siguiente:
 
-![[../Images/Pasted image 20240920102757.png]]
+![[../Pasted image 20240920103523.png]]
 
 Cada CPU tiene su Conjunto de Instrucciones, en inglés: `Instruction Set Architecture (ISA)`.
 
@@ -24,7 +24,7 @@ Hay registros que tienen una función específica, mientras que hay otros que so
 
 En este caso, nos vamos a centrar e los registros GPRs (Registros de Propósito General):
 
-![[../Images/Pasted image 20240920102831.png]]
+![[../Pasted image 20240920103542.png]]
 
 En la primera columna como vemos, pone “Nomenclatura x86”, esto es porque dependiendo de los bits del procesador, la nomenclatura es distinta:
 
