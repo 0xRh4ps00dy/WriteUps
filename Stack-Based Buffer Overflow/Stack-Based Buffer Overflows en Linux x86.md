@@ -316,6 +316,8 @@ Buffer = "\x55" * (1040 - 256 - 4) = 780
    EIP = "\x66" * 4
 ```
 
+Ahora veamos la función principal completa, ya que si la ejecutamos ahora, el programa se bloqueará sin darnos la posibilidad de seguir lo que sucede en la memoria. Por lo tanto, estableceremos un punto de interrupción en la función correspondiente para que la ejecución se detenga en este punto y podamos analizar el contenido de la memoria.
+
 
 
 
