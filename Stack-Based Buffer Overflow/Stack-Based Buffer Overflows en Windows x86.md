@@ -1,36 +1,41 @@
 # Debugging Windows Programs
-	
+
+
 
 
 # Local Buffer Overflow
 
-# Fuzzing Paramenters
+## Fuzzing Paramenters
 
 
 
-# Controlling EIP
+## Controlling EIP
 
 
 
-# Indetyfing Bad Characters
+## Indetyfing Bad Characters
 
 
 
-# 
+
+
+## Finding a Return Instruction
 
 
 
-# 
+## Jumping to Shellcode
 
 
 # # Remote Buffer Overflow
 
-# 
+## Remote Fuzzing
 
 
 
-# 
+## Building a Remote Exploit
 
 
 
-# 
+## Remote Exploitation
+
+
