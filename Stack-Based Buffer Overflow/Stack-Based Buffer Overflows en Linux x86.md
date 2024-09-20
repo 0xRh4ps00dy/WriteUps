@@ -177,7 +177,7 @@ fs             0x0	0
 gs             0x63	99
 ```
 
-## Determinar el desplazamiento
+#### Determinar el desplazamiento
 
 El desplazamiento se utiliza para determinar cuántos bytes se necesitan para sobrescribir el búfer y cuánto espacio tenemos alrededor de nuestro shellcode.
 
@@ -203,7 +203,6 @@ Program received signal SIGSEGV, Segmentation fault.
 0x69423569 in ?? ()
 ```
 
-
 #### BGF - EIP
 
 ```shell-session
@@ -211,6 +210,15 @@ Program received signal SIGSEGV, Segmentation fault.
 
 eip            0x69423569	0x69423569
 ```
+
+#### GDB - Desplazamiento
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -q 0x69423569
+
+[*] Exact match at offset 1036
+```
+
 
 
 
