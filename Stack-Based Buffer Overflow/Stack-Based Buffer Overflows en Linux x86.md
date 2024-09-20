@@ -266,6 +266,7 @@ Shellcode = "\x44" * 150
 
 #### BGF
 
+Determinar la longitud del Shellcode
 
 ```shell-session
 (gdb) run $(python -c 'print "\x55" * (1040 - 100 - 150 - 4) + "\x90" * 100 + "\x44" * 150 + "\x66" * 4')
@@ -281,10 +282,6 @@ Program received signal SIGSEGV, Segmentation fault.
 #### Buffer
 
 ![imagen](https://academy.hackthebox.com/storage/modules/31/buffer_overflow_7.png)
-
-Servidores VP
-
-
 
 ## Identifications of Bad Characters
 
