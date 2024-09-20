@@ -11,11 +11,9 @@
             "id": "284a1626dc7cd883",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20240920103542.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
+                "file": "Pasted image 20240920103542.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
+                "file": "Pasted image 20240920103542.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md"
+                "file": "Pasted image 20240920103542.png"
               }
             }
           }
@@ -149,11 +147,11 @@
   },
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
-    "Pasted image 20240920103542.png",
     "Pasted image 20240920103523.png",
+    "Stack-Based Buffer Overflow/Fundamentos.md",
+    "Pasted image 20240920103542.png",
     "Introducción.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
-    "Stack-Based Buffer Overflow/Fundamentos.md",
     "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
@@ -166,7 +164,6 @@
     "Images/Pasted-image-20240318204924.png",
     "Images/Pasted-image-20240404132135.png",
     "Images/Pasted-image-20240404133530.png",
-    "Images/Pasted-image-20240404133457.png",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
     "Stack-Based Buffer Overflow",
     "Reconocimiento/Reconocimiento.md",
