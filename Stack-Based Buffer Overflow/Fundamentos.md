@@ -321,7 +321,7 @@ A 0x000000**0B**, hacemos la operación de la imagen, quedandose tal que:
 
 00
 
-00
+`00`
 
 El último valor, el resaltado, tiene como dirección de memoria la ya vista arriba: 0x0028FEBC, por lo que podríamos obtener los demás valores tal que:
 
