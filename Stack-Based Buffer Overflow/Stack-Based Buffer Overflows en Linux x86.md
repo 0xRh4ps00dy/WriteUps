@@ -430,8 +430,6 @@ Buffer = "\x55" * (1040 - 254 - 4) = 782
 ```
 #### Enviar CHARS - Sin "\x00" y "\x09"
 
-  Identificación de malos personajes
-
 ```shell-session
 (gdb) run $(python -c 'print "\x55" * (1040 - 254 - 4) + "\x01\x02\x03\x04\x05\x06\x07\x08\x0a\x0b...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
 
