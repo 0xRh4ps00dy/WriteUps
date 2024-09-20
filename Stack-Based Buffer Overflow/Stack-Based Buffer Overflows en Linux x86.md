@@ -154,7 +154,7 @@ Program received signal SIGSEGV, Segmentation fault.
 0x55555555 in ?? ()
 ```
 
-Si insertamos 1200 " `U`"s (hex " `55`") como entrada, podemos ver a partir de la información del registro que hemos sobrescrito el `EIP`. Hasta donde sabemos, el `EIP`apunta a la siguiente instrucción que se ejecutará.
+Si insertamos 1200 "`U`" (hex "`55`") como entrada, podemos ver a partir de la información del registro que hemos sobrescrito el `EIP`. Hasta donde sabemos, el `EIP`apunta a la siguiente instrucción que se ejecutará.
 
 ```shell-session
 (gdb) info registers 
@@ -219,9 +219,20 @@ eip            0x69423569	0x69423569
 [*] Exact match at offset 1036
 ```
 
+#### Desplazamiento del GDB
 
+Si ahora usamos precisamente esta cantidad de bytes para nuestros "`U`", deberíamos llegar exactamente al `EIP`. Para sobrescribirlo y verificar si lo hemos alcanzado como lo habíamos planeado, podemos agregar 4 bytes más con " `\x66`" y ejecutarlo para asegurarnos de que controlamos el `EIP`.
 
+```shell-session
+(gdb) run $(python -c "print '\x55' * 1036 + '\x66' * 4")
 
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+
+Starting program: /home/student/bow/bow32 $(python -c "print '\x55' * 1036 + '\x66' * 4")
+Program received signal SIGSEGV, Segmentation fault.
+0x66666666 in ?? ()
+```
 ## Determine the Length for Shellcode
 
 
