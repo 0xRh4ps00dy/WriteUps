@@ -1,6 +1,6 @@
 ## Vulnerable Program
 
-We are now writing a simple C-program called `bow.c` with a vulnerable function called `strcpy()`.
+Ahora estamos escribiendo un programa C simple llamado ``bow.c'`` con una función vulnerable llamada 'strcpy()'.
 
 #### Bow.c
 
