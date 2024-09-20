@@ -105,3 +105,9 @@ Varios compiladores y enlazadores utilizan la `.bss`sección como parte del seg
 Las protecciones de memoria modernas ( `DEP`/ `ASLR`) evitarían los daños causados ​​por desbordamientos de búfer. DEP (Prevención de ejecución de datos), regiones marcadas de memoria como "de solo lectura". Las regiones de memoria de solo lectura son donde se almacenan algunas entradas del usuario (Ejemplo: La pila), por lo que la idea detrás de DEP era evitar que los usuarios cargaran shellcode a la memoria y luego establecieran el puntero de instrucción al shellcode. Los piratas informáticos comenzaron a utilizar ROP (Programación orientada al retorno) para evitar esto, ya que les permitía cargar el shellcode a un espacio ejecutable y usar llamadas existentes para ejecutarlo. Con ROP, el atacante necesita saber las direcciones de memoria donde se almacenan las cosas, por lo que la defensa contra esto fue implementar ASLR (Aleatorización del diseño del espacio de direcciones) que aleatoriza dónde se almacena todo, lo que hace que ROP sea más difícil.
 
 Los usuarios pueden sortear ASLR filtrando direcciones de memoria, pero esto hace que los exploits sean menos fiables y, a veces, imposibles. Por ejemplo, el ["Servidor FTP Freefloat"](https://www.exploit-db.com/exploits/46763) es fácil de explotar en Windows XP (antes de DEP/ASLR). Sin embargo, si la aplicación se ejecuta en un sistema operativo Windows moderno, el desbordamiento del búfer existe, pero actualmente no es fácil explotarlo debido a DEP/ASLR (ya que no se conoce ninguna forma de filtrar direcciones de memoria).
+
+
+
+# Referencias
+
+https://deephacking.tech/fundamentos-para-buffer-overflow/
