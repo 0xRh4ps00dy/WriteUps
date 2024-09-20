@@ -65,4 +65,57 @@ Existen varias funciones vulnerables en el lenguaje de programación C que no pr
 
 # Presentacion del GDB
 
+GDB, o GNU Debugger, es el depurador estándar de los sistemas Linux desarrollado por el Proyecto GNU. Se ha adaptado a muchos sistemas y es compatible con los lenguajes de programación C, C++, Objective-C, FORTRAN, Java y muchos más.
 
+GDB nos proporciona las características habituales de trazabilidad como puntos de interrupción o salida de traza de pila y nos permite intervenir en la ejecución de programas. También nos permite, por ejemplo, manipular las variables de la aplicación o llamar a funciones independientemente de la ejecución normal del programa.
+
+Usamos `GNU Debugger`( `GDB`) para visualizar el binario creado en el nivel de ensamblador. Una vez que hayamos ejecutado el binario con `GDB`, podemos desensamblar la función principal del programa.
+
+## GDB - Sintaxis de AT&T
+
+```shell-session
+student@nix-bow:~$ gdb -q bow32
+
+Reading symbols from bow...(no debugging symbols found)...done.
+(gdb) disassemble main
+
+Dump of assembler code for function main:
+   0x00000582 <+0>: 	lea    0x4(%esp),%ecx
+   0x00000586 <+4>: 	and    $0xfffffff0,%esp
+   0x00000589 <+7>: 	pushl  -0x4(%ecx)
+   0x0000058c <+10>:	push   %ebp
+   0x0000058d <+11>:	mov    %esp,%ebp
+   0x0000058f <+13>:	push   %ebx
+   0x00000590 <+14>:	push   %ecx
+   0x00000591 <+15>:	call   0x450 <__x86.get_pc_thunk.bx>
+   0x00000596 <+20>:	add    $0x1a3e,%ebx
+   0x0000059c <+26>:	mov    %ecx,%eax
+   0x0000059e <+28>:	mov    0x4(%eax),%eax
+   0x000005a1 <+31>:	add    $0x4,%eax
+   0x000005a4 <+34>:	mov    (%eax),%eax
+   0x000005a6 <+36>:	sub    $0xc,%esp
+   0x000005a9 <+39>:	push   %eax
+   0x000005aa <+40>:	call   0x54d <bowfunc>
+   0x000005af <+45>:	add    $0x10,%esp
+   0x000005b2 <+48>:	sub    $0xc,%esp
+   0x000005b5 <+51>:	lea    -0x1974(%ebx),%eax
+   0x000005bb <+57>:	push   %eax
+   0x000005bc <+58>:	call   0x3e0 <puts@plt>
+   0x000005c1 <+63>:	add    $0x10,%esp
+   0x000005c4 <+66>:	mov    $0x1,%eax
+   0x000005c9 <+71>:	lea    -0x8(%ebp),%esp
+   0x000005cc <+74>:	pop    %ecx
+   0x000005cd <+75>:	pop    %ebx
+   0x000005ce <+76>:	pop    %ebp
+   0x000005cf <+77>:	lea    -0x4(%ecx),%esp
+   0x000005d2 <+80>:	ret    
+End of assembler dump.
+```
+
+En la primera columna, los números hexadecimales representan los `memory addresses`. Los números con el signo más ( `+`) muestran los `address jumps`en memoria en bytes, utilizados para la instrucción respectiva. A continuación, podemos ver los `assembler instructions`( `mnemonics`) con registros y sus `operation suffixes`. La sintaxis actual es `AT&T`, que podemos reconocer por los caracteres `%`y .`$`
+
+|**Dirección de memoria**|**Saltos de dirección**|**Instrucciones de ensamblador**|**Sufijos de operaciones**|
+|---|---|---|---|
+|0x00000582|<+0>:|pasto|0x4(%esp),%ecx|
+|0x00000586|<+4>:|y|$0xfffffff0,%esp|
+|...|...|...|...|
