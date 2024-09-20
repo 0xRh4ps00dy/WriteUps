@@ -52,6 +52,344 @@ La memoria se divide en 4 regiones: Text, Data, Heap y Stack.
 - `Heap`: aquí es donde se encuentra la memoria dinámica, es decir, durante la ejecución, el programa puede requerir mas memoria de lo que estaba previsto, por ello, a través de llamadas al sistema como brk o sbrk y todo controlado a través del uso de malloc, realloc y free, se consigue un área expandible en base a lo necesario.
 - `Stack`: es el área donde ocurre todo, vamos a dedicarle un punto.
 
+## Stack
+
+El stack es un bloque o estructura de datos con modo de acceso LIFO (Last In, First Out; último en entrar, primero en salir), y está ubicado en la **High Memory**. Se puede pensar en el stack como un array usado para almacenar direcciones de retornos de funciones, pasar argumentos a funciones y almacenar variables locales.
+
+Algo curioso del stack, es que crece hacia **Low Memory**, es decir, crece hacia abajo, hacia **0x00000000**.
+
+Siendo el stack de modo de acceso LIFO, existen dos operaciones principales, antes de entrar a explicar cada una de ellas, voy a definir un registro importante para entender estas dos operaciones:
+
+–> ESP (Stack Pointer): es un registro el cual apunta siempre a la cima del stack (top of the stack). En este punto hay que darse cuenta que, como el stack crece hacia abajo, es decir, hacia Low Memory, conforme el ESP esté mas cerca del 0x00000000 mas grande es el stack.
+
+- Operación PUSH
+
+La operación de PUSH lo que hace es restar al ESP. En CPU de 32 bits, resta 4 mientras que en 64, 8. Si lo pensamos bien, si el PUSH en vez de restar, sumase, estariamos sobreescribiendo/perdiendo datos.
+
+Ejemplo de PUSH T:
+
+![image 66](https://deephacking.tech/wp-content/uploads/2021/10/image-66-1024x609.png.webp "Fundamentos para Stack based Buffer Overflow 8")
+
+Referencia: [javapoint.com](https://www.javatpoint.com/stack-push-operation)
+
+Ahora, por ejemplo, de forma mas técnica, si el valor inicial del ESP fuese `0x0028FF80`, e hiciésemos un PUSH 1, el ESP disminuiria -4, conviertiéndose en `0x0028FF7C` y entonces, el 1 se pondría en la cima del stack.
+
+De forma detallada, la dirección iria cambiando tal que:
+
+![image 87](https://deephacking.tech/wp-content/uploads/2021/10/image-87.png.webp "Fundamentos para Stack based Buffer Overflow 9")
+
+Ejemplo de operación PUSH
+
+- Operacion POP
+
+El caso del POP es igual pero al contrario, en 32 bits también se suma 4 y en 64, 8. El POP lo que haría en este caso sería quitar el valor que está en la cima del stack, es decir, los datos que se encuentren en la dirección donde apunta ahora mismo el ESP. Estos datos que se quitan normalmente se almacenarian en otro registro.
+
+Ejemplo de POP T:
+
+![image 68](https://deephacking.tech/wp-content/uploads/2021/10/image-68-1024x609.png.webp "Fundamentos para Stack based Buffer Overflow 10")
+
+Referencia: [javapoint.com](https://www.javatpoint.com/stack-pop-operation)
+
+De nuevo, de forma mas técnica, si por ejemplo, despues del PUSH 1 anterior, el ESP vale `0x0028FF7C`, haciendole la operacion `POP EAX` quitariamos lo previamente empujado, haciendo que el ESP volviese a valer `0x0028FF80`, y, además, haciendo que el valor quitado, se copie al registro EAX (en este caso).
+
+Es importante saber que el valor que se quita no se elimina o se vuelve 0. Se queda en el stack hasta que otra instrucción lo sobreescriba.
+
+## Funciones
+
+Ahora que se entiende mejor el stack, vamos a ver las funciones. Éstas, alteran el flujo normal del programa y cuando una función acaba, el flujo vuelve a la parte desde donde ha sido llamada.
+
+Hay dos fases importantes aquí:
+
+- **Prólogo**: es lo que ocurre al principio de cada función. Crea el stack frame correspondiente.
+- **Epílogo**: exactamente lo contrario al prólogo. Ocurre al final de la funcion cuando ésta acaba. Su propósito es restaurar el stack frame de la función que llamó a la que acaba de terminar.
+
+Por lo que el stack consiste en `stack frames` (porciones o areas del stack), que son empujadas (PUSH) cuando se llama a una función y quitadas (POP) cuando devuelve el valor esa funcion.
+
+Cuando una funcion empieza, se crea un stack frame que se asigna a la dirección actual del ESP.
+
+Cuando la funcion termina, ocurren dos cosas:
+
+- El programa recibe los parámetros pasados a la subrutina
+- El EIP se resetea a la dirección de la llamada inicial.
+
+Dicho de otra forma, el stack frame mantiene el control de la direccion donde cada `subrutina`/`stack frame` debe volver cuando acaba.
+
+Vamos a ver un ejemplo práctico básico para que se vea todo mas claro:
+
+![image 69](https://deephacking.tech/wp-content/uploads/2021/10/image-69.png.webp "Fundamentos para Stack based Buffer Overflow 11")
+
+Ejemplo código simple en C
+
+1. El programa empieza por la funcion main. El primer stack frame que debe ser empujado (PUSH) al stack es `main() stack frame`. Así que una vez se inicia, un nuevo stack frame se crea, el main() stack frame.
+2. Dentro de `main()`, se llama a la función `a()`, por lo que el ESP está apuntando a la cima del stack de `main()` y aquí se crea el stack frame para `a()`.
+3. Dentro de `a()`, se llama a `b()`, por lo que estando el ESP en la cima del stack frame de `a()` se crea el stack frame para `b()`.
+4. A la hora de acabar y que cada funcion vaya llegando a su return, es el proceso contrario, entraremos en detalle en el siguiente ejemplo.
+
+![image 70](https://deephacking.tech/wp-content/uploads/2021/10/image-70-1024x354.png.webp "Fundamentos para Stack based Buffer Overflow 12")
+
+POC (proof of concept)
+
+- Ejemplo mas complejo y en detalle:
+
+![image 71](https://deephacking.tech/wp-content/uploads/2021/10/image-71.png.webp "Fundamentos para Stack based Buffer Overflow 13")
+
+Ejemplo código en C
+
+Cuando una función comienza, lo primero que se añade al stack son los parámetros, en este caso, el programa comienza en la función `main()` y añade mediante PUSH al stack los parámetros `argc` y `argv` , en orden de derecha a izquierda (siempre es así).
+
+El stack se vería asi:
+
+`High Memory`
+
+![image 72](https://deephacking.tech/wp-content/uploads/2021/10/image-72.png.webp "Fundamentos para Stack based Buffer Overflow 14")
+
+`Low Memory`
+
+Ahora, se hace la llamada (CALL) a la función main(). Se empuja el contenido del EIP (Instruction Pointer) al stack y se apunta al primer byte después del CALL.
+
+Este punto es importante porque tenemos que saber la dirección de la siguiente instrucción para poder seguir una vez la función llamada retorne.
+
+`High Memory`
+
+![image 73](https://deephacking.tech/wp-content/uploads/2021/10/image-73.png.webp "Fundamentos para Stack based Buffer Overflow 15")
+
+`Low Memory`
+
+Ahora estamos dentro de la funcion main(), se tiene que crear un nuevo stack frame para ésta funcion. El stack frame es definido por el EBP (Frame Pointer) y el ESP (Stack Pointer).
+
+Como no queremos perder información del anterior stack frame, debemos guardar el EBP actual del stack, ya que si no hacemos esto cuando retornemos, no sabremos que información pertenecía al anterior stack frame, la que llamó a main().
+
+Una vez se ha guardado el valor del EBP, el EBP se actualiza y apunta a la cima del stack. En este punto, el EBP y el ESP apuntan al mismo sitio
+
+`Low Memory`
+
+![image 74](https://deephacking.tech/wp-content/uploads/2021/10/image-74.png.webp "Fundamentos para Stack based Buffer Overflow 16")
+
+`High Memory`
+
+Desde este punto, el nuevo stack frame comienza encima del anterior (old stack frame).
+
+Toda esta secuencia de instrucciones llevadas a cabo hasta ahora es lo que se conoce como “prólogo”. Esta fase ocurre en todas las funciones. Las instrucciones llevadas a cabo hasta ahora, en ensamblador, serían las siguientes:
+
+1. `push ebp`
+2. `mov ebp, esp`
+3. `sub esp, X` // Donde X es un número
+
+El stack antes de estas tres instrucciones es el siguiente:
+
+`Low Memory`
+
+![image 75](https://deephacking.tech/wp-content/uploads/2021/10/image-75.png.webp "Fundamentos para Stack based Buffer Overflow 17")
+
+`High Memory`
+
+La primera instrucción (`push ebp`), guarda el EBP empujándolo al stack, correspondiendose en el stack a “old EBP”, para que se pueda restaurar una vez la función retorne.
+
+Ahora el EBP está apuntando a la cima del anterior stack frame (old stack frame).
+
+Con la segunda instrucción (`mov ebp, esp`), conseguimos que el ESP se mueva donde está el EBP, creando ahora si, un nuevo stack frame:
+
+`Low Memory`
+
+![image 76](https://deephacking.tech/wp-content/uploads/2021/10/image-76.png.webp "Fundamentos para Stack based Buffer Overflow 18")
+
+`High Memory`
+
+Recordemos que en este punto, el EBP y el ESP están ubicados en la misma dirección.
+
+La tercera instrucción (`sub esp, X`), mueve el ESP disminuyendo su valor (que como el stack crece hacia abajo, está por así decirlo, aumentando). Esto es necesario para hacer espacio para las variables locales de la función.
+
+Esta instrucción básicamente está haciendo la siguiente operación:
+
+- ESP = ESP – X
+
+Dejando el stack, en la siguiente forma:
+
+`Low Memory`
+
+![image 77](https://deephacking.tech/wp-content/uploads/2021/10/image-77.png.webp "Fundamentos para Stack based Buffer Overflow 19")
+
+`High Memory`
+
+Ahora que el prólogo ha terminado, el stack frame para la función main() está completado. Ahora, hemos creado un hueco, que se puede ver en la imagen superior, para las variables locales.
+
+Pero ocurre un problema, el ESP no está apuntando a la memoria que hay después del “old EBP”, sino que está apuntando a la cima del stack. Por lo que si hacemos un PUSH para añadir cada variable local, no se estaría empujando a la memoria reservada para ellas.
+
+Así que no podemos usar este tipo de operación.
+
+Así que, en este caso, trayendo el código para recordarlo:
+
+![image 78](https://deephacking.tech/wp-content/uploads/2021/10/image-78.png.webp "Fundamentos para Stack based Buffer Overflow 20")
+
+Código en C
+
+Vamos a tener que usar otro tipo de operación, y será la siguiente:
+
+- `MOV DWORD PRT SS:[ESP+Y], 0B`
+
+Teniendo en cuenta que 0B es 11, y estamos hablando de la primera variable declarada en main() como podemos ver en el código. Esta instrucción significa:
+
+- Mueveme el valor 0B a la dirección de memoria que apunte ESP+Y. Siendo Y un número y ESP+Y una dirección de memoria entre EBP y ESP.
+
+Este proceso se repetirá para todas las variables que se tengan que declarar. Una vez completado, el stack tendrá esta forma:
+
+`Low Memory`
+
+![image 79](https://deephacking.tech/wp-content/uploads/2021/10/image-79.png.webp "Fundamentos para Stack based Buffer Overflow 21")
+
+`High Memory`
+
+Despues de colocar las 3 variables, el main() ejecutará la siguiente instrucción. En términos generales, el main() seguirá con su ejecución.
+
+En este caso, el main() ahora llama a la función test(), por lo que otro stack frame se creará.
+
+El proceso será el mismo que lo visto hasta ahora:
+
+- PUSH a los parámetros de la función
+- Llamada a la función
+- Prólogo (entre otras cosas, actualizará el EBP y el ESP para el nuevo stack frame)
+- Almacenará las variables locales en el stack
+
+Al final de todo este proceso, el stack se verá de esta forma:
+
+`Low Memory`
+
+![image 80](https://deephacking.tech/wp-content/uploads/2021/10/image-80.png.webp "Fundamentos para Stack based Buffer Overflow 22")
+
+`High Memory`
+
+Hasta este punto, solo hemos visto la mitad del proceso, el cómo se crea los stack frames. Ahora vamos a ver como se destruyen, es decir, que ocurre cuando se ejecuta una sentencia return, que es también, lo que se conoce como “epílogo”.
+
+En el epílogo, ocurre lo siguiente:
+
+- Se devuelve el control al caller (a quien llamó a la función)
+- El ESP se reemplaza con el valor actual de EBP, haciendo que ESP y EBP apunten al mismo sitio. Ahora se hace un POP a EBP para que se recupere el anterior EBP.
+- Se vuelve al caller haciendo un POP al EIP y luego saltando a él.
+
+El epílogo se puede representar como:
+
+- leave
+- ret
+
+En instrucciones en ensamblador correspondería a:
+
+1. `mov esp, ebp`
+2. `pop ebp`
+3. `ret`
+
+Cuando se ejecuta la primera instrucción (`mov esp, ebp`), el ESP valdrá lo mismo que el EBP y por lo tanto, el stack obtiene la siguiente forma:
+
+`Low Memory`
+
+![image 89](https://deephacking.tech/wp-content/uploads/2021/10/image-89.png.webp "Fundamentos para Stack based Buffer Overflow 23")
+
+`High Memory`
+
+Con la segunda instrucción (`pop ebp`), se hace un POP al EBP (donde también se encuentra en este momento el ESP). Por lo que al quitarlo del stack. El “old EBP” vuelve a ser el principal, y de esta forma, se ha restaurado el anterior stack frame:
+
+`Low Memory`
+
+![image 90](https://deephacking.tech/wp-content/uploads/2021/10/image-90.png.webp "Fundamentos para Stack based Buffer Overflow 24")
+
+`High Memory`
+
+Con la tercera instrucción (`ret`), se vuelve a la dirección de retorno del stack(referencia: [docs.oracle.com)](https://docs.oracle.com/cd/E19455-01/806-3773/instructionset-67/index.html#:~:text=The%20ret%20instruction%20transfers%20control,stack%20by%20a%20call%20instruction.&text=The%20optional%20numeric%20(16%2D%20or,is%20popped%20from%20the%20stack.)
+
+Con esto, conseguimos que el ESP apunte a “old EIP”, de tal forma que el stack quede de la siguiente forma:
+
+`Low Memory`
+
+![image 91](https://deephacking.tech/wp-content/uploads/2021/10/image-91.png.webp "Fundamentos para Stack based Buffer Overflow 25")
+
+`High Memory`
+
+En este punto, todo se ha restaurado correctamente, y el programa ya seguiría a la siguiente instrucción después de la llamada a test(). Y cuando acabe, ocurre el mismo proceso.
+
+## Endianness
+
+La forma de representar y almacenar los valores en la memoria es en Endianness, donde dentro de éste formato hay 2 tipos:
+
+- big-endian
+- little-endian
+
+![image 84](https://deephacking.tech/wp-content/uploads/2021/10/image-84.png.webp "Fundamentos para Stack based Buffer Overflow 26")
+
+Referencia: [skmp.dev](https://skmp.dev/blog/negative-addressing-bswap/)
+
+Ejemplo:
+
+Si representamos el número 11, en 4 bytes y en hexadecimal, obtenemos el siguiente valor:
+
+- 0x000000**0B**
+
+Siendo 0B = 11
+
+Si por ejemplo, víesemos que en la dirección de memoria 0x0028FEBC se encuentra 0x0000000B, si estamos en un **sistema que usa Little Endian**, podriamos entender en que dirección de memoria está cada byte con lo siguiente:
+
+A 0x000000**0B**, hacemos la operación de la imagen, quedandose tal que:
+
+0B
+
+00
+
+00
+
+`00`
+
+El último valor, el resaltado, tiene como dirección de memoria la ya vista arriba: 0x0028FEBC, por lo que podríamos obtener los demás valores tal que:
+
+`high memory`
+
+0B : 0x0028FEBF
+
+00 : 0x0028FEBE
+
+00 : 0x0028FEBD
+
+**`00 : 0x0028FEBC`**
+
+`low memory`
+
+En forma de ecuación por así decirlo, podriamos expresarlo de la siguiente manera:
+
+a = 0x0028FEBC
+
+0B : a + 3
+
+00 : a + 2
+
+00 : a + 1
+
+00 : a
+
+Si el sistema hubiese sido Big Endian sería exactamente al revés, las direcciones hubieran correspondido a:
+
+`high memory`
+
+00 : 0x0028FEBF
+
+00 : 0x0028FEBE
+
+00 : 0x0028FEBD
+
+**0B : 0x0028FEBC**
+
+`low memory`
+
+Es importante saber la diferencia ya que lo necesitaremos para escribir payloads de cara a un Buffer Overflow.
+
+## NOPS – No Operation Instruction
+
+El NOP es una instrucción del lenguaje ensamblador que no hace nada. Si un programa se encuentra un NOP simplemente saltará a la siguiente instrucción. El NOP es normalmente representado en hexadecimal como 0x90, en los sistemas x86.
+
+El NOP-sled es una técnica usada durante la explotación de buffer overflows. Su propósito es llenar ya sea una gran porcion o pequeña del stack de NOPS. Esto nos permitirá controlar que instrucción queremos ejecutar, la cual será la que normalmente se coloque despues del NOP-Sled.
+
+![image 85](https://deephacking.tech/wp-content/uploads/2021/10/image-85.png.webp "Fundamentos para Stack based Buffer Overflow 27")
+
+La razon de ésto es porque quizas el buffer overflow en cuestion del programa, necesite un tamaño y dirección específico porque será la que el programa esté esperando. O también nos puede facilitar conseguir que el EIP apunte a nuestro payload/shellcode.
+
+[  
+](https://newsletter.deephacking.tech/)
 
 
 
@@ -66,41 +404,6 @@ La memoria se divide en 4 regiones: Text, Data, Heap y Stack.
 
 
 
-
-
-
-
-Las excepciones de memoria son la reacción del sistema operativo ante un error en el software existente o durante la ejecución de este. Esto es responsable de la mayoría de las vulnerabilidades de seguridad en los flujos de programas en la última década. A menudo se producen errores de programación, lo que lleva a desbordamientos de búfer debido a la falta de atención al programar con lenguajes poco abstractos como `C`o `C++`.
-
-Para entender cómo funciona a nivel técnico, necesitamos familiarizarnos con cómo:
-
-- La memoria se divide y se utiliza.
-- El depurador muestra y nombra las instrucciones individuales.
-- El depurador se puede utilizar para detectar dichas vulnerabilidades.
-- Podemos manipular la memoria.
-
-Los exploits normalmente solo funcionan para una versión específica del software y del sistema operativo.
-
-## La memoria
-
-Cuando se llama al programa, las secciones se asignan a los segmentos del proceso y los segmentos se cargan en la memoria según lo describe el `ELF`archivo.
-
-### .datos
-
-La `.data`sección contiene variables globales y estáticas que son inicializadas explícitamente por el programa.
-### .bss
-
-Varios compiladores y enlazadores utilizan la `.bss`sección como parte del segmento de datos, que contiene variables asignadas estáticamente representadas exclusivamente por 0 bits.
-### Heap
-
-`Heap memory`Se asigna desde esta área. Esta área comienza al final del segmento ".bss" y crece hasta las direcciones de memoria superiores.
-### Stack
-
-`Stack memory`es una `Last-In-First-Out`estructura de datos en la que se almacenan las direcciones de retorno, los parámetros y, según las opciones del compilador, los punteros de marco. `C/C++`Las variables locales se almacenan aquí e incluso se puede copiar código a la pila. El `Stack`es un área definida en `RAM`. El enlazador reserva esta área y normalmente coloca la pila en el área inferior de la RAM por encima de las variables globales y estáticas. Se accede al contenido a través de `stack pointer`, establecido en el extremo superior de la pila durante la inicialización. Durante la ejecución, la parte asignada de la pila crece hasta las direcciones de memoria inferiores.
-
-Las protecciones de memoria modernas ( `DEP`/ `ASLR`) evitarían los daños causados ​​por desbordamientos de búfer. DEP (Prevención de ejecución de datos), regiones marcadas de memoria como "de solo lectura". Las regiones de memoria de solo lectura son donde se almacenan algunas entradas del usuario (Ejemplo: La pila), por lo que la idea detrás de DEP era evitar que los usuarios cargaran shellcode a la memoria y luego establecieran el puntero de instrucción al shellcode. Los piratas informáticos comenzaron a utilizar ROP (Programación orientada al retorno) para evitar esto, ya que les permitía cargar el shellcode a un espacio ejecutable y usar llamadas existentes para ejecutarlo. Con ROP, el atacante necesita saber las direcciones de memoria donde se almacenan las cosas, por lo que la defensa contra esto fue implementar ASLR (Aleatorización del diseño del espacio de direcciones) que aleatoriza dónde se almacena todo, lo que hace que ROP sea más difícil.
-
-Los usuarios pueden sortear ASLR filtrando direcciones de memoria, pero esto hace que los exploits sean menos fiables y, a veces, imposibles. Por ejemplo, el ["Servidor FTP Freefloat"](https://www.exploit-db.com/exploits/46763) es fácil de explotar en Windows XP (antes de DEP/ASLR). Sin embargo, si la aplicación se ejecuta en un sistema operativo Windows moderno, el desbordamiento del búfer existe, pero actualmente no es fácil explotarlo debido a DEP/ASLR (ya que no se conoce ninguna forma de filtrar direcciones de memoria).
 
 
 
