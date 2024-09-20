@@ -52,7 +52,7 @@ bow: ELF 32-bit LSB shared object
  BuildID[sha1]=93dda6b77131deecaadf9d207fdd2e70f47e1071
  not stripped
 ```
-## Funciones C vulnerables
+# Funciones C vulnerables
 
 Existen varias funciones vulnerables en el lenguaje de programación C que no protegen la memoria de forma independiente. Estas son algunas de ellas:
 
@@ -62,4 +62,7 @@ Existen varias funciones vulnerables en el lenguaje de programación C que no pr
 - `scanf`
 - `strcat`
 - ...
+
+# Presentacion del GDB
+
 
