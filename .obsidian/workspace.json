@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "4eacc62a6b264373",
+        "id": "61214c28ea76c6da",
         "type": "tabs",
         "children": [
           {
-            "id": "8285d5bf1f7ee7fa",
+            "id": "895152f7ae13ee26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8cf948895482ddce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#brute-force-directory",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 214.5
+    "width": 200
   },
   "right": {
     "id": "1a9a10c6b7318c55",
@@ -105,7 +92,7 @@
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               }
             }
           },
@@ -151,61 +138,54 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-importer:Open Importer": false,
       "switcher:Abrir selector rápido": false,
       "graph:Abrir vista gráfica": false,
       "canvas:Crear nuevo lienzo": false,
       "daily-notes:Abrir la nota de hoy": false,
       "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "obsidian-importer:Open Importer": false
+      "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "8cf948895482ddce",
+  "active": "895152f7ae13ee26",
   "lastOpenFiles": [
-    "Images/Pasted image 20240920125948.png",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86.md",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86.md",
     "Stack-Based Buffer Overflow/Fundamentos.md",
-    "Images/Pasted image 20240920105457.png",
-    "Images/Pasted image 20240920105444.png",
-    "Images/Pasted image 20240920105433.png",
-    "Images/Pasted image 20240920105426.png",
-    "Images/Pasted image 20240920105418.png",
-    "Images/Pasted image 20240920105410.png",
-    "Images/Pasted image 20240920105402.png",
-    "Images/Pasted image 20240920105354.png",
-    "Images/Pasted image 20240920105345.png",
-    "Images/Pasted image 20240920105334.png",
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86.md",
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
+    "Sin título.canvas",
+    "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
-    "Writeups/Hackthebox/Media/Manager.md",
-    "Introducción.md",
-    "Writeups/Hackthebox/Media/Surveillance.md",
-    "Writeups/Hackthebox/Fàcil/Analytics.md",
+    "conflict-files-obsidian-git.md",
+    "Images/image.png",
+    "Images/image-9.png",
+    "Images/image-9 1.png",
+    "Images/image-8.png",
+    "Images/image-8 1.png",
+    "Images/image-6.png",
+    "Images/image-6 1.png",
+    "Images/image-5.png",
+    "Images/image-5 1.png",
+    "Images/image-46.png",
+    "Images",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
     "Stack-Based Buffer Overflow",
-    "Reconocimiento/Reconocimiento.md",
-    "HTML import/Attachments/admin 1.php",
-    "HTML import/Attachments/admin.php",
-    "HTML import/Attachments",
-    "HTML import",
-    "Imágenes/image-13.png.md",
-    "Surveillance – Marcos Jurado_files/image-23.png.md",
-    "Surveillance – Marcos Jurado_files",
-    "Surveillance – Marcos Jurado_files/image-24.png.md",
-    "Manager – Marcos Jurado_files/image-13.png.md",
-    "Manager – Marcos Jurado_files",
-    "HTML import/Attachments/admin 3.php",
-    "HTML import/Attachments/admin 2.php",
-    "Writeups/Media/Surveillance.md",
-    "Writeups/Fàcil/Devvortex.md",
-    "Writeups/Fàcil/Codify.md",
-    "Writeups/Fàcil/Analytics.md",
-    "Writeups/Sin título.md",
-    "Write Ups/Untitled.md",
+    "Introducción.md",
+    "Writeups/Hackthebox/Media/Surveillance.md",
+    "Writeups/Hackthebox/Media/Manager.md",
+    "Writeups/Hackthebox/Media",
+    "Writeups/Hackthebox/Fàcil",
+    "Writeups/Hackthebox",
+    "Writeups",
+    "Untitled 1.md",
+    "Imágenes",
     "Test.md",
     "Untitled.md",
-    "Untitled 1.md",
-    "1. Reconnaissance/Test Note.md"
+    "Write Ups/Untitled.md",
+    "1. Reconnaissance/Test Note.md",
+    "README.md",
+    "2. Exploitation",
+    "Write Ups"
   ]
 }
