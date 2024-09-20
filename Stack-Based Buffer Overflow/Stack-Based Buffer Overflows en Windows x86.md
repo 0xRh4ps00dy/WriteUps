@@ -1,12 +1,36 @@
 # Debugging Windows Programs
-
+	
 
 
 # Local Buffer Overflow
 
+# Fuzzing Paramenters
 
 
 
-# ###### Remote Buffer Overflow
+# Controlling EIP
 
-  [Remote Fuzzing](https://academy.hackthebox.com/module/89/section/950)  [Building a Remote Exploit](https://academy.hackthebox.com/module/89/section/951)  [Remote Exploitation](https://academy.hackthebox.com/module/89/section/952)
+
+
+# Indetyfing Bad Characters
+
+
+
+# 
+
+
+
+# 
+
+
+# # Remote Buffer Overflow
+
+# 
+
+
+
+# 
+
+
+
+# 
