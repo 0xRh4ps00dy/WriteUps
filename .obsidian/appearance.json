@@ -1,7 +1,5 @@
 {
   "cssTheme": "Tokyo Night",
   "theme": "obsidian",
-  "enabledCssSnippets": [
-    "css-caption"
-  ]
+  "enabledCssSnippets": []
 }

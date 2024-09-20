@@ -1,15 +1,15 @@
 #active-directory #adcs #certipy #crackmapexec #esc7 #evil-winrm #mssql #mssqlclient #password-spray #windows #xp-dirtree
 
 
-![](../../../Imágenes/Manager%201.png)
+![](../../../Images/Manager%201.png)
 
 Manager empieza realizando fuerza bruta sobre Kerberos para encontrar usuarios en el dominio, y luego haciendo un spray de contraseñas usando el nombre de usuario de cada usuario como contraseña. Una vez tenemos las primeras credenciales podemos acceder a la instancia de base de datos MSSQL y utilizar la función xp_dirtree para explorar el sistema de archivos. Gracias a una copia de seguridad del servidor web, obtenemos unas credenciales de usuario que nos dan acceso al sistema mediante el servicio WINRM. Una vez dentro del sistema escalamos privilegios gracias la vulnerabilidad ESC7 obtenida mediante una configuración errónea.
 
-## Enumeración
+# Enumeración
 
 En primer lugar, realizamos la enumeración básica de puertos con **Nmap**:
 
-![](../../../Imágenes/image-2%201.png)
+![](../../../Images/image-2%201.png)
 
 A continuación, realizamos el escaneo de servicios/versión y scripts de los puertos que hemos encontrado abiertos:
 
@@ -107,59 +107,59 @@ Además, **nmap** también nos ha brindado dos dominios, **manager.htb** y **dc0
 
 Ahora probemos a enumerar usuarios usando la herramienta [**Kerbrute**](https://github.com/ropnop/kerbrute):
 
-![](../../../Imágenes/image-4%201.png)
+![](../../../Images/image-4%201.png)
 
 Depuremos la lista:
 
-![](../../../Imágenes/image%202.png)
+![](../../../Images/image%202.png)
 
 Ahora es momento de realizar una pulverización de contraseñas con cuidado de no vulnerar la política de contraseñas mediante la herramienta **Crackmapexec**:
 
-![](../../../Imágenes/Selection_017%201.png)
+![](../../../Images/Selection_017%201.png)
 
 Por suerte nos encontramos que el usuario **operator** tiene acceso a SMB con la contraseña **operator**. Inspeccionemos SMB y averigüemos que podemos encontrar allí:
 
-![](../../../Imágenes/Selection_016%201.png)
+![](../../../Images/Selection_016%201.png)
 
 Nada interesante…
 
-## Acceso como Raven
+# Acceso como Raven
 
 No obstante, descubrimos que el usuario **operator** también puede acceder a **MSSQL**:
 
-![](../../../Imágenes/Selection_015%201.png)
+![](../../../Images/Selection_015%201.png)
 
 Después de enumerar el servicio **MSSQL** y probar diferentes técnicas de forma fallida, descubrimos que podemos leer archivos y en especial vemos una copia de seguridad del sitio del cual podemos acceder a través del protocolo HTTP:
 
-![](../../../Imágenes/Selection_013%201.png)
+![](../../../Images/Selection_013%201.png)
 
-![](../../../Imágenes/Selection_012%201.png)
+![](../../../Images/Selection_012%201.png)
 
 Descomprimimos el fichero descargado y visualizamos el fichero **.old-conf.xml** que nos arroja las credenciales del usuario **raven**:
 
-![](../../../Imágenes/Selection_014%201.png)
+![](../../../Images/Selection_014%201.png)
 
-![](../../../Imágenes/Selection_011%201.png)
+![](../../../Images/Selection_011%201.png)
 
 Es hora de probar estas credenciales en el servicio WINRM:
 
-![](../../../Imágenes/Selection_010-1%202.png)
+![](../../../Images/Selection_010-1%202.png)
 
 Una vez dentro nos hacemos con la bandera **user.txt:**
 
-![](../../../Imágenes/image-6%201.png)
+![](../../../Images/image-6%201.png)
 
-## Escalada de priviliegios
+# Escalada de priviliegios
 
 En ese mismo directorio y en el directorio **Documents,** el cual fue el punto de acceso al sistema, nos encontramos el fichero **certify.exe**:
 
-![](../../../Imágenes/image-5%201.png)
+![](../../../Images/image-5%201.png)
 
 Esta repetición genera curiosidad y nos da una señal de que la escalada de privilegios podía estar relacionada con certificados, por lo tanto, investiguemos un poco.
 
 Ejecutamos el siguiente comando:
 
-![](../../../Imágenes/image-8%201.png)
+![](../../../Images/image-8%201.png)
 
 El resultado nos arroja mucha información, pero lo más importante aquí son los dos derechos principales **`ManageCA`** y **`ManageCertificates`**.
 
@@ -173,27 +173,27 @@ Asimismo, la plantilla del certificado **`SubCA`** es **vulnerable a ESC1**, per
 - Derecho **`Manage Certificates`** (se puede otorgar desde **`ManageCA`**)
 - La plantilla de certificado **`SubCA`** debe estar **habilitado** (se puede habilitar desde **`ManageCA`**)
 
-### Abuso
+## Abuso
 
 Para poder abusar de esta vulnerabilidad vamos a usar la utilidad **[certipy](https://github.com/ly4k/Certipy)**.
 
 Concedemos el derecho `**Manage Certificates**` agregando al usuario rave como nuevo oficial:
 
-![](../../../Imágenes/image-9%201.png)
+![](../../../Images/image-9%201.png)
 
 Habilitamos una plantilla de certificado específica y solicitamos un certificado con privilegios elevados:
 
-![](../../../Imágenes/image-10%201.png)
+![](../../../Images/image-10%201.png)
 
-![](../../../Imágenes/image-12%202.png)
+![](../../../Images/image-12%202.png)
 
 Emitimos el certificado solicitado:
 
-![[../../../Imágenes/Pasted image 20240919130218.png]]
+![[../../../Images/Pasted image 20240919130218.png]]
 
 Nos autenticamos con el certificado obtenido y obtenemos el hash del administrador del sistema:
 
-![](../../../Imágenes/image-15%203.png)
+![](../../../Images/image-15%203.png)
 
 Durante el proceso, me encontré un error relacionado con el desfase del reloj. Este error, conocido como ‘KRB_AP_ERR_SKEW’ , ocurre cuando hay una diferencia horaria significativa entre el sistema local y el servidor remoto.
 
@@ -207,6 +207,6 @@ Además, la introducción de los comandos debe de hacerse de forma rápida, ya q
 
 Finalmente, iniciamos sesión mediante WINRM y leemos la bandera **root.txt**:
 
-![](../../../Imágenes/image-16%203.png)
+![](../../../Images/image-16%203.png)
 
-![](../../../Imágenes/image-17%201.png)
+![](../../../Images/image-17%201.png)
