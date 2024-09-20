@@ -121,13 +121,13 @@ Ejemplo código simple en C
 3. Dentro de `a()`, se llama a `b()`, por lo que estando el ESP en la cima del stack frame de `a()` se crea el stack frame para `b()`.
 4. A la hora de acabar y que cada funcion vaya llegando a su return, es el proceso contrario, entraremos en detalle en el siguiente ejemplo.
 
-![image 70](https://deephacking.tech/wp-content/uploads/2021/10/image-70-1024x354.png.webp "Fundamentos para Stack based Buffer Overflow 12")
+![](../Images/Pasted%20image%2020240920105159.png)
 
 POC (proof of concept)
 
 - Ejemplo mas complejo y en detalle:
 
-![image 71](https://deephacking.tech/wp-content/uploads/2021/10/image-71.png.webp "Fundamentos para Stack based Buffer Overflow 13")
+![](../Images/Pasted%20image%2020240920105207.png)
 
 Ejemplo código en C
 
@@ -137,7 +137,7 @@ El stack se vería asi:
 
 `High Memory`
 
-![image 72](https://deephacking.tech/wp-content/uploads/2021/10/image-72.png.webp "Fundamentos para Stack based Buffer Overflow 14")
+![](../Images/Pasted%20image%2020240920105220.png)
 
 `Low Memory`
 
@@ -147,7 +147,7 @@ Este punto es importante porque tenemos que saber la dirección de la siguiente 
 
 `High Memory`
 
-![image 73](https://deephacking.tech/wp-content/uploads/2021/10/image-73.png.webp "Fundamentos para Stack based Buffer Overflow 15")
+![](../Images/Pasted%20image%2020240920105233.png)
 
 `Low Memory`
 
@@ -159,7 +159,7 @@ Una vez se ha guardado el valor del EBP, el EBP se actualiza y apunta a la cima 
 
 `Low Memory`
 
-![image 74](https://deephacking.tech/wp-content/uploads/2021/10/image-74.png.webp "Fundamentos para Stack based Buffer Overflow 16")
+![](../Images/Pasted%20image%2020240920105242.png)
 
 `High Memory`
 
