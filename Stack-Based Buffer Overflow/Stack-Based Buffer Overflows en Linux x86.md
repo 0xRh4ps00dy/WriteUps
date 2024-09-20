@@ -139,13 +139,19 @@ Dump of assembler code for function main:
 student@nix-bow:~$ echo 'set disassembly-flavor intel' > ~/.gdbinit
 ```
 
-# Explotaition
-# 
+# Exploitation
+## Take Control of EIP
 
-# 
 
-# 
 
-# Generating Shell
+## Determine the Length for Shellcode
+
+
+
+## Identifications of Bad Characters
+
+## Generating Shellcode
+
+## Generating Shell
 
 ## Identification of the Return Address
