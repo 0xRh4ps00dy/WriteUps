@@ -18,6 +18,41 @@ El ISA es una serie de instrucciones que el programador o el compilador debe ent
 
 En otras palabras, ISA es lo que el programador puede ver, es decir, memoria, registros, instrucciones, etc. Da toda la información necesaria para el que quiera escribir un programa en ese lenguaje maquina.
 
+## Registros
+
+Cuando se habla de que un procesador es de 32 o 64 bits, se refiere al ancho de los registros de la CPU. Cada CPU tiene un conjunto de registros que son accesibles cuando se requieren. Se podría pensar en los registros como variables temporales usadas por la CPU para obtener y almacenar datos.
+
+Hay registros que tienen una función específica, mientras que hay otros que solo sirven como se dice arriba, para obtener y almacenar datos.
+
+En este caso, nos vamos a centrar e los registros GPRs (Registros de Propósito General):
+
+![image 63](https://deephacking.tech/wp-content/uploads/2021/10/image-63.png.webp "Fundamentos para Stack based Buffer Overflow 5")
+
+En la primera columna como vemos, pone “Nomenclatura x86”, esto es porque dependiendo de los bits del procesador, la nomenclatura es distinta:
+
+![image 64](https://deephacking.tech/wp-content/uploads/2021/10/image-64.png.webp "Fundamentos para Stack based Buffer Overflow 6")
+
+Referencia: [decoder.cloud](https://decoder.cloud/2017/01/25/idiots-guide-to-buffer-overflow-on-gnulinux-x64-architecture/)
+
+- En las CPU de 8 bits, se añadia el sufijo L o H dependiendo de si se trataba de un Low byte o High Byte.
+- En las CPU de 16 bits, el sufijo era la X (sustituyendolo por la L o H de las CPU de 8 bits), excepto en el ESP, EBP, ESI y EDI, donde simplemente quitaron la L.
+- En las CPU de 32 bits, como vemos, se añade el prefijo E, refiriendose a Extender.
+- Por último, en las CPU de 64 bits, la E se reemplaza por la R.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Las excepciones de memoria son la reacción del sistema operativo ante un error en el software existente o durante la ejecución de este. Esto es responsable de la mayoría de las vulnerabilidades de seguridad en los flujos de programas en la última década. A menudo se producen errores de programación, lo que lleva a desbordamientos de búfer debido a la falta de atención al programar con lenguajes poco abstractos como `C`o `C++`.
