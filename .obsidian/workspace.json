@@ -11,8 +11,12 @@
             "id": "895152f7ae13ee26",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "1a9a10c6b7318c55",
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86.md"
+              }
             }
           }
         ],
@@ -141,14 +149,15 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86.md",
+    "Stack-Based Buffer Overflow/Fundamentos.md",
+    "Sin título.canvas",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86.md",
     "conflict-files-obsidian-git.md",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
-    "Stack-Based Buffer Overflow/Fundamentos.md",
     "Images/image.png",
     "Images/image-9.png",
     "Images/image-9 1.png",
