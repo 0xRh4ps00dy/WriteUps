@@ -318,11 +318,47 @@ Buffer = "\x55" * (1040 - 256 - 4) = 780
 
 Ahora veamos la función principal completa, ya que si la ejecutamos ahora, el programa se bloqueará sin darnos la posibilidad de seguir lo que sucede en la memoria. Por lo tanto, estableceremos un punto de interrupción en la función correspondiente para que la ejecución se detenga en este punto y podamos analizar el contenido de la memoria.
 
+#### Punto de interrupción del GDB
 
+Para establecer el punto de interrupción, damos el comando "`break`" con el nombre de la función correspondiente.
 
+```shell-session
+(gdb) break bowfunc 
 
+Breakpoint 1 at 0x56555551
+```
 
+#### Enviar CHARS
 
+```shell-session
+(gdb) run $(python -c 'print "\x55" * (1040 - 256 - 4) + "\x00\x01\x02\x03\x04\x05...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
+
+Starting program: /home/student/bow/bow32 $(python -c 'print "\x55" * (1040 - 256 - 4) + "\x00\x01\x02\x03\x04\x05...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
+/bin/bash: warning: command substitution: ignored null byte in input
+
+Breakpoint 1, 0x56555551 in bowfunc ()
+```
+#### La pila
+
+Después de haber ejecutado nuestro buffer con los caracteres incorrectos y haber alcanzado el punto de interrupción, podemos mirar la pila.
+
+```shell-session
+(gdb) x/2000xb $esp+500
+
+0xffffd28a:	0xbb	0x69	0x36	0x38	0x36	0x00	0x00	0x00
+0xffffd292:	0x00	0x00	0x00	0x00	0x00	0x00	0x00	0x00
+0xffffd29a:	0x00	0x2f	0x68	0x6f	0x6d	0x65	0x2f	0x73
+0xffffd2a2:	0x74	0x75	0x64	0x65	0x6e	0x74	0x2f	0x62
+0xffffd2aa:	0x6f	0x77	0x2f	0x62	0x6f	0x77	0x33	0x32
+0xffffd2b2:	0x00    0x55	0x55	0x55	0x55	0x55	0x55	0x55
+				 # |---> "\x55"s begin
+
+0xffffd2ba: 0x55	0x55	0x55	0x55	0x55	0x55	0x55	0x55
+0xffffd2c2: 0x55	0x55	0x55	0x55	0x55	0x55	0x55	0x55
+<SNIP>
+```
+
+Aquí reconocemos en qué dirección `\x55`comienza nuestro " ". A partir de aquí, podemos ir más abajo y buscar el lugar donde `CHARS`comienza nuestro " ".
 
 
 ## Generating Shellcode
