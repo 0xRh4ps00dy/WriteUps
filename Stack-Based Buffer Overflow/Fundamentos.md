@@ -30,8 +30,6 @@ En la primera columna como vemos, pone “Nomenclatura x86”, esto es porque de
 
 ![image 64](https://deephacking.tech/wp-content/uploads/2021/10/image-64.png.webp "Fundamentos para Stack based Buffer Overflow 6")
 
-Referencia: [decoder.cloud](https://decoder.cloud/2017/01/25/idiots-guide-to-buffer-overflow-on-gnulinux-x64-architecture/)
-
 - En las CPU de 8 bits, se añadia el sufijo L o H dependiendo de si se trataba de un Low byte o High Byte.
 - En las CPU de 16 bits, el sufijo era la X (sustituyendolo por la L o H de las CPU de 8 bits), excepto en el ESP, EBP, ESI y EDI, donde simplemente quitaron la L.
 - En las CPU de 32 bits, como vemos, se añade el prefijo E, refiriendose a Extender.
