@@ -8,7 +8,7 @@ Las instrucciones de la CPU son representadas en hexadecimal. Sin embargo, ésta
 
 Entonces, de forma gráfica, la diferencia entre el código máquina y el lenguaje ensamblador es la siguiente:
 
-![main qimg 3b6822a74141d7ce28aba2583b237313 lq](https://qph.fs.quoracdn.net/main-qimg-3b6822a74141d7ce28aba2583b237313-lq "Fundamentos para Stack based Buffer Overflow 4")
+
 
 Referencia: [Quora](https://www.quora.com/Is-assembly-language-a-source-code-or-object-code)
 
@@ -47,9 +47,10 @@ Además de los 8 GPR, hay otro registro que será muy importante para nosotros, 
 
 Cuando se ejecuta un proceso, se organiza en la memoria de la siguiente forma:
 
-![image 65|hgola](https://deephacking.tech/wp-content/uploads/2021/10/image-65.png.webp "Fundamentos para Stack based Buffer Overflow 7")
+![image 65](https://deephacking.tech/wp-content/uploads/2021/10/image-65.png.webp "Fundamentos para Stack based Buffer Overflow 7")
 
-Proceso en memoria
+Proceso en memoria 
+
 
 La memoria se divide en 4 regiones: Text, Data, Heap y Stack.
 
