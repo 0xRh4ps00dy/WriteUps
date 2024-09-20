@@ -11,9 +11,11 @@
             "id": "284a1626dc7cd883",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Imágenes/Pasted-image-20240318201752.png"
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Imágenes/Pasted-image-20240318201752.png",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Imágenes/Pasted-image-20240318201752.png",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Imágenes/Pasted-image-20240318201752.png"
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md"
               }
             }
           }
@@ -147,6 +149,7 @@
   },
   "active": "284a1626dc7cd883",
   "lastOpenFiles": [
+    "Imágenes/Pasted-image-20240318201752.png",
     "Imágenes/Pasted-image-20240318204311.png",
     "Imágenes/Pasted-image-20240318204449.png",
     "Imágenes/Pasted-image-20240318204924.png",
@@ -157,7 +160,6 @@
     "Imágenes/Pasted image 20240919134413.png",
     "Imágenes/Pasted image 20240919134303.png",
     "Imágenes/Pasted image 20240919134159.png",
-    "Imágenes/Pasted image 20240919134133.png",
     "Stack-Based Buffer Overflow/Fundamentos.md",
     "Introducción.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
