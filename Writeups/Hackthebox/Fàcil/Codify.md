@@ -4,9 +4,9 @@
 
 Codify es una máquina que aloja un sitio web para revisar código Node.js en un servidor web. Podemos conseguir un punto de apoyo en el sistema objetivo mediante la explotación de una vulnerabilidad de una librería JavaScript que el sitio utiliza para la revisión de código. Una vez dentro debemos movernos lateralmente hacia otro usuario gracias al hallazgo de un hash ubicado dentro de un fichero en el sistema y realizando su desencriptado. Finalmente, debemos escalar privilegios realizando fuerza bruta sobre un script encontrado en el sistema o, también, usando la herramienta PSPY que nos permitirá capturar la contraseña del usuario root.
 
-## Enumeración
+# Enumeración
 
-### Nmap
+## Nmap
 
 El escaneo de puertos nos arroja la existencia de servicios como **SSH**, **HTTP** y un servicio **HTTP** alojado en el puerto 3000.
 
@@ -14,7 +14,7 @@ El escaneo de puertos nos arroja la existencia de servicios como **SSH**, **HTTP
 
 ![](../../../Images/Selection_002-1.png)
 
-### HTTP 3000/TCP
+## HTTP 3000/TCP
 
 El puerto 3000 nos aporta mucha curiosidad, por lo que nos dirigimos hacia él mediante el navegador. El sitio nos muestra un editor de código para testear código escrito en lenguaje Node.js:
 
@@ -60,7 +60,7 @@ Si volvemos al sitio web y probamos el código podemos comprobar que se muestra 
 
 ![](../../../Images/Pasted-image-20240404133530.png)
 
-## Usuario svc
+# Usuario svc
 
 Ahora es hora de introducir un payload para obtener una reverse shell:
 
@@ -70,7 +70,7 @@ Una vez obtenido la shell en el sistema objetivo y estabilizarla, nos encontramo
 
 ![](../../../Images/Selection_005-1.png)
 
-## Usuario joshua
+# Usuario joshua
 
 Después de realizar una enumeración del sistema nos encontramos que existe un archivo llamado **tickets.db** dentro de la carpeta **/var/www**. Este archivo parece contener el nombre de joshua (el cual no tenemos acceso) y lo que parece ser un hash.
 
@@ -86,7 +86,7 @@ Por suerte, logramos desencriptar la contraseña, cambiar de usuario hacia joshu
 
 ![](../../../Images/Selection_009-1-wpp1712234194943.png)
 
-## Escalada de privilegios
+# Escalada de privilegios
 
 Rápidamente, comprobamos comandos que el usuario puede ejecutar con permisos root y nos entramos con que puede ejecutar un script que aparentemente realiza una copia de seguridad de la base de datos **MYSQL**.
 
