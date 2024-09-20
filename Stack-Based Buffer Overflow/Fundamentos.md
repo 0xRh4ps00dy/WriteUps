@@ -251,7 +251,7 @@ Al final de todo este proceso, el stack se verá de esta forma:
 
 `Low Memory`
 
-![image 80](https://deephacking.tech/wp-content/uploads/2021/10/image-80.png.webp "Fundamentos para Stack based Buffer Overflow 22")
+![](../Images/Pasted%20image%2020240920105402.png)
 
 `High Memory`
 
@@ -278,7 +278,7 @@ Cuando se ejecuta la primera instrucción (`mov esp, ebp`), el ESP valdrá lo mi
 
 `Low Memory`
 
-![image 89](https://deephacking.tech/wp-content/uploads/2021/10/image-89.png.webp "Fundamentos para Stack based Buffer Overflow 23")
+![](../Images/Pasted%20image%2020240920105410.png)
 
 `High Memory`
 
@@ -286,7 +286,7 @@ Con la segunda instrucción (`pop ebp`), se hace un POP al EBP (donde también s
 
 `Low Memory`
 
-![image 90](https://deephacking.tech/wp-content/uploads/2021/10/image-90.png.webp "Fundamentos para Stack based Buffer Overflow 24")
+![](../Images/Pasted%20image%2020240920105418.png)
 
 `High Memory`
 
@@ -296,7 +296,7 @@ Con esto, conseguimos que el ESP apunte a “old EIP”, de tal forma que el sta
 
 `Low Memory`
 
-![image 91](https://deephacking.tech/wp-content/uploads/2021/10/image-91.png.webp "Fundamentos para Stack based Buffer Overflow 25")
+![](../Images/Pasted%20image%2020240920105426.png)
 
 `High Memory`
 
@@ -309,7 +309,7 @@ La forma de representar y almacenar los valores en la memoria es en Endianness, 
 - big-endian
 - little-endian
 
-![image 84](https://deephacking.tech/wp-content/uploads/2021/10/image-84.png.webp "Fundamentos para Stack based Buffer Overflow 26")
+![](../Images/Pasted%20image%2020240920105433.png)
 
 Referencia: [skmp.dev](https://skmp.dev/blog/negative-addressing-bswap/)
 
@@ -381,12 +381,11 @@ El NOP es una instrucción del lenguaje ensamblador que no hace nada. Si un prog
 
 El NOP-sled es una técnica usada durante la explotación de buffer overflows. Su propósito es llenar ya sea una gran porcion o pequeña del stack de NOPS. Esto nos permitirá controlar que instrucción queremos ejecutar, la cual será la que normalmente se coloque despues del NOP-Sled.
 
-![image 85](https://deephacking.tech/wp-content/uploads/2021/10/image-85.png.webp "Fundamentos para Stack based Buffer Overflow 27")
+![](../Images/Pasted%20image%2020240920105444.png)
 
 La razon de ésto es porque quizas el buffer overflow en cuestion del programa, necesite un tamaño y dirección específico porque será la que el programa esté esperando. O también nos puede facilitar conseguir que el EIP apunte a nuestro payload/shellcode.
 
-[  
-](https://newsletter.deephacking.tech/)
+# Referencias
 
 
 
