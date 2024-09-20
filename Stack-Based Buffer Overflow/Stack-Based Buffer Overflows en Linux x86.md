@@ -454,9 +454,7 @@ Este proceso debe repetirse hasta eliminar todos los caracteres que podrían int
 
 #### Shellcode
 
-  ellcode
-
-```shell-session
+  ```shell-session
 0xRh4ps00dy@htb[/htb]$ cat shellcode
 
 unsigned char buf[] = 
