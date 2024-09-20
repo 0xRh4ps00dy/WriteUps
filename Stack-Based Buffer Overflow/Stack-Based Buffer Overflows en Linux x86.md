@@ -264,9 +264,7 @@ Shellcode = "\x44" * 150
 
 ![](../Images/Pasted%20image%2020240920125948.png)
 
-#### BGF
-
-Determinar la longitud del Shellcode
+#### GFB
 
 ```shell-session
 (gdb) run $(python -c 'print "\x55" * (1040 - 100 - 150 - 4) + "\x90" * 100 + "\x44" * 150 + "\x66" * 4')
