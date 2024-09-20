@@ -13,8 +13,6 @@ Entonces, de forma gráfica, la diferencia entre el código máquina y el lengua
 ![](../Images/Analytics.png)
 
 
-![](../Images/Pasted image 20240920103739.png)
-
 
 Cada CPU tiene su Conjunto de Instrucciones, en inglés: `Instruction Set Architecture (ISA)`.
 
