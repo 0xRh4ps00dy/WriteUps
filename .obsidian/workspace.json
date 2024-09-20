@@ -8,12 +8,14 @@
         "type": "tabs",
         "children": [
           {
-            "id": "284a1626dc7cd883",
+            "id": "8285d5bf1f7ee7fa",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20240920103542.png"
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240920103542.png",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240920103542.png",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240920103542.png"
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md"
               }
             }
           }
@@ -145,11 +147,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "284a1626dc7cd883",
+  "active": "8285d5bf1f7ee7fa",
   "lastOpenFiles": [
+    "Images/Pasted image 20240920103739.png",
+    "Pasted image 20240920103542.png",
     "Pasted image 20240920103523.png",
     "Stack-Based Buffer Overflow/Fundamentos.md",
-    "Pasted image 20240920103542.png",
     "Introducción.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
