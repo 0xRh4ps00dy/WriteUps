@@ -2,5 +2,7 @@
   "obsidian-git",
   "obsidian-icon-folder",
   "obsidian-languagetool-plugin",
-  "obsidian-importer"
+  "obsidian-importer",
+  "language-translator",
+  "deepl"
 ]
