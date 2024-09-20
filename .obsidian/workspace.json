@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflows en Linux x86.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflows en Linux x86.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflows en Linux x86.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md"
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflows en Linux x86.md"
               }
             }
           }
@@ -149,6 +149,8 @@
   },
   "active": "8285d5bf1f7ee7fa",
   "lastOpenFiles": [
+    "Stack-Based Buffer Overflow/Fundamentos.md",
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Stack-Based Buffer Overflows en Linux x86.md",
     "Images/Pasted image 20240920105457.png",
     "Images/Pasted image 20240920105444.png",
     "Images/Pasted image 20240920105433.png",
@@ -159,9 +161,7 @@
     "Images/Pasted image 20240920105354.png",
     "Images/Pasted image 20240920105345.png",
     "Images/Pasted image 20240920105334.png",
-    "Images/Pasted image 20240920105323.png",
     "Writeups/Hackthebox/Fàcil/Codify.md",
-    "Stack-Based Buffer Overflow/Fundamentos.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Writeups/Hackthebox/Media/Manager.md",
     "Introducción.md",
