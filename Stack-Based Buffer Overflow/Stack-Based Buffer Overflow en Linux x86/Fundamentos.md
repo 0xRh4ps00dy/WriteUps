@@ -28,6 +28,8 @@ En este caso, nos vamos a centrar e los registros GPRs (Registros de Propósito 
 
 ![image 63](https://deephacking.tech/wp-content/uploads/2021/10/image-63.png.webp "Fundamentos para Stack based Buffer Overflow 5")
 
+Registros de Propósito General
+
 En la primera columna como vemos, pone “Nomenclatura x86”, esto es porque dependiendo de los bits del procesador, la nomenclatura es distinta:
 
 ![image 64](https://deephacking.tech/wp-content/uploads/2021/10/image-64.png.webp "Fundamentos para Stack based Buffer Overflow 6")
