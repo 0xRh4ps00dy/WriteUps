@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Fundamentos.md"
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md"
               }
             }
           }
@@ -147,8 +147,9 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "c9df10bcd5b889c0",
+  "active": "284a1626dc7cd883",
   "lastOpenFiles": [
+    "Stack-Based Buffer Overflow/Fundamentos.md",
     "Images/Pasted image 20240920102831.png",
     "Images/Pasted image 20240920102757.png",
     "Images/Pasted-image-20240318201752.png",
@@ -159,8 +160,6 @@
     "Images/Pasted-image-20240404133530.png",
     "Images/Pasted-image-20240404133457.png",
     "Images/Pasted image 20240919125635.png",
-    "Images/Pasted image 20240919134413.png",
-    "Stack-Based Buffer Overflow/Fundamentos.md",
     "Introducción.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
     "Stack-Based Buffer Overflow",
