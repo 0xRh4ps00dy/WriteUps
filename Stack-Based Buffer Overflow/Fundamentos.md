@@ -68,9 +68,7 @@ La operación de PUSH lo que hace es restar al ESP. En CPU de 32 bits, resta 4 m
 
 Ejemplo de PUSH T:
 
-![image 66](https://deephacking.tech/wp-content/uploads/2021/10/image-66-1024x609.png.webp "Fundamentos para Stack based Buffer Overflow 8")
-
-Referencia: [javapoint.com](https://www.javatpoint.com/stack-push-operation)
+![](../Images/Pasted%20image%2020240920104627.png)
 
 Ahora, por ejemplo, de forma mas técnica, si el valor inicial del ESP fuese `0x0028FF80`, e hiciésemos un PUSH 1, el ESP disminuiria -4, conviertiéndose en `0x0028FF7C` y entonces, el 1 se pondría en la cima del stack.
 
@@ -86,9 +84,7 @@ El caso del POP es igual pero al contrario, en 32 bits también se suma 4 y en 6
 
 Ejemplo de POP T:
 
-![image 68](https://deephacking.tech/wp-content/uploads/2021/10/image-68-1024x609.png.webp "Fundamentos para Stack based Buffer Overflow 10")
-
-Referencia: [javapoint.com](https://www.javatpoint.com/stack-pop-operation)
+![](../Images/Pasted%20image%2020240920104655.png)
 
 De nuevo, de forma mas técnica, si por ejemplo, despues del PUSH 1 anterior, el ESP vale `0x0028FF7C`, haciendole la operacion `POP EAX` quitariamos lo previamente empujado, haciendo que el ESP volviese a valer `0x0028FF80`, y, además, haciendo que el valor quitado, se copie al registro EAX (en este caso).
 
