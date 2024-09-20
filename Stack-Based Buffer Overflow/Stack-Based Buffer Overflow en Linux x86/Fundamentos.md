@@ -27,9 +27,7 @@ En este caso, nos vamos a centrar e los registros GPRs (Registros de Propósito 
 
 En la primera columna como vemos, pone “Nomenclatura x86”, esto es porque dependiendo de los bits del procesador, la nomenclatura es distinta:
 
-![image 64](https://deephacking.tech/wp-content/uploads/2021/10/image-64.png.webp "Fundamentos para Stack based Buffer Overflow 6")
-
-Referencia: [decoder.cloud](https://decoder.cloud/2017/01/25/idiots-guide-to-buffer-overflow-on-gnulinux-x64-architecture/)
+![[../../Imágenes/Pasted image 20240920074713.png|Referencia: [decoder.cloud](https://decoder.cloud/2017/01/25/idiots-guide-to-buffer-overflow-on-gnulinux-x64-architecture/)]]
 
 - En las CPU de 8 bits, se añadia el sufijo L o H dependiendo de si se trataba de un Low byte o High Byte.
 - En las CPU de 16 bits, el sufijo era la X (sustituyendolo por la L o H de las CPU de 8 bits), excepto en el ESP, EBP, ESI y EDI, donde simplemente quitaron la L.
@@ -42,7 +40,7 @@ Además de los 8 GPR, hay otro registro que será muy importante para nosotros, 
 
 Cuando se ejecuta un proceso, se organiza en la memoria de la siguiente forma:
 
-![image 65](https://deephacking.tech/wp-content/uploads/2021/10/image-65.png.webp "Fundamentos para Stack based Buffer Overflow 7")
+![[../../Imágenes/Pasted image 20240920074753.png|Proceso en memoria]]
 
 Proceso en memoria 
 
