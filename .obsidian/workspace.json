@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
+                "file": "Writeups/DockerLabs/Muy fàcil/Injection.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
+                "file": "Writeups/DockerLabs/Muy fàcil/Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
+                "file": "Writeups/DockerLabs/Muy fàcil/Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md"
+                "file": "Writeups/DockerLabs/Muy fàcil/Injection.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Writeups/Writeup Template.md",
@@ -163,7 +164,6 @@
     "Writeups/DockerLabs/Fàcil",
     "Writeups/DockerLabs/Muy fàcil",
     "Writeups/DockerLabs",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Fundamentos.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
     "Sin título.canvas",

@@ -4,7 +4,7 @@
 
 ## Nmap
 
-
+El escaneo de nmap nos ensenya la existencia de un servicio SSH i un servicio HTTP funcionando.
 
 # Foothold
 
