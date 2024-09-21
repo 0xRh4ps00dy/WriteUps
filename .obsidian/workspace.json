@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Writeup Template.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Writeup Template.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Writeup Template.md",
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Writeup Template.md"
+                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md"
               }
             }
           }
@@ -147,7 +147,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c9df10bcd5b889c0",
+  "active": "895152f7ae13ee26",
   "lastOpenFiles": [
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Writeups/Writeup Template.md",
