@@ -584,6 +584,9 @@ uid=1000(student) gid=1000(student) groups=1000(student),4(adm),24(cdrom),27(sud
 
 Ahora vemos que obtuvimos una conexión desde la dirección IP local. Sin embargo, no es obvio si tenemos un shell. Por lo tanto, escribimos el comando " `id`" para obtener más información sobre el usuario. Si obtenemos un valor de retorno con información, sabemos que estamos en un shell, como se muestra en el ejemplo.
 
+# Referencias
+
+https://academy.hackthebox.com/module/31/section/385
 
 
 
