@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
+                "file": "Writeups/Writeup Template.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
+                "file": "Writeups/Writeup Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
+                "file": "Writeups/Writeup Template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md"
+                "file": "Writeups/Writeup Template.md"
               }
             }
           }
@@ -147,10 +147,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "895152f7ae13ee26",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
-    "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
+    "Writeups/Writeup Template.md",
+    "Writeups/Hackthebox/Fàcil/Devvortex.md",
+    "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Images/Pasted image 20240921182525.png",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
@@ -165,7 +167,6 @@
     "Stack-Based Buffer Overflow/Fundamentos.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
     "Sin título.canvas",
-    "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "conflict-files-obsidian-git.md",
     "Images/image.png",
     "Images/image-9.png",
