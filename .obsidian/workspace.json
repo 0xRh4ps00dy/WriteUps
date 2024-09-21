@@ -147,8 +147,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "895152f7ae13ee26",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
+    "Writeups/DockerLabs/Sin nombre",
+    "Writeups/DockerLabs",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Fundamentos.md",
@@ -185,7 +187,6 @@
     "Write Ups/Untitled.md",
     "1. Reconnaissance/Test Note.md",
     "README.md",
-    "2. Exploitation",
-    "Write Ups"
+    "2. Exploitation"
   ]
 }
