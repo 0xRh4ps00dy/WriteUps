@@ -149,7 +149,12 @@
   },
   "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
-    "Writeups/DockerLabs/Sin nombre",
+    "Writeups/Hackthebox/Insane",
+    "Writeups/Hackthebox/Difícil",
+    "Writeups/DockerLabs/Difícil",
+    "Writeups/DockerLabs/Medio",
+    "Writeups/DockerLabs/Fàcil",
+    "Writeups/DockerLabs/Muy fàcil",
     "Writeups/DockerLabs",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
@@ -177,16 +182,11 @@
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Media",
-    "Writeups/Hackthebox/Fàcil",
-    "Writeups/Hackthebox",
-    "Writeups",
     "Untitled 1.md",
-    "Imágenes",
     "Test.md",
     "Untitled.md",
     "Write Ups/Untitled.md",
     "1. Reconnaissance/Test Note.md",
-    "README.md",
-    "2. Exploitation"
+    "README.md"
   ]
 }
