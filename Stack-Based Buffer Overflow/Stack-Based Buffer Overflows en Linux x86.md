@@ -256,10 +256,12 @@ A menudo puede resultar útil insertar algunos `no operation instruction`( `NO
 3. `150 bytes`para nuestro `shellcode`.
 
 ```shell-session
-   Buffer = "\x55" * (1040 - 100 - 150 - 4) = 786
-     NOPs = "\x90" * 100
+Offset = 1036
+NOPs = "\x90" * 100
 Shellcode = "\x44" * 150
-      EIP = "\x66" * 4
+EIP = "\x66" * 4
+
+Buffer = "\x55" * (1040 - 100 - 150 - 4) = 786
 ```
 
 ![](../Images/Pasted%20image%2020240920125948.png)
