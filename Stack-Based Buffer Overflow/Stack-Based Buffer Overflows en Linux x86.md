@@ -256,7 +256,7 @@ A menudo puede resultar útil insertar algunos `no operation instruction`( `NO
 3. `150 bytes`para nuestro `shellcode`.
 
 ```shell-session
-Offset = 1036
+Para llegar al EIP = "\55" * 1040
 NOPs = "\x90" * 100
 Shellcode = "\x44" * 150
 EIP = "\x66" * 4
