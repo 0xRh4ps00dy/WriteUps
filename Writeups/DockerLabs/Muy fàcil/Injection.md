@@ -49,7 +49,7 @@ Nmap done: 1 IP address (1 host up) scanned in 6.96 seconds
 En el sitio web nos encontramos con una panel de inicio de sesión. Comprobando los campos del formulario si contienen una posible vulnerabilidad SQLi, comprobamos que el campo de usuario es vulnerable.
 
 ![](../../../Images/Pasted%20image%2020240923102252.png)
-# Foothold
+# Usuario Dylan
 
 Utilizando la herramienta SQLMap realizamos la autoexplotación de la vulnerabilidad encontrada para extraer datos interesantes. Pero, antes de todo, capturamos la petición GET con Burpsuite.
 
@@ -124,7 +124,10 @@ Table: users
 [*] ending @ 12:34:02 /2024-09-23/
 ```
 
-De esta forma conseguimos un nombre de usuario y una contraseña 
+De esta forma conseguimos un nombre de usuario y una contraseña. 
+
+Ahora podemos intentar iniciar sesión en el servicio SSH abierto en el puerto 22.
+
 ```
 
 ```
