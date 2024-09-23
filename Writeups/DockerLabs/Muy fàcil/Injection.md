@@ -51,6 +51,8 @@ En el sitio web nos encontramos con una panel de inicio de sesión. Comprobando 
 ![](../../../Images/Pasted%20image%2020240923102252.png)
 # Foothold
 
+Utilizando la herramienta SQLMap realizamos la autoexplotación de la vulnerabilidad encontrada para extraer datos interesantes. Antes de todo, capturamos la petición GET
+
 
 
 
