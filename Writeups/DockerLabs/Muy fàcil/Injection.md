@@ -158,5 +158,7 @@ Haciendo una investigación a nivel local del sistema descubrimos un binario con
 
 
 
-Como sudo está desactivado podemos ahorrarnos la primera linea y aputnar direct
+Como sudo está desactivado podemos ahorrarnos la primera línea y apuntar directamente a la ruta del binario, consiguiendo así rootear la máquina.
+
+
 
