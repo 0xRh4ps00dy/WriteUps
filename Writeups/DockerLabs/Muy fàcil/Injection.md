@@ -154,9 +154,23 @@ dylan@3a52fa45bcbe:~$
 
 # Escalada de privilegios
 
-Haciendo una investigación a nivel local del sistema descubrimos un binario con permisos SUID.
+Haciendo una investigación a nivel local del sistema descubrimos el binario ``/usr/bin/env`` con permisos SUID.
 
+```
+> find / -user root -perm -4000 -exec ls -ldb {} \; 2>/dev/null
 
+-rwsr-xr-x 1 root root 72712 Feb  6  2024 /usr/bin/chfn
+-rwsr-xr-x 1 root root 44808 Feb  6  2024 /usr/bin/chsh
+-rwsr-xr-x 1 root root 72072 Feb  6  2024 /usr/bin/gpasswd
+-rwsr-xr-x 1 root root 47480 Feb 21  2022 /usr/bin/mount
+-rwsr-xr-x 1 root root 40496 Feb  6  2024 /usr/bin/newgrp
+-rwsr-xr-x 1 root root 59976 Feb  6  2024 /usr/bin/passwd
+-rwsr-xr-x 1 root root 55672 Feb 21  2022 /usr/bin/su
+-rwsr-xr-x 1 root root 35192 Feb 21  2022 /usr/bin/umount
+-rwsr-xr-x 1 root root 43976 Jan  8  2024 /usr/bin/env
+-rwsr-xr-- 1 root messagebus 35112 Oct 25  2022 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+-rwsr-xr-x 1 root root 338536 Jan  2  2024 /usr/lib/openssh/ssh-keysign
+```
 
 Como sudo está desactivado podemos ahorrarnos la primera línea y apuntar directamente a la ruta del binario, consiguiendo así rootear la máquina.
 
