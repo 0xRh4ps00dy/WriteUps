@@ -172,6 +172,10 @@ Haciendo una investigación a nivel local del sistema descubrimos el binario ``/
 -rwsr-xr-x 1 root root 338536 Jan  2  2024 /usr/lib/openssh/ssh-keysign
 ```
 
+Ahora nos podemos dirigir al sitio web [GTFOBins](https://gtfobins.github.io/) para descubrir como explotar está vulnerabilidad.
+
+![](../../../Images/Pasted%20image%2020240923103932.png)
+
 Como sudo está desactivado podemos ahorrarnos la primera línea y apuntar directamente a la ruta del binario, consiguiendo así rootear la máquina.
 
 
