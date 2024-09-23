@@ -7,7 +7,9 @@
 El escaneo de **nmap** nos enseña la existencia de un servicio SSH i un servicio HTTP funcionando.
 
 
-En el sitio web nos encotnramos con una panel de
+En el sitio web nos encontramos con una panel de inicio de sesión. Comprobando los campos del formulario si contienen una posible vulnerabilidad SQLi, comprobamos que el campo de usuario es vulnerable.
+
+
 
 
 
