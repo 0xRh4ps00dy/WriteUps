@@ -126,16 +126,37 @@ Table: users
 
 De esta forma conseguimos un nombre de usuario y una contraseña. 
 
-Ahora podemos intentar iniciar sesión en el servicio SSH abierto en el puerto 22.
+Ahora podemos iniciar sesión en el servicio SSH abierto en el puerto 22.
 
 ```
+ssh dylan@$target                                                                                                                   
+dylan@172.17.0.2's password: 
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 6.9.7-amd64 x86_64)
 
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+dylan@3a52fa45bcbe:~$ 
 ```
-
-
-
 
 # Escalada de privilegios
 
+Haciendo una investigación a nivel local del sistema descubrimos un binario con permisos SUID.
 
+
+
+Como sudo está desactivado podemos ahorrarnos la primera linea y aputnar direct
 
