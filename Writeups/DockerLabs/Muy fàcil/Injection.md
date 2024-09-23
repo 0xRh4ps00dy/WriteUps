@@ -53,8 +53,10 @@ En el sitio web nos encontramos con una panel de inicio de sesión. Comprobando 
 
 Utilizando la herramienta SQLMap realizamos la autoexplotación de la vulnerabilidad encontrada para extraer datos interesantes. Pero, antes de todo, capturamos la petición GET con Burpsuite.
 
+![](../../../Images/Pasted%20image%2020240923103040.png)
 
 
+Ahora pasamos la petición a SLQMap.
 
 
 
