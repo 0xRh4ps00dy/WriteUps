@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/DockerLabs/Muy fàcil/Injection.md",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/DockerLabs/Muy fàcil/Injection.md",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/DockerLabs/Muy fàcil/Injection.md",
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/DockerLabs/Muy fàcil/Injection.md"
+                "file": "Stack-Based Buffer Overflow/Fundamentos.md"
               }
             }
           }
@@ -149,13 +149,13 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
+    "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Images/Pasted image 20240923104053.png",
     "Images/Pasted image 20240923103932.png",
     "Images/Pasted image 20240923103040.png",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
-    "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Images/Pasted image 20240923102252.png",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
     "Writeups/Writeup Template.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
@@ -177,7 +177,6 @@
     "Images/image-9 1.png",
     "Images/image-8.png",
     "Images/image-8 1.png",
-    "Images/image-6.png",
     "Images",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
     "Stack-Based Buffer Overflow",
