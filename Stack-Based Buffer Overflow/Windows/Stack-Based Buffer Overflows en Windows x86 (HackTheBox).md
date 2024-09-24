@@ -22,7 +22,7 @@ Cuando se complete el proceso, el complemento debería estar listo para usarse. 
 
 Para visualizar la `ERC`salida del , debemos pasar a la `Log` pestaña haciendo clic sobre ella o haciendo clic en `Alt+L`, como podemos ver a continuación:
 
-![](../Images/Pasted%20image%2020240924085743.png)
+![](../../Images/Pasted%20image%2020240924085743.png)
 
 # Local Buffer Overflow
 

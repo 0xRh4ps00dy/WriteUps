@@ -263,7 +263,7 @@ EIP = "\x66" * 4
 Buffer = "\x55" * (1040 - 100 - 150 - 4) = 786
 ```
 
-![](../Images/Pasted%20image%2020240920125948.png)
+![](../../Images/Pasted%20image%2020240920125948.png)
 
 #### GDB
 

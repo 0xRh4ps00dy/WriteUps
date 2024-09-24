@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Writeup Template.md",
+                "file": "Stack-Based Buffer Overflow/Linux/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Writeup Template.md",
+                "file": "Stack-Based Buffer Overflow/Linux/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Writeup Template.md",
+                "file": "Stack-Based Buffer Overflow/Linux/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Writeup Template.md"
+                "file": "Stack-Based Buffer Overflow/Linux/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md"
               }
             }
           }
@@ -147,21 +147,23 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "895152f7ae13ee26",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
+    "Writeups/Writeup Template.md",
+    "Stack-Based Buffer Overflow/Windows",
+    "Stack-Based Buffer Overflow/Linux",
     "Images/Pasted image 20240924085743.png",
     "Enumeration/Nmap Cheatsheet.md",
     "Enumeration",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Stack-Based Buffer Overflow/Fundamentos.md",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
+    "Stack-Based Buffer Overflow/Linux/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Images/Pasted image 20240923104053.png",
     "Images/Pasted image 20240923103932.png",
     "Images/Pasted image 20240923103040.png",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Images/Pasted image 20240923102252.png",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
-    "Writeups/Writeup Template.md",
+    "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Images/Pasted image 20240921182525.png",
@@ -179,9 +181,6 @@
     "Images/image-9.png",
     "Images/image-9 1.png",
     "Images/image-8.png",
-    "Images/image-8 1.png",
-    "Images",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
     "Introducción.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
