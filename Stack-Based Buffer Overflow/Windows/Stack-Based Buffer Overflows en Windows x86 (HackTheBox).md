@@ -116,6 +116,18 @@ Ahora podemos usar el valor de `EIP`para calcular el desplazamiento. Podemos ha
 [*] Exact match at offset 4112
 ```
 
+Usando ERC en x32dbg o x64dbg debemos obtener el valor ASCII de los bytes hexadecimales que se encuentran en `EIP`, haciendo clic derecho en `EIP`y seleccionando `Modify Value`, o haciendo clic en `EIP`y luego presionando Enter. Una vez que lo hagamos, veremos varias representaciones del `EIP`valor, siendo ASCII la última:
+
+![](../../Images/Pasted%20image%2020240924205944.png)
+
+El valor hexadecimal encontrado en `EIP`representa la cadena `1hF0`. Ahora, podemos usar `ERC --pattern o 1hF0`para obtener el desplazamiento del patrón:
+
+![](../../Images/Pasted%20image%2020240924210004.png)
+
+
+
+
+
 
 
 ## Indetyfing Bad Characters
