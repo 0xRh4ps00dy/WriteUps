@@ -121,7 +121,7 @@ Ahora, podemos guardar este exploit en nuestro escritorio como `win32bof_exploi
 ## Jumping to Shellcode
 
 
-# # Remote Buffer Overflow
+# Remote Buffer Overflow
 
 ## Remote Fuzzing
 

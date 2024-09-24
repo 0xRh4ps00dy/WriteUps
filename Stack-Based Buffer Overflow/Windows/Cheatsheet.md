@@ -1,5 +1,4 @@
-
-
+# Local Buffer Overflow
 ## Fuzzing
 
 ```
@@ -38,3 +37,18 @@ eip_offset()
 
 
 ## Jumping to Shellcode
+
+
+
+# Remote Buffer Overflow
+
+## Remote Fuzzing
+
+
+
+
+## Building a Remote Exploit
+
+
+
+## Remote Exploitation
