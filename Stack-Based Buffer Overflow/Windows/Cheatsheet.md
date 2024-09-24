@@ -28,7 +28,6 @@ Seleccionar EIP, botón derecho y modificar valor.
 ```
 ERC --pattern o <ASCII value>
 ```
-
 ## Indetyfing Bad Characters
 
 
@@ -42,7 +41,11 @@ ERC --pattern o <ASCII value>
 ## Jumping to Shellcode
 
 
+## Código del exploit
 
+```
+
+```
 # Remote Buffer Overflow
 
 ## Remote Fuzzing

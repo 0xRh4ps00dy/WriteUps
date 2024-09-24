@@ -143,8 +143,6 @@ def eip_control():
 eip_control()
 ```
 
-
-
 ## Indetyfing Bad Characters
 
 
