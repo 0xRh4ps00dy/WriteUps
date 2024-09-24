@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Cheatsheet.md",
+                "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Cheatsheet.md",
+                "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Cheatsheet.md"
+                "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md"
               }
             }
           }
@@ -172,10 +172,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "078ad743546569ed",
+  "active": "895152f7ae13ee26",
   "lastOpenFiles": [
-    "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Windows/Cheatsheet.md",
+    "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Linux/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Writeups/Writeup Template.md",
     "Stack-Based Buffer Overflow/Windows",

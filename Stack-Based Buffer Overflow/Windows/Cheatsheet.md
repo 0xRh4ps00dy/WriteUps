@@ -1,11 +1,14 @@
-# Fuzzing
+
+
+## Fuzzing
 
 ```
 python -c "print('A'*10000)"
 python -c "print('A'*10000, file=open('fuzz.wav', 'w'))"
 ```
 
-# Contro
+## Controlling EIP
+
 ```
 /usr/bin/msf-pattern_create -l 5000
 
@@ -23,3 +26,15 @@ with open('pattern.wav', 'wb') as f:
 
 eip_offset()
 ```
+
+## Indetyfing Bad Characters
+
+
+
+
+
+## Finding a Return Instruction
+
+
+
+## Jumping to Shellcode
