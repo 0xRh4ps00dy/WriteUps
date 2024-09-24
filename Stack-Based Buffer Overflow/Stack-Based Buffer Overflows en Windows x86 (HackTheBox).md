@@ -98,6 +98,14 @@ with open('pattern.wav', 'wb') as f:
     f.write(payload)
 ```
 
+Por último, debemos llamar a nuestra `eip_offset()`función agregando la siguiente línea al final. De lo contrario, la función no se ejecutará:
+
+```python3
+eip_offset()
+```
+
+Ahora, podemos guardar este exploit en nuestro escritorio como `win32bof_exploit.py`y ejecutarlo. Para ejecutarlo mientras aún estamos en nuestro escritorio `IDLE`, podemos hacer clic en `Run > Run Module`o hacer clic en `F5`:
+
 
 
 ## Indetyfing Bad Characters
