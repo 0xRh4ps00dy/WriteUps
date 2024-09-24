@@ -44,6 +44,17 @@ python -c "print('A'*10000, file=open('fuzz.wav', 'w'))"
 
 Nuestro próximo paso sería controlar con precisión qué dirección se coloca en `EIP` , de modo que se ejecute cuando el programa regrese de la función con la `ret` instrucción. Para ello, primero debemos calcular nuestro desplazamiento exacto de `EIP` , lo que significa qué tan lejos `EIP` está del comienzo de la entrada. Una vez que conocemos el desplazamiento, podemos llenar el búfer que conduce a `EIP` con cualquier dato basura y luego colocar la dirección de instrucción que queremos que se ejecute en la ubicación de `EIP`.
 
+La mejor manera de calcular el desplazamiento exacto de `EIP` es mediante el envío de un patrón único y no repetitivo de caracteres, de modo que podamos ver los caracteres que lo completan `EIP` y buscarlos en nuestro patrón único. Como es un patrón único y no repetitivo, solo encontraremos una coincidencia, que nos daría el desplazamiento exacto de `EIP`.
+
+### Creando un patrón único
+
+```shell-session
+/usr/bin/msf-pattern_create -l 5000
+
+Aa0Aa1Aa2...SNIP...3Gk4Gk5Gk
+```
+
+
 
 
 ## Indetyfing Bad Characters
