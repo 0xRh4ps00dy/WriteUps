@@ -378,22 +378,3 @@ La razon de ésto es porque quizas el buffer overflow en cuestion del programa, 
 # Referencias
 
 [Fundamentos para Stack based Buffer Overflow](https://deephacking.tech/fundamentos-para-buffer-overflow/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Referencias
-
-https://deephacking.tech/fundamentos-para-buffer-overflow/

