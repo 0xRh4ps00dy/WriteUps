@@ -1,33 +1,33 @@
 ## Scanning Options
 
-| **Nmap Option**      | **Description**                                                        |
-| -------------------- | ---------------------------------------------------------------------- |
-| `10.10.10.0/24`      | Rango de red de destino.                                               |
-| `-sn`                | Disables port scanning.                                                |
-| `-Pn`                | Disables ICMP Echo Requests                                            |
-| `-n`                 | Disables DNS Resolution.                                               |
-| `-PE`                | Performs the ping scan by using ICMP Echo Requests against the target. |
-| `--packet-trace`     | Shows all packets sent and received.                                   |
-| `--reason`           | Displays the reason for a specific result.                             |
-| `--disable-arp-ping` | Disables ARP Ping Requests.                                            |
-| `--top-ports=<num>`  | Scans the specified top ports that have been defined as most frequent. |
-| `-p-`                | Scan all ports.                                                        |
-| `-p22-110`           | Escanee todos los puertos entre 22 y 110.                              |
-| `-p22,25`            | Analiza solo los puertos especificados 22 y 25.                        |
-| `-F`                 | Analiza los 100 puertos principales.                                   |
-| `-sS`                | Performs an TCP SYN-Scan.                                              |
-| `-sA`                | Performs an TCP ACK-Scan.                                              |
-| `-sU`                | Performs an UDP Scan.                                                  |
-| `-sV`                | Scans the discovered services for their versions.                      |
-| `-sC`                | Perform a Script Scan with scripts that are categorized as "default".  |
-| `--script <script>`  | Performs a Script Scan by using the specified scripts.                 |
-| `-O`                 | Performs an OS Detection Scan to determine the OS of the target.       |
-| `-A`                 | Performs OS Detection, Service Detection, and traceroute scans.        |
-| `-D RND:5`           | Sets the number of random Decoys that will be used to scan the target. |
-| `-e`                 | Specifies the network interface that is used for the scan.             |
-| `-S 10.10.10.200`    | Specifies the source IP address for the scan.                          |
-| `-g`                 | Specifies the source port for the scan.                                |
-| `--dns-server <ns>`  | DNS resolution is performed by using a specified name server.          |
+| **Nmap Option**      | **Description**                                                                       |
+| -------------------- | ------------------------------------------------------------------------------------- |
+| `10.10.10.0/24`      | Rango de red de destino.                                                              |
+| `-sn`                | Deshabilita el escaneo de puertos.                                                    |
+| `-Pn`                | Deshabilita las solicitudes de eco ICMP                                               |
+| `-n`                 | Deshabilita la resolución DNS.                                                        |
+| `-PE`                | Realiza el escaneo de ping mediante solicitudes de eco ICMP en el destino.            |
+| `--packet-trace`     | Muestra todos los paquetes enviados y recibidos.                                      |
+| `--reason`           | Muestra el motivo de un resultado específico.                                         |
+| `--disable-arp-ping` | Deshabilita las solicitudes de ping ARP.                                              |
+| `--top-ports=<num>`  | Examina los puertos superiores especificados que se han definido como más frecuentes. |
+| `-p-`                | Escanee todos los puertos.                                                            |
+| `-p22-110`           | Escanee todos los puertos entre 22 y 110.                                             |
+| `-p22,25`            | Analiza solo los puertos especificados 22 y 25.                                       |
+| `-F`                 | Analiza los 100 puertos principales.                                                  |
+| `-sS`                | Realiza un escaneo TCP SYN.                                                           |
+| `-sA`                | Realiza un escaneo TCP ACK.                                                           |
+| `-sU`                | Realiza un escaneo UDP.                                                               |
+| `-sV`                | Scans the discovered services for their versions.                                     |
+| `-sC`                | Perform a Script Scan with scripts that are categorized as "default".                 |
+| `--script <script>`  | Performs a Script Scan by using the specified scripts.                                |
+| `-O`                 | Performs an OS Detection Scan to determine the OS of the target.                      |
+| `-A`                 | Performs OS Detection, Service Detection, and traceroute scans.                       |
+| `-D RND:5`           | Sets the number of random Decoys that will be used to scan the target.                |
+| `-e`                 | Specifies the network interface that is used for the scan.                            |
+| `-S 10.10.10.200`    | Specifies the source IP address for the scan.                                         |
+| `-g`                 | Specifies the source port for the scan.                                               |
+| `--dns-server <ns>`  | DNS resolution is performed by using a specified name server.                         |
 
 ----------------
 
