@@ -71,7 +71,11 @@ providing a search string (must be at least 3 chars long).
     Pattern offset: ERC --pattern <offset | o> <search string>
 ```
 
+Como podemos ver, podemos usar `ERC --pattern c 5000` para obtener nuestro patrón. Entonces, usemos este comando y veamos qué obtenemos: 
 
+![Crear patrón](https://academy.hackthebox.com/storage/modules/89/win32bof_erc_pattern_create_1.jpg)
+
+Este patrón es el mismo que obtuvimos con la `msf-pattern_create` herramienta, por lo que podemos usar cualquiera de los dos. Ahora podemos ir a nuestro escritorio para buscar la salida guardada en un archivo llamado `Pattern_Create_1.txt`.
 
 
 ## Indetyfing Bad Characters
