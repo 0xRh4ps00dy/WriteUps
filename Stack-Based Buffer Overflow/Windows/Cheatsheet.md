@@ -38,7 +38,7 @@ ERC --pattern o <ASCII value>
 
 
 
-## Jumping to Shellcode
+## Saltar a Shellcode
 
 
 ## Código del exploit
@@ -202,13 +202,13 @@ exploit()
 ```
 # Remote Buffer Overflow
 
-## Remote Fuzzing
+## Fuzzing remoto
 
 
 
 
-## Building a Remote Exploit
+## Construyendo un exploit remoto
 
 
 
-## Remote Exploitation
+## Explotación remota
