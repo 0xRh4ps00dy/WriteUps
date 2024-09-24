@@ -147,8 +147,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "63a4c92e94005e09",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
+    "Linux",
+    "Windows",
     "conflict-files-obsidian-git.md",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Stack-Based Buffer Overflow/Fundamentos.md",
@@ -179,7 +181,6 @@
     "Images/image-8 1.png",
     "Images",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
-    "Stack-Based Buffer Overflow",
     "Introducción.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
