@@ -73,7 +73,7 @@ providing a search string (must be at least 3 chars long).
 
 Como podemos ver, podemos usar `ERC --pattern c 5000` para obtener nuestro patrón. Entonces, usemos este comando y veamos qué obtenemos: 
 
-![Crear patrón](https://academy.hackthebox.com/storage/modules/89/win32bof_erc_pattern_create_1.jpg)
+![](../Images/Pasted%20image%2020240924122728.png)
 
 Este patrón es el mismo que obtuvimos con la `msf-pattern_create` herramienta, por lo que podemos usar cualquiera de los dos. Ahora podemos ir a nuestro escritorio para buscar la salida guardada en un archivo llamado `Pattern_Create_1.txt`.
 
@@ -98,16 +98,15 @@ with open('pattern.wav', 'wb') as f:
     f.write(payload)
 ```
 
-Por último, debemos llamar a nuestra `eip_offset()`función agregando la siguiente línea al final. De lo contrario, la función no se ejecutará:
+Por último, debemos llamar a nuestra `eip_offset()` función agregando la siguiente línea al final. De lo contrario, la función no se ejecutará:
 
 ```python3
 eip_offset()
 ```
 
-Ahora, podemos guardar este exploit en nuestro escritorio como `win32bof_exploit.py`y ejecutarlo. Para ejecutarlo mientras aún estamos en nuestro escritorio `IDLE`, podemos hacer clic en `Run > Run Module`o hacer clic en `F5`:
+Ahora, podemos guardar este exploit en nuestro escritorio como `win32bof_exploit.py` y ejecutarlo. Para ejecutarlo mientras aún estamos en nuestro escritorio `IDLE`, podemos hacer clic en `Run > Run Module` o hacer clic en `F5`:
 
-
-
+![](../Images/Pasted%20image%2020240924122717.png)
 ## Indetyfing Bad Characters
 
 
