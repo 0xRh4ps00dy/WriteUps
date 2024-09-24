@@ -58,6 +58,19 @@ Para hacerlo en nuestra máquina, podemos usar el siguiente comando:
 Aa0Aa1Aa2...SNIP...3Gk4Gk5Gk
 ```
 
+Siempre es más fácil hacer todo en Windows para evitar saltar entre dos máquinas virtuales. Veamos cómo podemos obtener el mismo patrón con `ERC`.
+
+Si usamos el `ERC --help` comando, veremos la siguiente guía:
+
+```cmd-session
+--Pattern
+Generates a non repeating pattern. A pattern of pure ASCII characters can be generated up to 20277 and up to  
+66923 if special characters are used. The offset of a particular string can be found inside the pattern by 
+providing a search string (must be at least 3 chars long).
+    Pattern create: ERC --pattern <create | c> <length>
+    Pattern offset: ERC --pattern <offset | o> <search string>
+```
+
 
 
 
