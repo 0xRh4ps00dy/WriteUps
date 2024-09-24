@@ -12,7 +12,9 @@ python -c "print('A'*10000, file=open('fuzz.wav', 'w'))"
 
 ```
 /usr/bin/msf-pattern_create -l 5000
+```
 
+```
 ERC --pattern c 5000
 ```
 
@@ -34,11 +36,11 @@ eip_offset()
 
 ```
 /usr/bin/msf-pattern_offset -q 31684630
-
-[*] Exact match at offset 4112
 ```
 
+```
 
+```
 ## Indetyfing Bad Characters
 
 
