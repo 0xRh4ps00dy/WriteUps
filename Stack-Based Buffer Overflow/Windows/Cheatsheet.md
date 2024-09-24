@@ -21,7 +21,7 @@ def eip_offset():
 payload = bytes("Aa0Aa1Aa2Aa3Aa4Aa5...Gj7Gj8Gj9Gk0Gk1Gk2Gk3Gk4Gk5Gk", "utf-8")
 
 with open('pattern.wav', 'wb') as f:
-    f.write(payload)
+	f.write(payload)
 
 eip_offset()
 ```
