@@ -18,10 +18,11 @@ Finalmente, podemos hacer doble clic `C:\Program Files\x64dbg\x96dbg.exe`para r
 
 Para instalar el `ERC` plugin, podemos ir a la [página de lanzamiento](https://github.com/Andy53/ERC.Xdbg/releases) y descargar el `zip`archivo que coincida con nuestra VM (`x64`o `x32`), que en nuestro caso es `ERC.Xdbg_32-<SNIP>.zip`. Una vez que lo descarguemos en nuestra VM de Windows, podemos extraer su contenido en `x32dbg`la carpeta plugins ubicada en `C:\Program Files\x64dbg\x32\plugins`.
 
-Cuando se complete el proceso, el complemento debería estar listo para usarse. Por lo tanto, una vez que ejecutemos `x32dbg`, podemos escribir `ERC --help`en la barra de comandos en la parte inferior para ver `ERC`el menú de ayuda de .
+Cuando se complete el proceso, el complemento debería estar listo para usarse. Por lo tanto, una vez que ejecutemos `x32dbg`, podemos escribir `ERC --help` en la barra de comandos en la parte inferior para ver `ERC`el menú de ayuda de .
 
-Para visualizar la `ERC`salida del , debemos pasar a la `Log`pestaña haciendo clic sobre ella o haciendo clic en `Alt+L`, como podemos ver a continuación:
+Para visualizar la `ERC`salida del , debemos pasar a la `Log` pestaña haciendo clic sobre ella o haciendo clic en `Alt+L`, como podemos ver a continuación:
 
+![](../Images/Pasted%20image%2020240924085743.png)
 
 # Local Buffer Overflow
 
