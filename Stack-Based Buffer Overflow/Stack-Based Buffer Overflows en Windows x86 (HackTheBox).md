@@ -42,6 +42,8 @@ python -c "print('A'*10000, file=open('fuzz.wav', 'w'))"
 ```
 ## Controlling EIP
 
+Nuestro próximo paso sería controlar con precisión qué dirección se coloca en `EIP` , de modo que se ejecute cuando el programa regrese de la función con la `ret` instrucción. Para ello, primero debemos calcular nuestro desplazamiento exacto de `EIP` , lo que significa qué tan lejos `EIP` está del comienzo de la entrada. Una vez que conocemos el desplazamiento, podemos llenar el búfer que conduce a `EIP` con cualquier dato basura y luego colocar la dirección de instrucción que queremos que se ejecute en la ubicación de `EIP`.
+
 
 
 ## Indetyfing Bad Characters
