@@ -28,22 +28,14 @@
 | `-S 10.10.10.200`    | Especifica la dirección IP de origen para el análisis.                                                   |
 | `-g`                 | Especifica el puerto de origen para el análisis.                                                         |
 | `--dns-server <ns>`  | La resolución de DNS se realiza mediante un servidor de nombres especificado.                            |
-
-----------------
-
-
 ## Output Options
 
-
-| **Nmap Option** | **Description** |
-|---|----|
-| `-oA filename` | Stores the results in all available formats starting with the name of "filename". |
-| `-oN filename` | Stores the results in normal format with the name "filename". |
-| `-oG filename` | Stores the results in "grepable" format with the name of "filename". |
-| `-oX filename` | Stores the results in XML format with the name of "filename". |
-
-
-
+| **Nmap Option** | **Description**                                                                   |
+| --------------- | --------------------------------------------------------------------------------- |
+| `-oA filename`  | Stores the results in all available formats starting with the name of "filename". |
+| `-oN filename`  | Stores the results in normal format with the name "filename".                     |
+| `-oG filename`  | Stores the results in "grepable" format with the name of "filename".              |
+| `-oX filename`  | Stores the results in XML format with the name of "filename".                     |
 ## Performance Options
 
 | **Nmap Option** | **Description** |
@@ -55,10 +47,6 @@
 | `--max-rtt-timeout 100ms` | Sets the specified time value as maximum RTT timeout. |
 | `--min-rate 300` | Sets the number of packets that will be sent simultaneously. |
 | `-T <0-5>` | Specifies the specific timing template. |
-
-
--------------
-
 ## Scan Network Range
 
 ```
@@ -72,8 +60,6 @@ neutron@kali[/kali]$ sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" "
 10.129.2.20
 10.129.2.28
 ```
-
---------
 
 ## Scan IP List
 
@@ -96,8 +82,6 @@ neutron@kali[/kali]$ sudo nmap -sn -oA tnet -iL hosts.lst | grep for | cut -d" "
 10.129.2.19
 10.129.2.20
 ```
-
---------------
 
 ## Discovering Open UDP Ports
 
