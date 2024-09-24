@@ -81,9 +81,7 @@ Este patrón es el mismo que obtuvimos con la `msf-pattern_create` herramienta,
 
 Escribiremos nuestro exploit en Python3, ya que contiene bibliotecas integradas que nos ayudan en este proceso, como `struct` y `requests`.
 
-Podemos empezar creando una nueva función con `def eip_offset():`, y luego crear nuestra `payload`variable como un `bytes`objeto y pegar entre paréntesis la `Ascii:`salida de `Pattern_Create_1.txt`. Así, podemos hacer clic en la barra de búsqueda de Windows en la parte inferior y escribir `IDLE`, lo que abriría el editor de Python3, y luego hacer clic `ctrl+N`para comenzar a escribir un nuevo script de Python donde podemos comenzar a escribir nuestro código. Nuestro código inicial debería verse así:
-
-Código: python
+Podemos empezar creando una nueva función con `def eip_offset():`, y luego crear nuestra `payload`variable como un `bytes`objeto y pegar entre paréntesis la `Ascii:` salida de `Pattern_Create_1.txt`. Así, podemos hacer clic en la barra de búsqueda de Windows en la parte inferior y escribir `IDLE`, lo que abriría el editor de Python3, y luego hacer clic `ctrl+N` para comenzar a escribir un nuevo script de Python donde podemos comenzar a escribir nuestro código. Nuestro código inicial debería verse así:
 
 ```python
 def eip_offset():
@@ -93,13 +91,11 @@ def eip_offset():
 					"utf-8")
 ```
 
-A continuación, bajo la misma `eip_offset()`función, escribiremos `payload`en un archivo llamado `pattern.wav`, agregando las siguientes líneas:
-
-Código: python
+A continuación, bajo la misma `eip_offset()` función, escribiremos `payload` en un archivo llamado `pattern.wav`, agregando las siguientes líneas:
 
 ```python
-    with open('pattern.wav', 'wb') as f:
-        f.write(payload)
+with open('pattern.wav', 'wb') as f:
+    f.write(payload)
 ```
 
 
