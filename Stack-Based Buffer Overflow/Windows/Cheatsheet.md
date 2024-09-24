@@ -38,8 +38,9 @@ eip_offset()
 /usr/bin/msf-pattern_offset -q 31684630
 ```
 
+Seleccionar EIP, botón derecho y Modificar valor 
 ```
-
+ERC --pattern o 1hF0
 ```
 ## Indetyfing Bad Characters
 
