@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1faa6616c5cdb714",
+        "id": "61214c28ea76c6da",
         "type": "tabs",
         "children": [
           {
-            "id": "63a4c92e94005e09",
+            "id": "895152f7ae13ee26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a1d9cbfcfc5d1e17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Enumeration/Nmap Cheatsheet.md",
+                "file": "Writeups/Writeup Template.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+                "file": "Writeups/Writeup Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+                "file": "Writeups/Writeup Template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md"
+                "file": "Writeups/Writeup Template.md"
               }
             }
           }
@@ -159,23 +147,20 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "63a4c92e94005e09",
+  "active": "895152f7ae13ee26",
   "lastOpenFiles": [
-    "Enumeration/Nmap Cheatsheet.md",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
-    "Enumeration",
     "Images/Pasted image 20240924085743.png",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
-    "Stack-Based Buffer Overflow/Fundamentos.md",
-    "Linux",
-    "Windows",
-    "conflict-files-obsidian-git.md",
+    "Enumeration/Nmap Cheatsheet.md",
+    "Enumeration",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
+    "Stack-Based Buffer Overflow/Fundamentos.md",
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Images/Pasted image 20240923104053.png",
     "Images/Pasted image 20240923103932.png",
     "Images/Pasted image 20240923103040.png",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Images/Pasted image 20240923102252.png",
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
     "Writeups/Writeup Template.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
@@ -189,10 +174,14 @@
     "Writeups/DockerLabs",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
     "Sin título.canvas",
+    "conflict-files-obsidian-git.md",
     "Images/image.png",
     "Images/image-9.png",
     "Images/image-9 1.png",
     "Images/image-8.png",
+    "Images/image-8 1.png",
+    "Images",
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86",
     "Introducción.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
