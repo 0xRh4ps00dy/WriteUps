@@ -28,7 +28,14 @@ Para visualizar la `ERC`salida del , debemos pasar a la `Log` pestaña haciend
 
 ## Fuzzing Paramenters
 
+### Fuzzing de archivo abierto
 
+```
+```powershell-session
+python -c "print('A'*10000, file=open('fuzz.wav', 'w'))"
+```
+```
+### 
 
 ## Controlling EIP
 
