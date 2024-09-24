@@ -77,6 +77,32 @@ Como podemos ver, podemos usar `ERC --pattern c 5000` para obtener nuestro patr
 
 Este patrón es el mismo que obtuvimos con la `msf-pattern_create` herramienta, por lo que podemos usar cualquiera de los dos. Ahora podemos ir a nuestro escritorio para buscar la salida guardada en un archivo llamado `Pattern_Create_1.txt`.
 
+### Escribiendo nuestro exploit
+
+Escribiremos nuestro exploit en Python3, ya que contiene bibliotecas integradas que nos ayudan en este proceso, como `struct` y `requests`.
+
+Podemos empezar creando una nueva función con `def eip_offset():`, y luego crear nuestra `payload`variable como un `bytes`objeto y pegar entre paréntesis la `Ascii:`salida de `Pattern_Create_1.txt`. Así, podemos hacer clic en la barra de búsqueda de Windows en la parte inferior y escribir `IDLE`, lo que abriría el editor de Python3, y luego hacer clic `ctrl+N`para comenzar a escribir un nuevo script de Python donde podemos comenzar a escribir nuestro código. Nuestro código inicial debería verse así:
+
+Código: python
+
+```python
+def eip_offset():
+    payload = bytes("Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac6Ac7Ac8Ac"
+                    ...SNIP...
+                    "Gi3Gi4Gi5Gi6Gi7Gi8Gi9Gj0Gj1Gj2Gj3Gj4Gj5Gj6Gj7Gj8Gj9Gk0Gk1Gk2Gk3Gk4Gk5Gk",
+					"utf-8")
+```
+
+A continuación, bajo la misma `eip_offset()`función, escribiremos `payload`en un archivo llamado `pattern.wav`, agregando las siguientes líneas:
+
+Código: python
+
+```python
+    with open('pattern.wav', 'wb') as f:
+        f.write(payload)
+```
+
+
 
 ## Indetyfing Bad Characters
 
