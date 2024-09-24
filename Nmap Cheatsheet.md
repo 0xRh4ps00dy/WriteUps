@@ -1,33 +1,33 @@
-## Scanning Options
+## Opciones de escaneo
 
-| **Nmap Option**      | **Description**                                                                       |
-| -------------------- | ------------------------------------------------------------------------------------- |
-| `10.10.10.0/24`      | Rango de red de destino.                                                              |
-| `-sn`                | Deshabilita el escaneo de puertos.                                                    |
-| `-Pn`                | Deshabilita las solicitudes de eco ICMP                                               |
-| `-n`                 | Deshabilita la resolución DNS.                                                        |
-| `-PE`                | Realiza el escaneo de ping mediante solicitudes de eco ICMP en el destino.            |
-| `--packet-trace`     | Muestra todos los paquetes enviados y recibidos.                                      |
-| `--reason`           | Muestra el motivo de un resultado específico.                                         |
-| `--disable-arp-ping` | Deshabilita las solicitudes de ping ARP.                                              |
-| `--top-ports=<num>`  | Examina los puertos superiores especificados que se han definido como más frecuentes. |
-| `-p-`                | Escanee todos los puertos.                                                            |
-| `-p22-110`           | Escanee todos los puertos entre 22 y 110.                                             |
-| `-p22,25`            | Analiza solo los puertos especificados 22 y 25.                                       |
-| `-F`                 | Analiza los 100 puertos principales.                                                  |
-| `-sS`                | Realiza un escaneo TCP SYN.                                                           |
-| `-sA`                | Realiza un escaneo TCP ACK.                                                           |
-| `-sU`                | Realiza un escaneo UDP.                                                               |
-| `-sV`                | Scans the discovered services for their versions.                                     |
-| `-sC`                | Perform a Script Scan with scripts that are categorized as "default".                 |
-| `--script <script>`  | Performs a Script Scan by using the specified scripts.                                |
-| `-O`                 | Performs an OS Detection Scan to determine the OS of the target.                      |
-| `-A`                 | Performs OS Detection, Service Detection, and traceroute scans.                       |
-| `-D RND:5`           | Sets the number of random Decoys that will be used to scan the target.                |
-| `-e`                 | Specifies the network interface that is used for the scan.                            |
-| `-S 10.10.10.200`    | Specifies the source IP address for the scan.                                         |
-| `-g`                 | Specifies the source port for the scan.                                               |
-| `--dns-server <ns>`  | DNS resolution is performed by using a specified name server.                         |
+| **Opción Nmap**      | **Descripción**                                                                                          |
+| -------------------- | -------------------------------------------------------------------------------------------------------- |
+| `10.10.10.0/24`      | Rango de red de destino.                                                                                 |
+| `-sn`                | Deshabilita el escaneo de puertos.                                                                       |
+| `-Pn`                | Deshabilita las solicitudes de eco ICMP                                                                  |
+| `-n`                 | Deshabilita la resolución DNS.                                                                           |
+| `-PE`                | Realiza el escaneo de ping mediante solicitudes de eco ICMP en el destino.                               |
+| `--packet-trace`     | Muestra todos los paquetes enviados y recibidos.                                                         |
+| `--reason`           | Muestra el motivo de un resultado específico.                                                            |
+| `--disable-arp-ping` | Deshabilita las solicitudes de ping ARP.                                                                 |
+| `--top-ports=<num>`  | Examina los puertos superiores especificados que se han definido como más frecuentes.                    |
+| `-p-`                | Escanee todos los puertos.                                                                               |
+| `-p22-110`           | Escanee todos los puertos entre 22 y 110.                                                                |
+| `-p22,25`            | Analiza solo los puertos especificados 22 y 25.                                                          |
+| `-F`                 | Analiza los 100 puertos principales.                                                                     |
+| `-sS`                | Realiza un escaneo TCP SYN.                                                                              |
+| `-sA`                | Realiza un escaneo TCP ACK.                                                                              |
+| `-sU`                | Realiza un escaneo UDP.                                                                                  |
+| `-sV`                | Examina los servicios detectados en busca de sus versiones.                                              |
+| `-sC`                | Realice un análisis de scripts con scripts que se clasifican como "predeterminados".                     |
+| `--script <script>`  | Realiza un examen de secuencias de comandos mediante las secuencias de comandos especificadas.           |
+| `-O`                 | Realiza un análisis de detección del sistema operativo para determinar el sistema operativo del destino. |
+| `-A`                 | Realiza la detección del sistema operativo, la detección de servicios y los análisis de traceroute.      |
+| `-D RND:5`           | Establece el número de señuelos aleatorios que se usarán para escanear el objetivo.                      |
+| `-e`                 | Especifica la interfaz de red que se utiliza para el análisis.                                           |
+| `-S 10.10.10.200`    | Especifica la dirección IP de origen para el análisis.                                                   |
+| `-g`                 | Especifica el puerto de origen para el análisis.                                                         |
+| `--dns-server <ns>`  | La resolución de DNS se realiza mediante un servidor de nombres especificado.                            |
 
 ----------------
 
