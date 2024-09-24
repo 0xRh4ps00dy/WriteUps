@@ -48,6 +48,10 @@ La mejor manera de calcular el desplazamiento exacto de `EIP` es mediante el en
 
 ### Creando un patrón único
 
+Podemos generar un patrón único `pattern_create` en nuestra máquina atacante o directamente en nuestro depurador `x32dbg` con el `ERC` complemento. 
+
+Para hacerlo en nuestra máquina, podemos usar el siguiente comando:
+
 ```shell-session
 /usr/bin/msf-pattern_create -l 5000
 
