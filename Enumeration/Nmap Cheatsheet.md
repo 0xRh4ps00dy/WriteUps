@@ -28,14 +28,14 @@
 | `-S 10.10.10.200`    | Especifica la dirección IP de origen para el análisis.                                                   |
 | `-g`                 | Especifica el puerto de origen para el análisis.                                                         |
 | `--dns-server <ns>`  | La resolución de DNS se realiza mediante un servidor de nombres especificado.                            |
-## Output Options
+## Opciones de salida
 
-| **Nmap Option** | **Description**                                                                   |
-| --------------- | --------------------------------------------------------------------------------- |
-| `-oA filename`  | Stores the results in all available formats starting with the name of "filename". |
-| `-oN filename`  | Stores the results in normal format with the name "filename".                     |
-| `-oG filename`  | Stores the results in "grepable" format with the name of "filename".              |
-| `-oX filename`  | Stores the results in XML format with the name of "filename".                     |
+| **Nmap Option** | **Description**                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------- |
+| `-oA filename`  | Almacena los resultados en todos los formatos disponibles que comienzan con el nombre de "nombre de archivo". |
+| `-oN filename`  | Almacena los resultados en formato normal con el nombre "nombre de archivo".                                  |
+| `-oG filename`  | Almacena los resultados en formato "grepable" con el nombre de "filename".                                    |
+| `-oX filename`  | Almacena los resultados en formato XML con el nombre de "filename".                                           |
 ## Opciones de rendimiento
 
 | **Opción Nmap**              | **Descripción**                                                              |
@@ -44,9 +44,9 @@
 | `--stats-every=5s`           | Muestra el estado del escaneo cada 5 segundos.                               |
 | `-v/-vv`                     | Muestra una salida detallada durante el análisis.                            |
 | `--initial-rtt-timeout 50ms` | Establece el valor de tiempo especificado como tiempo de espera RTT inicial. |
-| `--max-rtt-timeout 100ms`    | Sets the specified time value as maximum RTT timeout.                        |
-| `--min-rate 300`             | Sets the number of packets that will be sent simultaneously.                 |
-| `-T <0-5>`                   | Specifies the specific timing template.                                      |
+| `--max-rtt-timeout 100ms`    | Establece el valor de tiempo especificado como tiempo de espera RTT máximo.  |
+| `--min-rate 300`             | Establece el número de paquetes que se enviarán simultáneamente.             |
+| `-T <0-5>`                   | Especifica la plantilla de temporización específica.                         |
 ## Rango de red de escaneo
 
 ```
