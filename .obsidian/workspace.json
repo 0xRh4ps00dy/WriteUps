@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a1d9cbfcfc5d1e17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Nmap Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+                "file": "Nmap Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+                "file": "Nmap Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md"
+                "file": "Nmap Cheatsheet.md"
               }
             }
           }
@@ -147,12 +160,14 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "63a4c92e94005e09",
+  "active": "a1d9cbfcfc5d1e17",
   "lastOpenFiles": [
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+    "Nmap Cheatsheet.md",
+    "Enumeration",
     "Images/Pasted image 20240924085743.png",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Fundamentos.md",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
     "Linux",
     "Windows",
     "conflict-files-obsidian-git.md",
@@ -179,8 +194,6 @@
     "Images/image-9.png",
     "Images/image-9 1.png",
     "Images/image-8.png",
-    "Images/image-8 1.png",
-    "Images",
     "Introducción.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
