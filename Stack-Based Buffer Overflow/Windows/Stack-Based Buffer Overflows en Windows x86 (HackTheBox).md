@@ -105,9 +105,6 @@ eip_offset()
 ```
 
 Ahora, podemos guardar este exploit en nuestro escritorio como `win32bof_exploit.py`y ejecutarlo. Para ejecutarlo mientras aún estamos en nuestro escritorio `IDLE`, podemos hacer clic en `Run > Run Module`o hacer clic en `F5`:
-
-
-
 ## Indetyfing Bad Characters
 
 
