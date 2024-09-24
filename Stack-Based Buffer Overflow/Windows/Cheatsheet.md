@@ -40,7 +40,7 @@ eip_offset()
 
 Seleccionar EIP, botón derecho y Modificar valor 
 ```
-ERC --pattern o 1hF0
+ERC --pattern o <ASCII value>
 ```
 ## Indetyfing Bad Characters
 

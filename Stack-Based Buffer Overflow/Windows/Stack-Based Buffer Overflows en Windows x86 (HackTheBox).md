@@ -104,7 +104,20 @@ Por último, debemos llamar a nuestra `eip_offset()`función agregando la sigui
 eip_offset()
 ```
 
-Ahora, podemos guardar este exploit en nuestro escritorio como `win32bof_exploit.py`y ejecutarlo. Para ejecutarlo mientras aún estamos en nuestro escritorio `IDLE`, podemos hacer clic en `Run > Run Module`o hacer clic en `F5`:
+Ahora, podemos guardar este exploit en nuestro escritorio como `win32bof_exploit.py`y ejecutarlo. Para ejecutarlo mientras aún estamos en nuestro escritorio `IDLE`, podemos hacer clic en `Run > Run Module`o hacer clic en `F5`.
+
+### Cálculo de la compensación del EIP
+
+Ahora podemos usar el valor de `EIP`para calcular el desplazamiento. Podemos hacerlo nuevamente en nuestra máquina con `msf-pattern_offset`(la contraparte de `msf-pattern_create`), usando el valor hexadecimal en `EIP`, de la siguiente manera:
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ /usr/bin/msf-pattern_offset -q 31684630
+
+[*] Exact match at offset 4112
+```
+
+
+
 ## Indetyfing Bad Characters
 
 
