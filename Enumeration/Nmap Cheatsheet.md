@@ -36,18 +36,18 @@
 | `-oN filename`  | Stores the results in normal format with the name "filename".                     |
 | `-oG filename`  | Stores the results in "grepable" format with the name of "filename".              |
 | `-oX filename`  | Stores the results in XML format with the name of "filename".                     |
-## Performance Options
+## Opciones de rendimiento
 
-| **Nmap Option** | **Description** |
-|---|----|
-| `--max-retries <num>` | Sets the number of retries for scans of specific ports. |
-| `--stats-every=5s` | Displays scan's status every 5 seconds. |
-| `-v/-vv` | Displays verbose output during the scan. |
-| `--initial-rtt-timeout 50ms` | Sets the specified time value as initial RTT timeout. |
-| `--max-rtt-timeout 100ms` | Sets the specified time value as maximum RTT timeout. |
-| `--min-rate 300` | Sets the number of packets that will be sent simultaneously. |
-| `-T <0-5>` | Specifies the specific timing template. |
-## Scan Network Range
+| **Opción Nmap**              | **Descripción**                                                              |
+| ---------------------------- | ---------------------------------------------------------------------------- |
+| `--max-retries <num>`        | Establece el número de reintentos para los exámenes de puertos específicos.  |
+| `--stats-every=5s`           | Muestra el estado del escaneo cada 5 segundos.                               |
+| `-v/-vv`                     | Muestra una salida detallada durante el análisis.                            |
+| `--initial-rtt-timeout 50ms` | Establece el valor de tiempo especificado como tiempo de espera RTT inicial. |
+| `--max-rtt-timeout 100ms`    | Sets the specified time value as maximum RTT timeout.                        |
+| `--min-rate 300`             | Sets the number of packets that will be sent simultaneously.                 |
+| `-T <0-5>`                   | Specifies the specific timing template.                                      |
+## Rango de red de escaneo
 
 ```
 neutron@kali[/kali]$ sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
@@ -61,7 +61,7 @@ neutron@kali[/kali]$ sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" "
 10.129.2.28
 ```
 
-## Scan IP List
+## Escanear lista de IP
 
 ```
 neutron@kali[/kali]$ cat hosts.lst
@@ -83,7 +83,7 @@ neutron@kali[/kali]$ sudo nmap -sn -oA tnet -iL hosts.lst | grep for | cut -d" "
 10.129.2.20
 ```
 
-## Discovering Open UDP Ports
+## Descubriendo puertos UDP abiertos
 
 ```
 neutron@kali[/kali]$ sudo nmap 10.129.2.28 -F -sU
@@ -103,9 +103,7 @@ MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 Nmap done: 1 IP address (1 host up) scanned in 98.07 seconds
 ```
 
-----------
-
-## Service Version Detection
+## Detección de versiones de servicio
 
 ```
 neutron@kali[/kali]$ sudo nmap 10.129.2.28 -p- -sV
@@ -116,9 +114,7 @@ Stats: 0:00:03 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
 SYN Stealth Scan Timing: About 3.64% done; ETC: 19:45 (0:00:53 remaining)
 ```
 
--------------
-
-## Aggresive Scan
+## Escaneo agresivo
 
 ```
 neutron@kali[/kali]$ sudo nmap 10.129.2.28 -p 80 -A
