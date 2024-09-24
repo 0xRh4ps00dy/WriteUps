@@ -42,6 +42,9 @@ Seleccionar EIP, botón derecho y Modificar valor
 ```
 ERC --pattern o <ASCII value>
 ```
+
+### Control de EIP
+
 ## Indetyfing Bad Characters
 
 
