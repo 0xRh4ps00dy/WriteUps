@@ -26,8 +26,9 @@ Para visualizar la `ERC`salida del , debemos pasar a la `Log` pestaña haciend
 
 # Local Buffer Overflow
 
-## Fuzzing Paramenters
+## Fuzzing Paramenter
 
+El primer paso en cualquier ejercicio de vulnerabilidad binaria es realizar pruebas de fuzzing en varios parámetros y cualquier otra entrada que acepte el programa para ver si nuestra entrada puede hacer que la aplicación se bloquee. Si alguna de nuestras entradas logra que el programa se bloquee, revisamos qué causó el bloqueo del programa. Si vemos que el programa se bloqueó porque nuestra entrada sobrescribió el `EIP` registro, es probable que tengamos una vulnerabilidad de desbordamiento de búfer basada en pila. Todo lo que queda es explotar esta vulnerabilidad con éxito, lo que puede variar en dificultad según el sistema operativo, la arquitectura del programa y las protecciones.
 ### Fuzzing en campos de texto
 
 ```
