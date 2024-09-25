@@ -151,14 +151,24 @@ Como estamos atacando un parámetro de entrada (un archivo abierto en este caso)
 
 Por ejemplo, un carácter incorrecto muy común es un byte nulo `0x00`, utilizado en Assembly como un terminador de cadena, que le dice al procesador que la cadena ha terminado. Entonces, si nuestra carga útil incluye un byte nulo, el programa puede dejar de procesar nuestro shellcode, pensando que ha llegado al final de la misma. Esto hará que nuestra carga útil no se ejecute correctamente y nuestro ataque fallará. Más ejemplos son `0x0a`y `0x0d`, que son la nueva línea `\n` y el retorno de carro `\r`, respectivamente. Si estuviéramos explotando un desbordamiento de búfer en una entrada de cadena que se espera que sea una sola línea (como una clave de licencia), estos caracteres probablemente terminarían nuestra entrada prematuramente, lo que también haría que nuestra carga útil falle.
 
-Para identificar caracteres incorrectos, tenemos que enviar todos los caracteres después de completar la `EIP`dirección, que se encuentra después de `4112`+ `4`bytes. Luego, verificamos si el programa eliminó alguno de los caracteres o si nuestra entrada se truncó prematuramente después de un carácter específico.
+Para identificar caracteres incorrectos, tenemos que enviar todos los caracteres después de completar la `EIP` dirección, que se encuentra después de `4112`+ `4` bytes. Luego, verificamos si el programa eliminó alguno de los caracteres o si nuestra entrada se truncó prematuramente después de un carácter específico.
 
 Para ello necesitaríamos dos archivos:
 
-1. Un `.wav`archivo con todos los caracteres para cargar en el programa.
-2. Un `.bin`archivo para comparar con nuestra entrada en memoria
+1. Un `.wav` archivo con todos los caracteres para cargar en el programa.
+2. Un `.bin` archivo para comparar con nuestra entrada en memoria
 
-Podemos utilizar `ERC`para generar el `.bin`archivo y generar una lista de todos los caracteres para crear nuestro `.wav`archivo. Para ello, podemos utilizar el `ERC --bytearray`comando:
+Podemos utilizar `ERC` para generar el `.bin` archivo y generar una lista de todos los caracteres para crear nuestro `.wav` archivo. Para ello, podemos utilizar el `ERC --bytearray` comando:
+
+![](../../Images/Pasted%20image%2020240925071440.png)
+
+Esto también crea dos archivos en nuestro escritorio:
+
+- `ByteArray_1.txt`: Que contiene la cadena de todos los caracteres que podemos usar en nuestro exploit de Python
+- `ByteArray_1.bin`: Que podemos usar `ERC`más adelante para comparar con nuestra entrada en la memoria.
+
+
+
 
 ## Finding a Return Instruction
 
