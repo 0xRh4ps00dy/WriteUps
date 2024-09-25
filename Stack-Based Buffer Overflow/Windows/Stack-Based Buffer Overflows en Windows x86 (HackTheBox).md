@@ -311,14 +311,30 @@ Como podemos ver, todos los archivos pertenecen al propio programa, lo que indic
 
 #### Buscando JMP ESP
 
-Ahora que tenemos una lista de archivos cargados que pueden incluir la instrucción que buscamos, podemos buscar en ellos instrucciones que podamos utilizar. Para acceder a cualquiera de estos archivos, podemos ir a la `Symbols`pestaña haciendo clic en ella o pulsando `alt+e`:
+Ahora que tenemos una lista de archivos cargados que pueden incluir la instrucción que buscamos, podemos buscar en ellos instrucciones que podamos utilizar. Para acceder a cualquiera de estos archivos, podemos ir a la `Symbols` pestaña haciendo clic en ella o pulsando `alt+e`:
 
+![](../../Images/Pasted%20image%2020240925164732.png)
 
+Podemos empezar con `cdextract.exe` y hacer doble clic para abrir la vista y buscar sus instrucciones. Para buscar la `JMP ESP` instrucción dentro de las instrucciones de este archivo, podemos hacer clic en `ctrl+f`, lo que nos permite buscar cualquier instrucción dentro del archivo abierto `cdextract.exe`:
 
+![](../../Images/Pasted%20image%2020240925164744.png)
 
+Podemos ingresar `jmp esp`y debería mostrarnos si este archivo contiene alguna de las instrucciones que buscamos:
 
+![](../../Images/Pasted%20image%2020240925164758.png)
 
+Como podemos ver, encontramos las siguientes coincidencias:
 
+```cmd-shell
+Address  Disassembly
+00419D0B jmp esp
+00463B91 jmp esp
+00477A8B jmp esp
+0047E58B jmp esp
+004979F4 jmp esp
+```
+
+Nota: También podemos buscar `CALL ESP`, que también saltará a la pila.
 
 
 ## Saltar a Shellcode
