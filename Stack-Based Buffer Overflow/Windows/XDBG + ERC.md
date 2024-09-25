@@ -585,22 +585,61 @@ Fuzzing 9500 bytes
 ```
 
 
-Vemos que todo el script se ejecutó sin bloquear los servicios de escucha, ya que el puerto `8888`seguía escuchando durante nuestro análisis de fuzzing. Sin embargo, si verificamos nuestro `x32dbg` depurador, vemos que el `cloudme`programa front-end se bloqueó y `EIP`se sobrescribió con nuestro `A`búfer de :
+Vemos que todo el script se ejecutó sin bloquear los servicios de escucha, ya que el puerto `8888` seguía escuchando durante nuestro análisis de fuzzing. Sin embargo, si verificamos nuestro `x32dbg` depurador, vemos que el `cloudme`programa front-end se bloqueó y `EIP` se sobrescribió con nuestro `A`búfer de :
+
+![](../../Images/Pasted%20image%2020240925165832.png)
 
 
+Nos enfrentamos a este problema porque nuestro programa nunca deja de enviar cargas útiles, ya que el servicio de escucha nunca se bloquea. Entonces, ¿cómo podríamos saber en qué longitud de búfer se bloqueó el programa?
 
+Podemos enviar nuestro buffer gradualmente agregando un `breakpoint()`después `s.send(buffer)`, de modo que cuando podamos continuar manualmente presionando `c`, podamos ver si nuestra entrada hizo que el programa se bloqueara y sobrescribiera `EIP`.
 
+Entonces, agregaremos nuestro punto de interrupción a nuestro exploit, reiniciaremos el programa en `x32dbg` y comenzaremos a fuzzear gradualmente el programa:
 
+```cmd-session
+Fuzzing 0 bytes
+> c:\users\htb-student\desktop\win32bof_exploit_remote.py(13)fuzz()
+-> s.send(buffer)
+(Pdb) c
+Fuzzing 500 bytes
+> c:\users\htb-student\desktop\win32bof_exploit_remote.py(12)fuzz()
+-> breakpoint()
+(Pdb) c
+Fuzzing 1000 bytes
+> c:\users\htb-student\desktop\win32bof_exploit_remote.py(13)fuzz()
+-> s.send(buffer)
+(Pdb) c
+Fuzzing 1500 bytes
+> c:\users\htb-student\desktop\win32bof_exploit_remote.py(12)fuzz()
+-> breakpoint()
+(Pdb) c
+...
+```
 
-
-
-
-
+Una vez que el programa falla y `EIP`se sobrescribe, sabemos que la última cantidad de bytes que enviamos es lo que hizo que el programa fallara y que el programa es vulnerable a un desbordamiento de búfer.
 
 
 
 
 ## Construyendo un exploit remoto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
