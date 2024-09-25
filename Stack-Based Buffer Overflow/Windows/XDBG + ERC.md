@@ -146,7 +146,7 @@ def eip_control():
 eip_control()
 ```
 
-## Indetyfing personajes malos
+## Indificando personajes malos
 
 Antes de comenzar a utilizar el hecho de que podemos controlar `EIP` y subvertir el flujo de ejecución del programa, necesitamos determinar los caracteres que debemos evitar usar en nuestra carga útil.
 
@@ -209,7 +209,7 @@ Lo que hará este comando es comparar byte por byte tanto nuestra entrada `ESP`
 
 Como podemos ver, esto coloca cada byte de ambas ubicaciones uno al lado del otro para detectar rápidamente cualquier problema. El resultado que buscamos es que todos los bytes de ambas ubicaciones sean iguales, sin diferencias de ningún tipo. Sin embargo, vemos que después del primer carácter, `00`todos los bytes restantes son diferentes. `"Esto indica que 0x00 truncado la entrada restante y, por lo tanto, debe considerarse un carácter incorrecto"`.
 
-## Eliminando Malos Personajes
+### Eliminando Malos Personajes
 
 Ahora que hemos identificado el primer carácter incorrecto, debemos utilizar `--bytearray`nuevamente para generar una lista de todos los caracteres sin caracteres incorrectos, que podemos especificar con `-bytes 0x00,0x0a,0x0d...etc.`. Por lo tanto, utilizaremos el siguiente comando:
 
@@ -240,7 +240,7 @@ Entonces, ahora sabemos que debemos evitar usar `0x00`en la `EIP` dirección q
 
 ## Encontrar una instrucción de devolución
 
-## Subvirtiendo el flujo del programa
+### Subvirtiendo el flujo del programa
 
 Para subvertir con éxito el flujo de ejecución del programa, debemos escribir una dirección de trabajo en `EIP` que conduzca a una instrucción que nos beneficie. Actualmente, solo hemos escrito 4 `B` en `EIP`, que (obviamente) no es una dirección de trabajo, y cuando el programa intente ir a esta dirección, fallará, lo que provocará que todo el programa se bloquee.
 
@@ -259,7 +259,7 @@ Para dirigir el flujo de ejecución a la pila, debemos escribir una dirección p
 1. Podemos utilizar la `ESP` dirección.
 2. Podemos buscar `JMP ESP` instrucciones en módulos cargados con seguridad deshabilitada.
 
-## Uso de la dirección ESP
+### Uso de la dirección ESP
 
 Primero, probemos el método más básico para escribir la dirección de la parte superior de la pila `ESP`. Una vez que escribimos una dirección `EIP` y el programa falla en la instrucción de retorno `ret`, el depurador se detendría en ese punto y la `ESP` dirección en ese punto coincidiría con el comienzo de nuestro shellcode, de manera similar a cómo vimos nuestros caracteres en la pila cuando buscamos caracteres incorrectos. Podemos tomar nota de la `ESP`dirección en este punto, que en este caso es `0014F974`:
 
