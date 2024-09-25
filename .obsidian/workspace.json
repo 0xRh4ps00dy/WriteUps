@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
+                "file": "Writeups/Hackthebox/Media/Devvortex.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
+                "file": "Writeups/Hackthebox/Media/Devvortex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md",
+                "file": "Writeups/Hackthebox/Media/Devvortex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Devvortex.md"
+                "file": "Writeups/Hackthebox/Media/Devvortex.md"
               }
             }
           }
@@ -160,7 +160,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "441635379ac2ca64",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
@@ -188,7 +188,7 @@
     "Images/Pasted image 20240923104053.png",
     "Images/Pasted image 20240923103932.png",
     "Images/Pasted image 20240923103040.png",
-    "Writeups/Hackthebox/Fàcil/Devvortex.md",
+    "Writeups/Hackthebox/Media/Devvortex.md",
     "Images/Pasted image 20240923102252.png",
     "Writeups/Writeup Template.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
