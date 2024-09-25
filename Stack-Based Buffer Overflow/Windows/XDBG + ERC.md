@@ -277,9 +277,9 @@ La forma más confiable de ejecutar el shellcode cargado en la pila es encontrar
 
 Para encontrar esta instrucción, debemos buscar en los ejecutables y bibliotecas cargados por nuestro programa. Esto incluye:
 
-1. El archivo del programa`` 
+1. El archivo del programa `.exe`. 
 2. Las bibliotecas propias del programa `.dll`. 
-3. Cualquier `.dll` biblioteca de Windows utilizada por el programa
+3. Cualquier biblioteca `.dll` de Windows utilizada por el programa.
 
 Para encontrar una lista de todos los archivos cargados por el programa, podemos utilizar `ERC --ModuleInfo`, de la siguiente manera:
 
