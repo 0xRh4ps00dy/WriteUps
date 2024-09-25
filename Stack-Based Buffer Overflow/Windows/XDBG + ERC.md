@@ -511,6 +511,42 @@ buf += b"\xd9\xc8\xb8\x7c\x9f\x8c\x72\xd9\x74\x24\xf4\x5d\x33"
 
 ### Depuración de un programa remoto
 
+Depuraremos un programa llamado `CloudMe`, una herramienta de usuario final para un servicio de uso compartido de archivos, que se encuentra en el escritorio de la máquina virtual Windows que se muestra a continuación. Como servicio de uso compartido de archivos, esta herramienta escucha en un puerto las actualizaciones del servidor de archivos. Podemos ver esto si la herramienta se está ejecutando y enumeramos los puertos de escucha en `Powershell`:
+
+```powershell-session
+PS C:\htb> netstat -a
+
+...SNIP...
+TCP    0.0.0.0:8888           0.0.0.0:0              LISTENING
+[CloudMe.exe]
+```
+
+Como podemos ver, el servicio está escuchando en el puerto `8888`y también ha establecido una conexión con un servidor remoto. Podemos usar el `netcat`programa en el Escritorio para interactuar con este puerto y ver si acepta algún parámetro:
+
+```powershell-session
+PS C:\Users\htb-student\Desktop> .\nc.exe 127.0.0.1 8888
+?
+PS C:\Users\htb-student\Desktop> .\nc.exe 127.0.0.1 8888
+help
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Construyendo un exploit remoto
 
