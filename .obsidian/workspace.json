@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Codify.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Codify.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Codify.md",
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Codify.md"
+                "file": "Writeups/Hackthebox/Fàcil/Analytics.md"
               }
             }
           }
@@ -162,6 +162,7 @@
   },
   "active": "441635379ac2ca64",
   "lastOpenFiles": [
+    "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Enumeration/Nmap Cheatsheet.md",
@@ -191,7 +192,6 @@
     "Images/Pasted image 20240923103040.png",
     "Images/Pasted image 20240923102252.png",
     "Writeups/Writeup Template.md",
-    "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Insane",
     "Writeups/Hackthebox/Difícil",
     "Writeups/DockerLabs/Difícil",
