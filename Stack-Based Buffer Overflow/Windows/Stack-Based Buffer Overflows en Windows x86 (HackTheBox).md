@@ -211,6 +211,30 @@ Lo que hará este comando es comparar byte por byte tanto nuestra entrada `ESP`
 
 ![](../../Images/Pasted%20image%2020240925162721.png)
 
+Como podemos ver, esto coloca cada byte de ambas ubicaciones uno al lado del otro para detectar rápidamente cualquier problema. El resultado que buscamos es que todos los bytes de ambas ubicaciones sean iguales, sin diferencias de ningún tipo. Sin embargo, vemos que después del primer carácter, `00`todos los bytes restantes son diferentes. `"Esto indica que 0x00 truncado la entrada restante y, por lo tanto, debe considerarse un carácter incorrecto"`.
+
+## Eliminando Malos Personajes
+
+Ahora que hemos identificado el primer carácter incorrecto, debemos utilizar `--bytearray`nuevamente para generar una lista de todos los caracteres sin caracteres incorrectos, que podemos especificar con `-bytes 0x00,0x0a,0x0d...etc.`. Por lo tanto, utilizaremos el siguiente comando:
+
+```cmd-session
+ERC --bytearray -bytes 0x00
+```
+
+Ahora, usemos este comando `ERC`nuevamente para generar el nuevo archivo y usarlo para actualizar nuestro exploit:
+
+![](../../Images/Pasted%20image%2020240925162815.png)
+
+Como podemos ver, esta vez, decía `excluding: 00`, y la tabla de matriz no incluye `00`al principio. Entonces, vayamos al archivo de salida generado `ByteArray_2.txt`, copiemos los nuevos bytes en `C#`, y colóquelos en nuestro exploit, que ahora debería verse así:
+
+Código: python
+
+```python
+def bad_chars():
+    all_chars = bytes([
+        0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08
+...SNIP...
+```
 
 
 
