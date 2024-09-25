@@ -250,11 +250,18 @@ Para subvertir con éxito el flujo de ejecución del programa, debemos escribir 
 
 Para encontrar una dirección que podamos usar, debemos observar todas las instrucciones utilizadas o cargadas por nuestro programa, elegir una de ellas y escribir su dirección en `EIP`. En los sistemas modernos con Address Space Layout Randomization (ASLR), si elegimos una dirección, será inútil, ya que cambiaría la próxima vez que se ejecute nuestro programa, ya que se aleatoriza. En ese caso, tendríamos que seguir un método para filtrar el conjunto actual de direcciones en tiempo real y usarlo en nuestro exploit. Sin embargo, no estamos tratando con ninguno de estos tipos de protecciones en este módulo, por lo que podemos asumir que la dirección que elijamos no cambiará y podemos usarla de manera segura en nuestro programa.
 
-Para saber qué instrucción utilizar, primero debemos saber qué queremos que haga esta dirección. Si bien los métodos de explotación binaria más avanzados `ROP`se basan en la utilización y el mapeo de varias instrucciones locales para realizar el ataque (como enviar un shell inverso), aún no tenemos que llegar a este nivel avanzado, ya que estamos tratando con un programa con la mayoría de las protecciones de memoria deshabilitadas.
+Para saber qué instrucción utilizar, primero debemos saber qué queremos que haga esta dirección. Si bien los métodos de explotación binaria más avanzados `ROP` se basan en la utilización y el mapeo de varias instrucciones locales para realizar el ataque (como enviar un shell inverso), aún no tenemos que llegar a este nivel avanzado, ya que estamos tratando con un programa con la mayoría de las protecciones de memoria deshabilitadas.
 
-Entonces, utilizaremos un método conocido como `Jumping to Stack`.
+Entonces, utilizaremos un método conocido como `Saltar a la pila`.
 
+### Saltar a la pila
 
+Como ya tenemos datos en la pila, que está repleta de información, podemos escribir instrucciones que nos envíen un shell inverso cuando se ejecuten (en forma de código de máquina/shellcode). Una vez que escribimos nuestros datos en la pila, podemos dirigir el flujo de ejecución del programa a la pila, de modo que comience a ejecutar nuestro shellcode, momento en el que recibiríamos un shell inverso y obtendríamos el control del servidor remoto.
+
+Para dirigir el flujo de ejecución a la pila, debemos escribir una dirección para `EIP`ello. Esto se puede hacer de dos maneras:
+
+1. Escribe la `ESP` dirección (parte superior de la pila) en `EIP`, para que comience a ejecutar el código que se encuentra en la parte superior de la pila
+2. Usando una `JMP ESP` instrucción, que dirige el flujo de ejecución a la pila
 
 
 
