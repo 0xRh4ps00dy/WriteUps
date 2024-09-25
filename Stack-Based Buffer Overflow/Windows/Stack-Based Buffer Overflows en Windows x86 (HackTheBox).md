@@ -289,6 +289,37 @@ Para encontrar una lista de todos los archivos cargados por el programa, podemos
 
 ![](../../Images/Pasted%20image%2020240925164619.png)
 
+Encontramos muchos módulos cargados por el programa, sin embargo podemos obviar algunos archivos con:
+
+- `NXCompat`:Como estamos buscando una `JMP ESP` instrucción, el archivo no debería tener protección de ejecución de pila.
+- `Rebase`o `ASLR`: Dado que estas protecciones provocarían que las direcciones cambiaran entre ejecuciones
+
+En cuanto a `OS DLL`, si estamos ejecutando una versión más nueva de Windows como Windows 10, podemos esperar que todos los archivos DLL del sistema operativo tengan todas las protecciones de memoria presentes, por lo que no usaríamos ninguna de ellas. Si estuviéramos atacando una versión anterior de Windows como Windows XP, muchas de las DLL del sistema operativo cargadas probablemente no tengan protecciones para que podamos buscar `JMP ESP` instrucciones en ellas también.
+
+Si solo consideramos los archivos con `False` todas las protecciones configuradas, obtendremos la siguiente lista:
+
+```cmd-session
+------------------------------------------------------------------------------------------------------------------------ 
+ Base          | Entry point   | Size      | Rebase   | SafeSEH  | ASLR    | NXCompat | OS DLL  | Version, Name, and Path 
+------------------------------------------------------------------------------------------------------------------------ 
+0x400000        0xd88fc         0x11c000    False      False      False      False      False      C:\Program Files\CD to MP3 Freeware\cdextract.exe 
+0x672c0000      0x1000          0x13000     False      False      False      False      False      1.0rc1;AKRip32;C:\Program Files\CD to MP3 Freeware\akrip32.dll 
+0x10000000      0xa3e0          0xc000      False      False      False      False      False      C:\Program Files\CD to MP3 Freeware\ogg.dll
+```
+
+Como podemos ver, todos los archivos pertenecen al propio programa, lo que indica que el programa y todos sus archivos fueron compilados sin ninguna protección de memoria, lo que significa que podemos encontrar `JMP ESP`instrucciones en ellos `La mejor opción es utilizar una instrucción del propio programa, ya que nos aseguraremos de que esta dirección existirá independientemente de la versión de Windows en la que se ejecute el programa`.
+
+#### Buscando JMP ESP
+
+Ahora que tenemos una lista de archivos cargados que pueden incluir la instrucción que buscamos, podemos buscar en ellos instrucciones que podamos utilizar. Para acceder a cualquiera de estos archivos, podemos ir a la `Symbols`pestaña haciendo clic en ella o pulsando `alt+e`:
+
+
+
+
+
+
+
+
 
 ## Saltar a Shellcode
 
