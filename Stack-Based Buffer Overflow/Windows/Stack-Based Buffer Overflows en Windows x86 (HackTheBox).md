@@ -246,21 +246,21 @@ Entonces, ahora sabemos que debemos evitar usar `0x00`en la `EIP` dirección q
 
 
 
-## Jumping to Shellcode
+## Saltar a Shellcode
 
 
 # Remote Buffer Overflow
 
-## Remote Fuzzing
+## Fuzzing remoto
 
 
 
 
-## Building a Remote Exploit
+## Construyendo un exploit remoto
 
 
 
-## Remote Exploitation
+## Explotación a distancia
 
 
 # Referencias
