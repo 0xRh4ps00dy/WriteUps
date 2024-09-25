@@ -244,6 +244,35 @@ Entonces, ahora sabemos que debemos evitar usar `0x00`en la `EIP` dirección q
 
 ## Encontrar una instrucción de devolución
 
+## Subvirtiendo el flujo del programa
+
+Para subvertir con éxito el flujo de ejecución del programa, debemos escribir una dirección de trabajo en `EIP` que conduzca a una instrucción que nos beneficie. Actualmente, solo hemos escrito 4 `B` en `EIP`, que (obviamente) no es una dirección de trabajo, y cuando el programa intente ir a esta dirección, fallará, lo que provocará que todo el programa se bloquee.
+
+Para encontrar una dirección que podamos usar, debemos observar todas las instrucciones utilizadas o cargadas por nuestro programa, elegir una de ellas y escribir su dirección en `EIP`. En los sistemas modernos con Address Space Layout Randomization (ASLR), si elegimos una dirección, será inútil, ya que cambiaría la próxima vez que se ejecute nuestro programa, ya que se aleatoriza. En ese caso, tendríamos que seguir un método para filtrar el conjunto actual de direcciones en tiempo real y usarlo en nuestro exploit. Sin embargo, no estamos tratando con ninguno de estos tipos de protecciones en este módulo, por lo que podemos asumir que la dirección que elijamos no cambiará y podemos usarla de manera segura en nuestro programa.
+
+Para saber qué instrucción utilizar, primero debemos saber qué queremos que haga esta dirección. Si bien los métodos de explotación binaria más avanzados `ROP`se basan en la utilización y el mapeo de varias instrucciones locales para realizar el ataque (como enviar un shell inverso), aún no tenemos que llegar a este nivel avanzado, ya que estamos tratando con un programa con la mayoría de las protecciones de memoria deshabilitadas.
+
+Entonces, utilizaremos un método conocido como `Jumping to Stack`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 1. Podemos utilizar la `ESP` dirección
 2. Podemos buscar `JMP ESP` instrucciones en módulos cargados con seguridad deshabilitada
