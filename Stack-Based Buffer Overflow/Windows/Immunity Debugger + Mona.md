@@ -65,4 +65,7 @@ except:
 ```
 # Comparar distancia
 !mona findmsp -distance 600
+
+# Encontrar malos personajes
+`!mona bytearray -b "\x00"   `
 ```
