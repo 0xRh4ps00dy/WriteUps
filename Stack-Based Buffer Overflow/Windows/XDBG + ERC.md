@@ -695,13 +695,41 @@ bad_chars()
 
 Una vez que reiniciamos nuestro programa `x32dbg` y ejecutamos nuestro exploit, podemos usar `ERC --compare` para comparar los bytes en la `ESP` dirección con el `ByteArray_1.bin` archivo:
 
+![](../../Images/Pasted%20image%2020240925170128.png)
 
+Como podemos ver, todos los bytes coinciden entre la memoria y `ByteArray_1.bin`, lo que significa que este programa no tiene ningún carácter incorrecto.
 
+### Cómo encontrar una instrucción de devolución
 
+Ahora que tenemos el control `EIP` y sabemos qué caracteres incorrectos debemos evitar en nuestra carga útil, necesitamos encontrar una instrucción para ejecutar la carga útil que colocaremos en la pila. Una vez más, dado que este programa no tiene ningún carácter incorrecto, podemos usar la `ESP`dirección como nuestra dirección de retorno. (Intente aprovechar el programa usando `ESP` como dirección de retorno).
 
+Sin embargo, preferiremos utilizar una dirección de una instrucción incorporada en el programa para asegurarnos de que se ejecutará en cualquier sistema, ya que estas instrucciones serán las mismas en cualquier sistema. Por lo tanto, primero obtendremos una lista de módulos y bibliotecas cargadas por el programa, y ​​solo consideraremos aquellas que tengan `False`todas las protecciones, que son las siguientes:
 
+```cmd-session
+------------------------------------------------------------------------------------------------------------------------ 
+Process Name: CloudMe Modules total: 79 
+------------------------------------------------------------------------------------------------------------------------ 
+ Base          | Entry point   | Size      | Rebase   | SafeSEH  | ASLR    | NXCompat | OS DLL  | Version, Name and Path 
+------------------------------------------------------------------------------------------------------------------------ 
+ 0x400000        0x14c0          0x431000    False      False      False      False      False      C:\Users\htb-student\AppData\Local\Programs\CloudMe\CloudMe\CloudMe.exe 
+ 0x61b40000      0x1410          0x5f6000    False      False      False      False      False      5.9.0.0;C:\Users\htb-student\AppData\Local\Programs\CloudMe\CloudMe\Qt5Gui.dll 
+ 0x69900000      0x1410          0x1c1000    False      False      False      False      False      5.9.0.0;C:\Users\htb-student\AppData\Local\Programs\CloudMe\CloudMe\Qt5Network.dll 
+ 0x6d9c0000      0x1410          0x4c000     False      False      False      False      False      5.9.0.0;C:\Users\htb-student\AppData\Local\Programs\CloudMe\CloudMe\Qt5Sql.dll 
+ 0x66e00000      0x1410          0x3d000     False      False      False      False      False      5.9.0.0;C:\Users\htb-student\AppData\Local\Programs\CloudMe\CloudMe\Qt5Xml.dll 
+ 0x6eb40000      0x1410          0x24000     False      False      False      False      False      C:\Users\htb-student\AppData\Local\Programs\CloudMe\CloudMe\libgcc_s_dw2-1.dll 
+ 0x6fe40000      0x1410          0x17e000    False      False      False      False      False      C:\Users\htb-student\AppData\Local\Programs\CloudMe\CloudMe\libstdc++-6.dll 
+ 0x64b40000      0x1410          0x1b000     False      False      False      False      False      1,;WinPthreadGC;C:\Users\htb-student\AppData\Local\Programs\CloudMe\CloudMe\libwinpthread-1.dll 
+ 0x6aa80000      0x1410          0x1b7000    False      False      False      False      False      5.9.0.0;C:\Users\htb-student\AppData\Local\Programs\CloudMe\CloudMe\platforms\qwindows.dll 
+```
 
+Como podemos observar, hay varias librerías cargadas por el programa sin protección de memoria, incluido el `CloudMe.exe` propio programa. Para buscarlas todas `JMP ESP`, podemos ir a la `CPU`pestaña y hacer clic derecho, seleccionar `Search For>All Modules>Command`, ingresar `JMP ESP` , y obtendremos una lista de `JMP ESP` instrucciones en los módulos cargados:
 
+![](../../Images/Pasted%20image%2020240925170209.png)
+
+Si no hubiéramos encontrado ningún resultado, podríamos buscar el `FFE4`patrón en todo el módulo o en todos los módulos, como se mostró en una sección anterior. También podemos buscar otras instrucciones útiles, como `54C3`. En nuestro caso, después de hacer doble clic en el primer resultado para asegurarnos de que efectivamente es `JMP ESP`, podemos copiar la dirección `0069D2E5`y usarla en nuestro exploit. (Intenta buscar otras instrucciones y úsalas como dirección de retorno).
+### Saltar a Shellcode
+
+Nuestro paso final es explotar el programa, por lo que comenzaremos creando nuestro shellcode con el que `msfvenom`abriremos `calc.exe`como prueba de explotación exitosa:
 
 
 
