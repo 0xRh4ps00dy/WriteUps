@@ -62,7 +62,7 @@
       "key": "6"
     }
   ],
-  "obsidian-link-converter:convert-wikis-to-md-in-active-file": [
+  "obsidian-link-converter:convert-wikis-to-mdlinks-within-selection": [
     {
       "modifiers": [
         "Mod",
