@@ -195,11 +195,11 @@ Ahora es momento de estabilizar la terminal:
 
 En este momento estamos con un punto de apoyo como usuario www-data. Vemos que hay dos usuarios en el sistema, Matthew y Zoneminder:
 
-![[../../../Images/Pasted image 20240919130039.png]]
+![Pasted image 20240919130039](../../../Images/Pasted%20image%2020240919130039.png)
 
 Enumerando el sistema nos encontramos con una copia de seguridad de la base de datos SQL del sitio web:
 
-![[../../../Images/Pasted image 20240919130050.png]]
+![Pasted image 20240919130050](../../../Images/Pasted%20image%2020240919130050.png)
 
 En este momento, copiemos el fichero al host de ataque y lo descomprimimos. Una vez hecho esto, abrimos la copia de seguridad con un editor de texto en busca de credenciales.
 
@@ -215,7 +215,7 @@ Ahora intentemos desencriptarlo usando **hashcat**:
 
 Hacemos suerte y logramos encontrar la contraseña del usuario Matthew que nos permite conectarnos a la máquina con este usuario mediante SSH y realizar el movimiento lateral:
 
-![[../../../Images/Pasted image 20240919135441.png]]
+![Pasted image 20240919135441](../../../Images/Pasted%20image%2020240919135441.png)
 
 Aprovechamos para leer la bandera user.txt:
 
