@@ -4,35 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "1faa6616c5cdb714",
-        "type": "tabs",
+        "id": "b6f32464fabf87eb",
+        "type": "split",
         "children": [
           {
-            "id": "a1d9cbfcfc5d1e17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Enumeration/Nmap Cheatsheet.md",
-                "mode": "source",
-                "source": false
+            "id": "61214c28ea76c6da",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "895152f7ae13ee26",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            }
+            ]
           },
           {
-            "id": "441635379ac2ca64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
-                "mode": "source",
-                "source": false
+            "id": "dcfb893137071814",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "078ad743546569ed",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Stack-Based Buffer Overflow/Windows/Cheatsheet.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
               }
-            }
+            ]
           }
         ],
-        "currentTab": 1
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
+                "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md",
+                "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Fàcil/Analytics.md"
+                "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md"
               }
             }
           }
@@ -160,46 +172,45 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "441635379ac2ca64",
+  "active": "895152f7ae13ee26",
   "lastOpenFiles": [
-    "Writeups/Hackthebox/Fàcil/Codify.md",
-    "Writeups/Hackthebox/Fàcil/Devvortex.md",
-    "Writeups/DockerLabs/Muy fàcil/Injection.md",
-    "Enumeration/Nmap Cheatsheet.md",
-    "Writeups/Hackthebox/Fàcil/Analytics.md",
-    "Writeups/Hackthebox/Media/Manager.md",
-    "Writeups/Hackthebox/Media/Surveillance.md",
-    "conflict-files-obsidian-git.md",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
-    "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
-    "Stack-Based Buffer Overflow/Windows/Cheatsheet.md",
-    "Stack-Based Buffer Overflow/Windows",
-    "Stack-Based Buffer Overflow/Linux/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
-    "Stack-Based Buffer Overflow/Linux",
-    "Images/Pasted image 20240925071440.png",
-    "Images/Pasted image 20240924210004.png",
-    "Images/Pasted image 20240924205944.png",
     "Images/Pasted image 20240924122728.png",
     "Images/Pasted image 20240924122717.png",
-    "Enumeration",
+    "Images/Pasted image 20240925071440.png",
+    "Stack-Based Buffer Overflow/Windows/Cheatsheet.md",
+    "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+    "Images/Pasted image 20240924210004.png",
+    "Images/Pasted image 20240924205944.png",
+    "Stack-Based Buffer Overflow/Linux/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
+    "Writeups/Writeup Template.md",
+    "Stack-Based Buffer Overflow/Windows",
+    "Stack-Based Buffer Overflow/Linux",
     "Images/Pasted image 20240924085743.png",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
+    "Enumeration/Nmap Cheatsheet.md",
+    "Enumeration",
+    "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Stack-Based Buffer Overflow/Fundamentos.md",
-    "Linux",
-    "Windows",
     "Images/Pasted image 20240923104053.png",
     "Images/Pasted image 20240923103932.png",
     "Images/Pasted image 20240923103040.png",
+    "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Images/Pasted image 20240923102252.png",
-    "Writeups/Writeup Template.md",
+    "Writeups/Hackthebox/Fàcil/Codify.md",
+    "Writeups/Hackthebox/Fàcil/Analytics.md",
+    "Images/Pasted image 20240921182525.png",
     "Writeups/Hackthebox/Insane",
     "Writeups/Hackthebox/Difícil",
     "Writeups/DockerLabs/Difícil",
     "Writeups/DockerLabs/Medio",
     "Writeups/DockerLabs/Fàcil",
+    "Writeups/DockerLabs/Muy fàcil",
+    "Writeups/DockerLabs",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
     "Sin título.canvas",
+    "conflict-files-obsidian-git.md",
     "Introducción.md",
+    "Writeups/Hackthebox/Media/Surveillance.md",
+    "Writeups/Hackthebox/Media/Manager.md",
     "Untitled 1.md",
     "Test.md",
     "Untitled.md",
