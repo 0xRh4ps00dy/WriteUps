@@ -384,11 +384,11 @@ def exploit():
 
 ### La carga útil final
 
-Ahora que tenemos nuestro shellcode, podemos escribir la carga útil final que escribiremos en el `.wav`archivo que se abrirá en nuestro programa. Hasta ahora, sabemos lo siguiente:
+Ahora que tenemos nuestro shellcode, podemos escribir la carga útil final que escribiremos en el `.wav` archivo que se abrirá en nuestro programa. Hasta ahora, sabemos lo siguiente:
 
-1. `buffer`:Podemos llenar el buffer escribiendo`b"A"*offset`
-2. `EIP`:Los siguientes 4 bytes deberían ser nuestra dirección de retorno
-3. `buf`:Después de eso, podemos agregar nuestro shellcode
+1. `buffer`:Podemos llenar el buffer escribiendo`b"A"*offset`.
+2. `EIP`:Los siguientes 4 bytes deberían ser nuestra dirección de retorno.
+3. `buf`:Después de eso, podemos agregar nuestro shellcode.
 
 En la sección anterior, encontramos múltiples direcciones de retorno que pueden funcionar al ejecutar cualquier código shell que escribamos en la pila:
 
@@ -400,19 +400,15 @@ En la sección anterior, encontramos múltiples direcciones de retorno que puede
 |-|`0047E58B`|-|
 |-|`004979F4`|-|
 
-Cualquiera de estos debería funcionar para ejecutar el código shell que escribimos en la pila (siéntete libre de probar algunos de ellos). Comenzaremos con el más confiable, `JMP ESP`, y elegiremos la primera dirección `00419D0B`y la escribiremos como nuestra dirección de retorno.
+Cualquiera de estos debería funcionar para ejecutar el código shell que escribimos en la pila (siéntete libre de probar algunos de ellos). Comenzaremos con el más confiable, `JMP ESP`, y elegiremos la primera dirección `00419D0B` y la escribiremos como nuestra dirección de retorno.
 
 Para convertirlo `hex`en una dirección en Little Endian, utilizaremos una función de Python llamada que `pack`se encuentra en la `struct`biblioteca. Podemos importar esta función agregando la siguiente línea al comienzo de nuestro código:
-
-Código: python
 
 ```python
 from struct import pack
 ```
 
-Ahora podemos usar `pack`para convertir nuestra dirección a su formato adecuado y usar ' `<L`' para especificar que la queremos en formato Little Endian:
-
-Código: python
+Ahora podemos usar `pack` para convertir nuestra dirección a su formato adecuado y usar ' `<L`' para especificar que la queremos en formato Little Endian:
 
 ```python
     offset = 4112
@@ -420,6 +416,13 @@ Código: python
     eip = pack('<L', 0x00419D0B)
 ```
 
+### Relleno de código Shell
+
+Ahora que tenemos `buffer`y `eip`, podemos agregar nuestro shellcode `buf`después de ellos y generar nuestro `.wav` archivo. Sin embargo, dependiendo del marco de pila actual del programa y de la alineación de pila, para cuando `JMP ESP` se ejecute nuestra instrucción, la parte superior de la dirección de la pila `ESP` puede haberse movido ligeramente. Los primeros bytes de nuestro shellcode pueden omitirse, lo que hará que el shellcode falle.
+
+```python
+    nop = b"\x90"*32
+```
 
 
 # Remote Buffer Overflow
