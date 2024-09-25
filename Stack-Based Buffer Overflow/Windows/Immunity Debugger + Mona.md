@@ -67,5 +67,16 @@ except:
 !mona findmsp -distance 600
 
 # Encontrar malos personajes
-`!mona bytearray -b "\x00"   `
+!mona bytearray -b "\x00"
+
+
+```
+
+
+Generar cadena de carácteres incorrectos con Pyhon:
+
+```
+for x in range(1, 256):
+  print("\\x" + "{:02x}".format(x), end='')
+print()
 ```
