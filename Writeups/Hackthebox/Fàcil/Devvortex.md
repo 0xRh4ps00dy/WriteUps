@@ -30,7 +30,7 @@ Por el momento no vemos nada interesante.
 
 Ahora es una buena opción intentar encontrar algún subdirectorio. Esto lo podemos hacer mediante alguna herramienta como **`ffuf`**:
 
-![[../../../Images/Pasted image 20240919134107.png]]
+![Pasted image 20240919134107](../../../Images/Pasted%20image%2020240919134107.png)
 
 Los resultados tampoco nos muestran nada interesante.
 
@@ -71,7 +71,7 @@ Según este [sitio web](https://hackertarget.com/attacking-enumerating-joomla/),
 - /administrator/manifests/files/joomla.xml
 - /language/en-GB/en-GB.xml
 
-![[../../../Images/Pasted image 20240919134133.png]]
+![Pasted image 20240919134133](../../../Images/Pasted%20image%2020240919134133.png)
 
 Con esta información podemos concretar que estamos enfrente de la versión 4.2.6.
 
@@ -85,7 +85,7 @@ Buscando en Google encontramos que la versión de Joomla tiene una vulnerabilida
 
 Esta vulnerabilidad es fácil de explotar utilizando este [exploit](https://www.exploit-db.com/exploits/51334). Descargamos el exploit y lo ejecutamos:
 
-![[../../../Images/Pasted image 20240919134147.png]]
+![Pasted image 20240919134147](../../../Images/Pasted%20image%2020240919134147.png)
 
 Encontramos unas credenciales de la base de datos MYSQL.
 
@@ -95,7 +95,7 @@ Usando estas credenciales en el panel de administrador de Joomla conseguimos ten
 
 Una vez dentro del sistema es muy fácil obtener acceso al sistema, solo tenemos que reemplazar un archivo de alguna plantilla del CMS, preparar un listener de **netcat** y navegar hacia ella:
 
-![[../../../Images/Pasted image 20240919134159.png]]
+![Pasted image 20240919134159](../../../Images/Pasted%20image%2020240919134159.png)
 
 Una vez conseguimos el punto de apoyo en el sistema objetivo es buen momento para estabilizar la terminal e intentar buscar la bandera user.txt. En este caso hemos accedido al sistema como usuario www-data y no podemos leer la bandera que está en la carpeta del usuario Logan. Vamos a intentar hacer un movimiento lateral hacia el usuario Logan.
 
@@ -109,9 +109,9 @@ En primer lugar, intentemos conectarnos a la base de datos MYSQL e intentar reco
 
  ![](../../../Images/Selection_029.png)
 
-![[../../../Images/Pasted image 20240919134217.png]]
+![Pasted image 20240919134217](../../../Images/Pasted%20image%2020240919134217.png)
 
-![[../../../Images/Pasted image 20240919134234.png]]
+![Pasted image 20240919134234](../../../Images/Pasted%20image%2020240919134234.png)
 
 Estamos de suerte y encontramos el hash del usuario Logan:   
   
@@ -119,11 +119,11 @@ Estamos de suerte y encontramos el hash del usuario Logan:
 
 Intentemos desencriptarlo usando **hashcat:**
 
-![[../../../Images/Pasted image 20240919134303.png]]
+![Pasted image 20240919134303](../../../Images/Pasted%20image%2020240919134303.png)
 
 Finalmente, podemos obtener acceso al sistema objetivo mediante **SSH** y como usuario Logan, el cual ya podemos leer la bandera user.txt:
 
-![[../../../Images/Pasted image 20240919134309.png]]
+![Pasted image 20240919134309](../../../Images/Pasted%20image%2020240919134309.png)
 
 # Escalada de privilegios
 
@@ -173,24 +173,24 @@ Signed-off-by: Benjamin Drung <benjamin.drung@canonical.com>
 
 En primer lugar, para realizar la explotación de esta vulnerabilidad y obtener un terminal con privilegios debemos ejecutar la aplicación y seleccionar que queremos reportar un problema referente a la pantalla:
 
-![[../../../Images/Pasted image 20240919134413.png]]
+![Pasted image 20240919134413](../../../Images/Pasted%20image%2020240919134413.png)
 
 Entonces, indicamos que tipo de problemas hemos observado, por ejemplo, podemos indicar que hemos observado congelaciones de la pantalla durante el arranque o el uso del sistema:
 
-![[../../../Images/Pasted image 20240919134659.png]]
+![Pasted image 20240919134659](../../../Images/Pasted%20image%2020240919134659.png)
 
 Ahora, debemos indicar que queremos ver el informe y una vez el binario nos muestre toda la información del informe nos aparecerán dos puntos (:).
 
-![[../../../Images/Pasted image 20240919134709.png]]
+![Pasted image 20240919134709](../../../Images/Pasted%20image%2020240919134709.png)
 
 ![](../../../Images/Selection_042.png)
 
 En este momento debemos escribir el signo de exclamación (!) y pulsar la tecla Enter:
 
-![[../../../Images/Pasted image 20240919134725.png]]
+![Pasted image 20240919134725](../../../Images/Pasted%20image%2020240919134725.png)
 
 Con esto, conseguimos obtener el terminal con privilegios y leer la bandera root.txt:
 
-![[../../../Images/Pasted image 20240919134732.png]]
+![Pasted image 20240919134732](../../../Images/Pasted%20image%2020240919134732.png)
 
 ![](../../../Images/image-12%201.png)
