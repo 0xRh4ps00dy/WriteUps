@@ -173,8 +173,7 @@ Esto también crea dos archivos en nuestro escritorio:
 
 - `ByteArray_1.txt`: Que contiene la cadena de todos los caracteres que podemos usar en nuestro exploit de Python
 - `ByteArray_1.bin`: Que podemos usar `ERC` más adelante para comparar con nuestra entrada en la memoria.
-
-## Actualizando nuestro exploit
+### Actualizando nuestro exploit
 
 El siguiente paso sería generar un `.wav` archivo con la cadena de caracteres generada por `ERC`. Nuevamente escribiremos una nueva función `bad_chars()`, y usaremos un código similar a la `eip_control()` función, pero usaremos los caracteres bajo `C#`in `ByteArray_1.txt`. Crearemos una nueva lista de bytes `all_chars = bytes([])`, y pegaremos los caracteres entre los corchetes. Luego escribiremos en `chars.wav` el mismo `payload`from `eip_control()`, y agregaremos después `all_chars`. La función final se vería así:
 
@@ -196,6 +195,8 @@ def bad_chars():
 
 bad_chars()
 ```
+### Comparando nuestra entrada
+
 
 
 ## Finding a Return Instruction
