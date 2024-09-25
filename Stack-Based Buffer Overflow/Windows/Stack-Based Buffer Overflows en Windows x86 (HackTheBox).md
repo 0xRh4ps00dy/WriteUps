@@ -227,8 +227,6 @@ Ahora, usemos este comando `ERC`nuevamente para generar el nuevo archivo y usar
 
 Como podemos ver, esta vez, decía `excluding: 00`, y la tabla de matriz no incluye `00`al principio. Entonces, vayamos al archivo de salida generado `ByteArray_2.txt`, copiemos los nuevos bytes en `C#`, y colóquelos en nuestro exploit, que ahora debería verse así:
 
-Código: python
-
 ```python
 def bad_chars():
     all_chars = bytes([
@@ -236,7 +234,13 @@ def bad_chars():
 ...SNIP...
 ```
 
+Una vez que tengamos nuestro nuevo `chars.wav`archivo, lo cargaremos nuevamente en nuestro programa y lo usaremos `--compare`con el nuevo `ByteArray_2.bin`archivo para ver si ambas entradas coinciden:
 
+![](../../Images/Pasted%20image%2020240925162840.png)
+
+Como podemos ver, esta vez, ambas líneas coinciden perfectamente hasta `0xFF`, lo que significa que ya no hay caracteres incorrectos en nuestra entrada. Si hubiéramos identificado otro carácter incorrecto, repetiríamos el mismo proceso que acabamos de realizar para `Eliminating Bad Characters`hasta que ambas líneas coincidan perfectamente.
+
+Entonces, ahora sabemos que debemos evitar usar `0x00`en la `EIP` dirección que queremos ejecutar o en nuestro shellcode.
 
 ## Finding a Return Instruction
 

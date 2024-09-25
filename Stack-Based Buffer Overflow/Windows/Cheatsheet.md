@@ -30,7 +30,9 @@ ERC --pattern o <ASCII value>
 ```
 ## Indentificando personajes malos
 
-
+```
+ERC --bytearray
+```
 
 
 
