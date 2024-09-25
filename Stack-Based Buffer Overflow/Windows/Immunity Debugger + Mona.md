@@ -1,7 +1,4 @@
-
-
-
-
+# Scripts
 
 fuzzer.py
 
