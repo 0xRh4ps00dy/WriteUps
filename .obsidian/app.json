@@ -1,6 +1,6 @@
 {
   "attachmentFolderPath": "Images",
-  "useMarkdownLinks": true,
+  "useMarkdownLinks": false,
   "newLinkFormat": "relative",
   "autoConvertHtml": true,
   "promptDelete": false,
