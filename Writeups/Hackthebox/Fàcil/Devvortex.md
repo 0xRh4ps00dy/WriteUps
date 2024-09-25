@@ -191,6 +191,6 @@ En este momento debemos escribir el signo de exclamación (!) y pulsar la tecla 
 
 Con esto, conseguimos obtener el terminal con privilegios y leer la bandera root.txt:
 
-![[../../../Images/Pasted image 20240919134732.png]]
+![../../../Images/Pasted image 20240919134732.png](../../../Images/Pasted%20image%2020240919134732.png)
 
 ![](../../../Images/image-12%201.png)
