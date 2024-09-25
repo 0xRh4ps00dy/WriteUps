@@ -337,7 +337,26 @@ Address  Disassembly
 Nota: También podemos buscar `CALL ESP`, que también saltará a la pila.
 
 Al igual que ocurre con la dirección cuando se utiliza la `ESP`dirección . `Debemos asegurarnos de que la dirección de instrucción no contenga caracteres incorrectos`. De lo contrario, nuestra carga útil se truncaría y el ataque fallaría. Sin embargo, en nuestro caso, no tenemos ningún carácter incorrecto, por lo que podemos elegir cualquiera de las direcciones anteriores.
-## Saltar a Shellcode
+## Shellcode
+
+### Generación de Shellcode
+
+Para generar nuestro shellcode, usaremos `msfvenom`, que puede generar shellcodes para sistemas Windows, mientras que herramientas como `pwntools` actualmente solo admiten shellcodes de Linux.
+
+Primero, podemos enumerar todas las cargas útiles disponibles para `Windows 32-bit`, de la siguiente manera:
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ msfvenom -l payloads | grep
+
+...SNIP...
+    windows/exec                                        Execute an arbitrary command
+    windows/format_all_drives                           This payload formats all mounted disks in Windows (aka ShellcodeOfDeath). After formatting, this payload sets the volume label to the string specified in the VOLUMELABEL option. If the code is unable to access a drive for
+    windows/loadlibrary                                 Load an arbitrary library path
+    windows/messagebox                                  Spawns a dialog via MessageBox using a customizable title, text & icon
+...SNIP...
+```
+
+
 
 
 # Remote Buffer Overflow

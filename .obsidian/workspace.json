@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
+                "file": "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
+                "file": "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
+                "file": "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Linux/GDB.md"
+                "file": "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
+    "Stack-Based Buffer Overflow/Linux/GDB.md",
     "Stack-Based Buffer Overflow/Windows/Scripts.md",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC Cheatsheet.md",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
@@ -163,7 +164,6 @@
     "Images/Pasted image 20240925162721.png",
     "Images/Pasted image 20240925162653.png",
     "Images/Pasted image 20240924122728.png",
-    "Stack-Based Buffer Overflow/Linux/GDB.md",
     "Writeups/Writeup Template.md",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux",
