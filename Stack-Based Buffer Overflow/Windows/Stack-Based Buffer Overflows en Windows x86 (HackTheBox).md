@@ -245,6 +245,10 @@ Entonces, ahora sabemos que debemos evitar usar `0x00`en la `EIP` dirección q
 ## Encontrar una instrucción de devolución
 
 
+1. Podemos utilizar la `ESP` dirección
+2. Podemos buscar `JMP ESP` instrucciones en módulos cargados con seguridad deshabilitada
+3. Podemos buscar instrucciones de montaje o buscar patrones de código de máquina.
+4. Cualquier dirección que seleccionemos no debe contener ningún carácter incorrecto.
 
 ## Saltar a Shellcode
 
