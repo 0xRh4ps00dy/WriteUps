@@ -193,11 +193,11 @@ bad_chars()
 ```
 ### Comparando nuestra entrada
 
-Copiar la dirección de `ESP`ya que es donde se encuentra nuestra entrada. Esto lo podemos hacer haciendo clic derecho sobre ella y seleccionando `Copy value`, o haciendo clic en `[Ctrl + C]`:
+Copiar la dirección de `ESP` ya que es donde se encuentra nuestra entrada. Esto lo podemos hacer haciendo clic derecho sobre ella y seleccionando `Copy value`, o haciendo clic en `[Ctrl + C]`:
 
 ![](../../Images/Pasted%20image%2020240925162653.png)
 
-Una vez que tenemos el valor de `ESP`, podemos usarlo `ERC --compare`y darle la `ESP`dirección y la ubicación del `.bin`archivo que contiene todos los caracteres, de la siguiente manera:
+Una vez que tenemos el valor de `ESP`, podemos usarlo `ERC --compare` y darle la `ESP`dirección y la ubicación del `.bin` archivo que contiene todos los caracteres, de la siguiente manera:
 
 ```cmd-session
 ERC --compare 0014F974 C:\Users\htb-tudent\Desktop\ByteArray_1.bin
