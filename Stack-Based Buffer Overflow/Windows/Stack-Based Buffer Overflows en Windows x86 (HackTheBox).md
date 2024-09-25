@@ -269,8 +269,25 @@ Primero, probemos el método más básico para escribir la dirección de la part
 
 ![](../../Images/Pasted%20image%2020240925164513.png)
 
+Este método puede funcionar para este programa en particular, pero no es un método muy confiable en las máquinas Windows. En primer lugar, la entrada que estamos atacando aquí es un archivo de audio, por lo que vemos que se permiten todos los caracteres sin caracteres incorrectos. Sin embargo, en muchos casos, podemos estar atacando una entrada de cadena o un argumento de programa, en cuyo caso `0x00`sería un carácter incorrecto y no usaríamos la dirección de `ESP` ya que comienza con `00`.
 
+Otra razón es que la dirección de `ESP` puede no ser la misma en todas las máquinas. Por lo tanto, puede funcionar durante todo el proceso de depuración y desarrollo del exploit, pero puede que no sea la misma dirección cuando lancemos el exploit a un objetivo real, ya que puede tener una `ESP`dirección diferente, en cuyo caso nuestro exploit fallaría.
 
+### Uso de JMP ESP
+
+La forma más confiable de ejecutar el shellcode cargado en la pila es encontrar una instrucción utilizada por el programa que dirija el flujo de ejecución del programa a la pila. Podemos usar varias instrucciones de este tipo, pero usaremos la más básica, , `JMP ESP` que salta a la parte superior de la pila y continúa la ejecución.
+
+#### Localización de módulos
+
+Para encontrar esta instrucción, debemos buscar en los ejecutables y bibliotecas cargados por nuestro programa. Esto incluye:
+
+1. `.exe`El archivo del programa
+2. `.dll`Las bibliotecas propias del programa
+3. Cualquier `.dll`biblioteca de Windows utilizada por el programa
+
+Para encontrar una lista de todos los archivos cargados por el programa, podemos utilizar `ERC --ModuleInfo`, de la siguiente manera:
+
+![](../../Images/Pasted%20image%2020240925164619.png)
 
 
 ## Saltar a Shellcode
