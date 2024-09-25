@@ -69,8 +69,10 @@ except:
 # Encontrar malos personajes
 !mona bytearray -b "\x00"
 
-# 
+# Comparar carácteres
 !mona compare -f C:\mona\oscp\bytearray.bin -a <address>
+
+
 ```
 
 
