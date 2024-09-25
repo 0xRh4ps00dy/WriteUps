@@ -104,10 +104,9 @@ Por último, debemos llamar a nuestra `eip_offset()` función agregando la sigu
 eip_offset()
 ```
 
-<<<<<<< HEAD:Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md
 Ahora, podemos guardar este exploit en nuestro escritorio como `win32bof_exploit.py` y ejecutarlo. Para ejecutarlo mientras aún estamos en nuestro escritorio `IDLE`, podemos hacer clic en `Run > Run Module` o hacer clic en `F5`:
 
-![](../Images/Pasted%20image%2020240924122717.png)
+![](../../Images/Pasted%20image%2020240925172323.png)
 ## Indetyfing Bad Characters
 =======
 Ahora, podemos guardar este exploit en nuestro escritorio como `win32bof_exploit.py`y ejecutarlo. Para ejecutarlo mientras aún estamos en nuestro escritorio `IDLE`, podemos hacer clic en `Run > Run Module`o hacer clic en `F5`.
