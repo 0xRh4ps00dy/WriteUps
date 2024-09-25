@@ -30,7 +30,7 @@ Por el momento no vemos nada interesante.
 
 Ahora es una buena opción intentar encontrar algún subdirectorio. Esto lo podemos hacer mediante alguna herramienta como **`ffuf`**:
 
-![[../../../Images/Pasted image 20240919134107.png]]
+![../../../Images/Pasted image 20240919134107.png](../../../Images/Pasted%20image%2020240919134107.png)
 
 Los resultados tampoco nos muestran nada interesante.
 
