@@ -197,7 +197,7 @@ Copiar la dirección de `ESP` ya que es donde se encuentra nuestra entrada. Est
 
 ![](../../Images/Pasted%20image%2020240925162653.png)
 
-Una vez que tenemos el valor de `ESP`, podemos usarlo `ERC --compare` y darle la `ESP`dirección y la ubicación del `.bin` archivo que contiene todos los caracteres, de la siguiente manera:
+Una vez que tenemos el valor de `ESP`, podemos usarlo `ERC --compare` y darle la `ESP` dirección y la ubicación del `.bin` archivo que contiene todos los caracteres, de la siguiente manera:
 
 ```cmd-session
 ERC --compare 0014F974 C:\Users\htb-tudent\Desktop\ByteArray_1.bin
@@ -277,9 +277,9 @@ La forma más confiable de ejecutar el shellcode cargado en la pila es encontrar
 
 Para encontrar esta instrucción, debemos buscar en los ejecutables y bibliotecas cargados por nuestro programa. Esto incluye:
 
-1. `.exe`El archivo del programa
-2. `.dll`Las bibliotecas propias del programa
-3. Cualquier `.dll`biblioteca de Windows utilizada por el programa
+1. El archivo del programa`` 
+2. Las bibliotecas propias del programa `.dll`. 
+3. Cualquier `.dll` biblioteca de Windows utilizada por el programa
 
 Para encontrar una lista de todos los archivos cargados por el programa, podemos utilizar `ERC --ModuleInfo`, de la siguiente manera:
 
