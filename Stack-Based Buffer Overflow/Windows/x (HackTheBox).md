@@ -336,7 +336,7 @@ Address  Disassembly
 
 Nota: También podemos buscar `CALL ESP`, que también saltará a la pila.
 
-
+Al igual que ocurre con la dirección cuando se utiliza la `ESP`dirección . `Debemos asegurarnos de que la dirección de instrucción no contenga caracteres incorrectos`. De lo contrario, nuestra carga útil se truncaría y el ataque fallaría. Sin embargo, en nuestro caso, no tenemos ningún carácter incorrecto, por lo que podemos elegir cualquiera de las direcciones anteriores.
 ## Saltar a Shellcode
 
 

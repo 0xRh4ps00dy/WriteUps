@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+                "file": "Stack-Based Buffer Overflow/Windows/x (HackTheBox).md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+                "file": "Stack-Based Buffer Overflow/Windows/x (HackTheBox).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+                "file": "Stack-Based Buffer Overflow/Windows/x (HackTheBox).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md"
+                "file": "Stack-Based Buffer Overflow/Windows/x (HackTheBox).md"
               }
             }
           }
@@ -156,7 +156,7 @@
     "Images/Pasted image 20240925164513.png",
     "Stack-Based Buffer Overflow/Linux/Cheatsheet.md",
     "Stack-Based Buffer Overflow/Windows/Cheatsheet.md",
-    "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
+    "Stack-Based Buffer Overflow/Windows/x (HackTheBox).md",
     "Stack-Based Buffer Overflow/Windows/Scripts.md",
     "Images/Pasted image 20240925162840.png",
     "Images/Pasted image 20240925162815.png",
