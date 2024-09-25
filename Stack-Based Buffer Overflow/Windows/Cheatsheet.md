@@ -34,12 +34,12 @@ ERC --pattern o <ASCII value>
 # Generar lista de carácteres
 ERC --bytearray
 
-#Comparar lista
+# Comparar lista
 ERC --compare 0014F974 C:\Users\htb-tudent\Desktop\ByteArray_1.bin
 
+# Generar lista de carácteres son personaje malo detectado
+ERC --bytearray -bytes 0x00
 ```
-
-
 
 ## Encontrar una instrucción de devolución
 

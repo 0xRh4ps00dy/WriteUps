@@ -242,7 +242,7 @@ Como podemos ver, esta vez, ambas líneas coinciden perfectamente hasta `0xFF`,
 
 Entonces, ahora sabemos que debemos evitar usar `0x00`en la `EIP` dirección que queremos ejecutar o en nuestro shellcode.
 
-## Finding a Return Instruction
+## Encontrar una instrucción de devolución
 
 
 
