@@ -74,8 +74,6 @@ except:
 
 # Encontrar jmp esp
 !mona jmp -r esp -cpb "\x00"
-
-
 ```
 
 Generar cadena de carácteres incorrectos con Pyhon:
