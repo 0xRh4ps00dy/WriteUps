@@ -260,31 +260,18 @@ Como ya tenemos datos en la pila, que está repleta de información, podemos esc
 
 Para dirigir el flujo de ejecución a la pila, debemos escribir una dirección para `EIP`ello. Esto se puede hacer de dos maneras:
 
-1. Escribe la `ESP` dirección (parte superior de la pila) en `EIP`, para que comience a ejecutar el código que se encuentra en la parte superior de la pila
-2. Usando una `JMP ESP` instrucción, que dirige el flujo de ejecución a la pila
+1. Podemos utilizar la `ESP` dirección.
+2. Podemos buscar `JMP ESP` instrucciones en módulos cargados con seguridad deshabilitada.
+
+## Uso de la dirección ESP
+
+Primero, probemos el método más básico para escribir la dirección de la parte superior de la pila `ESP`. Una vez que escribimos una dirección `EIP` y el programa falla en la instrucción de retorno `ret`, el depurador se detendría en ese punto y la `ESP` dirección en ese punto coincidiría con el comienzo de nuestro shellcode, de manera similar a cómo vimos nuestros caracteres en la pila cuando buscamos caracteres incorrectos. Podemos tomar nota de la `ESP`dirección en este punto, que en este caso es `0014F974`:
+
+![](../../Images/Pasted%20image%2020240925164513.png)
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. Podemos utilizar la `ESP` dirección
-2. Podemos buscar `JMP ESP` instrucciones en módulos cargados con seguridad deshabilitada
-3. Podemos buscar instrucciones de montaje o buscar patrones de código de máquina.
-4. Cualquier dirección que seleccionemos no debe contener ningún carácter incorrecto.
 
 ## Saltar a Shellcode
 
