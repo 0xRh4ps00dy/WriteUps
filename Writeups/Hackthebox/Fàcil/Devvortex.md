@@ -177,22 +177,20 @@ En primer lugar, para realizar la explotación de esta vulnerabilidad y obtener 
 
 Entonces, indicamos que tipo de problemas hemos observado, por ejemplo, podemos indicar que hemos observado congelaciones de la pantalla durante el arranque o el uso del sistema:
 
-![../../../Images/Pasted image 20240919134659.png](../../../Images/Pasted%20image%2020240919134659.png)
+![](../../../Images/Pasted%20image%2020240919134659.png)
 
 Ahora, debemos indicar que queremos ver el informe y una vez el binario nos muestre toda la información del informe nos aparecerán dos puntos (:).
 
-![../../../Images/Pasted image 20240919134709.png](../../../Images/Pasted%20image%2020240919134709.png)
+![](../../../Images/Pasted%20image%2020240919134709.png)
 
-![../../../Images/Selection_042.png](../../../Images/Selection_042.png)
+![](../../../Images/Selection_042.png)
 
 En este momento debemos escribir el signo de exclamación (!) y pulsar la tecla Enter:
 
-![../../../Images/Pasted image 20240919134725.png](../../../Images/Pasted%20image%2020240919134725.png)
+![](../../../Images/Pasted%20image%2020240919134725.png)
 
 Con esto, conseguimos obtener el terminal con privilegios y leer la bandera root.txt:
-Ls
 
-
-![../../../Images/Pasted image 20240919134732.png](../../../Images/Pasted%20image%2020240919134732.png)
+![](../../../Images/Pasted%20image%2020240919134732.png)
 
 ![](../../../Images/image-12%201.png)
