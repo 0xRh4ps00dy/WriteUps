@@ -1,10 +1,12 @@
+#sqlmap #sqli #gtfobins #env #suid
+
 ![](../../../Images/Pasted%20image%2020240921182525.png)
 
 # Enumeración
 
 ## Nmap
 
-El escaneo de **nmap** nos enseña la existencia de un servicio SSH i un servicio HTTP funcionando.
+El escaneo de **nmap** nos enseña la existencia de un servicio SSH y un servicio HTTP funcionando.
 
 ```
 > nmap --open --min-rate 10000 -Pn -n -oN scans/allTCPPorts $target
@@ -46,7 +48,7 @@ Nmap done: 1 IP address (1 host up) scanned in 6.96 seconds
 
 ## Website (80 TCP Port)
 
-En el sitio web nos encontramos con una panel de inicio de sesión. Comprobando los campos del formulario si contienen una posible vulnerabilidad SQLi, comprobamos que el campo de usuario es vulnerable.
+En el sitio web nos encontramos con un panel de inicio de sesión. Comprobando los campos del formulario si contienen una posible vulnerabilidad SQLi, comprobamos que el campo de usuario es vulnerable.
 
 ![](../../../Images/Pasted%20image%2020240923102252.png)
 # Usuario Dylan
