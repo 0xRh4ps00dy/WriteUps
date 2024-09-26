@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "1faa6616c5cdb714",
+        "id": "61214c28ea76c6da",
         "type": "tabs",
         "children": [
           {
-            "id": "a1d9cbfcfc5d1e17",
+            "id": "895152f7ae13ee26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Enumeration/Nmap Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "441635379ac2ca64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Hacking with Powershell.md",
+                "file": "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Hacking with Powershell.md",
+                "file": "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Hacking with Powershell.md",
+                "file": "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Hacking with Powershell.md"
+                "file": "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md"
               }
             }
           }
@@ -160,17 +147,14 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "441635379ac2ca64",
+  "active": "895152f7ae13ee26",
   "lastOpenFiles": [
-    "Writeups/Hackthebox/Media/Surveillance.md",
     "Windows/Hacking with Powershell.md",
-    "conflict-files-obsidian-git.md",
-    "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
+    "Windows",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC Cheatsheet.md",
-    "Stack-Based Buffer Overflow/Windows/Scripts.md",
     "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
-    "Stack-Based Buffer Overflow/Linux/GDB.md",
-    "Stack-Based Buffer Overflow/Linux/Cheatsheet.md",
+    "Stack-Based Buffer Overflow/Windows/Scripts.md",
+    "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
     "Images/Pasted image 20240925172337.png",
     "Images/Pasted image 20240925172323.png",
     "Images/Pasted image 20240925170209.png",
@@ -179,35 +163,37 @@
     "Images/Pasted image 20240925170022.png",
     "Images/Pasted image 20240925165950.png",
     "Images/Pasted image 20240925165832.png",
+    "Stack-Based Buffer Overflow/Linux/GDB.md",
     "Images/Pasted image 20240925164758.png",
     "Images/Pasted image 20240925164744.png",
-    "Writeups/Hackthebox/Media/Manager.md",
-    "Writeups/Hackthebox/Fàcil/Analytics.md",
-    "Writeups/Hackthebox/Fàcil/Codify.md",
-    "Writeups/Hackthebox/Fàcil/Devvortex.md",
-    "Writeups/DockerLabs/Muy fàcil/Injection.md",
-    "Enumeration/Nmap Cheatsheet.md",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
-    "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
-    "Stack-Based Buffer Overflow/Windows/Cheatsheet.md",
-    "Stack-Based Buffer Overflow/Windows",
-    "Stack-Based Buffer Overflow/Linux/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
-    "Stack-Based Buffer Overflow/Linux",
-    "Enumeration",
-    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
-    "Stack-Based Buffer Overflow/Fundamentos.md",
-    "Linux",
-    "Windows",
+    "Stack-Based Buffer Overflow/Linux/Cheatsheet.md",
     "Writeups/Writeup Template.md",
+    "Stack-Based Buffer Overflow/Windows",
+    "Stack-Based Buffer Overflow/Linux",
+    "Enumeration/Nmap Cheatsheet.md",
+    "Enumeration",
+    "Writeups/DockerLabs/Muy fàcil/Injection.md",
+    "Stack-Based Buffer Overflow/Fundamentos.md",
+    "Writeups/Hackthebox/Fàcil/Devvortex.md",
+    "Writeups/Hackthebox/Fàcil/Codify.md",
+    "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/Hackthebox/Insane",
     "Writeups/Hackthebox/Difícil",
     "Writeups/DockerLabs/Difícil",
     "Writeups/DockerLabs/Medio",
     "Writeups/DockerLabs/Fàcil",
+    "Writeups/DockerLabs/Muy fàcil",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
     "Sin título.canvas",
+    "conflict-files-obsidian-git.md",
     "Introducción.md",
+    "Writeups/Hackthebox/Media/Surveillance.md",
+    "Writeups/Hackthebox/Media/Manager.md",
     "Untitled 1.md",
-    "Test.md"
+    "Test.md",
+    "Untitled.md",
+    "Write Ups/Untitled.md",
+    "1. Reconnaissance/Test Note.md",
+    "README.md"
   ]
 }
