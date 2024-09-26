@@ -51,7 +51,11 @@ PS C:\>Get-Command
 
 `Get-Command Verb-*` o `Get-Command *-Noun`
 
+## Manipulación de objetos
 
+Puede pensar en los métodos como funciones que se pueden aplicar a la salida del _cmdlet_  y puede pensar en las propiedades como variables en la salida de un _cmdlet_ . Para ver estos detalles, pase la salida de un _cmdlet_  al `Get-Member` _cmdlet:_
+
+`Verb-Noun | Get-Member`
 
 
 
