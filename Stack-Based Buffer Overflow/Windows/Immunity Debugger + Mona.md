@@ -62,7 +62,10 @@ except:
 
 # Pattern
 
-
+```
+python -c "print('A'*10000, file=open('fuzz.wav', 'w'))"
+python -c "print('A'*10000)"
+```
 
 # Mona
 
@@ -80,7 +83,9 @@ except:
 !mona compare -f C:\mona\oscp\bytearray.bin -a <ESP address>
 
 # Encontrar jmp esp
-!mona jmp -r esp -cpb "\x00"
+!mona jmp -r esp -cpb "\x00" # El resultado va a
+
+
 ```
 
 Generar cadena de carácteres incorrectos con Pyhon:
