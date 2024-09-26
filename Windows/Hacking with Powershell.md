@@ -57,7 +57,28 @@ Puede pensar en los métodos como funciones que se pueden aplicar a la salida de
 
 `Verb-Noun | Get-Member`
 
+## Creación de objetos a partir de cmdlets anteriores
 
+Una forma de manipular objetos es extraer las propiedades de la salida de un _cmdlet_ y crear un nuevo objeto. Esto se hace mediante el `Select-Object` _cmdlet._ 
+
+A continuación se muestra un ejemplo de cómo enumerar los directorios y simplemente seleccionar el modo y el nombre:
+
+```powershell
+PS C:\Users\Administrator> Get-ChildItem | Select-Object -Property Mode, Name
+Mode   Name
+----   ----
+d-r--- Contacts
+d-r--- Desktop
+d-r--- Documents
+d-r--- Downloads
+d-r--- Favorites
+d-r--- Links
+d-r--- Music
+d-r--- Pictures
+d-r--- Saved Games
+d-r--- Searches
+d-r--- Videos
+```
 
 
 
