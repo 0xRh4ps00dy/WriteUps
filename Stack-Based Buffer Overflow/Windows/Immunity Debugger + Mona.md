@@ -83,9 +83,7 @@ python -c "print('A'*10000)"
 !mona compare -f C:\mona\oscp\bytearray.bin -a <ESP address>
 
 # Encontrar jmp esp
-!mona jmp -r esp -cpb "\x00" # El resultado va a
-
-
+!mona jmp -r esp -cpb "\x00" # El resultado va a en retn pero al revés (Little Endian)
 ```
 
 Generar cadena de carácteres incorrectos con Pyhon:
