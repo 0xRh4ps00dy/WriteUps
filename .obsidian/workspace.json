@@ -30,17 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "21774dc49843ad1d",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Writeups/Hackthebox/Media/Surveillance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Writeups/Hackthebox/Media/Surveillance.md"
+              }
             }
           }
         ],
@@ -164,7 +160,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "21774dc49843ad1d",
+  "active": "441635379ac2ca64",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
