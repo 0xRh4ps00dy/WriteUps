@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Windows/Hacking with Powershell.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Windows/Hacking with Powershell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "Windows/Hacking with Powershell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md"
+                "file": "Windows/Hacking with Powershell.md"
               }
             }
           }
@@ -162,8 +162,9 @@
   },
   "active": "441635379ac2ca64",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
+    "Windows/Hacking with Powershell.md",
+    "conflict-files-obsidian-git.md",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC Cheatsheet.md",
     "Stack-Based Buffer Overflow/Windows/Scripts.md",
@@ -207,7 +208,6 @@
     "Sin título.canvas",
     "Introducción.md",
     "Untitled 1.md",
-    "Test.md",
-    "Untitled.md"
+    "Test.md"
   ]
 }
