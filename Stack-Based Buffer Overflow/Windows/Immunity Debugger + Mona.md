@@ -70,7 +70,7 @@ except:
 !mona bytearray -b "\x00"
 
 # Comparar carácteres
-!mona compare -f C:\mona\oscp\bytearray.bin -a <address>
+!mona compare -f C:\mona\oscp\bytearray.bin -a <ESP address>
 
 # Encontrar jmp esp
 !mona jmp -r esp -cpb "\x00"
