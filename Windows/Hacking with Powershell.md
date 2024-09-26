@@ -46,6 +46,12 @@ Example 1: Get cmdlets, functions, and aliases
 PS C:\>Get-Command
 ```
 
+## Get-Command
+
+`Get-Command` obtiene todos los _cmdlets_ instalados en el equipo actual. Lo bueno de este _cmdlet_  es que permite la coincidencia de patrones como la siguiente:
+
+`Get-Command Verb-*` o `Get-Command *-Noun`
+
 
 
 
