@@ -20,3 +20,9 @@ Para obtener la lista completa de verbos aprobados, visita [este](https://docs.
 
 # Comandos básicos
 
+`Get-Command` y `Get-Help` son tus mejores amigos.
+
+## Get-Help
+
+`Get-Help` muestra información sobre un _cmdlet._ Para obtener ayuda con un comando en particular, ejecute lo siguiente:
+
