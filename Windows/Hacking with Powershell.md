@@ -80,9 +80,60 @@ d-r--- Searches
 d-r--- Videos
 ```
 
+## Filtrado de objetos
 
+Al recuperar objetos de salida, es posible que desee seleccionar objetos que coincidan con un valor muy específico. Puede hacerlo utilizando el `Where-Object`filtro en función del valor de las propiedades. 
 
+El formato general para utilizar este _cmdlet_  es 
 
+`Verb-Noun | Where-Object -Property PropertyName -operator Value`
+
+`Verb-Noun | Where-Object {$_.PropertyName -operator Value}`
+
+La segunda versión utiliza el `$_` operador para iterar a través de cada objeto pasado al `Where-Object` _cmdlet_ .
+
+**PowerShell es bastante sensible, así que no pongas comillas alrededor del comando.**
+
+¿Dónde `-operator` está una lista de los siguientes operadores:
+
+- `-Contains`: si algún elemento en el valor de la propiedad coincide exactamente con el valor especificado
+- `-EQ`: si el valor de la propiedad es el mismo que el valor especificado
+- `-GT`: si el valor de la propiedad es mayor que el valor especificado
+
+Para obtener una lista completa de operadores, utilice [este](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/where-object?view=powershell-6) enlace.
+
+A continuación se muestra un ejemplo de comprobación de los procesos detenidos:
+
+Demostrar el uso de operadores únicamente para mostrar servicios detenidos
+
+```powershell
+PS C:\Users\Administrator> Get-Service | Where-Object -Property Status -eq Stopped
+
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  AJRouter           AllJoyn Router Service
+Stopped  ALG                Application Layer Gateway Service
+Stopped  AppIDSvc           Application Identity
+Stopped  AppMgmt            Application Management
+Stopped  AppReadiness       App Readiness
+Stopped  AppVClient         Microsoft App-V Client
+Stopped  AppXSvc            AppX Deployment Service (AppXSVC)
+Stopped  AudioEndpointBu... Windows Audio Endpoint Builder
+Stopped  Audiosrv           Windows Audio
+Stopped  AxInstSV           ActiveX Installer (AxInstSV)
+Stopped  BITS               Background Intelligent Transfer Ser...
+Stopped  Browser            Computer Browser
+Stopped  bthserv            Bluetooth Support Service
+-- cropped for brevity--
+```
+
+Ordenar objeto
+
+Cuando un _cmdlet_ genera una gran cantidad de información, es posible que deba ordenarla para extraerla de manera más eficiente. Para ello, canalice la salida de un _cmdlet_  hacia el `Sort-Object` _cmdlet_ .
+
+El formato del comando sería:
+
+`Verb-Noun | Sort-Object`
 
 
 
