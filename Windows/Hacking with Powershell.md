@@ -127,7 +127,7 @@ Stopped  bthserv            Bluetooth Support Service
 -- cropped for brevity--
 ```
 
-Ordenar objeto
+## Ordenar objeto
 
 Cuando un _cmdlet_ genera una gran cantidad de información, es posible que deba ordenarla para extraerla de manera más eficiente. Para ello, canalice la salida de un _cmdlet_  hacia el `Sort-Object` _cmdlet_ .
 
