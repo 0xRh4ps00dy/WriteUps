@@ -63,6 +63,9 @@ except:
 # Mona
 
 ```
+# Configuración del directorio
+!mona config -set workingfolder c:\mona\%p
+
 # Comparar distancia
 !mona findmsp -distance 600
 
