@@ -94,7 +94,7 @@ La segunda versión utiliza el `$_` operador para iterar a través de cada obje
 
 **PowerShell es bastante sensible, así que no pongas comillas alrededor del comando.**
 
-¿Dónde `-operator` está una lista de los siguientes operadores:
+El `-operator` tiene una lista de los siguientes operadores:
 
 - `-Contains`: si algún elemento en el valor de la propiedad coincide exactamente con el valor especificado
 - `-EQ`: si el valor de la propiedad es el mismo que el valor especificado
