@@ -26,3 +26,41 @@ Para obtener la lista completa de verbos aprobados, visita [este](https://docs.
 
 `Get-Help` muestra información sobre un _cmdlet._ Para obtener ayuda con un comando en particular, ejecute lo siguiente:
 
+`Get-Help Command-Name`
+
+También puedes entender exactamente cómo usar el comando si pasas el `-examples`indicador. Esto devolvería un resultado como el siguiente: 
+
+Ejecutar el cmdlet Get-Help para explicar un comando
+
+```powershell
+PS C:\Users\Administrator> Get-Help Get-Command -Examples
+
+NAME
+    Get-Command
+
+SYNOPSIS
+Gets all commands.
+
+Example 1: Get cmdlets, functions, and aliases
+
+PS C:\>Get-Command
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
