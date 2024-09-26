@@ -84,7 +84,7 @@ d-r--- Videos
 
 Al recuperar objetos de salida, es posible que desee seleccionar objetos que coincidan con un valor muy específico. Puede hacerlo utilizando el `Where-Object`filtro en función del valor de las propiedades. 
 
-El formato general para utilizar este _cmdlet_  es 
+El formato general para utilizar este _cmdlet_ es 
 
 `Verb-Noun | Where-Object -Property PropertyName -operator Value`
 
