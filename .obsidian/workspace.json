@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "21774dc49843ad1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/Hackthebox/Media/Surveillance.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           }
@@ -160,37 +172,43 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "441635379ac2ca64",
+  "active": "21774dc49843ad1d",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Writeups/Hackthebox/Media/Surveillance.md",
+    "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
+    "Stack-Based Buffer Overflow/Windows/XDBG + ERC Cheatsheet.md",
+    "Stack-Based Buffer Overflow/Windows/Scripts.md",
+    "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
+    "Stack-Based Buffer Overflow/Linux/GDB.md",
+    "Stack-Based Buffer Overflow/Linux/Cheatsheet.md",
+    "Images/Pasted image 20240925172337.png",
+    "Images/Pasted image 20240925172323.png",
+    "Images/Pasted image 20240925170209.png",
+    "Images/Pasted image 20240925170128.png",
+    "Images/Pasted image 20240925170034.png",
+    "Images/Pasted image 20240925170022.png",
+    "Images/Pasted image 20240925165950.png",
+    "Images/Pasted image 20240925165832.png",
+    "Images/Pasted image 20240925164758.png",
+    "Images/Pasted image 20240925164744.png",
     "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Enumeration/Nmap Cheatsheet.md",
-    "Writeups/Hackthebox/Media/Surveillance.md",
-    "conflict-files-obsidian-git.md",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Windows/Stack-Based Buffer Overflows en Windows x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Windows/Cheatsheet.md",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Linux",
-    "Images/Pasted image 20240925071440.png",
-    "Images/Pasted image 20240924210004.png",
-    "Images/Pasted image 20240924205944.png",
-    "Images/Pasted image 20240924122728.png",
-    "Images/Pasted image 20240924122717.png",
     "Enumeration",
-    "Images/Pasted image 20240924085743.png",
     "Stack-Based Buffer Overflow/Stack-Based Buffer Overflows en Linux x86 (HackTheBox).md",
     "Stack-Based Buffer Overflow/Fundamentos.md",
     "Linux",
     "Windows",
-    "Images/Pasted image 20240923104053.png",
-    "Images/Pasted image 20240923103932.png",
-    "Images/Pasted image 20240923103040.png",
-    "Images/Pasted image 20240923102252.png",
     "Writeups/Writeup Template.md",
     "Writeups/Hackthebox/Insane",
     "Writeups/Hackthebox/Difícil",
@@ -202,9 +220,6 @@
     "Introducción.md",
     "Untitled 1.md",
     "Test.md",
-    "Untitled.md",
-    "Write Ups/Untitled.md",
-    "1. Reconnaissance/Test Note.md",
-    "README.md"
+    "Untitled.md"
   ]
 }
