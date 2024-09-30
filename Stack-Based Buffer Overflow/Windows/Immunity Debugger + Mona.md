@@ -74,7 +74,7 @@ python -c "print('A'*10000)"
 
 ```
 # Configuración del directorio
-!mona config -set workingfolder C:\Users\0xRh4ps00dyc:\user\%p
+!mona config -set workingfolder c:\mona\%p
 
 # Comparar distancia
 !mona findmsp -distance 600
@@ -83,7 +83,7 @@ python -c "print('A'*10000)"
 !mona bytearray -b "\x00"
 
 # Comparar carácteres
-!mona compare -f C:\mona\oscp\bytearray.bin -a <ESP address>
+!mona compare -f C:\mona\bytearray.bin -a <ESP address>
 
 # Encontrar jmp esp
 !mona jmp -r esp -cpb "\x00" # El resultado va a en retn pero al revés (Little Endian)
