@@ -43,8 +43,8 @@ prefix = "OVERFLOW1 "
 offset = 0
 overflow = "A" * offset
 retn = ""
-padding = ""
-payload = "" # ("\x...""\x...""\x")
+padding = "" # "\x90" * 16
+payload = "" # ("\x...""\x...""\x...")
 postfix = ""
 
 buffer = prefix + overflow + retn + padding + payload + postfix
