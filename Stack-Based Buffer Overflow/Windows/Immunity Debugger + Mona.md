@@ -65,6 +65,7 @@ except:
 ```
 python -c "print('A'*10000, file=open('fuzz.wav', 'w'))"
 python -c "print('A'*10000)"
+/usr/bin/msf-pattern_create -l 5000
 ```
 
 # Mona
