@@ -66,8 +66,8 @@ except:
 python -c "print('A'*10000, file=open('fuzz.wav', 'w'))"
 python -c "print('A'*10000)"
 
-/usr/bin/msf-pattern_create -l 5000
-usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -l 1000 -q <EIP>
+/usr/bin/msf-pattern_create -l 200
+/usr/bin/msf-pattern_offset -l 200 -q <EIP>
 ```
 
 # Mona
