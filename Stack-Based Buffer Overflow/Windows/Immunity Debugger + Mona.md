@@ -74,7 +74,7 @@ python -c "print('A'*10000)"
 
 ```
 # Configuración del directorio
-!mona config -set workingfolder c:\mona\%p
+!mona config -set workingfolder c:\user\%p
 
 # Comparar distancia
 !mona findmsp -distance 600
