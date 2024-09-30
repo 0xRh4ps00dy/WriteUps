@@ -44,7 +44,7 @@ offset = 0
 overflow = "A" * offset
 retn = ""
 padding = ""
-payload = ""
+payload = "" # ("\x...""\x...""\x")
 postfix = ""
 
 buffer = prefix + overflow + retn + padding + payload + postfix
