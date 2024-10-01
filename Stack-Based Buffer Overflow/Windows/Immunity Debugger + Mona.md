@@ -89,7 +89,7 @@ python -c "print('A'*10000)"
 !mona jmp -r esp -cpb "\x00" # El resultado va a en retn pero al revés (Little Endian)
 ```
 
-Generar cadena de carácteres incorrectos con Pyhon:
+Generar cadena de carácteres incorrectos con Python:
 
 ```
 for x in range(1, 256):
