@@ -183,9 +183,7 @@ El desplazamiento se utiliza para determinar cuántos bytes se necesitan para so
 #### Crear patrón
 
 ```shell-session
-```
 0xRh4ps00dy@htb[/htb]$ /usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 1200 > pattern.txt
-```
 0xRh4ps00dy@htb[/htb]$ cat pattern.txt
 
 Aa0Aa1Aa2Aa3Aa4Aa5...<SNIP>...Bn6Bn7Bn8Bn9
