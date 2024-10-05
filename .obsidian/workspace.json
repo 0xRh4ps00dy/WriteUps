@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md"
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md"
               }
             }
           }
@@ -149,11 +149,11 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
+    "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
     "Stack-Based Buffer Overflow/Linux/GDB.md",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC Cheatsheet.md",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
     "Stack-Based Buffer Overflow/Windows/Scripts.md",
-    "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
     "Introducción.md",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Windows/Hacking with Powershell.md",
