@@ -1,4 +1,4 @@
-#tag
+#ssh #hydra #cve
 
 ![](../../../Images/Pasted%20image%2020241008071626.png)
 # Enumeración
@@ -39,23 +39,21 @@ Nmap done: 1 IP address (1 host up) scanned in 0.93 seconds
 
 ## SSH (22 TCP Port)
 
-Investigando el servicio vemos que es una vesiñon antigua que tiene una vulnerabildiad numerada como [CVE-2018-15473](https://nvd.nist.gov/vuln/detail/cve-2018-15473) el cual nos permite una enum,eración de usuarios. Con este [PoC](https://github.com/Sait-Nuri/CVE-2018-15473) y una lista de usuarios podemos conseguir que usaurios existen en el 
+Investigando el servicio vemos que es una vesiñon antigua que tiene una vulnerabilidad numerada como [CVE-2018-15473](https://nvd.nist.gov/vuln/detail/cve-2018-15473) el cual nos permite una enumeración de usuarios. Con este [PoC](https://github.com/Sait-Nuri/CVE-2018-15473) y una lista de usuarios podemos conseguir que usuarios existen en el sistema
 
-# Usuario Root
 
-Hacemos un stego con `steghide` y obtenemos algo de información no importante.
 
 ```
 
 ```
 
-Luego examinamos los metadatos de la imagen y conseguimos dar con un nombre de usuario.
+
 
 ```
 
 ```
 
-Ahora, con el nombre de usuario podemos hacer fuerza bruta contra el servicio SSH con `hydra`.
+Ahora, con el nombre de usuario encontrado podemos hacer fuerza bruta contra el servicio SSH con `hydra`.
 
 ```
 > hydra -l root -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
