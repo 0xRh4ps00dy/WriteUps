@@ -54,9 +54,12 @@ Hacemos un stego con `steghide` y obtenemos algo de información no importante.
 
 Luego examinamos los metadatos de la imagen y conseguimos dar con un nombre de usuario.
 
-Ahora, con el nombre de usuario podemos hacer fuerza bruta contra el servicio SSH
+Ahora, con el nombre de usuario podemos hacer fuerza bruta contra el servicio SSH con `hydra`.
+
+
+Conseguimos acceder al sistema mediante SSH.
 
 # Escalada de privilegios
 
-Haciendo una investigación a nivel local del sistema ...
+Una vez dentro nvestigamos los comandos que podemos ejecutar con perimsos `sudo`
 
