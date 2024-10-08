@@ -61,7 +61,9 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 7.11 seconds
 ```
 
+## FTP (21 TCP Port)
 
+Tal como nmap nos muestra con sus scripts, podemos acceder al servicio usando el nombre de usuariuo **anonymous** y sin contraseña para des
 
 ## Website (80 TCP Port)
 
