@@ -108,7 +108,16 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-10-08 17:08:
 ```
 
 
-
+```
+ssh camilo@172.17.0.2
+The authenticity of host '172.17.0.2 (172.17.0.2)' can't be established.
+ED25519 key fingerprint is SHA256:52z4CT20OpL7G8YfPhcdERem6Sq+z8868LngvNGXRlA.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.17.0.2' (ED25519) to the list of known hosts.
+camilo@172.17.0.2's password:
+$
+```
 
 # Escalada de privilegios
 
