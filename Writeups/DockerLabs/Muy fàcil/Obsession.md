@@ -91,12 +91,12 @@ Tal como **nmap** nos muestra con sus scripts, podemos acceder al servicio usand
 
 ## Website (80 TCP Port)
 
-En el código fuente del sitio web nos encontramos con un comentario donde se indica que se realiza
+En el código fuente del sitio web nos encontramos con un comentario donde se indica que se realiza el reutilización de nombres de usuario.
 
 
 ![](../../../Images/Pasted%20image%2020241008160638.png)
 
-
+Realizamos un ataque de fuerza brote de directios sobre el sitios web donde descubrimos dos directorios con dos ficheros en c m
 
 ```
 dirscan http://172.17.0.2/FUZZ
