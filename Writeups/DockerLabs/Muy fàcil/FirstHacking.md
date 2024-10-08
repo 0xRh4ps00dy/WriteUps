@@ -38,20 +38,9 @@ Nmap done: 1 IP address (1 host up) scanned in 1.85 seconds
 
 ## FTP (21 TCP Port)
 
-Enumerando el servicio **FTP** nos encontramos con una versión que tiene una vul
+Enumerando el servicio **FTP** nos encontramos con una versión que tiene la vulnerabildiad [CVE-2011-2523](https://nvd.nist.gov/vuln/detail/CVE-2011-2523) que permite la ejecución de comandos.
 
-
-
-
-
-
-
-
-
-Haciendo una investigación a nivel local del sistema ...
-
-https://www.exploit-db.com/exploits/49757
-
+Descargando el siguiente [exploit](https://www.exploit-db.com/exploits/49757) conseguimos una 
 ```
 > python3 49757 172.17.0.2
 
