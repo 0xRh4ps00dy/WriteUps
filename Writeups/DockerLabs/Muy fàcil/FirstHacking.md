@@ -23,13 +23,22 @@ Nmap done: 1 IP address (1 host up) scanned in 0.53 seconds
 
 ```
 > nmap -oN scans/targetedTCPPorts -sCV $target -p 22,80                       
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-10-08 15:44 CEST
+Nmap scan report for 172.17.0.2
+Host is up (0.000045s latency).
 
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 2.3.4
+MAC Address: 02:42:AC:11:00:02 (Unknown)
+Service Info: OS: Unix
 
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.85 seconds
 ```
 
-## Website (80 TCP Port)
+## FTP (21 TCP Port)
 
-En el sitio web nos encontramos con un ...
+Enumerando el servicio **FTP**
 
 
 
