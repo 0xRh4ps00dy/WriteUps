@@ -37,16 +37,50 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.93 seconds
 ```
 
-## Website (80 TCP Port)
-
-En el sitio web nos encontramos con un ...
+## SSH (22 TCP Port)
 
 
+https://github.com/Sait-Nuri/CVE-2018-15473
 
+# Usuario Borazuwarah
 
-# Usuario XXX
+Hacemos un stego con `steghide` y obtenemos algo de información no importante.
 
+```
 
-# Escalada de privilegios
+```
 
-Haciendo una investigación a nivel local del sistema ...
+Luego examinamos los metadatos de la imagen y conseguimos dar con un nombre de usuario.
+
+```
+
+```
+
+Ahora, con el nombre de usuario podemos hacer fuerza bruta contra el servicio SSH con `hydra`.
+
+```
+> hydra 
+```
+
+Conseguimos acceder al sistema mediante SSH.
+
+# Foothold
+
+Una vez dentro investigamos los comandos que podemos ejecutar con permisos `sudo`.
+
+```
+borazuwarah@7dd5484e294a:~$ sudo -l
+Matching Defaults entries for borazuwarah on 7dd5484e294a:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin, use_pty
+
+User borazuwarah may run the following commands on 7dd5484e294a:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: /bin/bash
+```
+
+Nos encontramos que podemos ejecutar el binario`/bin/bash` con permisos ``sudo`` y sin contraseña.
+
+```
+borazuwarah@7dd5484e294a:~$ sudo /bin/bash
+root@7dd5484e294a:/home/borazuwarah#
+```
