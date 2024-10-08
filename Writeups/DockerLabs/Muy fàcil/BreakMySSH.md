@@ -1,4 +1,4 @@
-#ssh #hydra #cve
+#ssh #hydra
 
 ![](../../../Images/Pasted%20image%2020241008071626.png)
 # Enumeración
@@ -53,7 +53,7 @@ Investigando el servicio vemos que es una vesiñon antigua que tiene una vulnera
 
 ```
 
-Ahora, con el nombre de usuario encontrado podemos hacer fuerza bruta contra el servicio SSH con `hydra`.
+Ahora, con el nombre de usuario encontrado podemos hacer fuerza bruta contra el servicio SSH con **hydra**.
 
 ```
 > hydra -l root -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
