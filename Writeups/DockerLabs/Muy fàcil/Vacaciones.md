@@ -122,3 +122,12 @@ $
 # Escalada de privilegios
 
 Haciendo una investigación a nivel local del sistema ...
+
+
+
+```
+camilo@a8996f6fcde9:/var/mail/camilo$ cat correo.txt
+Hola Camilo,
+
+Me voy de vacaciones y no he terminado el trabajo que me dio el jefe. Por si acaso lo pide, aquí tienes la contraseña: 2k84dicb
+```
