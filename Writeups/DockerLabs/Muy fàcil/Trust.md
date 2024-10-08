@@ -82,7 +82,7 @@ by Ben "epi" Risher 🤓                 ver: 2.11.0
 
 # Usuario Mario
 
-Con el nombre usuario logramos conseguir una contraseña realitzando un ataque de fuerza bruta de contraseñas.
+Con el nombre usuario logramos conseguir una contraseña realizando un ataque de fuerza bruta de contraseñas que nos permite acceder en el sistema objetivo como el usuario **Mario**.
 
 ```
 > hydra -l mario -P /usr/share/wordlists/rockyou.txt 172.18.0.2 ssh
