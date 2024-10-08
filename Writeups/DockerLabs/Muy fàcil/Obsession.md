@@ -248,3 +248,6 @@ User russoski may run the following commands on 7646d085583b:
 https://gtfobins.github.io/
 
 
+![](../../../Images/Pasted%20image%2020241008162323.png)
+
+
