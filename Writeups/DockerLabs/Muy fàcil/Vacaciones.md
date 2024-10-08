@@ -1,4 +1,6 @@
+#tag
 
+![](../../../Images/Pasted%20image%2020241008071813.png)
 # Enumeración
 
 ## Nmap
