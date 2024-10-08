@@ -49,7 +49,7 @@ En el sitio web nos encontramos con solo una imagen.
 ![](../../../Images/Pasted%20image%2020241008070656.png)
 
 Descargamos la imagen en nuestro sistema de ataque y nos ponemos a investigarla.
-# Foothold
+# Usuario Borazuwarah
 
 Hacemos un stego con `steghide` y obtenemos algo de información no importante.
 
