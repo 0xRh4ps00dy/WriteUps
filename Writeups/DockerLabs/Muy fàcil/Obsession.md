@@ -63,7 +63,19 @@ Nmap done: 1 IP address (1 host up) scanned in 7.11 seconds
 
 ## FTP (21 TCP Port)
 
-Tal como nmap nos muestra con sus scripts, podemos acceder al servicio usando el nombre de usuariuo **anonymous** y sin contraseña para des
+Tal como **nmap** nos muestra con sus scripts, podemos acceder al servicio usando el nombre de usuario **anonymous** y sin contraseña para descargar dos ficheros.
+
+**chat-gonza.txt**
+
+```
+
+```
+
+**pendientes.txt**
+
+```
+
+```
 
 ## Website (80 TCP Port)
 
