@@ -5,7 +5,7 @@
 
 ## Nmap
 
-El escaneo de **nmap** nos enseña la existencia de un servicio SSH i un servicio HTTP funcionando.
+El escaneo de **nmap** nos enseña la existencia de un servicio **SSH** i un servicio **HTTP** funcionando.
 
 ```
 > nmap --open --min-rate 10000 -Pn -n -oN scans/allTCPPorts $target
@@ -45,7 +45,7 @@ Nmap done: 1 IP address (1 host up) scanned in 6.90 seconds
 
 ## Website (80 TCP Port)
 
-En el sitio web nos encontramos con un ...
+En el sitio web no vemos nada interesante pero si  encontramos con un ...
 
 
 

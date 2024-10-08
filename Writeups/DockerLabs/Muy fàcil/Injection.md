@@ -5,7 +5,7 @@
 
 ## Nmap
 
-El escaneo de **nmap** nos enseña la existencia de un servicio SSH y un servicio HTTP funcionando.
+El escaneo de **nmap** nos enseña la existencia de un servicio **SSH** y un servicio **HTTP** funcionando.
 
 ```
 > nmap --open --min-rate 10000 -Pn -n -oN scans/allTCPPorts $target
