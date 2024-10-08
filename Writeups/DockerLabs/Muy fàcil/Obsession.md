@@ -91,7 +91,7 @@ Tal como **nmap** nos muestra con sus scripts, podemos acceder al servicio usand
 
 ## Website (80 TCP Port)
 
-En el sitio web nos encontramos con un ...
+En el código fuente del sitio web nos encontramos con un comentario donde se indica que se realiza
 
 
 ![](../../../Images/Pasted%20image%2020241008160638.png)
