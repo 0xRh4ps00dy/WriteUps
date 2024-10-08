@@ -45,9 +45,9 @@ Nmap done: 1 IP address (1 host up) scanned in 6.90 seconds
 
 ## Website (80 TCP Port)
 
-En el sitio web no vemos nada interesante pero si  encontramos con un ...
+En el sitio web no vemos nada interesante pero si hacenmos un ataque de fuerza bruta de directorios nos encontramos con una que nos revela un nombre de usuario-
 
-
+![](../../../Images/Pasted%20image%2020241008173556.png)
 
 ```
 feroxbuster -u http://172.18.0.2 -x php
