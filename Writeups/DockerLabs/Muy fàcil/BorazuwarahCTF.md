@@ -1,3 +1,5 @@
+#abusing-sudo #apport-cli #cms #password-brute-force #hashcat #joomla #mysql #wfuzz #subdomain-brute-force
+
 ![](../../../Images/Pasted%20image%2020241008070451.png)
 # Enumeración
 
@@ -61,5 +63,5 @@ Conseguimos acceder al sistema mediante SSH.
 
 # Escalada de privilegios
 
-Una vez dentro nvestigamos los comandos que podemos ejecutar con perimsos `sudo`
+Una vez dentro nvestigamos los comandos que podemos ejecutar con perimsos `sudo` y nos encontramos que podemos ejecutar el binario`/bin/bash`. Por lo tanto ejecutando 
 
