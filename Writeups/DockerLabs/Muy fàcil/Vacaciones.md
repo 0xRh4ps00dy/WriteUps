@@ -83,7 +83,7 @@ $
 ```
 # Usuario Juan
 
-Una vez dentro del sistema realitzamos una enumeración y logramos enoctrar un correo electrónico con una contraseña. Protgrando la cotnaseña copn los diferentes usuario que existen logramos un movimeinto lateral hacia el usuario **Juan**.
+Una vez dentro del sistema realizamos una enumeración y logramos encontrar un correo electrónico con una contraseña. 
 
 ```
 camilo@a8996f6fcde9:/var/mail/camilo$ cat correo.txt
@@ -92,7 +92,7 @@ Hola Camilo,
 Me voy de vacaciones y no he terminado el trabajo que me dio el jefe. Por si acaso lo pide, aquí tienes la contraseña: 2k84dicb
 ```
 
-
+Probando la contraseña encontrada con los diferentes usuario que existen logramos un movimiento lateral hacia el usuario **Juan**.
 
 ```
 camilo@a8996f6fcde9:/var/mail/camilo$ su juan
@@ -101,7 +101,6 @@ $ id
 uid=1000(juan) gid=1000(juan) groups=1000(juan)
 $
 ```
-
 
 # Escalada de privilegios
 
