@@ -46,20 +46,12 @@ Nmap done: 1 IP address (1 host up) scanned in 6.80 seconds
 
 ## Website (80 TCP Port)
 
-En el sitio web no vemos nada pero mirando el códuigo fuente de la página desucbrimos dos posibles nombres de usaurios.
-
-
+En el sitio web no vemos nada pero mirando el código fuente de la página descubrimos dos posibles nombres de usuarios.
 
 ![](../../../Images/Pasted%20image%2020241008170742.png)
+# Usuario Camilo
 
-
-## SSH (22 TCP Port)
-
-
-
-
-# Usuario XXX
-
+Logramos conseguir una conrtaseña para el usuario **Mario** realizando un ataqiue de fuerza bruta de contraseñas con **Hydra** y logramos acceder en el sistems objectivo.
 
 ```
 > hydra -l camilo -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
