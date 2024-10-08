@@ -138,7 +138,7 @@ Descubre un directorio llamado **backup** y uno llamado **important**.
 Usuario para todos mis servicios: russoski (cambiar pronto!)
 ```
 
-Este fichero nos sigue diciendo que se reutiliza el nombre de usuario en los servicios.
+Este fichero nos sigue diciendo que se reutiliza el nombre de usuario en los servicios y conseguimos un nombre de usuario.
 
 **important.md**
 
@@ -185,11 +185,10 @@ Malditos muchachos. Todos son iguales. Pero tú, en tu psicología de tres parte
 
 ```
 
-Este fichero no parece darnos mucha info
-
+Este fichero no parece darnos mucha información relevante.
 # Usuario Russoski
 
-
+Realizamos una taque de fuerza bruta con el nombre de usuario encontrado y el servicio **SSH/*.
 
 ```
 > hydra -l russoski -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
