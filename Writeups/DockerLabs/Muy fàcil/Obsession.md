@@ -96,7 +96,7 @@ En el código fuente del sitio web nos encontramos con un comentario donde se in
 
 ![](../../../Images/Pasted%20image%2020241008160638.png)
 
-Realizamos un ataque de fuerza brote de directios sobre el sitios web donde descubrimos dos directorios con dos ficheros en c m
+Realizamos un ataque de fuerza brote de directorios sobre el sitios web donde descubrimos dos directorios con dos ficheros en cada uno de ellos.
 
 ```
 dirscan http://172.17.0.2/FUZZ
@@ -138,11 +138,11 @@ Descubre un directorio llamado **backup** y uno llamado **important**.
 Usuario para todos mis servicios: russoski (cambiar pronto!)
 ```
 
-
-![](../../../Images/Pasted%20image%2020241008161830.png)
-
+Este fichero nos sigue diciendo que se reutiliza el nombre de usuario en los servicios.
 
 **important.md**
+
+![](../../../Images/Pasted%20image%2020241008161830.png)
 
 ```
                                    -------------------------------------------------------
@@ -185,6 +185,7 @@ Malditos muchachos. Todos son iguales. Pero tú, en tu psicología de tres parte
 
 ```
 
+Este fichero no parece darnos mucha info
 
 # Usuario Russoski
 
