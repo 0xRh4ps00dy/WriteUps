@@ -1,4 +1,4 @@
-#hydra #password-brute-force #gtfobins #env #suid
+#hydra #password-brute-force #gtfobins #directory-brute-force #abusing-sudo #vim
 
 ![](../../../Images/Pasted%20image%2020241008071854.png)
 # Enumeración
