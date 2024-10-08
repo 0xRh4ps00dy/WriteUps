@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/DockerLabs/Muy fàcil/Vacaciones.md",
+                "file": "Writeups/DockerLabs/Muy fàcil/Trust.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/DockerLabs/Muy fàcil/Vacaciones.md",
+                "file": "Writeups/DockerLabs/Muy fàcil/Trust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/DockerLabs/Muy fàcil/Vacaciones.md",
+                "file": "Writeups/DockerLabs/Muy fàcil/Trust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/DockerLabs/Muy fàcil/Vacaciones.md"
+                "file": "Writeups/DockerLabs/Muy fàcil/Trust.md"
               }
             }
           }
@@ -149,9 +149,9 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
+    "Writeups/DockerLabs/Muy fàcil/Vacaciones.md",
     "Images/Pasted image 20241008170742.png",
     "Writeups/DockerLabs/Muy fàcil/BreakMySSH.md",
-    "Writeups/DockerLabs/Muy fàcil/Vacaciones.md",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Writeups/DockerLabs/Muy fàcil/FirstHacking.md",
     "Writeups/DockerLabs/Muy fàcil/BorazuwarahCTF.md",
@@ -172,7 +172,6 @@
     "Images/Pasted image 20241008071742.png",
     "Images/Pasted image 20241008071626.png",
     "Writeups/Writeup Template.md",
-    "Images/Pasted image 20241008070656.png",
     "Stack-Based Buffer Overflow/Linux/GDB.md",
     "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC Cheatsheet.md",

@@ -119,9 +119,9 @@ camilo@172.17.0.2's password:
 $
 ```
 
-# Escalada de privilegios
 
-Haciendo una investigación a nivel local del sistema ...
+
+# Usuario Juan
 
 
 
@@ -131,3 +131,28 @@ Hola Camilo,
 
 Me voy de vacaciones y no he terminado el trabajo que me dio el jefe. Por si acaso lo pide, aquí tienes la contraseña: 2k84dicb
 ```
+
+
+
+```
+camilo@a8996f6fcde9:/var/mail/camilo$ su juan
+Password:
+$ id
+uid=1000(juan) gid=1000(juan) groups=1000(juan)
+$
+```
+
+
+# Escalada de privilegios
+
+Haciendo una investigación a nivel local del sistema ...
+
+```
+sudo -l
+Matching Defaults entries for juan on a8996f6fcde9:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User juan may run the following commands on a8996f6fcde9:
+    (ALL) NOPASSWD: /usr/bin/ruby
+```
+
