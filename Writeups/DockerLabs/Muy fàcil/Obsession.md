@@ -184,7 +184,7 @@ Malditos muchachos. Todos son iguales. Pero tú, en tu psicología de tres parte
 ```
 
 
-## SSh (22 TCP Port)
+
 
 
 ```
@@ -205,8 +205,27 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-10-08 16:19:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-10-08 16:20:23
 ```
 
-# Usuario XXX
+# Usuario Russoski
 
+
+
+```
+> ssh russoski@172.17.0.2
+russoski@172.17.0.2's password:
+
+Welcome to Ubuntu 24.04 LTS (GNU/Linux 6.10.9-amd64 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+This system has been minimized by removing packages and content that are
+not required on a system that users do not log into.
+
+To restore this content, you can run the 'unminimize' command.
+Last login: Tue Jun 18 04:38:10 2024 from 172.17.0.1
+russoski@7646d085583b:~$
+```
 
 # Escalada de privilegios
 
