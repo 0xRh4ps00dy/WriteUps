@@ -5,7 +5,7 @@
 
 ## Nmap
 
-El escaneo de **nmap** nos enseña la existencia de un servicio SSH i un servicio HTTP funcionando.
+El escaneo de **nmap** nos enseña la existencia de un servicio SSH.
 
 ```
 > nmap --open --min-rate 10000 -Pn -n -oN scans/allTCPPorts $target
@@ -39,10 +39,10 @@ Nmap done: 1 IP address (1 host up) scanned in 0.93 seconds
 
 ## SSH (22 TCP Port)
 
-
+Investigando el servicio vemos que es una vesiñon antigua que tiene una vulnerabildiad numerada como https://nvd.nist.gov/vuln/detail/cve-2018-15473
 https://github.com/Sait-Nuri/CVE-2018-15473
 
-# Usuario Borazuwarah
+# Usuario Root
 
 Hacemos un stego con `steghide` y obtenemos algo de información no importante.
 
@@ -89,9 +89,4 @@ the exact distribution terms for each program are described in the
 individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by applicable law.
-root@347cd6f2e506:~# ls
-root@347cd6f2e506:~# whoami
-root
-root@347cd6f2e506:~#
-```
+permitted by appli
