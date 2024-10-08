@@ -145,7 +145,7 @@ $
 
 # Escalada de privilegios
 
-Haciendo una investigación a nivel local del sistema ...
+Una vez dentro investigamos los comandos que podemos ejecutar con permisos `sudo` y vemos que podemos ejecutar el binario **ruby**.
 
 ```
 sudo -l
@@ -156,3 +156,10 @@ User juan may run the following commands on a8996f6fcde9:
     (ALL) NOPASSWD: /usr/bin/ruby
 ```
 
+Si investigamos en la página web de [GTFOBINS](https://gtfobins.github.io/) vemos como podemos conseguir una shell con permisos sudo.
+
+![](../../../Images/Pasted%20image%2020241008172202.png)
+
+```
+
+```
