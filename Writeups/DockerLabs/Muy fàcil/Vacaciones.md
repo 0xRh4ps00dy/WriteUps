@@ -46,7 +46,7 @@ Nmap done: 1 IP address (1 host up) scanned in 6.80 seconds
 
 ## Website (80 TCP Port)
 
-En el sitio web nos encontramos con un ...
+En el sitio web no vemos nada pero mirando el códuigo fuente de la página desucbrimos dos posibles nombres de usaurios.
 
 
 
