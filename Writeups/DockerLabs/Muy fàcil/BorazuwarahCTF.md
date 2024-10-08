@@ -53,15 +53,40 @@ Descargamos la imagen en nuestro sistema de ataque y nos ponemos a investigarla.
 
 Hacemos un stego con `steghide` y obtenemos algo de información no importante.
 
+```
+
+```
 
 Luego examinamos los metadatos de la imagen y conseguimos dar con un nombre de usuario.
 
+```
+
+```
+
 Ahora, con el nombre de usuario podemos hacer fuerza bruta contra el servicio SSH con `hydra`.
 
+```
+
+```
 
 Conseguimos acceder al sistema mediante SSH.
 
 # Escalada de privilegios
 
-Una vez dentro nvestigamos los comandos que podemos ejecutar con perimsos `sudo` y nos encontramos que podemos ejecutar el binario`/bin/bash`. Por lo tanto ejecutando 
+Una vez dentro investigamos los comandos que podemos ejecutar con permisos `sudo`.
 
+```
+
+```
+
+Nos encontramos que podemos ejecutar el binario`/bin/bash` con permisos ``sudo`` y sin contraseña.
+
+```
+borazuwarah@7dd5484e294a:~$ sudo -l
+Matching Defaults entries for borazuwarah on 7dd5484e294a:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin, use_pty
+
+User borazuwarah may run the following commands on 7dd5484e294a:
+    (ALL : ALL) ALL
+    (ALL) NOPASSWD: /bin/bash
+```
