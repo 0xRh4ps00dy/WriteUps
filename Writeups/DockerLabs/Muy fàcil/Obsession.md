@@ -126,7 +126,16 @@ ________________________________________________
 :: Progress: [11996/30000] :: Job [1/1] :: 8695 req/sec :: Duration: [0:00:01] :: Erro:: Progress: [13168/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:01] :: Err:: Progress: [14643/30000] :: Job [1/1] :: 11764 req/sec :: Duration: [0:00:01] :: Err:: Progress: [16190/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:01] :: Err:: Progress: [17596/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:01] :: Err:: Progress: [19214/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:01] :: Err:: Progress: [20797/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:01] :: Err:: Progress: [22309/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:01] :: Err:: Progress: [23927/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [25439/30000] :: Job [1/1] :: 10526 req/sec :: Duration: [0:00:02] :: Err:: Progress: [26977/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [28170/30000] :: Job [1/1] :: 6896 req/sec :: Duration: [0:00:02] :: Erro:: Progress: [29556/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [30000/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:02] :: Err:: Progress: [30000/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:02] :: Errors: 2 ::
 ```
 
-Descubre un directi
+Descubre un directio llamado backup y uno llamado important
+
+![](../../../Images/Pasted%20image%2020241008161739.png)
+
+**backup.txt**
+
+```
+Usuario para todos mis servicios: russoski (cambiar pronto!)
+```
+
 # Usuario XXX
 
 
