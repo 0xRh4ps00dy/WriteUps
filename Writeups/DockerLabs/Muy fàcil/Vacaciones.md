@@ -48,9 +48,6 @@ Nmap done: 1 IP address (1 host up) scanned in 6.80 seconds
 
 En el sitio web nos encontramos con un ...
 
-
-
-
 ```
 > dirscan http://172.17.0.2/FUZZ
 
@@ -79,6 +76,10 @@ ________________________________________________
 :: Progress: [4255/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors:                         [Status: 200, Size: 74, Words: 15, Lines: 2, Duration: 1ms]
 :: Progress: [4306/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [5660/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [7235/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [8627/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [10055/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors::: Progress: [11621/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:01] :: Err:: Progress: [12953/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:01] :: Err:: Progress: [14465/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:01] :: Err:: Progress: [15970/30000] :: Job [1/1] :: 11764 req/sec :: Duration: [0:00:01] :: Err:: Progress: [17429/30000] :: Job [1/1] :: 10526 req/sec :: Duration: [0:00:01] :: Err:: Progress: [18958/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:01] :: Err:: Progress: [20513/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:01] :: Err:: Progress: [21986/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:01] :: Err:: Progress: [23597/30000] :: Job [1/1] :: 16666 req/sec :: Duration: [0:00:02] :: Err:: Progress: [25164/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [26644/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:02] :: Err:: Progress: [28083/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:02] :: Err:: Progress: [29514/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:02] :: Err:: Progress: [30000/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:02] :: Err:: Progress: [30000/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:02] :: Errors: 2 ::
 ```
+
+
+![](../../../Images/Pasted%20image%2020241008170742.png)
+
 
 ## SSH (22 TCP Port)
 
