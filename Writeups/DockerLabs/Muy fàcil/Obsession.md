@@ -1,4 +1,4 @@
-#tag 
+#hydra #password-brute-force #gtfobins #env #suid
 
 ![](../../../Images/Pasted%20image%2020241008071854.png)
 # Enumeración

@@ -1,4 +1,4 @@
-#abusing-sudo #stego #steghide #exiftool #hydra 
+#abusing-sudo #stego #steghide #exiftool #hydra #password-brute-force 
 
 ![](../../../Images/Pasted%20image%2020241008070451.png)
 # Enumeración
