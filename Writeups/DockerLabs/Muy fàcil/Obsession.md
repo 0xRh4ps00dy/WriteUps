@@ -68,13 +68,25 @@ Tal como **nmap** nos muestra con sus scripts, podemos acceder al servicio usand
 **chat-gonza.txt**
 
 ```
-
+[16:21, 16/6/2024] Gonza: pero en serio es tan guapa esa tal Nágore como dices?
+[16:28, 16/6/2024] Russoski: es una auténtica princesa pff, le he hecho hasta un vídeo y todo, lo tengo ya subido y tengo la URL guardada
+[16:29, 16/6/2024] Russoski: en mi ordenador en una ruta segura, ahora cuando quedemos te lo muestro si quieres
+[21:52, 16/6/2024] Gonza: buah la verdad tenías razón eh, es hermosa esa chica, del 9 no baja
+[21:53, 16/6/2024] Gonza: por cierto buen entreno el de hoy en el gym, noto los brazos bastante hinchados, así sí
+[22:36, 16/6/2024] Russoski: te lo dije, ya sabes que yo tengo buenos gustos para estas cosas xD, y sí buen training hoy
 ```
 
 **pendientes.txt**
 
 ```
+1 Comprar el Voucher de la certificación eJPTv2 cuanto antes!
 
+2 Aumentar el precio de mis asesorías online en la Web!
+
+3 Terminar mi laboratorio vulnerable para la plataforma Dockerlabs!
+
+4 Cambiar algunas configuraciones de mi equipo, creo que tengo ciertos
+  permisos habilitados que no son del todo seguros..
 ```
 
 ## Website (80 TCP Port)
