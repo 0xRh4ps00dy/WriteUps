@@ -208,8 +208,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-10-08 16:19:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-10-08 16:20:23
 ```
 
-El resultado nos arroja un ncontraseña donde conseguimos entrar en el sistema objet
-
+El resultado nos arroja una contraseña donde conseguimos entrar en el sistema objetivo.
 
 ```
 > ssh russoski@172.17.0.2
@@ -231,8 +230,7 @@ russoski@7646d085583b:~$
 
 # Escalada de privilegios
 
-Haciendo una investigación a nivel local del sistema ...
-
+Una vez dentro investigamos los comandos que podemos ejecutar con permisos `sudo` y vemos que podemos ejecutar el binario **vim**.
 
 ```
 russoski@7646d085583b:~$ sudo -l
@@ -243,7 +241,7 @@ User russoski may run the following commands on 7646d085583b:
     (root) NOPASSWD: /usr/bin/vim
 ```
 
-
+Si investigamos en la pág
 
 https://gtfobins.github.io/
 
