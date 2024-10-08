@@ -48,34 +48,6 @@ Nmap done: 1 IP address (1 host up) scanned in 6.80 seconds
 
 En el sitio web nos encontramos con un ...
 
-```
-> dirscan http://172.17.0.2/FUZZ
-
-        /'___\  /'___\           /'___\
-       /\ \__/ /\ \__/  __  __  /\ \__/
-       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\
-        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/
-         \ \_\   \ \_\  \ \____/  \ \_\
-          \/_/    \/_/   \/___/    \/_/
-
-       v2.1.0-dev
-________________________________________________
-
- :: Method           : GET
- :: URL              : http://172.17.0.2/FUZZ
- :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt
- :: Follow redirects : false
- :: Calibration      : false
- :: Timeout          : 10
- :: Threads          : 40
- :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
-________________________________________________
-
-:: Progress: [21/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 javascript              [Status: 301, Size: 313, Words: 20, Lines: 10, Duration: 2ms]
-:: Progress: [175/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0:: Progress: [1405/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [2844/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [4200/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: server-status           [Status: 403, Size: 275, Words: 20, Lines: 10, Duration: 4ms]
-:: Progress: [4255/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors:                         [Status: 200, Size: 74, Words: 15, Lines: 2, Duration: 1ms]
-:: Progress: [4306/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [5660/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [7235/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [8627/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [10055/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors::: Progress: [11621/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:01] :: Err:: Progress: [12953/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:01] :: Err:: Progress: [14465/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:01] :: Err:: Progress: [15970/30000] :: Job [1/1] :: 11764 req/sec :: Duration: [0:00:01] :: Err:: Progress: [17429/30000] :: Job [1/1] :: 10526 req/sec :: Duration: [0:00:01] :: Err:: Progress: [18958/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:01] :: Err:: Progress: [20513/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:01] :: Err:: Progress: [21986/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:01] :: Err:: Progress: [23597/30000] :: Job [1/1] :: 16666 req/sec :: Duration: [0:00:02] :: Err:: Progress: [25164/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [26644/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:02] :: Err:: Progress: [28083/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:02] :: Err:: Progress: [29514/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:02] :: Err:: Progress: [30000/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:02] :: Err:: Progress: [30000/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:02] :: Errors: 2 ::
-```
 
 
 ![](../../../Images/Pasted%20image%2020241008170742.png)
