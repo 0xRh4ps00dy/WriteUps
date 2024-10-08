@@ -1,4 +1,6 @@
 
+
+![](../../../Images/Pasted%20image%2020241008071626.png)
 # Enumeración
 
 ## Nmap

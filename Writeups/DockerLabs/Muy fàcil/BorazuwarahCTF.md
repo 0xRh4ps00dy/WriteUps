@@ -1,4 +1,4 @@
-#abusing-sudo #apport-cli #cms #password-brute-force #hashcat #joomla #mysql #wfuzz #subdomain-brute-force
+#abusing-sudo #stego #steghide #exiftool #hydra 
 
 ![](../../../Images/Pasted%20image%2020241008070451.png)
 # Enumeración
