@@ -126,7 +126,7 @@ ________________________________________________
 :: Progress: [11996/30000] :: Job [1/1] :: 8695 req/sec :: Duration: [0:00:01] :: Erro:: Progress: [13168/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:01] :: Err:: Progress: [14643/30000] :: Job [1/1] :: 11764 req/sec :: Duration: [0:00:01] :: Err:: Progress: [16190/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:01] :: Err:: Progress: [17596/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:01] :: Err:: Progress: [19214/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:01] :: Err:: Progress: [20797/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:01] :: Err:: Progress: [22309/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:01] :: Err:: Progress: [23927/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [25439/30000] :: Job [1/1] :: 10526 req/sec :: Duration: [0:00:02] :: Err:: Progress: [26977/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [28170/30000] :: Job [1/1] :: 6896 req/sec :: Duration: [0:00:02] :: Erro:: Progress: [29556/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [30000/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:02] :: Err:: Progress: [30000/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:02] :: Errors: 2 ::
 ```
 
-Descubre un directio llamado backup y uno llamado important
+Descubre un directorio llamado **backup** y uno llamado **important**.
 
 ![](../../../Images/Pasted%20image%2020241008161739.png)
 
@@ -136,6 +136,52 @@ Descubre un directio llamado backup y uno llamado important
 Usuario para todos mis servicios: russoski (cambiar pronto!)
 ```
 
+
+![](../../../Images/Pasted%20image%2020241008161830.png)
+
+
+**important.md**
+
+```
+                                   -------------------------------------------------------
+
+                                                     MANIFIESTO HACKER
+                                                 La Conciencia de un Hacker 
+
+                                 Uno más ha sido capturado hoy, está en todos los periódicos.
+
+  "Joven arrestado en Escándalo de Crimen por Computadora", "Hacker arrestado luego de traspasar las barreras de seguridad de un banco.." 
+
+Malditos muchachos. Todos son iguales. Pero tú, en tu psicología de tres partes y tu técnocerebro de 1950, has alguna vez observado detrás
+                                                  de los ojos de un Hacker?
+
+           Alguna vez te has preguntado qué lo mueve, qué fuerzas lo han formado, cuáles lo pudieron haber moldeado?
+
+                                               Soy un Hacker, entra a mi mundo..
+
+           El mío es un mundo que comienza en la escuela.. Soy más inteligente que la mayoría de los otros muchachos,
+                                         esa basura que ellos nos enseñan me aburre..
+
+                                           Malditos sub realizados. Son todos iguales.
+
+    Estoy en la preparatoria. He escuchado a los profesores explicar por decimoquinta vez como reduciruna fracción. Yo lo entiendo.
+
+                            "No, Srta. Smith, no le voy a mostrar mi trabajo, lo hice en mi mente..
+                               "Maldito muchacho. Probablemente se lo copió. Todos son iguales.
+
+                  Hoy hice un descubrimiento. Encontré una computadora. Espera un momento, esto es lo máximo.
+                          Esto hace lo que yo le pida. Si comete un error es porque yo me equivoqué.
+
+        No porque no le gustó.. o se siente amenazada por mí.. o piensa que soy un engreído.. o no le gusta enseñar y no
+                     debería estar aquí.. Maldito muchacho. Todo lo que hace es jugar. Todos son iguales.
+
+   Y entonces ocurrió.. una puerta abierta al mundo.. corriendo a través de las lineas telefónicas como la heroína a través de
+       las venas de un adicto, se envía un pulso electrónico, un refugio para las incompetencias del día a día es buscado..
+                                            una tabla de salvación es encontrada.
+
+                                   --------------------------------------------------------
+
+```
 # Usuario XXX
 
 
