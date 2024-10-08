@@ -96,6 +96,37 @@ En el sitio web nos encontramos con un ...
 
 ![](../../../Images/Pasted%20image%2020241008160638.png)
 
+```
+dirscan http://172.17.0.2/FUZZ
+
+        /'___\  /'___\           /'___\
+       /\ \__/ /\ \__/  __  __  /\ \__/
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/
+         \ \_\   \ \_\  \ \____/  \ \_\
+          \/_/    \/_/   \/___/    \/_/
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://172.17.0.2/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+________________________________________________
+
+:: Progress: [1/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0 :backup                  [Status: 301, Size: 309, Words: 20, Lines: 10, Duration: 3ms]
+:: Progress: [126/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: 0:: Progress: [1299/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [2970/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: server-status           [Status: 403, Size: 275, Words: 20, Lines: 10, Duration: 1ms]
+:: Progress: [4265/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors:                         [Status: 200, Size: 5208, Words: 2135, Lines: 119, Duration: 1ms]
+:: Progress: [4273/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [4282/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [5773/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [7363/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [8659/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors: :: Progress: [10102/30000] :: Job [1/1] :: 0 req/sec :: Duration: [0:00:00] :: Errors::: Progress: [11765/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:01] :: Errimportant               [Status: 301, Size: 312, Words: 20, Lines: 10, Duration: 0ms]
+:: Progress: [11996/30000] :: Job [1/1] :: 8695 req/sec :: Duration: [0:00:01] :: Erro:: Progress: [13168/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:01] :: Err:: Progress: [14643/30000] :: Job [1/1] :: 11764 req/sec :: Duration: [0:00:01] :: Err:: Progress: [16190/30000] :: Job [1/1] :: 12500 req/sec :: Duration: [0:00:01] :: Err:: Progress: [17596/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:01] :: Err:: Progress: [19214/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:01] :: Err:: Progress: [20797/30000] :: Job [1/1] :: 13333 req/sec :: Duration: [0:00:01] :: Err:: Progress: [22309/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:01] :: Err:: Progress: [23927/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [25439/30000] :: Job [1/1] :: 10526 req/sec :: Duration: [0:00:02] :: Err:: Progress: [26977/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [28170/30000] :: Job [1/1] :: 6896 req/sec :: Duration: [0:00:02] :: Erro:: Progress: [29556/30000] :: Job [1/1] :: 14285 req/sec :: Duration: [0:00:02] :: Err:: Progress: [30000/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:02] :: Err:: Progress: [30000/30000] :: Job [1/1] :: 15384 req/sec :: Duration: [0:00:02] :: Errors: 2 ::
+```
+
+Descubre un directi
 # Usuario XXX
 
 
