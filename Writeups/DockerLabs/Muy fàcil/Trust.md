@@ -49,8 +49,43 @@ En el sitio web nos encontramos con un ...
 
 
 
+```
+feroxbuster -u http://172.18.0.2 -x php
 
-# Usuario XXX
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.11.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://172.18.0.2
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt
+ 👌  Status Codes          │ All Status Codes!
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.11.0
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🔎  Extract Links         │ true
+ 💲  Extensions            │ [php]
+ 🏁  HTTP methods          │ [GET]
+ 🔃  Recursion Depth       │ 4
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+403      GET        9l       28w      275c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+404      GET        9l       31w      272c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+200      GET       24l      127w    10359c http://172.18.0.2/icons/openlogo-75.png
+200      GET      368l      933w    10701c http://172.18.0.2/
+200      GET       39l       78w      927c http://172.18.0.2/secret.php
+[####################] - 5s     30005/30005   0s      found:3       errors:0
+[####################] - 5s     30000/30000   5738/s  http://172.18.0.2/                      
+```
+# Usuario Mario
+
+
+
+```
+
+```
 
 
 # Escalada de privilegios
