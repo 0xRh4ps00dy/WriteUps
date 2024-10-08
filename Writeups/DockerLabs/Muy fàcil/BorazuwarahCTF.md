@@ -49,7 +49,12 @@ En el sitio web nos encontramos con solo una imagen.
 Descargamos la imagen en nuestro sistema de ataque y nos ponemos a investigarla.
 # Foothold
 
-Hacemos un stego con `steghide`
+Hacemos un stego con `steghide` y obtenemos algo de información no importante.
+
+
+Luego examinamos los metadatos de la imagen y conseguimos dar con un nombre de usuario.
+
+Ahora, con el nombre de usuario podemos hacer fuerza bruta contra el servicio SSH
 
 # Escalada de privilegios
 
