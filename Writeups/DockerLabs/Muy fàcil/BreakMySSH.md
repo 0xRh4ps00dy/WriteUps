@@ -39,8 +39,7 @@ Nmap done: 1 IP address (1 host up) scanned in 0.93 seconds
 
 ## SSH (22 TCP Port)
 
-Investigando el servicio vemos que es una vesiñon antigua que tiene una vulnerabildiad numerada como https://nvd.nist.gov/vuln/detail/cve-2018-15473
-https://github.com/Sait-Nuri/CVE-2018-15473
+Investigando el servicio vemos que es una vesiñon antigua que tiene una vulnerabildiad numerada como [CVE-2018-15473](https://nvd.nist.gov/vuln/detail/cve-2018-15473) el cual nos permite una enum,eración de usuarios. Con este [PoC](https://github.com/Sait-Nuri/CVE-2018-15473) y una lista de usuarios podemos conseguir que usaurios existen en el 
 
 # Usuario Root
 
@@ -89,4 +88,7 @@ the exact distribution terms for each program are described in the
 individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
-permitted by appli
+permitted by applicable law.
+root@347cd6f2e506:~# whoami
+root
+```
