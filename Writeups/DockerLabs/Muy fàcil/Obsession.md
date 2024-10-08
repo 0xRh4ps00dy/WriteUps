@@ -96,6 +96,8 @@ En el sitio web nos encontramos con un ...
 
 ![](../../../Images/Pasted%20image%2020241008160638.png)
 
+
+
 ```
 dirscan http://172.17.0.2/FUZZ
 
@@ -184,6 +186,7 @@ Malditos muchachos. Todos son iguales. Pero tú, en tu psicología de tres parte
 ```
 
 
+# Usuario Russoski
 
 
 
@@ -205,7 +208,6 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2024-10-08 16:19:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2024-10-08 16:20:23
 ```
 
-# Usuario Russoski
 
 
 
@@ -230,3 +232,19 @@ russoski@7646d085583b:~$
 # Escalada de privilegios
 
 Haciendo una investigación a nivel local del sistema ...
+
+
+```
+russoski@7646d085583b:~$ sudo -l
+Matching Defaults entries for russoski on 7646d085583b:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty
+
+User russoski may run the following commands on 7646d085583b:
+    (root) NOPASSWD: /usr/bin/vim
+```
+
+
+
+https://gtfobins.github.io/
+
+
