@@ -94,7 +94,7 @@ Tal como **nmap** nos muestra con sus scripts, podemos acceder al servicio usand
 En el sitio web nos encontramos con un ...
 
 
-
+![](../../../Images/Pasted%20image%2020241008160638.png)
 
 # Usuario XXX
 
