@@ -50,6 +50,9 @@ En el sitio web nos encontramos con un ...
 ![](../../../Images/Pasted%20image%2020241009190626.png)
 
 
+![](../../../Images/Pasted%20image%2020241009190751.png)
+
+
 
 ```
 > dirscan http://172.17.0.2/FUZZ
