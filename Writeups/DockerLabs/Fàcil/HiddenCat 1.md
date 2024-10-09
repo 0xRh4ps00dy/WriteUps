@@ -47,6 +47,9 @@ Nmap done: 1 IP address (1 host up) scanned in 6.97 seconds
 
 En el sitio web nos encontramos con un ...
 
+![](../../../Images/Pasted%20image%2020241009190626.png)
+
+
 
 ```
 > dirscan http://172.17.0.2/FUZZ
