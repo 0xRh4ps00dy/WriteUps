@@ -48,6 +48,46 @@ Nmap done: 1 IP address (1 host up) scanned in 6.97 seconds
 En el sitio web nos encontramos con un ...
 
 
+```
+> dirscan http://172.17.0.2/FUZZ
+
+        /'___\  /'___\           /'___\
+       /\ \__/ /\ \__/  __  __  /\ \__/
+       \ \ ,__\\ \ ,__\/\ \/\ \ \ \ ,__\
+        \ \ \_/ \ \ \_/\ \ \_\ \ \ \ \_/
+         \ \_\   \ \_\  \ \____/  \ \_\
+          \/_/    \/_/   \/___/    \/_/
+
+       v2.1.0-dev
+________________________________________________
+
+ :: Method           : GET
+ :: URL              : http://172.17.0.2/FUZZ
+ :: Wordlist         : FUZZ: /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt
+ :: Follow redirects : false
+ :: Calibration      : false
+ :: Timeout          : 10
+ :: Threads          : 40
+ :: Matcher          : Response status: 200-299,301,302,307,401,403,405,500
+________________________________________________
+
+images                  [Status: 301, Size: 309, Words: 20, Lines: 10, Duration: 7ms]
+server-status           [Status: 403, Size: 275, Words: 20, Lines: 10, Duration: 1ms]
+                        [Status: 200, Size: 11142, Words: 3427, Lines: 522, Duration: 11ms]
+:: Progress: [30000/30000] :: Job [1/1] :: 8000 req/sec :: Duration: [0:00:02] :: Errors: 2 ::
+```
+
+
+![](../../../Images/Pasted%20image%2020241009185959.png)
+
+
+![](../../../Images/Pasted%20image%2020241009190018.png)
+
+
+
+
+
+
 
 
 # Usuario XXX
