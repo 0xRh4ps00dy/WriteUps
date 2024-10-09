@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Writeups/DockerLabs/Fàcil/HiddenCat.md",
+                "file": "Writeups/DockerLabs/Fàcil/HiddenCat 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writeups/DockerLabs/Fàcil/HiddenCat.md",
+                "file": "Writeups/DockerLabs/Fàcil/HiddenCat 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Writeups/DockerLabs/Fàcil/HiddenCat.md",
+                "file": "Writeups/DockerLabs/Fàcil/HiddenCat 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writeups/DockerLabs/Fàcil/HiddenCat.md"
+                "file": "Writeups/DockerLabs/Fàcil/HiddenCat 1.md"
               }
             }
           }
@@ -149,8 +149,9 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
-    "Writeups/Writeup Template.md",
     "Writeups/DockerLabs/Fàcil/HiddenCat.md",
+    "Writeups/DockerLabs/Fàcil/HiddenCat 1.md",
+    "Writeups/Writeup Template.md",
     "Images/Pasted image 20241008194118.png",
     "Writeups/DockerLabs/Muy fàcil/BorazuwarahCTF.md",
     "Writeups/DockerLabs/Muy fàcil/Vacaciones.md",
