@@ -43,7 +43,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 6.97 seconds
 ```
 
-## Website (80 TCP Port)
+# Foothold
 
 En el sitio web nos encontramos con un ...
 
@@ -112,12 +112,6 @@ permitted by applicable law.
 Last login: Tue May 14 17:41:58 2024 from 172.17.0.1
 agua@56550150e60e:~$
 ```
-
-
-
-
-# Usuario XXX
-
 
 # Escalada de privilegios
 
