@@ -53,6 +53,8 @@ En el sitio web nos encontramos con un ...
 ![](../../../Images/Pasted%20image%2020241009190751.png)
 
 
+![](../../../Images/Pasted%20image%2020241009190831.png)
+
 
 ```
 > dirscan http://172.17.0.2/FUZZ
@@ -91,7 +93,25 @@ server-status           [Status: 403, Size: 275, Words: 20, Lines: 10, Duration:
 
 
 
+```
+> ssh agua@172.17.0.2
+The authenticity of host '172.17.0.2 (172.17.0.2)' can't be established.
+ED25519 key fingerprint is SHA256:EZNhR2ojYOvInwAg+dpLntRab/b7eRvr60vq3sn7hH8.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.17.0.2' (ED25519) to the list of known hosts.
+agua@172.17.0.2's password:
+Linux 56550150e60e 6.10.9-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.10.9-1kali1 (2024-09-09) x86_64
 
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Tue May 14 17:41:58 2024 from 172.17.0.1
+agua@56550150e60e:~$
+```
 
 
 
