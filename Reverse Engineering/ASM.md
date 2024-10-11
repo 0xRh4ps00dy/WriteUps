@@ -58,7 +58,7 @@
 
 
 
-# Instrucciones 
+# Comparacion 
 
 | Commando | Descripción | Ejemplo |
 | -------- | ----------- | ------- |
