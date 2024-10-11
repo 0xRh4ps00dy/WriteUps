@@ -72,10 +72,10 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 ![](../Images/Pasted%20image%2020241011193255.png)
 # Instrucciones 
 
-| Commando | Descripción                                                                                                                  | Ejemplo |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------- | ------- |
-| JMP      | Es el salto directo o incondicional, aquí no hay ninguna decisión SIEMPRE saltara a la dirección que nos muestra el operando |         |
-|          |                                                                                                                              |         |
+| Commando | Descripción                                                                                                                  | Ejemplo                      |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| JMP      | Es el salto directo o incondicional, aquí no hay ninguna decisión SIEMPRE saltara a la dirección que nos muestra el operando | `JMP SHORT CRACKME.00401031` |
+|          |                                                                                                                              |                              |
 
 
 # Instrucciones 
