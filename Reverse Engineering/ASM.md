@@ -61,10 +61,10 @@
 | NOT      | Simplemente invierte el valor del único operando de esta función                          |               |
 # Comparaciones y saltos condicionales 
 
-| Commando | Descripción | Ejemplo |
-| -------- | ----------- | ------- |
-|          |             |         |
-|          |             |         |
+| Commando | Descripción                                                                                                                                                                                             | Ejemplo      |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| CMP      | Compara dos operandos, en realidad es una instrucción SUB, que no guarda el resultado de la resta en el primer operando, ambos operandos quedan igual, lo que cambian son los flags según el resultado. | CMP EAX, ECX |
+|          |                                                                                                                                                                                                         |              |
 
 
 # Instrucciones 
