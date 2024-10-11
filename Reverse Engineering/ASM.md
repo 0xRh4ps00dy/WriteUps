@@ -49,13 +49,13 @@
 
 # Instrucciones lógicas
 
-| Commando | Descripción | Ejemplo |
-| -------- | ----------- | ------- |
-| AND      |             |         |
-| OR       |             |         |
-| XOR      |             |         |
-| NOT      |             |         |
-|          |             |         |
+| Commando | Descripción                                                          | Ejemplo       |
+| -------- | -------------------------------------------------------------------- | ------------- |
+| AND      | El resultado es 1 si los dos bits son 1, y 0 en cualquier otro caso. | `AND ECX,EAX` |
+| OR       |                                                                      | ``            |
+| XOR      |                                                                      | ``            |
+| NOT      |                                                                      | ``            |
+
 
 
 # Instrucciones 
