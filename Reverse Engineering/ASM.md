@@ -32,13 +32,13 @@
 
 # Instrucciones  matemáticas
 
-| Commando             | Descripción                                                                                            | Ejemplo      |
-| -------------------- | ------------------------------------------------------------------------------------------------------ | ------------ |
-| INC                  | Incrementa el operando                                                                                 | `INC EAX`    |
-| DEC                  | Decrementa el operando                                                                                 | `DEC EAX`    |
-| ADD                  | Add suma ambos operandos y guarda el resultado en el primero.                                          | `ADD EAX,1`  |
-| ADC (ADD WITH CARRY) | Suman ambos operandos y se le suma el valor del CARRY FLAG O FLAG C y se guarda en el primer operando. | `ADC EDX, 3` |
-|                      |                                                                                                        |              |
+| Commando             | Descripción                                                                                                                                                 | Ejemplo      |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| INC                  | Incrementa el operando                                                                                                                                      | `INC EAX`    |
+| DEC                  | Decrementa el operando                                                                                                                                      | `DEC EAX`    |
+| ADD                  | Add suma ambos operandos y guarda el resultado en el primero.                                                                                               | `ADD EAX,1`  |
+| ADC (ADD WITH CARRY) | Suman ambos operandos y se le suma el valor del CARRY FLAG O FLAG C y se guarda en el primer operando.                                                      | `ADC EDX, 3` |
+| SUB                  | Resta o substracción o sea la operación contraria a ADD, lo que hace es restar el segundo operando al primero y guardar el resultado en el primer operando. | `SUB EAX,2`  |
 
 # Instrucciones 
 
