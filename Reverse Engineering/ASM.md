@@ -49,12 +49,12 @@
 
 # Instrucciones lógicas
 
-| Commando | Descripción                                                          | Ejemplo       |
-| -------- | -------------------------------------------------------------------- | ------------- |
-| AND      | El resultado es 1 si los dos bits son 1, y 0 en cualquier otro caso. | `AND ECX,EAX` |
-| OR       |                                                                      | ``            |
-| XOR      |                                                                      | ``            |
-| NOT      |                                                                      | ``            |
+| Commando | Descripción                                                                               | Ejemplo       |
+| -------- | ----------------------------------------------------------------------------------------- | ------------- |
+| AND      | El resultado es 1 si los dos bits son 1, y 0 en cualquier otro caso.                      | `AND ECX,EAX` |
+| OR       | El resultado es 1 si uno o los dos operandos es 1, y 0 en cualquier otro caso.            |               |
+| XOR      | El resultado es 1 si uno y sólo uno de los dos operandos es 1, y 0 en cualquier otro caso |               |
+| NOT      | Simplemente invierte el valor del único operando de esta función                          |               |
 
 
 
