@@ -32,10 +32,13 @@
 
 # Instrucciones  matemáticas
 
-| Commando | Descripción | Ejemplo |
-| -------- | ----------- | ------- |
-|          |             |         |
-|          |             |         |
+| Commando | Descripción            | Ejemplo   |
+| -------- | ---------------------- | --------- |
+| INC      | Incrementa el operando | `INC EAX` |
+| DEC      | Decrementa el operando | `DEC EAX` |
+|          |                        |           |
+|          |                        |           |
+|          |                        |           |
 
 # Instrucciones 
 
