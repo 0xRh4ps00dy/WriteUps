@@ -2,18 +2,18 @@
 
 # Registros
 
-| Commando | Descripción                                                        | Ejemplo |
-| -------- | ------------------------------------------------------------------ | ------- |
-| ESP      | Apunta al valor superior del stack.                                |         |
-| EIP      | Apunta a la instrucción que esta siendo ejecutada en este momento. |         |
+| Registro | Descripción                                                        |
+| -------- | ------------------------------------------------------------------ |
+| ESP      | Apunta al valor superior del stack.                                |
+| EIP      | Apunta a la instrucción que esta siendo ejecutada en este momento. |
 
 
 # Flags
 
-| Commando | Descripción | Ejemplo |
-| -------- | ----------- | ------- |
-|          |             |         |
-|          |             |         |
+| Flag                                    | Descripción                                                                                      |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| FLAG O O FLAG OVERFLOW (DESBORDAMIENTO) | Se activa cuando al hacer una operación, el resultado cambia de signo dando un valor incorrecto. |
+|                                         |                                                                                                  |
 # Instrucciones de assembler
 
 | Commando                                      | Descripción                                                                                                                                                                                                                                                   | Ejemplo                                                                                                                                                                  |
