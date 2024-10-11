@@ -67,7 +67,7 @@
 | TEST (Logical Compare) | El principio de esta instrucción es, en cierto modo, el mismo de cmp, es decir, una operación entre dos valores que no se guarda, sino que puede modificar el estado de algunos flags (en este caso, SF, ZF y PF) que determinan si debe efectuarse el salto que también suele acompañar a esta instrucción. La diferencia está en que en este caso, en vez de tratarse de una resta, se trata de una operación AND. | `TEST EAX,EAX` |
 |                        |                                                                                                                                                                                                                                                                                                                                                                                                                      |                |
 
-
+![](../Images/Pasted%20image%2020241011193255.png)
 # Instrucciones 
 
 | Commando | Descripción | Ejemplo |
