@@ -45,13 +45,16 @@
 | DIV (Unsigned Divide)           | DIV solo tiene un operando y no considera los signos y el resultado se guarda en EDX:EAX                                                                                                                                                                                                                                                        |                                           |
 | IDIV (Signed Divide)            | IDIV siempre considera los signos si usa un solo operando será como DIV y guardara en EDX:EAX y en el caso de dos operandos dividirá ambos y guardara en el primero, y en el de tres operandos dividirá el segundo y el tercero y guardara en el primero.                                                                                       |                                           |
 | XADD (Exchange and Add)         | Es como realizar en una sola instrucción XCHG y ADD.                                                                                                                                                                                                                                                                                            | `XADD EAX,ECX`                            |
-| NEG                             | Esta instrucción tiene la finalidad de cambiar de signo el número representado o sea que si tenemos el número 32 en hexa y le aplicamos NEG el resultado será el negativo del mismo.                                                                                                                                                            | `neg eax`                                 |
+| NEG                             | Esta instrucción tiene la finalidad de cambiar de signo el número representado o sea que si tenemos el número 32 en hexa y le aplicamos NEG el resultado será el negativo del mismo.                                                                                                                                                            | `NEG EAX`                                 |
 
-# Instrucciones 
+# Instrucciones lógicas
 
 | Commando | Descripción | Ejemplo |
 | -------- | ----------- | ------- |
-|          |             |         |
+| AND      |             |         |
+| OR       |             |         |
+| XOR      |             |         |
+| NOT      |             |         |
 |          |             |         |
 
 
