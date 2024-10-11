@@ -32,13 +32,13 @@
 
 # Instrucciones  matemáticas
 
-| Commando | Descripción            | Ejemplo   |
-| -------- | ---------------------- | --------- |
-| INC      | Incrementa el operando | `INC EAX` |
-| DEC      | Decrementa el operando | `DEC EAX` |
-|          |                        |           |
-|          |                        |           |
-|          |                        |           |
+| Commando | Descripción                                                                                                                       | Ejemplo   |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| INC      | Incrementa el operando                                                                                                            | `INC EAX` |
+| DEC      | Decrementa el operando                                                                                                            | `DEC EAX` |
+| ADD      | Add como ya vimos es la instrucción correspondiente  a la suma, siempre suma ambos operandos y guarda el resultado en el primero. |           |
+|          |                                                                                                                                   |           |
+|          |                                                                                                                                   |           |
 
 # Instrucciones 
 
