@@ -2,18 +2,18 @@
 
 # Registros
 
-|     |     |
-| --- | --- |
-|     |     |
-|     |     |
+| Commando | Descripción | Ejemplo |
+| -------- | ----------- | ------- |
+|          |             |         |
+|          |             |         |
 
 
 # Flags
 
-|     |     |
-| --- | --- |
-|     |     |
-|     |     |
+| Commando | Descripción | Ejemplo |
+| -------- | ----------- | ------- |
+|          |             |         |
+|          |             |         |
 
 # Instrucciones de assembler
 
@@ -29,43 +29,41 @@
 | MOVZX (Move with Zero-Extend)                 | Igual a movsx, pero en este caso, los espacios sobrantes se rellenan siempre con ceros o sea no depende de si el segundo operando es positivo o no.                                                                                                           | `MOVSX EAX,BX`                                                                                                                                                           |
 | LEA (Load Effective Address)                  | Similar a la instrucción mov, pero el primer operando es un registro de uso general y el segundo una dirección de memoria. Esta instrucción es útil sobre todo cuando esta dirección de memoria responde a un cálculo previo.                                 | `LEA EAX,DWORD PTR DS:[ECX+38]`                                                                                                                                          |
 | XCHG (Exchange Register/Memory with Register) | Esta instrucción intercambia los contenidos de los dos operandos.                                                                                                                                                                                             | `XCHG EAX,ECX`                                                                                                                                                           |
-|                                               |                                                                                                                                                                                                                                                               |                                                                                                                                                                          |
+
+# Instrucciones  matemáticas
+
+| Commando | Descripción | Ejemplo |
+| -------- | ----------- | ------- |
+|          |             |         |
+|          |             |         |
+
+# Instrucciones 
+
+| Commando | Descripción | Ejemplo |
+| -------- | ----------- | ------- |
+|          |             |         |
+|          |             |         |
 
 
 # Instrucciones 
 
-|     |     |
-| --- | --- |
-|     |     |
-|     |     |
-
-# Instrucciones 
-
-|     |     |
-| --- | --- |
-|     |     |
-|     |     |
+| Commando | Descripción | Ejemplo |
+| -------- | ----------- | ------- |
+|          |             |         |
+|          |             |         |
 
 
 # Instrucciones 
 
-|     |     |
-| --- | --- |
-|     |     |
-|     |     |
+| Commando | Descripción | Ejemplo |
+| -------- | ----------- | ------- |
+|          |             |         |
+|          |             |         |
 
 
 # Instrucciones 
 
-|     |     |
-| --- | --- |
-|     |     |
-|     |     |
-
-
-# Instrucciones 
-
-|     |     |
-| --- | --- |
-|     |     |
-|     |     |
+| Commando | Descripción | Ejemplo |
+| -------- | ----------- | ------- |
+|          |             |         |
+|          |             |         |
