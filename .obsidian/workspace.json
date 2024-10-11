@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse Engineering/Sin título.md",
+                "file": "Reverse Engineering/Registros y flags.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reverse Engineering/Sin título.md",
+                "file": "Reverse Engineering/Registros y flags.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reverse Engineering/Sin título.md",
+                "file": "Reverse Engineering/Registros y flags.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reverse Engineering/Sin título.md"
+                "file": "Reverse Engineering/Registros y flags.md"
               }
             }
           }
@@ -150,7 +150,7 @@
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
     "Images/Analytics.png",
-    "Reverse Engineering/Sin título.md",
+    "Reverse Engineering/Registros y flags.md",
     "Stack-Based Buffer Overflow/Fundamentos.md",
     "Reverse Engineering",
     "Writeups/DockerLabs/Fàcil/HiddenCat 1.md",
