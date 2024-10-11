@@ -65,7 +65,6 @@
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
 | CMP                    | Compara dos operandos, en realidad es una instrucción SUB, que no guarda el resultado de la resta en el primer operando, ambos operandos quedan igual, lo que cambian son los flags según el resultado.                                                                                                                                                                                                              | `CMP EAX, ECX` |
 | TEST (Logical Compare) | El principio de esta instrucción es, en cierto modo, el mismo de cmp, es decir, una operación entre dos valores que no se guarda, sino que puede modificar el estado de algunos flags (en este caso, SF, ZF y PF) que determinan si debe efectuarse el salto que también suele acompañar a esta instrucción. La diferencia está en que en este caso, en vez de tratarse de una resta, se trata de una operación AND. | `TEST EAX,EAX` |
-|                        |                                                                                                                                                                                                                                                                                                                                                                                                                      |                |
 # Saltos condicionales 
 
 Todos as instrucciones de salto tienen un solo operando que es la dirección adonde saltaría el programa, veamos los diferentes tipos aquí en la tabla y aclarémoslos.
@@ -73,10 +72,10 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 ![](../Images/Pasted%20image%2020241011193255.png)
 # Instrucciones 
 
-| Commando | Descripción | Ejemplo |
-| -------- | ----------- | ------- |
-|          |             |         |
-|          |             |         |
+| Commando | Descripción                                                                                                                  | Ejemplo |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------- | ------- |
+| JMP      | Es el salto directo o incondicional, aquí no hay ninguna decisión SIEMPRE saltara a la dirección que nos muestra el operando |         |
+|          |                                                                                                                              |         |
 
 
 # Instrucciones 
