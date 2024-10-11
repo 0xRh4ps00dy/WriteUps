@@ -14,7 +14,6 @@
 | -------- | ----------- | ------- |
 |          |             |         |
 |          |             |         |
-
 # Instrucciones de assembler
 
 | Commando                                      | Descripción                                                                                                                                                                                                                                                   | Ejemplo                                                                                                                                                                  |
@@ -29,7 +28,6 @@
 | MOVZX (Move with Zero-Extend)                 | Igual a movsx, pero en este caso, los espacios sobrantes se rellenan siempre con ceros o sea no depende de si el segundo operando es positivo o no.                                                                                                           | `MOVSX EAX,BX`                                                                                                                                                           |
 | LEA (Load Effective Address)                  | Similar a la instrucción mov, pero el primer operando es un registro de uso general y el segundo una dirección de memoria. Esta instrucción es útil sobre todo cuando esta dirección de memoria responde a un cálculo previo.                                 | `LEA EAX,DWORD PTR DS:[ECX+38]`                                                                                                                                          |
 | XCHG (Exchange Register/Memory with Register) | Esta instrucción intercambia los contenidos de los dos operandos.                                                                                                                                                                                             | `XCHG EAX,ECX`                                                                                                                                                           |
-
 # Instrucciones  matemáticas
 
 | Commando                        | Descripción                                                                                                                                                                                                                                                                                                                                     | Ejemplo                                   |
@@ -46,7 +44,6 @@
 | IDIV (Signed Divide)            | IDIV siempre considera los signos si usa un solo operando será como DIV y guardara en EDX:EAX y en el caso de dos operandos dividirá ambos y guardara en el primero, y en el de tres operandos dividirá el segundo y el tercero y guardara en el primero.                                                                                       |                                           |
 | XADD (Exchange and Add)         | Es como realizar en una sola instrucción XCHG y ADD.                                                                                                                                                                                                                                                                                            | `XADD EAX,ECX`                            |
 | NEG                             | Esta instrucción tiene la finalidad de cambiar de signo el número representado o sea que si tenemos el número 32 en hexa y le aplicamos NEG el resultado será el negativo del mismo.                                                                                                                                                            | `NEG EAX`                                 |
-
 # Instrucciones lógicas
 
 | Commando | Descripción                                                                               | Ejemplo       |
@@ -55,10 +52,7 @@
 | OR       | El resultado es 1 si uno o los dos operandos es 1, y 0 en cualquier otro caso.            |               |
 | XOR      | El resultado es 1 si uno y sólo uno de los dos operandos es 1, y 0 en cualquier otro caso |               |
 | NOT      | Simplemente invierte el valor del único operando de esta función                          |               |
-
-
-
-# Comparacion 
+# Comparaciones y saltos condicionales 
 
 | Commando | Descripción | Ejemplo |
 | -------- | ----------- | ------- |
