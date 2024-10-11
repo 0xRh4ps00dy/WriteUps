@@ -10,10 +10,12 @@
 
 # Flags
 
-| Flag                                    | Descripción                                                                                      |
-| --------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| FLAG O O FLAG OVERFLOW (DESBORDAMIENTO) | Se activa cuando al hacer una operación, el resultado cambia de signo dando un valor incorrecto. |
-|                                         |                                                                                                  |
+| Flag                          | Descripción                                                                                                                                                                                                                           |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| O o OVERFLOW (DESBORDAMIENTO) | Se activa cuando al hacer una operación, el resultado cambia de signo dando un valor incorrecto.                                                                                                                                      |
+| A o AUXILIAR                  | Tiene una función similar pero para cuando se realizan operaciones con otros formatos que por ahora no nos interesan.                                                                                                                 |
+| P o PARIDAD                   | Se activa cuando ejecutamos una instrucción y su resultado es un valor, que pasado a numero binario tiene una cantidad par de unos, como por ejemplo 1010, o 1100 o 1111000 que tienen resultados cuya cantidad de unos total es par. |
+| Z o CERO                      |                                                                                                                                                                                                                                       |
 # Instrucciones de assembler
 
 | Commando                                      | Descripción                                                                                                                                                                                                                                                   | Ejemplo                                                                                                                                                                  |
