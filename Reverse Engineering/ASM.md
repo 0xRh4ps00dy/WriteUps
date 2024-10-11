@@ -19,12 +19,10 @@
 
 | Commando | Descripción                                                                                                                                        |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PUSH     |                                                                                                                                                    |
+| NOP      | No operación.                                                                                                                                      |
+| PUSH     | Agrega un valor al stack.                                                                                                                          |
 | POP      |                                                                                                                                                    |
 | PUSHAD   | Guarda el contenido de los registros en la pila en un orden determinado. Así pues, pushad equivale a: push EAX, ECX, EDX, EBX, ESP, EBP, ESI, EDI. |
-|          |                                                                                                                                                    |
-|          |                                                                                                                                                    |
-|          |                                                                                                                                                    |
 |          |                                                                                                                                                    |
 |          |                                                                                                                                                    |
 
