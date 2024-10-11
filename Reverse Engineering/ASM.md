@@ -2,10 +2,10 @@
 
 # Registros
 
-| Commando | Descripción | Ejemplo |
-| -------- | ----------- | ------- |
-|          |             |         |
-|          |             |         |
+| Commando | Descripción                                                        | Ejemplo |
+| -------- | ------------------------------------------------------------------ | ------- |
+| ESP      | Apunta al valor superior del stack.                                |         |
+| EIP      | Apunta a la instrucción que esta siendo ejecutada en este momento. |         |
 
 
 # Flags
