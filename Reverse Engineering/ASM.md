@@ -106,11 +106,11 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 
 # Instrucciones para el manejo de cadenas e bytes
 
-| Commando | Descripción | Ejemplo |
-| -------- | ----------- | ------- |
-| MOVS     |             |         |
-| REP      |             |         |
-| COMPS    |             |         |
+| Commando | Descripción                                                                                                                                                                                                                                                              | Ejemplo |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| MOVS     | Mueve el contenido de ESI al contenido de EDI, realmente no necesita ningún parámetro, pero al escribir en OLLY la instrucción MOVS y apretar ASSEMBLE, la completa (innecesariamente) al ensamblar y queda como: <br><br>``MOVS DWORD PTR ES:[EDI],DWORD PTR DS:[ESI]`` |         |
+| REP      |                                                                                                                                                                                                                                                                          |         |
+| COMPS    |                                                                                                                                                                                                                                                                          |         |
 
 
 # Referencias
