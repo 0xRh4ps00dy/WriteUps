@@ -86,8 +86,8 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 | JB          | Salta si es mas bajo.                                                                                                                                                                                                                         |
 | JNB         | Saltara si el FLAG C es cero o sea no hay acarreo porque el resultado fue positivo, lo cual supone que EAX fue mayor que ECX y al revés que el anterior este saltara en ese  caso.                                                            |
 | JBE         | Salta si es mas bajo o igual o sea testea dos flags a la vez ve si el FLAG C esta activo en ese caso salta, y también verifica si el FLAG Z esta activo con el cual también salta, o sea si EAX es igual a ECX saltara y si es menor también. |
-| JNBE        |                                                                                                                                                                                                                                               |
-| JL          |                                                                                                                                                                                                                                               |
+| JNBE        | Salta si el flag Z y el FLAG C son cero ambos.                                                                                                                                                                                                |
+| JL          | Salta si es menor, pero en diferente forma, veamos aquí mira si FLAG S es diferente a FLAG O y en ese caso salta.                                                                                                                             |
 
 
 # Instrucciones 
