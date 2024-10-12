@@ -95,7 +95,15 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 | CALL     | Ejecuta una subrutina o si quieren parte del programa cuya dirección esta dada por el valor del operando.                                                                                                                                                                                                                                |         |
 | RET      | Es el final de la rutina y contrapartida de la instrucción CALL, si CALL nos trajo aquí, RET nos devolverá a la zona donde estábamos antes de entrar en esta rutina. Pero además RET quitara la dirección de retorno del stack que es un valor que al sistema ya no le interesa pues ya volvemos y luego la dirección ya no es útil más. |         |
 
+# Loops
 
+```
+XOR ECX,ECX
+ADD ECX,15 
+DEC  ECX
+TEST ECX,ECX
+JNZ SHORT 401007
+```
 # Referencias
 
 [Ricardo Narvaja](https://ricardonarvaja.info/)
