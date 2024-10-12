@@ -97,6 +97,8 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 
 # Loops
 
+## Manual
+
 ```
 XOR ECX,ECX
 ADD ECX,15 
@@ -104,6 +106,12 @@ DEC  ECX
 TEST ECX,ECX
 JNZ SHORT 401007
 ```
+
+##  Loop
+
+
+
+
 # Referencias
 
 [Ricardo Narvaja](https://ricardonarvaja.info/)
