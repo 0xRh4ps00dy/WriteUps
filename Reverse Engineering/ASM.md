@@ -89,7 +89,7 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 | JNBE        | Salta si el flag Z y el FLAG C son cero ambos.                                                                                                                                                                                                |
 | JL          | Salta si es menor, pero en diferente forma, veamos aquí mira si FLAG S es diferente a FLAG O y en ese caso salta.                                                                                                                             |
 ![](../Images/Pasted%20image%2020241012094113.png)
-# Instrucciones 
+# Instrucciones CALL y RET
 
 | Commando | Descripción | Ejemplo |
 | -------- | ----------- | ------- |
