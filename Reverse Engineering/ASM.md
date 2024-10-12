@@ -104,6 +104,15 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 | LOOPZ, LOOPE   | Realiza un blucle si es cero.   |                                                                                                |
 | LOOPNZ, LOOPNE | Realiza un bucle si no es cero. |                                                                                                |
 
+# Instrucciones para el manejo de cadenas e bytes
+
+| Commando | Descripción | Ejemplo |
+| -------- | ----------- | ------- |
+| MOVS     |             |         |
+| REP      |             |         |
+| COMPS    |             |         |
+
+
 # Referencias
 
 [Ricardo Narvaja](https://ricardonarvaja.info/)
