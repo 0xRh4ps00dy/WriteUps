@@ -97,27 +97,12 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 
 # Loops
 
-| Commando | Descripción                                                                                                                                                                                                                                                                                                                              | Ejemplo                                                                    |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Manual   |                                                                                                                                                                                                                                                                                                                                          | XOR ECX,ECX<br>ADD ECX,15 <br>DEC  ECX<br>TEST ECX,ECX<br>JNZ SHORT 401007 |
-| RET      | Es el final de la rutina y contrapartida de la instrucción CALL, si CALL nos trajo aquí, RET nos devolverá a la zona donde estábamos antes de entrar en esta rutina. Pero además RET quitara la dirección de retorno del stack que es un valor que al sistema ya no le interesa pues ya volvemos y luego la dirección ya no es útil más. | `LOOPD SHORT 401007`                                                       |
-
-## Manual
-
-```
-XOR ECX,ECX
-ADD ECX,15 
-DEC  ECX
-TEST ECX,ECX
-JNZ SHORT 401007
-```
-
-##  Loop
-
-```
-LOOPD SHORT 401007
-```
-
+| Commando       | Descripción                                                                                                                                                                                                                                                                                                                              | Ejemplo                                                                                        |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Manual         |                                                                                                                                                                                                                                                                                                                                          | ``XOR ECX,ECX``<br>``ADD ECX,15 ``<br>``DEC  ECX``<br>``TEST ECX,ECX``<br>``JNZ SHORT 401007`` |
+| LOOPD          | Es el final de la rutina y contrapartida de la instrucción CALL, si CALL nos trajo aquí, RET nos devolverá a la zona donde estábamos antes de entrar en esta rutina. Pero además RET quitara la dirección de retorno del stack que es un valor que al sistema ya no le interesa pues ya volvemos y luego la dirección ya no es útil más. | `LOOPD SHORT 401007`                                                                           |
+| LOOPZ, LOOPE   |                                                                                                                                                                                                                                                                                                                                          |                                                                                                |
+| LOOPNZ, LOOPNE |                                                                                                                                                                                                                                                                                                                                          |                                                                                                |
 
 # Referencias
 
