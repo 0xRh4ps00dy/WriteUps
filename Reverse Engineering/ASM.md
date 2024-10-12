@@ -72,14 +72,15 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 ![](../Images/Pasted%20image%2020241011193255.png)
 # Instrucciones 
 
-| Commando  | Descripción                                                                                   | Ejemplo              |
-| --------- | --------------------------------------------------------------------------------------------- | -------------------- |
-| JMP       | Es el salto directo o incondicional, siempre salta a la dirección que nos muestra el operando | `JMP SHORT 00401031` |
-| JE o JZ   | Salta cuando el flag Z sea cero.                                                              | `JE SHORT 00401031`  |
-| JNE o JNZ | Salta si el flag Z no esta activo o sea si el resultado de la operación fue distinto de cero. | `JNZ SHORT 00401031` |
-| JS        | Salta si la comparación da un resultado negativo                                              | `JS SHORT 00401031`  |
-| JNS       | Salta cuando el FLAG S este a cero o sea cuando el resultado sea positivo.                    | `JNS SHORT 00401031` |
-| JP O JPE  |                                                                                               |                      |
+| Commando  | Descripción                                                                                             | Ejemplo              |
+| --------- | ------------------------------------------------------------------------------------------------------- | -------------------- |
+| JMP       | Es el salto directo o incondicional, siempre salta a la dirección que nos muestra el operando           | `JMP SHORT 00401031` |
+| JE o JZ   | Salta cuando el flag Z sea cero.                                                                        | `JE SHORT 00401031`  |
+| JNE o JNZ | Salta si el flag Z no esta activo o sea si el resultado de la operación fue distinto de cero.           | `JNZ SHORT 00401031` |
+| JS        | Salta si la comparación da un resultado negativo                                                        | `JS SHORT 00401031`  |
+| JNS       | Salta cuando el FLAG S este a cero o sea cuando el resultado sea positivo.                              | `JNS SHORT 00401031` |
+| JP O JPE  | Salta cuando el FLAG P este activo y esto ocurrirá cuando el resultado de la comparación tenga paridad. | `JP SHORT 00401031`  |
+|           |                                                                                                         |                      |
 
 
 # Instrucciones 
