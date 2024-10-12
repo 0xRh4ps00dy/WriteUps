@@ -91,10 +91,10 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 ![](../Images/Pasted%20image%2020241012094113.png)
 # Instrucciones CALL y RET
 
-| Commando | Descripción | Ejemplo |
-| -------- | ----------- | ------- |
-|          |             |         |
-|          |             |         |
+| Commando | Descripción                                                                                               | Ejemplo |
+| -------- | --------------------------------------------------------------------------------------------------------- | ------- |
+| CALL     | Ejecuta una subrutina o si quieren parte del programa cuya dirección esta dada por el valor del operando. |         |
+| RET      |                                                                                                           |         |
 
 
 # Referencias
