@@ -70,7 +70,6 @@
 Todos as instrucciones de salto tienen un solo operando que es la dirección adonde saltaría el programa, veamos los diferentes tipos aquí en la tabla y aclarémoslos.
 
 ![](../Images/Pasted%20image%2020241011193255.png)
-# Instrucciones 
 
 | Commando    | Descripción                                                                                                                                                                                                                                   |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
