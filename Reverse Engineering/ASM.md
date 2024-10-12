@@ -72,19 +72,22 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 ![](../Images/Pasted%20image%2020241011193255.png)
 # Instrucciones 
 
-| Commando    | Descripción                                                                                                                                                                        |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| JMP         | Es el salto directo o incondicional, siempre salta a la dirección que nos muestra el operando                                                                                      |
-| JE o JZ     | Salta cuando el flag Z sea cero.                                                                                                                                                   |
-| JNE o JNZ   | Salta si el flag Z no esta activo o sea si el resultado de la operación fue distinto de cero.                                                                                      |
-| JS          | Salta si la comparación da un resultado negativo                                                                                                                                   |
-| JNS         | Salta cuando el FLAG S este a cero o sea cuando el resultado sea positivo.                                                                                                         |
-| JP O JPE    | Salta cuando el FLAG P este activo y esto ocurrirá cuando el resultado de la comparación tenga paridad.                                                                            |
-| JNP o  JNPE | Salta cuando el flag P esta a cero o sea la paridad es impar.                                                                                                                      |
-| JO          | Salta cuando hay overflow o capacidad excedida lo cual activa el flag O.                                                                                                           |
-| JNO         | salta cuando el FLAG O esta a CERO o sea no hay OVERFLOW.                                                                                                                          |
-| JB          | Salta si es mas bajo.                                                                                                                                                              |
-| JNB         | Saltara si el FLAG C es cero o sea no hay acarreo porque el resultado fue positivo, lo cual supone que EAX fue mayor que ECX y al revés que el anterior este saltara en ese  caso. |
+| Commando    | Descripción                                                                                                                                                                                                                                   |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| JMP         | Es el salto directo o incondicional, siempre salta a la dirección que nos muestra el operando                                                                                                                                                 |
+| JE o JZ     | Salta cuando el flag Z sea cero.                                                                                                                                                                                                              |
+| JNE o JNZ   | Salta si el flag Z no esta activo o sea si el resultado de la operación fue distinto de cero.                                                                                                                                                 |
+| JS          | Salta si la comparación da un resultado negativo                                                                                                                                                                                              |
+| JNS         | Salta cuando el FLAG S este a cero o sea cuando el resultado sea positivo.                                                                                                                                                                    |
+| JP O JPE    | Salta cuando el FLAG P este activo y esto ocurrirá cuando el resultado de la comparación tenga paridad.                                                                                                                                       |
+| JNP o  JNPE | Salta cuando el flag P esta a cero o sea la paridad es impar.                                                                                                                                                                                 |
+| JO          | Salta cuando hay overflow o capacidad excedida lo cual activa el flag O.                                                                                                                                                                      |
+| JNO         | salta cuando el FLAG O esta a CERO o sea no hay OVERFLOW.                                                                                                                                                                                     |
+| JB          | Salta si es mas bajo.                                                                                                                                                                                                                         |
+| JNB         | Saltara si el FLAG C es cero o sea no hay acarreo porque el resultado fue positivo, lo cual supone que EAX fue mayor que ECX y al revés que el anterior este saltara en ese  caso.                                                            |
+| JBE         | Salta si es mas bajo o igual o sea testea dos flags a la vez ve si el FLAG C esta activo en ese caso salta, y también verifica si el FLAG Z esta activo con el cual también salta, o sea si EAX es igual a ECX saltara y si es menor también. |
+| JNBE        |                                                                                                                                                                                                                                               |
+| JL          |                                                                                                                                                                                                                                               |
 
 
 # Instrucciones 
