@@ -109,7 +109,9 @@ JNZ SHORT 401007
 
 ##  Loop
 
-
+```
+LOOPD SHORT 401007
+```
 
 
 # Referencias
