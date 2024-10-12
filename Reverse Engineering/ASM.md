@@ -82,6 +82,8 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 | JP O JPE    | Salta cuando el FLAG P este activo y esto ocurrirá cuando el resultado de la comparación tenga paridad. | `JPE SHORT 00401031` |
 | JNP o  JNPE | Salta cuando el flag P esta a cero o sea la paridad es impar.                                           | `JNP SHORT 00401031` |
 | JO          | Salta cuando hay overflow o capacidad excedida lo cual activa el flag O.                                | `JO SHORT 401301`    |
+| JNO         | salta cuando el FLAG O esta a CERO o sea no hay OVERFLOW.                                               | `JNO SHORT 401301`   |
+| JB          | Salta si es mas bajo.                                                                                   |                      |
 |             |                                                                                                         |                      |
 
 
