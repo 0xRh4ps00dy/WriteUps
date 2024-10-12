@@ -84,7 +84,7 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 | JO          | Salta cuando hay overflow o capacidad excedida lo cual activa el flag O.                                | `JO SHORT 401301`    |
 | JNO         | salta cuando el FLAG O esta a CERO o sea no hay OVERFLOW.                                               | `JNO SHORT 401301`   |
 | JB          | Salta si es mas bajo.                                                                                   |                      |
-|             |                                                                                                         |                      |
+| JNB         |                                                                                                         |                      |
 
 
 # Instrucciones 
