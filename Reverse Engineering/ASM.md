@@ -72,19 +72,19 @@ Todos as instrucciones de salto tienen un solo operando que es la dirección ado
 ![](../Images/Pasted%20image%2020241011193255.png)
 # Instrucciones 
 
-| Commando    | Descripción                                                                                             | Ejemplo              |
-| ----------- | ------------------------------------------------------------------------------------------------------- | -------------------- |
-| JMP         | Es el salto directo o incondicional, siempre salta a la dirección que nos muestra el operando           | `JMP SHORT 00401031` |
-| JE o JZ     | Salta cuando el flag Z sea cero.                                                                        | `JZ SHORT 00401031`  |
-| JNE o JNZ   | Salta si el flag Z no esta activo o sea si el resultado de la operación fue distinto de cero.           | `JNZ SHORT 00401031` |
-| JS          | Salta si la comparación da un resultado negativo                                                        | `JS SHORT 00401031`  |
-| JNS         | Salta cuando el FLAG S este a cero o sea cuando el resultado sea positivo.                              | `JNS SHORT 00401031` |
-| JP O JPE    | Salta cuando el FLAG P este activo y esto ocurrirá cuando el resultado de la comparación tenga paridad. | `JPE SHORT 00401031` |
-| JNP o  JNPE | Salta cuando el flag P esta a cero o sea la paridad es impar.                                           | `JNP SHORT 00401031` |
-| JO          | Salta cuando hay overflow o capacidad excedida lo cual activa el flag O.                                | `JO SHORT 401301`    |
-| JNO         | salta cuando el FLAG O esta a CERO o sea no hay OVERFLOW.                                               | `JNO SHORT 401301`   |
-| JB          | Salta si es mas bajo.                                                                                   |                      |
-| JNB         |                                                                                                         |                      |
+| Commando    | Descripción                                                                                                                                                                        |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| JMP         | Es el salto directo o incondicional, siempre salta a la dirección que nos muestra el operando                                                                                      |
+| JE o JZ     | Salta cuando el flag Z sea cero.                                                                                                                                                   |
+| JNE o JNZ   | Salta si el flag Z no esta activo o sea si el resultado de la operación fue distinto de cero.                                                                                      |
+| JS          | Salta si la comparación da un resultado negativo                                                                                                                                   |
+| JNS         | Salta cuando el FLAG S este a cero o sea cuando el resultado sea positivo.                                                                                                         |
+| JP O JPE    | Salta cuando el FLAG P este activo y esto ocurrirá cuando el resultado de la comparación tenga paridad.                                                                            |
+| JNP o  JNPE | Salta cuando el flag P esta a cero o sea la paridad es impar.                                                                                                                      |
+| JO          | Salta cuando hay overflow o capacidad excedida lo cual activa el flag O.                                                                                                           |
+| JNO         | salta cuando el FLAG O esta a CERO o sea no hay OVERFLOW.                                                                                                                          |
+| JB          | Salta si es mas bajo.                                                                                                                                                              |
+| JNB         | Saltara si el FLAG C es cero o sea no hay acarreo porque el resultado fue positivo, lo cual supone que EAX fue mayor que ECX y al revés que el anterior este saltara en ese  caso. |
 
 
 # Instrucciones 
