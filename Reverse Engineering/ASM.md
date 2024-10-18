@@ -1,5 +1,7 @@
 
 
+![](../Images/Pasted%20image%2020241018165830.png)
+
 # Registros
 
 | Registro | Descripción                                                        |
