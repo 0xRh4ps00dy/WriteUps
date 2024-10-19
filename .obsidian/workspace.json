@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Forensics/Volatility.md",
+                "file": "Windows/Core Windows Processes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Forensics/Volatility.md",
+                "file": "Windows/Core Windows Processes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Forensics/Volatility.md",
+                "file": "Windows/Core Windows Processes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Forensics/Volatility.md"
+                "file": "Windows/Core Windows Processes.md"
               }
             }
           }
@@ -149,8 +149,11 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
-    "Reverse Engineering/ASM.md",
+    "Windows/Hacking with Powershell.md",
+    "Windows/Core Windows Processes.md",
     "Forensics/Volatility.md",
+    "Sin nombre",
+    "Reverse Engineering/ASM.md",
     "Forensics",
     "Images/Pasted image 20241018165830.png",
     "Writeups/DockerLabs/Fàcil/HiddenCat.md",
@@ -185,16 +188,13 @@
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
     "Stack-Based Buffer Overflow/Windows/Scripts.md",
     "Introducción.md",
-    "Windows/Hacking with Powershell.md",
     "Windows",
-    "Stack-Based Buffer Overflow/Linux/Cheatsheet.md",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux",
     "Enumeration",
     "Writeups/Hackthebox/Insane",
     "Writeups/Hackthebox/Difícil",
     "Writeups/DockerLabs/Difícil",
-    "Writeups/DockerLabs/Medio",
     "Sin título.canvas"
   ]
 }
