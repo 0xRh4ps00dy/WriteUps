@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse Engineering/ASM.md",
+                "file": "Forensics/Volatility.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reverse Engineering/ASM.md",
+                "file": "Forensics/Volatility.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reverse Engineering/ASM.md",
+                "file": "Forensics/Volatility.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reverse Engineering/ASM.md"
+                "file": "Forensics/Volatility.md"
               }
             }
           }
@@ -149,10 +149,12 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
+    "Reverse Engineering/ASM.md",
+    "Forensics/Volatility.md",
+    "Forensics",
     "Images/Pasted image 20241018165830.png",
     "Writeups/DockerLabs/Fàcil/HiddenCat.md",
     "Writeups/DockerLabs/Fàcil/HiddenCat.md",
-    "Reverse Engineering/ASM.md",
     "Images/Pasted image 20241012094113.png",
     "Images/Pasted image 20241011193255.png",
     "Images/Analytics.png",
@@ -165,7 +167,6 @@
     "Images/Pasted image 20241009185959.png",
     "Images/Pasted image 20241009185200.png",
     "Writeups/Writeup Template.md",
-    "Images/Pasted image 20241008194118.png",
     "Writeups/DockerLabs/Muy fàcil/BorazuwarahCTF.md",
     "Writeups/DockerLabs/Muy fàcil/Vacaciones.md",
     "Writeups/DockerLabs/Muy fàcil/Trust.md",
@@ -194,7 +195,6 @@
     "Writeups/Hackthebox/Difícil",
     "Writeups/DockerLabs/Difícil",
     "Writeups/DockerLabs/Medio",
-    "Writeups/DockerLabs/Fàcil",
     "Sin título.canvas"
   ]
 }
