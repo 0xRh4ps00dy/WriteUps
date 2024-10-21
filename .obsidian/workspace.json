@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Core Windows Processes.md",
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#abusing-sudo",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Core Windows Processes.md",
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Core Windows Processes.md",
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Core Windows Processes.md"
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md"
               }
             }
           }
@@ -149,52 +149,52 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
-    "Windows/Hacking with Powershell.md",
+    "Writeups/DockerLabs/Muy fàcil/Vacaciones.md",
+    "Writeups/DockerLabs/Muy fàcil/Trust.md",
+    "Writeups/DockerLabs/Muy fàcil/Obsession.md",
+    "Writeups/DockerLabs/Muy fàcil/FirstHacking.md",
+    "Writeups/DockerLabs/Muy fàcil/BreakMySSH.md",
+    "Writeups/DockerLabs/Muy fàcil/BorazuwarahCTF.md",
+    "Writeups/DockerLabs/Fàcil/HiddenCat.md",
+    "Writeups/DockerLabs/Fàcil",
     "Windows/Core Windows Processes.md",
-    "Forensics/Volatility.md",
-    "Sin nombre",
     "Reverse Engineering/ASM.md",
-    "Forensics",
+    "Reverse Engineering",
     "Images/Pasted image 20241018165830.png",
-    "Writeups/DockerLabs/Fàcil/HiddenCat.md",
-    "Writeups/DockerLabs/Fàcil/HiddenCat.md",
     "Images/Pasted image 20241012094113.png",
     "Images/Pasted image 20241011193255.png",
-    "Images/Analytics.png",
-    "Stack-Based Buffer Overflow/Fundamentos.md",
-    "Reverse Engineering",
     "Images/Pasted image 20241009190831.png",
     "Images/Pasted image 20241009190751.png",
     "Images/Pasted image 20241009190626.png",
     "Images/Pasted image 20241009190018.png",
     "Images/Pasted image 20241009185959.png",
     "Images/Pasted image 20241009185200.png",
-    "Writeups/Writeup Template.md",
-    "Writeups/DockerLabs/Muy fàcil/BorazuwarahCTF.md",
-    "Writeups/DockerLabs/Muy fàcil/Vacaciones.md",
-    "Writeups/DockerLabs/Muy fàcil/Trust.md",
-    "Writeups/DockerLabs/Muy fàcil/Obsession.md",
-    "Writeups/DockerLabs/Muy fàcil/Injection.md",
-    "Writeups/DockerLabs/Muy fàcil/FirstHacking.md",
-    "Writeups/DockerLabs/Muy fàcil/BreakMySSH.md",
-    "Writeups/Hackthebox/Media/Surveillance.md",
-    "Writeups/Hackthebox/Media/Manager.md",
-    "Writeups/Hackthebox/Fàcil/Devvortex.md",
-    "Writeups/Hackthebox/Fàcil/Codify.md",
-    "Writeups/Hackthebox/Fàcil/Analytics.md",
-    "Stack-Based Buffer Overflow/Linux/GDB.md",
+    "Images/Pasted image 20241008194118.png",
+    "Forensics/Volatility.md",
+    "Forensics",
     "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
+    "Stack-Based Buffer Overflow/Linux/GDB.md",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC Cheatsheet.md",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
     "Stack-Based Buffer Overflow/Windows/Scripts.md",
     "Introducción.md",
+    "Writeups/DockerLabs/Muy fàcil/Injection.md",
+    "Windows/Hacking with Powershell.md",
     "Windows",
+    "Stack-Based Buffer Overflow/Linux/Cheatsheet.md",
+    "Writeups/Writeup Template.md",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux",
+    "Enumeration/Nmap Cheatsheet.md",
     "Enumeration",
+    "Stack-Based Buffer Overflow/Fundamentos.md",
+    "Writeups/Hackthebox/Fàcil/Devvortex.md",
+    "Writeups/Hackthebox/Fàcil/Codify.md",
+    "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Writeups/Hackthebox/Insane",
     "Writeups/Hackthebox/Difícil",
     "Writeups/DockerLabs/Difícil",
+    "Stack-Based Buffer Overflow/Stack-Based Buffer Overflow en Linux x86/Fundamentos.md",
     "Sin título.canvas"
   ]
 }
