@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Core Windows Processes.md",
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Core Windows Processes"
+              "title": "GDB"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Core Windows Processes.md",
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Core Windows Processes"
+              "title": "Enlaces entrantes de GDB"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Core Windows Processes.md",
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Core Windows Processes"
+              "title": "Enlaces salientes de GDB"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Core Windows Processes.md"
+                "file": "Stack-Based Buffer Overflow/Linux/GDB.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de Core Windows Processes"
+              "title": "Esquema de GDB"
             }
           }
         ],
@@ -165,11 +165,11 @@
   },
   "active": "895152f7ae13ee26",
   "lastOpenFiles": [
-    "Windows/Hacking with Powershell.md",
+    "Reverse Engineering/ASM.md",
     "Windows/Core Windows Processes.md",
+    "Windows/Hacking with Powershell.md",
     "Forensics/Volatility.md",
     "Sin nombre",
-    "Reverse Engineering/ASM.md",
     "Forensics",
     "Images/Pasted image 20241018165830.png",
     "Writeups/DockerLabs/Fàcil/HiddenCat.md",
