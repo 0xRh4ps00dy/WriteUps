@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Linux/GDB.md",
+                "file": "Stack-Based Buffer Overflow/Linux/Protections 🛡️.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GDB"
+              "title": "Protections 🛡️"
             }
           }
         ],
@@ -168,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Stack-Based Buffer Overflow/Linux/GDB.md"
+                "file": "Stack-Based Buffer Overflow/Linux/Protections 🛡️.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de GDB"
+              "title": "Esquema de Protections 🛡️"
             }
           }
         ],
@@ -194,8 +194,8 @@
   },
   "active": "7a6221c2b8cee5a0",
   "lastOpenFiles": [
-    "Stack-Based Buffer Overflow/Linux/Protections 🛡️.md",
     "Stack-Based Buffer Overflow/Linux/GDB.md",
+    "Stack-Based Buffer Overflow/Linux/Protections 🛡️.md",
     "conflict-files-obsidian-git.md",
     "Reverse Engineering/ASM.md",
     "Windows/Core Windows Processes.md",
