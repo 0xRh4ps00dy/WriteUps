@@ -2,17 +2,17 @@
 
 
 
-| Comando              | Descripción                                  |
-| -------------------- | -------------------------------------------- |
-| `chr()`              |                                              |
-| `ord()`              |                                              |
-| `bytes.fromhex()`    |                                              |
-| `.hex()`             | Necesita `import base64`.                    |
-| `base64.b64encode()` |                                              |
-| `base64.b64decode()` |                                              |
-| `bytes_to_long()`    | Necesita `from Crypto.Util.number import *`. |
-| `long_to_bytes()`    | Necesita `from Crypto.Util.number import *`. |
-| `xor()`              | Necesita `pwntools`.                         |
-| ``                   |                                              |
-| ``                   |                                              |
+| Comando              | Descripción                                                                                                                                                                                                                                                                                   |
+| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `chr()`              | Convierte un valor entero (que representa un código ASCII o Unicode) en su carácter correspondiente. Por ejemplo, `chr(65)` devuelve `'A'`.                                                                                                                                                   |
+| `ord()`              | Convierte un carácter en su valor entero correspondiente en el código ASCII o Unicode. Por ejemplo, `ord('A')` devuelve `65`.                                                                                                                                                                 |
+| `bytes.fromhex()`    | Convierte una cadena hexadecimal en un objeto `bytes`. Por ejemplo, `bytes.fromhex('4142')` devuelve `b'AB'`.                                                                                                                                                                                 |
+| `.hex()`             | Convierte un objeto `bytes` en su representación hexadecimal. Por ejemplo, `b'AB'.hex()` devuelve `'4142'`. Necesita `import base64`.                                                                                                                                                         |
+| `base64.b64encode()` | Codifica datos binarios en formato Base64, útil para transmitir datos en formatos de texto como JSON o URLs. Devuelve un objeto `bytes` con la cadena codificada en Base64.                                                                                                                   |
+| `base64.b64decode()` | Decodifica una cadena en Base64 a su formato binario original. Esta función es útil para revertir la codificación en Base64 y recuperar los datos originales.                                                                                                                                 |
+| `bytes_to_long()`    | Convierte un objeto `bytes` en un valor entero (largo). Se utiliza en criptografía para manipular datos binarios como números enteros. (Esta función está disponible en el módulo `Crypto.Util.number` de la biblioteca `pycryptodome`). <br><br>Necesita `from Crypto.Util.number import *`. |
+| `long_to_bytes()`    | Necesita `from Crypto.Util.number import *`.                                                                                                                                                                                                                                                  |
+| `xor()`              | Necesita `pwntools`.                                                                                                                                                                                                                                                                          |
+| ``                   |                                                                                                                                                                                                                                                                                               |
+| ``                   |                                                                                                                                                                                                                                                                                               |
 
