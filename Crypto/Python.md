@@ -12,7 +12,7 @@
 | `base64.b64decode()` |                                              |
 | `bytes_to_long()`    | Necesita `from Crypto.Util.number import *`. |
 | `long_to_bytes()`    | Necesita `from Crypto.Util.number import *`. |
-| ``                   |                                              |
+| `xor()`              | Necesita `pwntools`.                         |
 | ``                   |                                              |
 | ``                   |                                              |
 
