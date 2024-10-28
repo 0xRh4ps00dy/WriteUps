@@ -48,9 +48,23 @@
               "icon": "lucide-file",
               "title": "ASM"
             }
+          },
+          {
+            "id": "1a990e893d82ac02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Crypto/Python.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Python"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -168,10 +182,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reverse Engineering/ASM.md"
+                "file": "Crypto/Python.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de ASM"
+              "title": "Esquema de Python"
             }
           }
         ],
@@ -192,16 +206,17 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "7a6221c2b8cee5a0",
+  "active": "1a990e893d82ac02",
   "lastOpenFiles": [
+    "Reverse Engineering/ASM.md",
     "Stack-Based Buffer Overflow/Linux/GDB.md",
+    "Crypto/Python.md",
+    "Crypto",
     "Stack-Based Buffer Overflow/Linux/Protections 🛡️.md",
     "conflict-files-obsidian-git.md",
-    "Reverse Engineering/ASM.md",
     "Windows/Core Windows Processes.md",
     "Windows/Hacking with Powershell.md",
     "Forensics/Volatility.md",
-    "Sin nombre",
     "Forensics",
     "Images/Pasted image 20241018165830.png",
     "Writeups/DockerLabs/Fàcil/HiddenCat.md",
@@ -232,7 +247,6 @@
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
     "Stack-Based Buffer Overflow/Windows/XDBG + ERC Cheatsheet.md",
-    "Stack-Based Buffer Overflow/Windows/XDBG + ERC.md",
     "Windows",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux",
