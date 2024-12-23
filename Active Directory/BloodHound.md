@@ -1,4 +1,4 @@
-Installation in 3 steps:
+# Installation in 3 steps
 
 1. Install Java.
 2. Install Neo4j.
