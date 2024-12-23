@@ -1,4 +1,5 @@
 # Installation in 3 steps
+## Windows
 
 ### 1. Install Java
 
@@ -26,9 +27,19 @@ PS C:\htb> net start neo4j
 The Neo4j Graph Database - neo4j service is starting..
 The Neo4j Graph Database - neo4j service was started successfully.
 ```
-## 3. Install BloodHound
+### 3. Install BloodHound
 
 [https://github.com/BloodHoundAD/BloodHound/releases](https://github.com/BloodHoundAD/BloodHound/releases)
+
+## Linux
+
+### 1. Install Java
+
+
+### 2. Install Neo4j
+
+
+### 3. Install BloodHound
 
 
 
