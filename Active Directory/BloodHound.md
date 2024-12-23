@@ -1,6 +1,6 @@
 # Installation in 3 steps
 
-## 1. Install Java
+### 1. Install Java
 
 https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
 
@@ -9,7 +9,7 @@ https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
 ```
 
 
-## 2. Install Neo4j
+### 2. Install Neo4j
 
 https://neo4j.com/download-center/#community
 
@@ -27,6 +27,10 @@ The Neo4j Graph Database - neo4j service is starting..
 The Neo4j Graph Database - neo4j service was started successfully.
 ```
 ## 3. Install BloodHound
+
+[https://github.com/BloodHoundAD/BloodHound/releases](https://github.com/BloodHoundAD/BloodHound/releases)
+
+
 
 | Command                                                                     | Description                            |
 | --------------------------------------------------------------------------- | -------------------------------------- |
