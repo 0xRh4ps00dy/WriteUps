@@ -46,21 +46,26 @@ Updating APT sources to install Neo4j
 
 ```shell-session
 wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
-0xRh4ps00dy@htb[/htb]$ echo 'deb https://debian.neo4j.com stable 4.4' | sudo tee -a /etc/apt/sources.list.d/neo4j.list
-0xRh4ps00dy@htb[/htb]$ sudo apt-get update
+
+echo 'deb https://debian.neo4j.com stable 4.4' | sudo tee -a /etc/apt/sources.list.d/neo4j.list
+
+sudo apt-get update
 ```
 
 Installing required packages
 
 ```shell-session
-0xRh4ps00dy@htb[/htb]$ sudo apt-get install apt-transport-https
+sudo apt-get install apt-transport-https
 ```
 
 Installing Neo4j
 
 ```shell-session
 sudo apt list -a neo4j 
+
+sudo apt install neo4j=1:4.4.16 -y
 ```
+
 ### 3. Install BloodHound
 
 
