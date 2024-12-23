@@ -163,8 +163,9 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "1a990e893d82ac02",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
+    "Active Directory",
     "Reverse Engineering/ASM.md",
     "Stack-Based Buffer Overflow/Linux/GDB.md",
     "Crypto/Python.md",
@@ -203,7 +204,6 @@
     "Writeups/Hackthebox/Fàcil/Codify.md",
     "Writeups/Hackthebox/Fàcil/Analytics.md",
     "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
-    "Stack-Based Buffer Overflow/Windows/XDBG + ERC Cheatsheet.md",
     "Windows",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux",
