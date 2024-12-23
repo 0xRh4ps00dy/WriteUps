@@ -16,6 +16,16 @@ https://neo4j.com/download-center/#community
 ```powershell-session
 Expand-Archive .\neo4j-community-4.4.16-windows.zip .
 ```
+
+```powershell-session
+.\neo4j-community-4.4.16\bin\neo4j.bat install-service
+```
+
+```powershell-session
+PS C:\htb> net start neo4j
+The Neo4j Graph Database - neo4j service is starting..
+The Neo4j Graph Database - neo4j service was started successfully.
+```
 ## 3. Install BloodHound
 
 | Command                                                                     | Description                            |
