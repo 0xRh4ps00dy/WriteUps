@@ -40,6 +40,12 @@ echo "deb http://httpredir.debian.org/debian stretch-backports main" | sudo tee 
 
 sudo apt-get update
 ```
+
+Change Java version to 11
+
+```shell-session
+sudo update-alternatives --config java
+```
 ### 2. Install Neo4j
 
 Updating APT sources to install Neo4j
@@ -65,6 +71,8 @@ sudo apt list -a neo4j
 
 sudo apt install neo4j=1:4.4.16 -y
 ```
+
+
 
 ### 3. Install BloodHound
 
