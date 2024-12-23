@@ -88,6 +88,21 @@ sudo systemctl stop neo4j
 
 https://github.com/BloodHoundAD/BloodHound/releases
 
+Unzip BloodHound
+
+```shell-session
+unzip BloodHound-linux-x64.zip 
+```
+
+Execute BloodHound
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ cd BloodHound-linux-x64/
+0xRh4ps00dy@htb[/htb]$ ./BloodHound --no-sandbox
+```
+
+# Recovering Neo4j Credentials
+
 
 
 | Command                                                                     | Description                            |
