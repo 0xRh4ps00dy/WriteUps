@@ -72,9 +72,21 @@ sudo apt list -a neo4j
 sudo apt install neo4j=1:4.4.16 -y
 ```
 
+To start and stop the service, we can use the following commands
+#### Start Neo4j
 
+```shell-session
+sudo systemctl start neo4j
+```
+#### Stop Neo4j
+
+```shell-session
+sudo systemctl stop neo4j
+```
 
 ### 3. Install BloodHound
+
+https://github.com/BloodHoundAD/BloodHound/releases
 
 
 
