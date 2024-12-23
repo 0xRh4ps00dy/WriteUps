@@ -23,9 +23,7 @@ Expand-Archive .\neo4j-community-4.4.16-windows.zip .
 ```
 
 ```powershell-session
-PS C:\htb> net start neo4j
-The Neo4j Graph Database - neo4j service is starting..
-The Neo4j Graph Database - neo4j service was started successfully.
+net start neo4j
 ```
 ### 3. Install BloodHound
 
@@ -38,17 +36,30 @@ The Neo4j Graph Database - neo4j service was started successfully.
 Updating APT sources to install Java
 
 ```shell-session
-0xRh4ps00dy@htb[/htb]# echo "deb http://httpredir.debian.org/debian stretch-backports main" | sudo tee -a /etc/apt/sources.list.d/stretch-backports.list
-0xRh4ps00dy@htb[/htb]# sudo apt-get update
+echo "deb http://httpredir.debian.org/debian stretch-backports main" | sudo tee -a /etc/apt/sources.list.d/stretch-backports.list
+
+sudo apt-get update
 ```
 ### 2. Install Neo4j
 
 Updating APT sources to install Neo4j
 
 ```shell-session
-0xRh4ps00dy@htb[/htb]$ wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
+wget -O - https://debian.neo4j.com/neotechnology.gpg.key | sudo apt-key add -
 0xRh4ps00dy@htb[/htb]$ echo 'deb https://debian.neo4j.com stable 4.4' | sudo tee -a /etc/apt/sources.list.d/neo4j.list
 0xRh4ps00dy@htb[/htb]$ sudo apt-get update
+```
+
+Installing required packages
+
+```shell-session
+0xRh4ps00dy@htb[/htb]$ sudo apt-get install apt-transport-https
+```
+
+Installing Neo4j
+
+```shell-session
+sudo apt list -a neo4j 
 ```
 ### 3. Install BloodHound
 
