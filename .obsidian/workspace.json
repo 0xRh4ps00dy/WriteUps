@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Crypto/Python.md",
+                "file": "Active Directory/Houd.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Python"
+              "title": "Houd"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Crypto/Python.md"
+                "file": "Active Directory/Houd.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de Python"
+              "title": "Esquema de Houd"
             }
           }
         ],
@@ -163,12 +163,13 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c9df10bcd5b889c0",
+  "active": "1a990e893d82ac02",
   "lastOpenFiles": [
+    "Crypto/Python.md",
+    "Active Directory/Houd.md",
     "Active Directory",
     "Reverse Engineering/ASM.md",
     "Stack-Based Buffer Overflow/Linux/GDB.md",
-    "Crypto/Python.md",
     "Crypto",
     "Stack-Based Buffer Overflow/Linux/Protections 🛡️.md",
     "conflict-files-obsidian-git.md",
@@ -210,7 +211,6 @@
     "Enumeration",
     "Writeups/Hackthebox/Insane",
     "Writeups/Hackthebox/Difícil",
-    "Writeups/DockerLabs/Difícil",
     "Sin título.canvas"
   ]
 }
