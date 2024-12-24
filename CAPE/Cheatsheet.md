@@ -13,3 +13,4 @@
 | `bloodhound-python -u P.Rosa -p 'Rosaisbest123' -d vintage.htb -c All -dc dc01.vintage.htb`                                        |                                                  |
 | `bloodhound-python -d inlanefreight.htb -c DCOnly -u htb-student -p HTBRocks! -ns 10.129.204.207 -k`                               |                                                  |
 | `bloodhound-python -d inlanefreight.htb -c DCOnly -u htb-student -p HTBRocks! -ns 10.129.204.207 --kerberos`                       | Using BloodHound.py with Kerberos authentication |
+| `runas /netonly /user:<DOMAIN>\<username> <app>`<br>``                                                                             | Running from Non-Domain-Joined Systems           |
