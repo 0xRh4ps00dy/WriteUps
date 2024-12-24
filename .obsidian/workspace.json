@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/BloodHound.md",
+                "file": "Active Directory/BloodHound 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BloodHound"
+              "title": "BloodHound 1"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/BloodHound.md"
+                "file": "Active Directory/BloodHound 1.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de BloodHound"
+              "title": "Esquema de BloodHound 1"
             }
           }
         ],
@@ -166,8 +166,10 @@
   },
   "active": "1a990e893d82ac02",
   "lastOpenFiles": [
+    "Active Directory/BloodHound/Installation.md",
+    "Active Directory/BloodHound 1.md",
+    "Active Directory/BloodHound",
     "Crypto/Python.md",
-    "Active Directory/BloodHound.md",
     "Active Directory",
     "Reverse Engineering/ASM.md",
     "Stack-Based Buffer Overflow/Linux/GDB.md",
@@ -204,14 +206,11 @@
     "Writeups/Hackthebox/Media/Manager.md",
     "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Writeups/Hackthebox/Fàcil/Codify.md",
-    "Writeups/Hackthebox/Fàcil/Analytics.md",
-    "Stack-Based Buffer Overflow/Windows/Immunity Debugger + Mona.md",
     "Windows",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux",
     "Enumeration",
     "Writeups/Hackthebox/Insane",
-    "Writeups/Hackthebox/Difícil",
     "Sin título.canvas"
   ]
 }
