@@ -16,8 +16,53 @@
 
 
 # Active Directory Enumeration & Attacks
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 # Active Directory LDAP
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 # Active Directory PowerView
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 
 
 # Active Directory BloodHound	
@@ -36,21 +81,179 @@
 
 
 # Windows Lateral Movement
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 # Using CrackMapExec
 
-
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
 
 
 
 
 
 # Kerberos Attacks
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 # DACL Attacks I
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 # DACL Attacks II
-# NTLM Relay Attacks
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
+# NTLM Relay Attacksv
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 # ADCS Attacks
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 # Active Directory Trust Attacks
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 # Intro to C2 Operations with Sliver
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 # Introduction to Windows Evasion Techniques
+
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+
 # MSSQL, Exchange, and SCCM Attacks
 
+
+
+| Command | Description |
+| ------- | ----------- |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
+|         |             |
