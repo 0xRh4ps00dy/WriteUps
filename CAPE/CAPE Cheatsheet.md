@@ -100,17 +100,17 @@
 
 Password Spray
 
-| Command               | Description |
-| --------------------- | ----------- |
-| `crackmapexec winrm ` |             |
-|                       |             |
-|                       |             |
-|                       |             |
-|                       |             |
-|                       |             |
-|                       |             |
-|                       |             |
-|                       |             |
+| Command                                                                                      | Description |
+| -------------------------------------------------------------------------------------------- | ----------- |
+| `crackmapexec winrm <ip> -u users.txt -p password.txt --no-bruteforce --continue-on-success` |             |
+|                                                                                              |             |
+|                                                                                              |             |
+|                                                                                              |             |
+|                                                                                              |             |
+|                                                                                              |             |
+|                                                                                              |             |
+|                                                                                              |             |
+|                                                                                              |             |
 
 
 | Command | Description |
