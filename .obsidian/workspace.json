@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "61214c28ea76c6da",
+        "id": "42fa3891b9ea1b6e",
         "type": "tabs",
         "children": [
           {
-            "id": "33467c870f211c8e",
+            "id": "46f7a4ce3bbc8180",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -164,10 +164,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "33467c870f211c8e",
+  "active": "46f7a4ce3bbc8180",
   "lastOpenFiles": [
-    "CAPE/BloodHound/Recovering Neo4j Credentials.md",
+    "Active Directory BloodHound.md",
     "CAPE/Cheatsheet.md",
+    "CAPE/BloodHound/Recovering Neo4j Credentials.md",
     "CAPE/BloodHound/Installation BloodHound.py.md",
     "CAPE/BloodHound/Installation BloodHound.md",
     "CAPE/BloodHound",
@@ -206,7 +207,6 @@
     "Writeups/DockerLabs/Muy fàcil/BreakMySSH.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
     "Writeups/Hackthebox/Media/Manager.md",
-    "Writeups/Hackthebox/Fàcil/Devvortex.md",
     "Windows",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux",

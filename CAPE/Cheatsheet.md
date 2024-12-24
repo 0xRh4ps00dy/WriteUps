@@ -1,39 +1,24 @@
 
 
 Active Directory Enumeration & Attacks	
-
 Active Directory LDAP	
-
 Active Directory PowerView	
-
-Active Directory BloodHound	
-
+[Active Directory BloodHound](Active%20Directory%20BloodHound)
 Windows Lateral Movement	
-Medium	
 Using CrackMapExec	
-Medium	
 Kerberos Attacks	
-Hard	
 DACL Attacks I	
-Hard	
 DACL Attacks II	
-Hard	
 NTLM Relay Attacks	
-Hard	
 ADCS Attacks	
-Hard	
 Active Directory Trust Attacks	
-Hard	
 Intro to C2 Operations with Sliver	
-Hard	
 Introduction to Windows Evasion Techniques	
-Hard	
 MSSQL, Exchange, and SCCM Attacks	
-Hard	
 
 
 
-# BloodHound
+# Active Directory BloodHound	
 
 | Command                                                                                                                              | Description                                      |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------ |
