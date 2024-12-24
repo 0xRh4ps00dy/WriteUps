@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CAPE/Cheatsheet.md",
+                "file": "CAPE/CAPE Cheatsheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cheatsheet"
+              "title": "CAPE Cheatsheet"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CAPE/Cheatsheet.md"
+                "file": "CAPE/CAPE Cheatsheet.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de Cheatsheet"
+              "title": "Esquema de CAPE Cheatsheet"
             }
           }
         ],
@@ -167,7 +167,7 @@
   "active": "46f7a4ce3bbc8180",
   "lastOpenFiles": [
     "Active Directory BloodHound.md",
-    "CAPE/Cheatsheet.md",
+    "CAPE/CAPE Cheatsheet.md",
     "CAPE/BloodHound/Recovering Neo4j Credentials.md",
     "CAPE/BloodHound/Installation BloodHound.py.md",
     "CAPE/BloodHound/Installation BloodHound.md",

@@ -1,5 +1,3 @@
-
-
 [[#Active Directory Enumeration & Attacks]]
 [[#Active Directory LDAP]]
 [[#Active Directory PowerView]]
@@ -17,21 +15,10 @@
 [[#MSSQL, Exchange, and SCCM Attacks]]
 
 
-Active Directory Enumeration & Attacks
-Active Directory LDAP
-Active Directory PowerView
-Active Directory BloodHound
-Windows Lateral Movement
-Using CrackMapExec
-Kerberos Attacks
-DACL Attacks I
-DACL Attacks II
-NTLM Relay Attacks
-[[#ADCS Attacks
-[[#Active Directory Trust Attacks
-[[#Intro to C2 Operations with Sliver
-[[#Introduction to Windows Evasion Techniques
-MSSQL, Exchange, and SCCM Attacks
+# Active Directory Enumeration & Attacks
+# Active Directory LDAP
+# Active Directory PowerView
+
 
 # Active Directory BloodHound	
 
@@ -45,3 +32,17 @@ MSSQL, Exchange, and SCCM Attacks
 | `bloodhound-python -d inlanefreight.htb -c DCOnly -u htb-student -p HTBRocks! -ns 10.129.204.207 -k`                                 |                                                  |
 | `bloodhound-python -d inlanefreight.htb -c DCOnly -u htb-student -p HTBRocks! -ns 10.129.204.207 --kerberos`                         | Using BloodHound.py with Kerberos authentication |
 | `runas /netonly /user:INLANEFREIGHT\htb-student cmd.exe`<br>`net view \\inlanefreight.htb\`<br>`SharpHound.exe -d inlanefreight.htb` | Running from Non-Domain-Joined Systems           |
+
+
+# Windows Lateral Movement
+# Using CrackMapExec
+# Kerberos Attacks
+# DACL Attacks I
+# DACL Attacks II
+# NTLM Relay Attacks
+# ADCS Attacks
+# Active Directory Trust Attacks
+# Intro to C2 Operations with Sliver
+# Introduction to Windows Evasion Techniques
+# MSSQL, Exchange, and SCCM Attacks
+
