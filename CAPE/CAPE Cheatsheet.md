@@ -97,6 +97,15 @@
 |         |             |
 
 # Using CrackMapExec
+#### Targets Format
+
+```shell-session
+crackmapexec [protocol] 10.10.10.1
+crackmapexec [protocol] 10.10.10.1 10.10.10.2 10.10.10.3
+crackmapexec [protocol] 10.10.10.1/24
+crackmapexec [protocol] internal.local
+crackmapexec [protocol] targets.txt
+```
 
 | Command                                                                                           | Description       |
 | ------------------------------------------------------------------------------------------------- | ----------------- |
