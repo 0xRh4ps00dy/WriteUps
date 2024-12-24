@@ -37,6 +37,13 @@
 
 # Windows Lateral Movement
 # Using CrackMapExec
+
+
+
+
+
+
+
 # Kerberos Attacks
 # DACL Attacks I
 # DACL Attacks II
