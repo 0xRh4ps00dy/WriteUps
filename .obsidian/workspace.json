@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/BloodHound 1.md",
+                "file": "Active Directory/BloodHound/Cheatsheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BloodHound 1"
+              "title": "Cheatsheet"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/BloodHound 1.md"
+                "file": "Active Directory/BloodHound/Cheatsheet.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de BloodHound 1"
+              "title": "Esquema de Cheatsheet"
             }
           }
         ],
@@ -166,8 +166,9 @@
   },
   "active": "1a990e893d82ac02",
   "lastOpenFiles": [
+    "Active Directory/BloodHound/Recovering Neo4j Credentials.md",
+    "Active Directory/BloodHound/Cheatsheet.md",
     "Active Directory/BloodHound/Installation.md",
-    "Active Directory/BloodHound 1.md",
     "Active Directory/BloodHound",
     "Crypto/Python.md",
     "Active Directory",
