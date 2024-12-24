@@ -98,6 +98,21 @@
 
 # Using CrackMapExec
 
+Password Spray
+
+| Command               | Description |
+| --------------------- | ----------- |
+| `crackmapexec winrm ` |             |
+|                       |             |
+|                       |             |
+|                       |             |
+|                       |             |
+|                       |             |
+|                       |             |
+|                       |             |
+|                       |             |
+
+
 | Command | Description |
 | ------- | ----------- |
 |         |             |
