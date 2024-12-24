@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/BloodHound/Cheatsheet.md",
+                "file": "CAPE/Cheatsheet.md",
                 "mode": "source",
                 "source": false
               },
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/BloodHound/Cheatsheet.md"
+                "file": "CAPE/Cheatsheet.md"
               },
               "icon": "lucide-list",
               "title": "Esquema de Cheatsheet"
@@ -164,14 +164,14 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "1a990e893d82ac02",
+  "active": "c9df10bcd5b889c0",
   "lastOpenFiles": [
-    "Active Directory/BloodHound/Recovering Neo4j Credentials.md",
-    "Active Directory/BloodHound/Cheatsheet.md",
-    "Active Directory/BloodHound/Installation.md",
-    "Active Directory/BloodHound",
+    "CAPE/BloodHound/Recovering Neo4j Credentials.md",
+    "CAPE/Cheatsheet.md",
+    "CAPE/BloodHound/Installation.md",
+    "CAPE/BloodHound",
     "Crypto/Python.md",
-    "Active Directory",
+    "CAPE",
     "Reverse Engineering/ASM.md",
     "Stack-Based Buffer Overflow/Linux/GDB.md",
     "Crypto",
