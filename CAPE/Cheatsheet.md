@@ -1,21 +1,36 @@
 
-|Name|Progress|Difficulty||   |
-|---|---|---|---|---|
-|[Active Directory Enumeration & Attacks](https://academy.hackthebox.com/module/details/143)||Medium|[View](https://academy.hackthebox.com/module/143)|
-|[Active Directory LDAP](https://academy.hackthebox.com/module/details/22)||Medium|[Start](https://academy.hackthebox.com/module/22)|
-|[Active Directory PowerView](https://academy.hackthebox.com/module/details/68)||Medium|Start|
-|[Active Directory BloodHound](https://academy.hackthebox.com/module/details/69)||Medium|[Continue](https://academy.hackthebox.com/module/69)|
-|[Windows Lateral Movement](https://academy.hackthebox.com/module/details/263)||Medium|Start|
-|[Using CrackMapExec](https://academy.hackthebox.com/module/details/84)||Medium|Start|
-|[Kerberos Attacks](https://academy.hackthebox.com/module/details/25)||Hard|Start|
-|[DACL Attacks I](https://academy.hackthebox.com/module/details/219)||Hard|Start|
-|[DACL Attacks II](https://academy.hackthebox.com/module/details/255)||Hard|Start|
-|[NTLM Relay Attacks](https://academy.hackthebox.com/module/details/232)||Hard|Start|
-|[ADCS Attacks](https://academy.hackthebox.com/module/details/236)||Hard|Start|
-|[Active Directory Trust Attacks](https://academy.hackthebox.com/module/details/253)||Hard|Start|
-|[Intro to C2 Operations with Sliver](https://academy.hackthebox.com/module/details/241)||Hard|Start|
-|[Introduction to Windows Evasion Techniques](https://academy.hackthebox.com/module/details/254)||Hard|Start|
-|[MSSQL, Exchange, and SCCM Attacks](https://academy.hackthebox.com/module/details/267)||Hard|Start|
+
+Active Directory Enumeration & Attacks	
+
+Active Directory LDAP	
+
+Active Directory PowerView	
+
+Active Directory BloodHound	
+
+Windows Lateral Movement	
+Medium	
+Using CrackMapExec	
+Medium	
+Kerberos Attacks	
+Hard	
+DACL Attacks I	
+Hard	
+DACL Attacks II	
+Hard	
+NTLM Relay Attacks	
+Hard	
+ADCS Attacks	
+Hard	
+Active Directory Trust Attacks	
+Hard	
+Intro to C2 Operations with Sliver	
+Hard	
+Introduction to Windows Evasion Techniques	
+Hard	
+MSSQL, Exchange, and SCCM Attacks	
+Hard	
+
 
 
 # BloodHound
