@@ -32,7 +32,7 @@
 | `bloodhound-python -d inlanefreight.htb -c DCOnly -u htb-student -p HTBRocks! -ns 10.129.204.207 -k`                                 |                                                  |
 | `bloodhound-python -d inlanefreight.htb -c DCOnly -u htb-student -p HTBRocks! -ns 10.129.204.207 --kerberos`                         | Using BloodHound.py with Kerberos authentication |
 | `runas /netonly /user:INLANEFREIGHT\htb-student cmd.exe`<br>`net view \\inlanefreight.htb\`<br>`SharpHound.exe -d inlanefreight.htb` | Running from Non-Domain-Joined Systems           |
-| `echo -e "\n10.129.204.207 dc01.inlanefreight.htb dc01 inlanefreight inlanefreight.htb" \| sudo tee -a /etc/hosts`                   | #### Setting up the /etc/hosts file              |
+| `echo -e "\n10.129.204.207 dc01.inlanefreight.htb dc01 inlanefreight inlanefreight.htb" \| sudo tee -a /etc/hosts`                   | Setting up the /etc/hosts file                   |
 
 
 # Windows Lateral Movement
