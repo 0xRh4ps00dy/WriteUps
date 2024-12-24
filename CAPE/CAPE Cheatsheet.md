@@ -98,15 +98,15 @@
 
 # Using CrackMapExec
 
-| Command                                                                                            | Description    |
-| -------------------------------------------------------------------------------------------------- | -------------- |
-| `crackmapexec <zprotocol> <ip> -u users.txt -p password.txt --no-bruteforce --continue-on-success` | Password Spray |
-|                                                                                                    |                |
-|                                                                                                    |                |
-|                                                                                                    |                |
-|                                                                                                    |                |
-|                                                                                                    |                |
-|                                                                                                    |                |
+| Command                                                                                           | Description       |
+| ------------------------------------------------------------------------------------------------- | ----------------- |
+| `crackmapexec <protocol> <ip> -u users.txt -p password.txt --no-bruteforce --continue-on-success` | Password Spray    |
+| `crackmapexec <protocol> -L`                                                                      | Available Modules |
+| `crackmapexec <protocol> <ip> -u users.txt -p password.txt --no-bruteforce --continue-on-success` |                   |
+| `crackmapexec <protocol> <ip> -u users.txt -p password.txt --no-bruteforce --continue-on-success` |                   |
+|                                                                                                   |                   |
+|                                                                                                   |                   |
+|                                                                                                   |                   |
 
 
 | Command | Description |
