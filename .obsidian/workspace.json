@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CAPE/CAPE Cheatsheet.md",
+                "file": "CAPE/BloodHound/Nodes Elements.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CAPE Cheatsheet"
+              "title": "Nodes Elements"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CAPE/CAPE Cheatsheet.md"
+                "file": "CAPE/BloodHound/Nodes Elements.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de CAPE Cheatsheet"
+              "title": "Esquema de Nodes Elements"
             }
           }
         ],
@@ -166,8 +166,9 @@
   },
   "active": "46f7a4ce3bbc8180",
   "lastOpenFiles": [
-    "Active Directory BloodHound.md",
     "CAPE/CAPE Cheatsheet.md",
+    "CAPE/BloodHound/Nodes Elements.md",
+    "Active Directory BloodHound.md",
     "CAPE/BloodHound/Recovering Neo4j Credentials.md",
     "CAPE/BloodHound/Installation BloodHound.py.md",
     "CAPE/BloodHound/Installation BloodHound.md",
@@ -206,7 +207,6 @@
     "Writeups/DockerLabs/Muy fàcil/FirstHacking.md",
     "Writeups/DockerLabs/Muy fàcil/BreakMySSH.md",
     "Writeups/Hackthebox/Media/Surveillance.md",
-    "Writeups/Hackthebox/Media/Manager.md",
     "Windows",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux",
