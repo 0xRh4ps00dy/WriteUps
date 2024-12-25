@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CAPE/BloodHound/Edges.md",
+                "file": "Windows/Hacking with Powershell.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Edges"
+              "title": "Hacking with Powershell"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CAPE/BloodHound/Edges.md"
+                "file": "Windows/Hacking with Powershell.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de Edges"
+              "title": "Esquema de Hacking with Powershell"
             }
           }
         ],
@@ -166,8 +166,10 @@
   },
   "active": "46f7a4ce3bbc8180",
   "lastOpenFiles": [
-    "CAPE/BloodHound/Nodes.md",
+    "Windows/Core Windows Processes.md",
+    "Introducción.md",
     "CAPE/BloodHound/Edges.md",
+    "CAPE/BloodHound/Nodes.md",
     "CAPE/CAPE Cheatsheet.md",
     "Active Directory BloodHound.md",
     "CAPE/BloodHound/Recovering Neo4j Credentials.md",
@@ -181,7 +183,6 @@
     "Crypto",
     "Stack-Based Buffer Overflow/Linux/Protections 🛡️.md",
     "conflict-files-obsidian-git.md",
-    "Windows/Core Windows Processes.md",
     "Windows/Hacking with Powershell.md",
     "Forensics/Volatility.md",
     "Forensics",
@@ -206,7 +207,6 @@
     "Writeups/DockerLabs/Muy fàcil/Obsession.md",
     "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Writeups/DockerLabs/Muy fàcil/FirstHacking.md",
-    "Writeups/DockerLabs/Muy fàcil/BreakMySSH.md",
     "Windows",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux",
