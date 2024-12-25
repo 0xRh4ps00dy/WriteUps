@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CAPE/BloodHound/Nodes Elements.md",
+                "file": "CAPE/BloodHound/Nodes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nodes Elements"
+              "title": "Nodes"
             }
           }
         ]
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CAPE/BloodHound/Nodes Elements.md"
+                "file": "CAPE/BloodHound/Nodes.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de Nodes Elements"
+              "title": "Esquema de Nodes"
             }
           }
         ],
@@ -167,7 +167,7 @@
   "active": "46f7a4ce3bbc8180",
   "lastOpenFiles": [
     "CAPE/CAPE Cheatsheet.md",
-    "CAPE/BloodHound/Nodes Elements.md",
+    "CAPE/BloodHound/Nodes.md",
     "Active Directory BloodHound.md",
     "CAPE/BloodHound/Recovering Neo4j Credentials.md",
     "CAPE/BloodHound/Installation BloodHound.py.md",
