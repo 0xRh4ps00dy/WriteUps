@@ -11,10 +11,14 @@
             "id": "46f7a4ce3bbc8180",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Test.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "Test"
             }
           }
         ]
@@ -162,6 +166,8 @@
   },
   "active": "46f7a4ce3bbc8180",
   "lastOpenFiles": [
+    "Test.md",
+    "Sin nombre",
     "CAPE/BloodHound/Edges/ForceChangePassword.md",
     "Windows/Hacking with Powershell.md",
     "CAPE/BloodHound/Edges",
@@ -203,11 +209,9 @@
     "Writeups/DockerLabs/Muy fàcil/Vacaciones.md",
     "Writeups/DockerLabs/Muy fàcil/Trust.md",
     "Writeups/DockerLabs/Muy fàcil/Obsession.md",
-    "Writeups/DockerLabs/Muy fàcil/Injection.md",
     "Windows",
     "Stack-Based Buffer Overflow/Windows",
     "Stack-Based Buffer Overflow/Linux",
-    "Enumeration",
     "Sin título.canvas"
   ]
 }
